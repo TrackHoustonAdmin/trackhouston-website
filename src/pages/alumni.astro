@@ -1,0 +1,152 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import CTAButton from '../components/CTAButton.astro';
+import alumni from '../data/alumni.json';
+import athleteSmile from '../assets/photos/athlete-smile.jpg';
+
+// Optional headshots: drop a photo at public/alumni/<slug>.jpg|jpeg|png
+// where <slug> is the athlete's name lowercased with non-letters as hyphens
+// (e.g. "G'Auna Edwards" -> g-auna-edwards.jpg). Missing photos are fine —
+// the athlete renders as a text entry.
+const ALUMNI_DIR = path.resolve('public/alumni');
+const slugOf = (name: string) =>
+  name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const photoOf = (name: string): string | null => {
+  if (!fs.existsSync(ALUMNI_DIR)) return null;
+  const slug = slugOf(name);
+  for (const ext of ['jpg', 'jpeg', 'png', 'webp']) {
+    if (fs.existsSync(path.join(ALUMNI_DIR, `${slug}.${ext}`))) return `/alumni/${slug}.${ext}`;
+  }
+  return null;
+};
+
+const totalAthletes = alumni.rollCall.reduce((n, s) => n + s.athletes.length, 0);
+const totalSchools = alumni.rollCall.length;
+---
+
+<Layout
+  title="Alumni — Track Houston Youth Track Club"
+  description={`Track Houston's college scholarship roll call: ${totalAthletes} alumni competing at ${totalSchools} colleges and universities across the country.`}
+>
+  <PageHero
+    kicker="Alumni"
+    title="The next level."
+    intro="Track Houston athletes go on to compete — and study — at colleges and universities across the country. This is the roll call."
+    image={athleteSmile}
+    imageAlt="A smiling Track Houston athlete after competition."
+  />
+
+  <!-- Stat band -->
+  <div class="bg-ink text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-8 grid grid-cols-2 sm:grid-cols-3 gap-6">
+      <div>
+        <p class="display text-4xl sm:text-5xl text-th-red">{totalAthletes}</p>
+        <p class="kicker text-white/75 mt-1">Scholarship Athletes</p>
+      </div>
+      <div>
+        <p class="display text-4xl sm:text-5xl text-th-red">{totalSchools}</p>
+        <p class="kicker text-white/75 mt-1">Colleges & Universities</p>
+      </div>
+      <div class="col-span-2 sm:col-span-1 self-center">
+        <p class="text-white/85 text-sm leading-relaxed">{alumni.intro}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Roll call -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <SectionHeading kicker={`${alumni.rollCallSeason} Roll Call`} title="Where they run now" />
+    <p class="reveal mt-5 max-w-2xl text-steel text-sm leading-relaxed">{alumni.note}</p>
+
+    <div class="mt-12 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        alumni.rollCall.map((entry) => (
+          <div class="reveal border-t-4 border-th-red pt-4">
+            <h3 class="font-condensed font-semibold uppercase tracking-[0.06em] text-lg leading-snug">
+              {entry.school}
+            </h3>
+            <ul class="mt-3 space-y-3">
+              {entry.athletes.map((a) => {
+                const photo = photoOf(a.name);
+                return (
+                  <li class="flex items-center gap-3">
+                    {photo ? (
+                      <img
+                        src={photo}
+                        alt={`${a.name} headshot`}
+                        loading="lazy"
+                        decoding="async"
+                        class="w-11 h-11 object-cover object-top border border-line shrink-0"
+                      />
+                    ) : (
+                      <span
+                        aria-hidden="true"
+                        class="w-11 h-11 shrink-0 bg-chalk border border-line flex items-center justify-center font-condensed font-semibold text-steel"
+                      >
+                        {a.name.split(' ').map((w) => w[0]).slice(0, 2).join('')}
+                      </span>
+                    )}
+                    <div class="min-w-0">
+                      <p class="font-medium leading-tight">{a.name}</p>
+                      <p class="text-steel text-sm">{a.detail}</p>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Signing classes -->
+  <section class="bg-chalk border-y border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+      <SectionHeading kicker="From the Archive" title="Signing classes" />
+      <p class="reveal mt-5 max-w-2xl text-steel text-sm leading-relaxed">
+        Signing-day classes preserved from the club's records. More years will be added as the
+        archive is restored.
+      </p>
+      <div class="mt-10 grid gap-10 lg:grid-cols-2">
+        {
+          alumni.signees.map((cls) => (
+            <div class="reveal bg-white border border-line p-6 sm:p-8">
+              <p class="display text-4xl text-th-red">{cls.year}</p>
+              <ul class="mt-5 divide-y divide-line">
+                {cls.entries.map((e) => (
+                  <li class="py-2.5 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-0.5">
+                    <span class="font-medium">{e.name}</span>
+                    <span class="text-steel text-sm">
+                      {e.school} · {e.sport}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Contribute -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-14">
+    <div class="reveal bg-ink text-white p-8 sm:p-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+      <div>
+        <h2 class="font-condensed font-semibold uppercase tracking-[0.05em] text-2xl">
+          Are you Track Houston alumni?
+        </h2>
+        <p class="text-white/80 mt-2 max-w-xl">
+          Changed schools, earned a degree, made a team, set a record? The club wants to celebrate
+          it — and keep this roll call current.
+        </p>
+      </div>
+      <CTAButton href="/contact" class="shrink-0">Update Your Entry</CTAButton>
+    </div>
+  </section>
+</Layout>
