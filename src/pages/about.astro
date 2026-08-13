@@ -1,0 +1,126 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import StatBlock from '../components/StatBlock.astro';
+import CTAButton from '../components/CTAButton.astro';
+import CoachCard from '../components/CoachCard.astro';
+import coaches from '../data/coaches.json';
+import girlsStart from '../assets/photos/girls-sprint-start.jpg';
+import boysDistance from '../assets/photos/boys-distance.jpg';
+
+const timeline = [
+  { year: '1989', text: 'Coach Johnny Dade and William Mitchell found Track Houston in Missouri City, Texas.' },
+  { year: '1990s–2000s', text: 'The club grows across greater Houston, building practice sites from Alief to Humble and a reputation at USATF and AAU national championships.' },
+  { year: '2020–21', text: 'Alumnus Bryce Deadmon wins Olympic gold in the 4x400m relay and bronze in the mixed relay at Tokyo 2020. The published college roll call reaches 95+ scholarship athletes.' },
+  { year: '2024', text: '170 medals at the USATF National Junior Olympics in College Station — 31 of them gold.' },
+  { year: '2026', text: '171 medals, a new national record and 17 national titles at the USATF National Junior Olympics.' },
+];
+---
+
+<Layout
+  title="About — Track Houston Youth Track Club"
+  description="Founded in 1989 by Coach Johnny Dade and William Mitchell, Track Houston has grown into one of the nation's most successful youth track & field clubs, serving 600+ athletes across greater Houston."
+>
+  <PageHero
+    kicker="About Track Houston"
+    title="Since 1989."
+    intro="One of the largest and most successful youth track & field clubs in the nation — built in Houston, for Houston."
+    image={girlsStart}
+    imageAlt="Track Houston girls sprinting off the start line at a summer meet."
+  />
+
+  <!-- Mission -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 lg:gap-20">
+    <SectionHeading kicker="Our Story" title="Suburbs to inner city. Beginner to national champion." />
+    <div class="reveal space-y-6 text-ink/80 leading-relaxed text-lg">
+      <p>
+        Track Houston Youth Track Club was founded in 1989 in Missouri City, Texas by Coach Johnny
+        Dade and William Mitchell. What started as a neighborhood club is now more than 600 athletes
+        a year, ages 7–18, drawn from the suburbs and the inner city of Houston alike.
+      </p>
+      <p>
+        The club is sanctioned by USA Track & Field through the Gulf Association, with more than 100
+        background-screened volunteers. The mission has never changed: build physical fitness,
+        mental stamina and teamwork — and give every child a lane, whatever their starting line.
+      </p>
+      <p>
+        The philosophy is <strong class="text-ink">"quantity of quality."</strong> Track Houston
+        doesn't chase a handful of stars. It develops entire age groups to a national standard —
+        which is why the club qualifies more athletes for the national Junior Olympics, and brings
+        home more medals, than any other track club in the country.
+      </p>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="bg-th-red text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+      <SectionHeading light kicker="History" title="Decades in the making." />
+      <ol class="mt-14 relative border-l-2 border-white/60 space-y-12 pl-8 max-w-3xl">
+        {
+          timeline.map((t) => (
+            <li class="reveal relative">
+              <span class="absolute -left-[2.45rem] top-1.5 w-4 h-4 bg-white" aria-hidden="true" />
+              <p class="display text-3xl sm:text-4xl text-white">{t.year}</p>
+              <p class="mt-2 text-white/90 leading-relaxed">{t.text}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- Numbers -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+      <StatBlock value={37} label="Seasons of Track Houston" />
+      <StatBlock value={12} label="Practice sites across greater Houston" />
+      <StatBlock value={100} suffix="+" label="Background-screened volunteers" />
+      <StatBlock value={50} suffix="+" label="Colleges where alumni have competed" />
+    </div>
+  </section>
+
+  <!-- Leadership -->
+  <section id="leadership" class="bg-chalk border-y border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+        <SectionHeading kicker="Leadership" title="Who runs the club." />
+        <p class="reveal text-steel max-w-md">
+          Track Houston is led by a volunteer board and athletic directors with decades of combined
+          coaching experience.
+        </p>
+      </div>
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {coaches.leadership.map((p) => <CoachCard name={p.name} role={p.role} phone={p.phone} email={p.email} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Community / closing -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="reveal order-2 lg:order-1">
+      <Image
+        src={boysDistance}
+        alt="Track Houston distance runners lead a pack down the backstretch."
+        class="w-full h-auto object-cover"
+        widths={[480, 800, 1200]}
+        sizes="(min-width: 1024px) 50vw, 100vw"
+        quality={78}
+      />
+    </div>
+    <div class="order-1 lg:order-2">
+      <SectionHeading kicker="Community" title="Houston is the team." />
+      <p class="reveal mt-6 text-ink/80 leading-relaxed max-w-lg">
+        Twelve practice sites. Hundreds of families. A vendor village at the Championships that
+        draws 6,500 people. Track Houston is a citywide community that has spent nearly four
+        decades proving that speed and scholarship travel together.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <CTAButton>Join Track Houston</CTAButton>
+        <CTAButton href="/contact" variant="secondary">Contact Us</CTAButton>
+      </div>
+    </div>
+  </section>
+</Layout>

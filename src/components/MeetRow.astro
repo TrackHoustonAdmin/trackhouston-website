@@ -1,0 +1,35 @@
+---
+interface Props {
+  date: string;
+  name: string;
+  location: string;
+  type?: 'meet' | 'championship' | 'featured' | 'club';
+}
+const { date, name, location, type = 'meet' } = Astro.props;
+
+const badge = {
+  championship: { label: 'Championship', class: 'bg-th-red text-white' },
+  featured: { label: 'Track Houston Event', class: 'bg-ink text-white' },
+  club: { label: 'Club', class: 'border border-line text-steel' },
+  meet: null,
+}[type];
+---
+
+<li class="reveal">
+  <div class="grid grid-cols-[5rem_1fr] sm:grid-cols-[7rem_1fr_auto] gap-x-4 gap-y-1 items-baseline py-4 border-b border-line">
+    <p class="display text-xl sm:text-2xl text-th-red row-span-2 sm:row-span-1">{date}</p>
+    <div>
+      <h3 class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg sm:text-xl leading-tight">
+        {name}
+      </h3>
+      <p class="text-steel text-sm mt-0.5">{location}</p>
+    </div>
+    {
+      badge && (
+        <p class={`kicker px-2.5 py-1 justify-self-start sm:justify-self-end col-start-2 sm:col-start-3 ${badge.class}`}>
+          {badge.label}
+        </p>
+      )
+    }
+  </div>
+</li>

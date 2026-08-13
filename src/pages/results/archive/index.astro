@@ -1,0 +1,121 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import PageHero from '../../../components/PageHero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import manifest from '../../../data/archive/manifest.json';
+import meets from '../../../data/archive/meets.json';
+import thMentions from '../../../data/archive/track-houston.json';
+
+type Meet = { title: string; location: string; sanction: string };
+const meetInfo = meets as Record<string, Meet>;
+const years = manifest as { year: string; parts: number; sections: number; thCount: number }[];
+const seasons = (await getCollection('history')).sort((a, b) => b.data.year - a.data.year);
+---
+
+<Layout
+  title="Results Archive — Track Houston Youth Track Club"
+  description="Complete AAU and USATF Junior Olympic results going back to 1990 — the historical record, including every Track Houston appearance."
+>
+  <PageHero
+    kicker="Results Archive"
+    title="The record book."
+    intro="Complete Junior Olympic results, digitized from the original meet documents going back to 1990. Wherever Track Houston appears in the record, it's flagged."
+  />
+
+  <!-- Championship history 2005–2025 -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+      <SectionHeading kicker="Championship History" title="Season by season, 2005–2025" />
+      <p class="reveal max-w-md text-steel">
+        Junior Olympic recaps, athletic honors and meet results — preserved from two decades of
+        Track Houston's own records.
+      </p>
+    </div>
+    <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+      {
+        seasons.map((s) => (
+          <a
+            href={`/results/history/${s.data.year}`}
+            class="reveal group border border-line bg-white p-4 hover:bg-th-red hover:text-white transition-colors duration-150"
+          >
+            <p class="display text-4xl">{s.data.year}</p>
+            <p class="kicker mt-2 text-steel group-hover:text-white/85 transition-colors">
+              {s.data.sections} {s.data.sections === 1 ? 'report' : 'reports'}
+            </p>
+          </a>
+        ))
+      }
+    </div>
+    <p class="reveal mt-6">
+      <a href="/results/records" class="kicker text-ink hover:text-th-red transition-colors">
+        Looking for club records? The Record Book →
+      </a>
+    </p>
+  </section>
+
+  <!-- Year grid -->
+  <section class="bg-chalk border-y border-line">
+   <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <SectionHeading kicker="Original Documents" title="Complete national results, 1990–2011" />
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {
+        years.map((y) => {
+          const info = meetInfo[y.year];
+          return (
+            <a
+              href={`/results/archive/${y.year}`}
+              class="reveal group border border-line border-t-4 border-t-th-red bg-white p-6 hover:bg-th-red hover:text-white transition-colors duration-150 flex flex-col"
+            >
+              <p class="display text-6xl">{y.year}</p>
+              <p class="mt-3 font-condensed font-semibold uppercase tracking-[0.06em] text-lg leading-tight">
+                {info?.title ?? 'National Junior Olympic Results'}
+              </p>
+              <p class="mt-1 text-steel group-hover:text-white/80 text-sm transition-colors">
+                {info?.location ?? ''}
+              </p>
+              <p class="kicker mt-5 pt-4 border-t border-line group-hover:border-white/30 text-steel group-hover:text-white/90 transition-colors">
+                {y.sections} result sections
+                {y.thCount > 0 && ` · ${y.thCount} Track Houston ${y.thCount === 1 ? 'entry' : 'entries'}`}
+              </p>
+            </a>
+          );
+        })
+      }
+    </div>
+   </div>
+  </section>
+
+  <!-- Track Houston through the years -->
+  {
+    thMentions.length > 0 && (
+      <section class="bg-ink text-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+          <SectionHeading light kicker="In the Record Book" title="Track Houston through the years" />
+          <p class="reveal mt-5 max-w-2xl text-white/80 leading-relaxed">
+            Every appearance of "Track Houston" in the archived national results — records set,
+            titles won, finals reached.
+          </p>
+          <div class="mt-10 grid md:grid-cols-2 gap-5">
+            {thMentions.slice(0, 24).map((m) => (
+              <article class="reveal border border-white/20 border-l-4 border-l-th-red p-5">
+                <p class="kicker text-th-red">
+                  {m.year} · {m.section}
+                </p>
+                <pre class="mt-3 font-mono text-xs sm:text-sm text-white/85 overflow-x-auto whitespace-pre">{m.excerpt}</pre>
+              </article>
+            ))}
+          </div>
+          {
+            thMentions.length > 24 && (
+              <p class="reveal mt-8 text-white/70">
+                Showing 24 of {thMentions.length} appearances — every one is highlighted on its
+                year's archive page, and each year's complete results are searchable.
+              </p>
+            )
+          }
+        </div>
+      </section>
+    )
+  }
+</Layout>

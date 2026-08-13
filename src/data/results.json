@@ -1,0 +1,52 @@
+{
+  "ticker": [
+    "171 medals — 2026 USATF National Junior Olympics",
+    "New national record — 11-12 Boys 4x100m, 46.85",
+    "17 national championship wins in 2026",
+    "170 medals — 2024 USATF National Junior Olympics, College Station",
+    "Bryce Deadmon — Olympic gold, Tokyo 4x400m relay",
+    "95+ alumni competing on college scholarships",
+    "Three AAU national relay records set in 1996 — still standing in the 2000 record book"
+  ],
+  "featured2026": {
+    "title": "2026 USATF National Junior Olympic Championships",
+    "summary": "Track Houston brought home 171 medals, set a new national record and won 17 national championships.",
+    "highlights": [
+      { "athlete": "Elijah Zuniga", "result": "Gold — 17-18 Boys 800m, 1500m and mixed 4x800m relay" },
+      { "athlete": "Maryann Akpobassa", "result": "Triple jump record · silver in long jump" },
+      { "athlete": "Thomas Holmes III", "result": "Gold — 11-12 Boys 400m" },
+      { "athlete": "11-12 Boys 4x100m relay", "result": "National record 46.85, set at Region 12" },
+      { "athlete": "Jace Coleman", "result": "Gold — pentathlon · silver — hurdles (13-14)" },
+      { "athlete": "Brooklyn Allen", "result": "Gold — 3000m (17-18 Girls)" },
+      { "athlete": "Avonte Earl", "result": "Gold — 200m (17-18 Boys)" },
+      { "athlete": "8U Boys 4x100m relay", "result": "Gold" },
+      { "athlete": "9-10 Girls 4x400m relay", "result": "Gold" }
+    ]
+  },
+  "medalTable2024": {
+    "title": "2024 USATF National Junior Olympics — College Station, TX",
+    "total": 170,
+    "rows": [
+      { "place": "Gold", "count": 31 },
+      { "place": "Silver", "count": 13 },
+      { "place": "Bronze", "count": 31 },
+      { "place": "4th", "count": 19 },
+      { "place": "5th", "count": 23 },
+      { "place": "6th", "count": 21 },
+      { "place": "7th", "count": 21 },
+      { "place": "8th", "count": 11 }
+    ]
+  },
+  "honors2022": [
+    { "athlete": "Beaux Hudson", "division": "9-10 Boys", "result": "Gold — 100m, 200m and 4x100m relay" },
+    { "athlete": "Harrison Lowe", "division": "13-14 Boys", "result": "Gold — triple jump" },
+    { "athlete": "Nita Koom-Dadzie", "division": "15-16 Girls", "result": "Gold — 100m" },
+    { "athlete": "Brooke Jackson", "division": "15-16 Girls", "result": "Gold — 200m" },
+    { "athlete": "Sydnee Burr", "division": "15-16 Girls", "result": "Gold — triple jump" },
+    { "athlete": "15-16 Girls relays", "division": "4x100m · 4x400m · 4x800m", "result": "Gold in all three" }
+  ],
+  "archive": {
+    "note": "Junior Olympic results and athletic honors archives go back to 2006. The historical archive is being migrated from the previous site.",
+    "years": "2006–2026"
+  }
+}

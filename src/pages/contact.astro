@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import CoachCard from '../components/CoachCard.astro';
+import coaches from '../data/coaches.json';
+import site from '../data/site.json';
+
+const routes = [
+  { topic: 'Registration & new families', who: 'Your age division head coach', href: '/coaches', label: 'Coach directory' },
+  { topic: 'Practice locations', who: 'The site coaches listed on each location', href: '/locations', label: 'Locations' },
+  { topic: 'Cross country', who: 'Kenya Artis · (337) 274-4458, or Kenneth Gandy · (832) 449-0803', href: '/coaches', label: 'XC coaches' },
+  { topic: 'Sponsorship, vendors & donations', who: 'Regina Godine · (281) 702-1929 · regina.godine@trackhouston.com', href: '/sponsors', label: 'Sponsorship' },
+  { topic: 'Academics & scholarships', who: 'Joe Felder · joe.felder@trackhouston.com', href: '/programs', label: 'Scholars program' },
+];
+---
+
+<Layout
+  title="Contact — Track Houston Youth Track Club"
+  description="Contact Track Houston: club leadership, age division head coaches, cross country coaches and sponsorship — direct phone numbers and emails."
+>
+  <PageHero
+    kicker="Contact"
+    title="Talk to us."
+    intro="No contact forms that go nowhere. Real names, real phone numbers."
+  />
+
+  <!-- Routing -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <SectionHeading kicker="Who To Call" title="Route it right." />
+    <ul class="mt-10 border-t border-line">
+      {
+        routes.map((r) => (
+          <li class="reveal border-b border-line py-5 grid sm:grid-cols-[1fr_1.4fr_auto] gap-2 sm:gap-6 sm:items-center">
+            <p class="font-condensed font-semibold uppercase tracking-[0.05em] text-xl">{r.topic}</p>
+            <p class="text-ink/75">{r.who}</p>
+            <a href={r.href} class="kicker text-th-red hover:text-ink transition-colors justify-self-start sm:justify-self-end">
+              {r.label} →
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="reveal mt-8 text-steel">
+      Mail: {site.mailingAddress}
+    </p>
+  </section>
+
+  <!-- Leadership -->
+  <section class="bg-chalk border-t border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+      <SectionHeading kicker="Leadership" title="Club officers" />
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {coaches.leadership.map((p) => <CoachCard name={p.name} role={p.role} phone={p.phone} email={p.email} />)}
+      </div>
+    </div>
+  </section>
+</Layout>

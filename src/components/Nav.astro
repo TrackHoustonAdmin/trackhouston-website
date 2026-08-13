@@ -1,0 +1,122 @@
+---
+import Wordmark from './Wordmark.astro';
+import CTAButton from './CTAButton.astro';
+
+interface Props {
+  overlay?: boolean;
+}
+const { overlay = false } = Astro.props;
+
+const links = [
+  { href: '/about', label: 'About' },
+  { href: '/locations', label: 'Locations' },
+  { href: '/programs', label: 'Programs' },
+  { href: '/schedule', label: 'Schedule' },
+  { href: '/results', label: 'Results' },
+  { href: '/athletes', label: 'Athletes' },
+  { href: '/roster', label: 'Roster' },
+  { href: '/coaches', label: 'Coaches' },
+  { href: '/parents', label: 'Parents' },
+  { href: '/news', label: 'News' },
+];
+
+const path = Astro.url.pathname;
+const isActive = (href: string) => path === href || path.startsWith(href + '/');
+---
+
+<header
+  class={overlay
+    ? 'absolute inset-x-0 top-0 z-50 bg-gradient-to-b from-black/50 to-transparent'
+    : 'sticky top-0 z-50 bg-th-red border-b border-white/20'}
+>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="flex h-16 lg:h-20 items-center justify-between gap-6">
+      <a href="/" class="shrink-0 flex items-center" aria-label="Track Houston — home">
+        <Wordmark light width={104} class="lg:hidden" />
+        <Wordmark light width={128} class="hidden lg:block" />
+      </a>
+
+      <nav aria-label="Main" class="hidden lg:block">
+        <ul class="flex items-center gap-4 xl:gap-6">
+          {
+            links.map((l) => (
+              <li>
+                <a
+                  href={l.href}
+                  aria-current={isActive(l.href) ? 'page' : undefined}
+                  class={`kicker py-2 transition-colors duration-150 text-white hover:text-white ${
+                    isActive(l.href)
+                      ? 'border-b-[3px] border-white'
+                      : 'border-b-[3px] border-transparent hover:border-white/50'
+                  }`}
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <div class="hidden lg:block shrink-0">
+        <CTAButton class="!px-5 !py-2.5 !text-sm">Join Track Houston</CTAButton>
+      </div>
+
+      <button
+        id="nav-toggle"
+        type="button"
+        class="lg:hidden inline-flex flex-col justify-center items-center gap-1.5 w-11 h-11 -mr-2 text-white"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        aria-label="Open menu"
+      >
+        <span class="block w-6 h-0.5 bg-current transition-transform duration-150" data-bar="1"></span>
+        <span class="block w-6 h-0.5 bg-current transition-opacity duration-150" data-bar="2"></span>
+        <span class="block w-6 h-0.5 bg-current transition-transform duration-150" data-bar="3"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-nav" hidden class="lg:hidden bg-th-red border-t border-white/20">
+    <nav aria-label="Main mobile" class="px-4 py-4">
+      <ul class="divide-y divide-white/20">
+        {
+          links.map((l) => (
+            <li>
+              <a
+                href={l.href}
+                aria-current={isActive(l.href) ? 'page' : undefined}
+                class={`block py-3.5 font-condensed font-semibold uppercase tracking-[0.12em] text-lg text-white ${
+                  isActive(l.href) ? 'pl-3 border-l-4 border-white' : ''
+                }`}
+              >
+                {l.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <div class="pt-4 pb-2">
+        <CTAButton class="w-full justify-center">Join Track Houston</CTAButton>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const menu = document.getElementById('mobile-nav');
+  toggle?.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+    if (menu) menu.hidden = open;
+    const bars = toggle.querySelectorAll('[data-bar]');
+    bars[0]?.classList.toggle('translate-y-2', !open);
+    bars[0]?.classList.toggle('rotate-45', !open);
+    bars[1]?.classList.toggle('opacity-0', !open);
+    bars[2]?.classList.toggle('-translate-y-2', !open);
+    bars[2]?.classList.toggle('-rotate-45', !open);
+  });
+</script>

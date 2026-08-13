@@ -1,0 +1,41 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/our-story.html", "destination": "/about", "permanent": true },
+    { "source": "/organizational-chart.html", "destination": "/about", "permanent": true },
+    { "source": "/alumni-reunion-2013.html", "destination": "/about", "permanent": true },
+    { "source": "/contacts.html", "destination": "/contact", "permanent": true },
+    { "source": "/track-and-field1.html", "destination": "/register", "permanent": true },
+    { "source": "/cross-country.html", "destination": "/register", "permanent": true },
+    { "source": "/registration-page2.html", "destination": "/register", "permanent": true },
+    { "source": "/track-meet-schedule.html", "destination": "/schedule", "permanent": true },
+    { "source": "/cross-country-schedule.html", "destination": "/schedule", "permanent": true },
+    { "source": "/age-divisions.html", "destination": "/programs", "permanent": true },
+    { "source": "/junior-olympic-results-:year(\\d+).html", "destination": "/results/history/:year", "permanent": true },
+    { "source": "/junior-olympic-:year(\\d+).html", "destination": "/results/history/:year", "permanent": true },
+    { "source": "/meet-results-:year(\\d+).html", "destination": "/results/history/:year", "permanent": true },
+    { "source": "/athletic-honors-:year(\\d+).html", "destination": "/results/history/:year", "permanent": true },
+    { "source": "/records.html", "destination": "/results/records", "permanent": true },
+    { "source": "/track-and-field.html", "destination": "/locations", "permanent": true },
+    { "source": "/sponsorship.html", "destination": "/sponsors", "permanent": true },
+    { "source": "/corporate-sponsorship.html", "destination": "/sponsors", "permanent": true },
+    { "source": "/track-meet-vendors.html", "destination": "/sponsors", "permanent": true },
+    { "source": "/business-directory.html", "destination": "/sponsors", "permanent": true },
+    { "source": "/vs-athlectic.html", "destination": "/parents", "permanent": true },
+    { "source": "/academic-and-life-skills.html", "destination": "/programs", "permanent": true },
+    { "source": "/current-scholarship-athletes.html", "destination": "/athletes", "permanent": true },
+    { "source": "/800-club-satact-course.html", "destination": "/programs", "permanent": true },
+    { "source": "/photo-gallery.html", "destination": "/photos", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/_astro/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}

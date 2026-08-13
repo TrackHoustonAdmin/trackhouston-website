@@ -1,0 +1,48 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import CTAButton from '../../components/CTAButton.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('news');
+  return posts.map((post) => ({
+    params: { slug: post.id.replace(/\.md$/, '') },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const formatted = post.data.date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<Layout title={`${post.data.title} — Track Houston`} description={post.data.excerpt}>
+  <article>
+    <header class="bg-th-red text-white">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 pt-16 pb-14 sm:pt-24 sm:pb-16">
+        <p class="kicker text-white/85">{post.data.category}</p>
+        <h1 class="display text-4xl sm:text-6xl mt-4">{post.data.title}</h1>
+        <time datetime={post.data.date.toISOString().slice(0, 10)} class="block mt-5 text-white/90">
+          {formatted}
+        </time>
+      </div>
+    </header>
+
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 py-12 lg:py-16">
+      <div
+        class="prose-th max-w-none text-lg leading-relaxed text-ink/85 space-y-5 [&_strong]:text-ink [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_a]:underline [&_a]:decoration-th-red [&_a]:decoration-2 [&_a]:underline-offset-4"
+      >
+        <Content />
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-line flex flex-wrap gap-4">
+        <CTAButton>Join Track Houston</CTAButton>
+        <CTAButton href="/news" variant="secondary">All News</CTAButton>
+      </div>
+    </div>
+  </article>
+</Layout>

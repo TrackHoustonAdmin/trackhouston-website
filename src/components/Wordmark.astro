@@ -1,0 +1,28 @@
+---
+// Official Track Houston wordmark.
+// `light` renders the all-white knockout (for red/dark backgrounds);
+// default renders the full-color mark (for light backgrounds).
+import { Image } from 'astro:assets';
+import logoColor from '../assets/logo-color.png';
+import logoWhite from '../assets/logo-white.png';
+
+interface Props {
+  class?: string;
+  light?: boolean;
+  /** rendered pixel width */
+  width?: number;
+}
+const { class: className = '', light = false, width = 120 } = Astro.props;
+const src = light ? logoWhite : logoColor;
+const height = Math.round(width * (321 / 628));
+---
+
+<Image
+  src={src}
+  alt="Track Houston"
+  width={width}
+  height={height}
+  densities={[1, 2]}
+  class={`select-none ${className}`}
+  loading="eager"
+/>

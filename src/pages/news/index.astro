@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import PageHero from '../../components/PageHero.astro';
+import NewsCard from '../../components/NewsCard.astro';
+import site from '../../data/site.json';
+import girlsStart from '../../assets/photos/girls-sprint-start.jpg';
+
+const posts = (await getCollection('news')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<Layout
+  title="News — Track Houston Youth Track Club"
+  description="Meet recaps, championship results, athlete achievements and club announcements from Track Houston."
+>
+  <PageHero
+    kicker="News"
+    title="The latest."
+    intro="Meet recaps, championship results and club announcements. For photos and live streams, follow the club on social."
+    image={girlsStart}
+    imageAlt="Track Houston sprinters mid-race in matching club uniforms."
+  />
+
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {
+        posts.map((post) => (
+          <NewsCard
+            href={`/news/${post.id.replace(/\.md$/, '')}`}
+            title={post.data.title}
+            date={post.data.date}
+            category={post.data.category}
+            excerpt={post.data.excerpt}
+            featured={post.data.featured}
+          />
+        ))
+      }
+    </div>
+
+    <div class="reveal mt-14 bg-chalk border border-line p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+      <div>
+        <h2 class="font-condensed font-semibold uppercase tracking-[0.05em] text-2xl">The photo archive</h2>
+        <p class="text-steel mt-2 max-w-xl">
+          Decades of team photos, championship trips, clippings and celebrations — straight from
+          the club's vault, with more on the social channels.
+        </p>
+      </div>
+      <div class="flex gap-5 shrink-0 items-center">
+        <a href="/photos" class="kicker bg-ink text-white px-4 py-2.5 hover:bg-th-red transition-colors">Browse the Archive</a>
+        <a href={site.social.facebook} rel="external" class="kicker text-ink hover:text-th-red transition-colors">Facebook</a>
+        <a href={site.social.youtube} rel="external" class="kicker text-ink hover:text-th-red transition-colors">YouTube</a>
+      </div>
+    </div>
+  </section>
+</Layout>

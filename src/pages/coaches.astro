@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import CoachCard from '../components/CoachCard.astro';
+import coaches from '../data/coaches.json';
+import girlsStart from '../assets/photos/girls-sprint-start.jpg';
+---
+
+<Layout
+  title="Coaches — Track Houston Youth Track Club"
+  description="Track Houston's leadership, cross country head coaches and Spring 2026 age division head coaches — with direct phone and email contacts for every division."
+>
+  <PageHero
+    kicker="Coaches"
+    title="Coached to compete."
+    intro="Experienced, background-screened coaches at every site and every age division. Your age division head coach is your first call for anything."
+    image={girlsStart}
+    imageAlt="Track Houston sprinters explode off the line under their coaches' watch."
+  />
+
+  <!-- Leadership -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <SectionHeading kicker="Club Leadership" title="The front office." />
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {coaches.leadership.map((p) => <CoachCard name={p.name} role={p.role} phone={p.phone} email={p.email} />)}
+    </div>
+  </section>
+
+  <!-- XC -->
+  <section class="bg-chalk border-y border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+      <SectionHeading kicker="Cross Country" title="XC head coaches" />
+      <div class="mt-10 grid sm:grid-cols-2 gap-5 max-w-3xl">
+        {coaches.crossCountry.map((p) => <CoachCard name={p.name} role={p.role} phone={p.phone} email={p.email} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Age divisions -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+      <SectionHeading kicker="Track & Field" title="Age division head coaches" />
+      <p class="reveal kicker text-steel pb-1">{coaches.seasonLabel}</p>
+    </div>
+    <div class="mt-10 grid md:grid-cols-2 gap-5">
+      {
+        coaches.ageDivisions.map((d) => (
+          <article class="reveal border border-line">
+            <h3 class="border-l-4 border-th-red px-5 py-3.5 font-condensed font-semibold uppercase tracking-[0.05em] text-xl bg-chalk">
+              {d.division}
+            </h3>
+            <ul class="px-5 py-4 space-y-2">
+              {d.coaches.map((c) => (
+                <li class="flex items-baseline justify-between gap-4">
+                  <span class="font-medium">{c.name}</span>
+                  <a href={`tel:${c.phone.replace(/[^0-9]/g, '')}`} class="text-steel text-sm hover:text-th-red transition-colors whitespace-nowrap">
+                    {c.phone}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

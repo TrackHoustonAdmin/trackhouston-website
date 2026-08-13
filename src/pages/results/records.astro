@@ -1,0 +1,123 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHero from '../../components/PageHero.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import CTAButton from '../../components/CTAButton.astro';
+import records from '../../data/club-records.json';
+import lewisRelay from '../../assets/photos/lewis-relay.jpg';
+
+const nationalHighlights = [
+  { mark: '46.85', event: '11-12 Boys 4x100m — USATF national record', year: '2026' },
+  { mark: '49.48', event: 'Midget Boys 4x100m — AAU national record (stood 4+ years)', year: '1996' },
+  { mark: '3:55.85', event: 'Midget Boys 4x400m — AAU national record', year: '1996' },
+  { mark: '3:09.53', event: "Young Men's 4x400m — AAU national record", year: '1996' },
+  { mark: '39.56', event: '17-18 Men 4x100m — national record, Region 12', year: '2012' },
+  { mark: '4:17.32', event: '9-10 Girls 4x400m — national record, USATF JO', year: '2013' },
+  { mark: '29.48', event: '8U Girls 200m, Dynasty McClennon — national record, USATF JO', year: '2011' },
+  { mark: '7:12.16', event: '1500m Race Walk, Camila Vicens — national record, AAU JO', year: '2014' },
+];
+
+const anchor = (d: string) => d.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+---
+
+<Layout
+  title="Club Records — Track Houston Youth Track Club"
+  description="The Track Houston record book: club records in every age division, including ten national-record marks from 1996 through 2026."
+>
+  <PageHero
+    kicker="The Record Book"
+    title="Club records."
+    intro="Every mark a Track Houston athlete has to beat — including the ones nobody in America has beaten."
+    image={lewisRelay}
+    imageAlt="A Track Houston relay runner drives for the finish line at a national championship."
+  />
+
+  <!-- National records strip -->
+  <section class="bg-ink text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-20">
+      <SectionHeading light kicker="National Class" title="Records nobody in America owned." />
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/15 border border-white/15">
+        {
+          nationalHighlights.map((r) => (
+            <div class="reveal bg-ink p-6">
+              <p class="display text-4xl sm:text-5xl text-th-red">{r.mark}</p>
+              <p class="mt-3 text-white/85 text-sm leading-snug">{r.event}</p>
+              <p class="kicker text-white/60 mt-2">{r.year}</p>
+            </div>
+          ))
+        }
+      </div>
+      <p class="reveal mt-6 text-white/70 text-sm max-w-3xl">
+        Documented in official championship records and the club record book. The 1996 AAU relay
+        records were still listed as the standing national records in the 1997, 1998 and 2000
+        championship books.
+      </p>
+    </div>
+  </section>
+
+  <!-- Division jump bar -->
+  <nav aria-label="Jump to division" class="bg-th-red sticky top-16 lg:top-20 z-30">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 flex gap-6 overflow-x-auto">
+      {
+        records.divisions.map((d) => (
+          <a
+            href={`#${anchor(d.division)}`}
+            class="kicker py-3.5 text-white whitespace-nowrap border-b-[3px] border-transparent hover:border-white transition-colors"
+          >
+            {d.division}
+          </a>
+        ))
+      }
+    </div>
+  </nav>
+
+  <!-- Record book -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-12 lg:py-16">
+    <p class="text-steel max-w-3xl">
+      {records.asOf}. {records.note}
+    </p>
+
+    <div class="mt-10 space-y-14">
+      {
+        records.divisions.map((d) => (
+          <section id={anchor(d.division)} class="scroll-mt-32">
+            <h2 class="display text-4xl sm:text-5xl border-b-4 border-th-red pb-3">{d.division}</h2>
+            <div class="mt-6 space-y-6">
+              {d.events.map((e) => (
+                <div class="grid sm:grid-cols-[11rem_1fr] gap-x-6 gap-y-1 border-b border-line pb-5">
+                  <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-lg text-ink">
+                    {e.event}
+                  </h3>
+                  <ul class="space-y-1.5">
+                    {e.entries.map((en: { text: string; national: boolean; champion?: boolean }) => (
+                      <li class={`text-[0.95rem] leading-relaxed ${en.national || en.champion ? 'font-semibold text-ink' : 'text-ink/75'}`}>
+                        {en.national && (
+                          <span class="kicker bg-th-red text-white px-1.5 py-0.5 mr-2">National Record</span>
+                        )}
+                        {en.champion && (
+                          <span class="kicker bg-ink text-white px-1.5 py-0.5 mr-2">JO Champions</span>
+                        )}
+                        {en.text.replace('* (National)', '').replace('*(National)', '')}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </section>
+        ))
+      }
+    </div>
+
+    <div class="mt-14 bg-chalk border border-line p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+      <div>
+        <h2 class="font-condensed font-semibold uppercase tracking-[0.05em] text-2xl">Think a record is missing?</h2>
+        <p class="text-steel mt-2 max-w-xl">
+          The record book is being updated with post-2015 marks. Send corrections and new records
+          to the club so the next edition is complete.
+        </p>
+      </div>
+      <CTAButton href="/contact" variant="secondary" class="shrink-0">Submit a Record</CTAButton>
+    </div>
+  </section>
+</Layout>

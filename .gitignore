@@ -1,0 +1,6 @@
+node_modules
+dist
+.astro
+# NEVER commit registration exports — they contain private family data
+export*.csv
+*.csv

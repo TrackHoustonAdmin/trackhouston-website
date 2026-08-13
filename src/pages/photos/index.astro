@@ -1,0 +1,131 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Layout from '../../layouts/Layout.astro';
+import CTAButton from '../../components/CTAButton.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import { getAlbums } from '../../lib/albums';
+
+// Curated "vault" highlights (processed, optimized through Astro)
+const modules = import.meta.glob<{ default: ImageMetadata }>(
+  '../../assets/gallery/*.{jpg,jpeg,png,webp}',
+  { eager: true }
+);
+const vault = Object.entries(modules)
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([, m]) => m.default);
+
+const albums = getAlbums();
+const totalPhotos = albums.reduce((n, a) => n + a.count, 0);
+
+// group albums by year, newest first
+const byYear = new Map<string, typeof albums>();
+for (const a of albums) {
+  const y = a.year ?? 'Undated';
+  if (!byYear.has(y)) byYear.set(y, []);
+  byYear.get(y)!.push(a);
+}
+---
+
+<Layout
+  title="Photo Archive — Track Houston Youth Track Club"
+  description={`The Track Houston photo archive: ${albums.length} albums and ${totalPhotos.toLocaleString()} photographs spanning two decades of championships, meets and celebrations.`}
+>
+  <header class="bg-th-red text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 pt-16 pb-14 sm:pt-24 sm:pb-16">
+      <p class="kicker text-white/85">From the Vault</p>
+      <h1 class="display text-5xl sm:text-7xl lg:text-8xl mt-4">The photo archive.</h1>
+      <p class="mt-6 max-w-2xl text-white/90 text-lg leading-relaxed">
+        {
+          albums.length > 0
+            ? `${albums.length} albums. ${totalPhotos.toLocaleString()} photographs. Two decades of championship trips, hometown meets and celebrations — preserved for good.`
+            : 'Photographs from the club’s history — preserved for good.'
+        }
+      </p>
+    </div>
+  </header>
+
+  <div class="bg-ink text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+      <p class="kicker text-th-red shrink-0">Help us caption these</p>
+      <p class="text-white/85 text-sm">
+        Recognize a face, a meet or a year? <a href="/contact" class="underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red transition-colors">Tell us</a> —
+        every identification makes the club's history more complete.
+      </p>
+    </div>
+  </div>
+
+  <!-- Albums by year -->
+  {
+    albums.length > 0 && (
+      <section class="mx-auto max-w-7xl px-4 sm:px-6 py-12 lg:py-16">
+        <SectionHeading kicker="Albums" title="Browse by season" />
+        <div class="mt-10 space-y-12">
+          {[...byYear.entries()].map(([year, list]) => (
+            <div>
+              <h3 class="display text-4xl text-th-red border-b-2 border-line pb-2">{year}</h3>
+              <div class="mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {list.map((a) => (
+                  <a href={`/photos/${a.slug}`} class="group block border border-line bg-white">
+                    <div class="aspect-[4/3] overflow-hidden bg-chalk">
+                      {a.cover && (
+                        <img
+                          src={a.cover}
+                          alt={`Cover photo — ${a.title}`}
+                          loading="lazy"
+                          decoding="async"
+                          class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-200"
+                        />
+                      )}
+                    </div>
+                    <div class="p-4">
+                      <p class="font-condensed font-semibold uppercase tracking-[0.04em] leading-tight group-hover:text-th-red transition-colors">
+                        {a.title}
+                      </p>
+                      <p class="kicker text-steel mt-2">{a.count} photos</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- Curated vault highlights -->
+  <section class="bg-chalk border-t border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-12 lg:py-16">
+      <SectionHeading kicker="Highlights" title="From the club scrapbook" />
+      <div class="mt-10 columns-2 md:columns-3 lg:columns-4 gap-4 [&>*]:mb-4">
+        {
+          vault.map((p, i) => (
+            <a href={p.src} target="_blank" rel="noopener" class="block break-inside-avoid group" aria-label={`Open scrapbook photo ${i + 1} full size`}>
+              <Image
+                src={p}
+                alt={`From the Track Houston scrapbook (photo ${i + 1})`}
+                widths={[320, 640]}
+                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+                quality={75}
+                class="w-full h-auto border border-line group-hover:opacity-90 transition-opacity"
+                loading="lazy"
+              />
+            </a>
+          ))
+        }
+      </div>
+
+      <div class="mt-14 bg-white border border-line p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+        <div>
+          <h2 class="font-condensed font-semibold uppercase tracking-[0.05em] text-2xl">Have photos from your Track Houston years?</h2>
+          <p class="text-steel mt-2 max-w-xl">
+            The archive grows one shoebox at a time. Scans, prints, screenshots — everything helps
+            preserve the club's history.
+          </p>
+        </div>
+        <CTAButton href="/contact" variant="secondary" class="shrink-0">Contribute Photos</CTAButton>
+      </div>
+    </div>
+  </section>
+</Layout>

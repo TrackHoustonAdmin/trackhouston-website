@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import LocationCard from '../components/LocationCard.astro';
+import CTAButton from '../components/CTAButton.astro';
+import locations from '../data/locations.json';
+import boysDistance from '../assets/photos/boys-distance.jpg';
+---
+
+<Layout
+  title="Practice Locations — Track Houston Youth Track Club"
+  description="Find your Track Houston practice site: 9 track & field locations and 3 cross country locations across greater Houston — Alief, Conroe, Cypress, Humble, Katy, Missouri City, Rosharon, Sugar Land and the Inner Loop."
+>
+  <PageHero
+    kicker="Locations"
+    title="Find your site."
+    intro="Twelve practice locations across greater Houston. Pick the one closest to you and call the site coach — athletes must be registered before attending practice."
+    image={boysDistance}
+    imageAlt="Track Houston runners training in a group on a Houston-area track."
+  />
+
+  <!-- Jump links -->
+  <nav aria-label="Location sections" class="bg-chalk border-b border-line sticky top-16 lg:top-20 z-30">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 flex gap-8 overflow-x-auto">
+      <a href="#track-field" class="kicker py-4 text-ink whitespace-nowrap border-b-2 border-transparent hover:border-th-red hover:text-th-red transition-colors">
+        Track & Field — 9 sites
+      </a>
+      <a href="#cross-country" class="kicker py-4 text-ink whitespace-nowrap border-b-2 border-transparent hover:border-th-red hover:text-th-red transition-colors">
+        Cross Country — 3 sites
+      </a>
+    </div>
+  </nav>
+
+  <section id="track-field" class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <SectionHeading kicker="Spring Season" title="Track & Field sites" />
+    <p class="reveal mt-5 max-w-2xl text-ink/75 leading-relaxed">
+      The track & field season runs February through July. Early season typically opens with
+      Saturday practices before moving to weekday evenings — your site coach confirms exact times
+      each season.
+    </p>
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {
+        locations.trackField.map((l) => (
+          <LocationCard
+            area={l.area}
+            facility={l.facility}
+            address={l.address}
+            coaches={l.coaches}
+            schedule={l.schedule}
+            program="Track & Field"
+          />
+        ))
+      }
+    </div>
+  </section>
+
+  <section id="cross-country" class="bg-chalk border-t border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+      <SectionHeading kicker="Fall Season" title="Cross Country sites" />
+      <p class="reveal mt-5 max-w-2xl text-ink/75 leading-relaxed">
+        Cross country runs September through December. 2026 practices begin Monday, August 24.
+        Questions go to co-head coaches Kenya Artis, (337) 274-4458, and Kenneth Gandy, (832) 449-0803.
+      </p>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {
+          locations.crossCountry.map((l) => (
+            <LocationCard
+              area={l.area}
+              facility={l.facility}
+              address={l.address}
+              coaches={l.coaches}
+              schedule={l.schedule}
+              program="Cross Country"
+            />
+          ))
+        }
+      </div>
+      <p class="reveal mt-10 text-steel text-sm max-w-2xl">{locations.note}</p>
+      <div class="mt-8">
+        <CTAButton>Register Before You Practice</CTAButton>
+      </div>
+    </div>
+  </section>
+</Layout>

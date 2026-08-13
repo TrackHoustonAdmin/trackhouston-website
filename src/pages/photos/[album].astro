@@ -1,0 +1,67 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CTAButton from '../../components/CTAButton.astro';
+import { getAlbums, getAlbumImages } from '../../lib/albums';
+
+export async function getStaticPaths() {
+  return getAlbums().map((album) => ({ params: { album: album.slug }, props: { album } }));
+}
+
+const { album } = Astro.props;
+const images = getAlbumImages(album.slug);
+const albums = getAlbums();
+const idx = albums.findIndex((a) => a.slug === album.slug);
+const prev = albums[idx + 1];
+const next = albums[idx - 1];
+---
+
+<Layout
+  title={`${album.title} — Track Houston Photo Archive`}
+  description={`${images.length} photographs from ${album.title}, preserved in the Track Houston photo archive.`}
+>
+  <header class="bg-th-red text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 pt-14 pb-12 sm:pt-20 sm:pb-14">
+      <p class="kicker text-white/85">
+        <a href="/photos" class="hover:text-white transition-colors">Photo Archive</a>
+        {album.year && ` · ${album.year}`}
+      </p>
+      <h1 class="display text-4xl sm:text-6xl mt-4 max-w-4xl">{album.title}</h1>
+      <p class="mt-4 text-white/90">{images.length} photographs · tap any photo for full size</p>
+    </div>
+  </header>
+
+  <nav aria-label="Album navigation" class="bg-ink text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+      {prev ? (
+        <a href={`/photos/${prev.slug}`} class="kicker text-white hover:text-th-red transition-colors truncate">← {prev.year ?? 'Prev'}</a>
+      ) : <span />}
+      <a href="/photos" class="kicker text-white/70 hover:text-white transition-colors shrink-0">All Albums</a>
+      {next ? (
+        <a href={`/photos/${next.slug}`} class="kicker text-white hover:text-th-red transition-colors truncate">{next.year ?? 'Next'} →</a>
+      ) : <span />}
+    </div>
+  </nav>
+
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-10 lg:py-14">
+    <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-2">
+      {
+        images.map((img, i) => (
+          <a href={img.full} target="_blank" rel="noopener" class="block group aspect-square overflow-hidden bg-chalk border border-line">
+            <img
+              src={img.thumb}
+              alt={`${album.title} — photo ${i + 1}`}
+              loading={i < 18 ? 'eager' : 'lazy'}
+              decoding="async"
+              class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-200"
+            />
+          </a>
+        ))
+      }
+    </div>
+
+    <div class="mt-12 flex flex-wrap gap-4">
+      <CTAButton href="/photos" variant="secondary">All Albums</CTAButton>
+      <CTAButton href="/contact" variant="secondary">Identify Someone in These Photos</CTAButton>
+    </div>
+  </section>
+</Layout>

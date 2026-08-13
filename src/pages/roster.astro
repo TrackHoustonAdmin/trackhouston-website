@@ -1,0 +1,157 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import CTAButton from '../components/CTAButton.astro';
+import roster from '../data/roster.json';
+import girlsStart from '../assets/photos/girls-sprint-start.jpg';
+
+const byDivision = roster.divisionsOrder
+  .map((division) => ({
+    division,
+    athletes: roster.athletes.filter((a) => a.division === division),
+  }))
+  .filter((g) => g.athletes.length > 0);
+
+const total = roster.athletes.length;
+const anchor = (d: string) => d.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+---
+
+<Layout
+  title="Team Roster — Track Houston Youth Track Club"
+  description={`The official Track Houston roster: ${total} athletes across ${byDivision.length} age divisions and ${roster.sites.length} practice sites in greater Houston.`}
+>
+  <PageHero
+    kicker={roster.season}
+    title="The roster."
+    intro={`${total} athletes. ${byDivision.length} age divisions. ${roster.sites.length} practice sites. One club.`}
+    image={girlsStart}
+    imageAlt="Track Houston sprinters race off the start line in club uniforms."
+  />
+
+  <!-- Division jump bar -->
+  <nav aria-label="Jump to division" class="bg-ink sticky top-16 lg:top-20 z-30">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 flex gap-6 overflow-x-auto">
+      {
+        byDivision.map((g) => (
+          <a
+            href={`#${anchor(g.division)}`}
+            class="kicker py-3.5 text-white whitespace-nowrap border-b-[3px] border-transparent hover:border-th-red transition-colors"
+          >
+            {g.division}
+          </a>
+        ))
+      }
+    </div>
+  </nav>
+
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-12 lg:py-16">
+    <!-- Filter (progressive enhancement — page works fully without JS) -->
+    <div class="flex flex-col sm:flex-row gap-4 sm:items-center justify-between">
+      <label class="flex items-center gap-3 border-2 border-ink px-4 py-2.5 w-full sm:max-w-xs focus-within:border-th-red transition-colors">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 text-steel">
+          <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="2"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <input
+          id="roster-search"
+          type="search"
+          placeholder="Search athletes…"
+          aria-label="Search athletes by name"
+          class="w-full bg-transparent outline-none font-condensed font-medium uppercase tracking-[0.06em] placeholder:text-steel"
+        />
+      </label>
+      <div class="flex items-center gap-3">
+        <label for="site-filter" class="kicker text-steel whitespace-nowrap">Site</label>
+        <select
+          id="site-filter"
+          class="border-2 border-ink px-3 py-2.5 bg-white font-condensed font-semibold uppercase tracking-[0.06em] text-sm"
+        >
+          <option value="">All sites</option>
+          {roster.sites.map((s) => <option value={s}>{s}</option>)}
+        </select>
+        <p class="kicker text-steel whitespace-nowrap" aria-live="polite">
+          <span id="roster-count">{total}</span> athletes
+        </p>
+      </div>
+    </div>
+
+    <!-- Divisions -->
+    <div class="mt-10 space-y-14" id="roster-root">
+      {
+        byDivision.map((g) => (
+          <section id={anchor(g.division)} data-division-section class="scroll-mt-32">
+            <header class="flex items-baseline justify-between gap-4 border-b-4 border-th-red pb-3">
+              <h2 class="display text-4xl sm:text-5xl">{g.division}</h2>
+              <p class="kicker text-steel whitespace-nowrap">
+                <span data-division-count>{g.athletes.length}</span> athletes
+              </p>
+            </header>
+            <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8">
+              {g.athletes.map((a) => (
+                <li
+                  data-athlete
+                  data-name={a.name.toLowerCase()}
+                  data-site={a.site}
+                  class="flex items-baseline justify-between gap-4 py-3 border-b border-line"
+                >
+                  <span class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg leading-tight">
+                    {a.name}
+                  </span>
+                  <span class="text-steel text-sm whitespace-nowrap">{a.site}</span>
+                </li>
+              ))}
+            </ul>
+            <p data-empty hidden class="text-steel py-6">No athletes match in this division.</p>
+          </section>
+        ))
+      }
+    </div>
+
+    <p class="mt-12 text-steel text-sm">
+      Roster from the {roster.updated}. See a correction? Contact your
+      <a href="/coaches" class="text-ink underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red">age division head coach</a>.
+    </p>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-th-red text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-14 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+      <div>
+        <p class="kicker text-white/85">Not on this list yet?</p>
+        <p class="display text-4xl sm:text-5xl mt-2">Your name goes here.</p>
+      </div>
+      <CTAButton class="shrink-0">Join Track Houston</CTAButton>
+    </div>
+  </section>
+
+  <script>
+    const search = document.getElementById('roster-search') as HTMLInputElement;
+    const siteSel = document.getElementById('site-filter') as HTMLSelectElement;
+    const countEl = document.getElementById('roster-count');
+    const athletes = [...document.querySelectorAll<HTMLElement>('[data-athlete]')];
+    const sections = [...document.querySelectorAll<HTMLElement>('[data-division-section]')];
+
+    function apply() {
+      const q = (search?.value || '').trim().toLowerCase();
+      const site = siteSel?.value || '';
+      let visible = 0;
+      for (const el of athletes) {
+        const show =
+          (!q || (el.dataset.name || '').includes(q)) &&
+          (!site || el.dataset.site === site);
+        el.hidden = !show;
+        if (show) visible++;
+      }
+      for (const sec of sections) {
+        const rows = sec.querySelectorAll<HTMLElement>('[data-athlete]:not([hidden])');
+        const empty = sec.querySelector<HTMLElement>('[data-empty]');
+        const count = sec.querySelector('[data-division-count]');
+        if (count) count.textContent = String(rows.length);
+        if (empty) empty.hidden = rows.length > 0;
+      }
+      if (countEl) countEl.textContent = String(visible);
+    }
+
+    search?.addEventListener('input', apply);
+    siteSel?.addEventListener('change', apply);
+  </script>
+</Layout>

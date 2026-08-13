@@ -1,0 +1,39 @@
+---
+interface Props {
+  name: string;
+  role: string;
+  phone?: string;
+  email?: string;
+}
+const { name, role, phone = '', email = '' } = Astro.props;
+const initials = name
+  .split(' ')
+  .map((n) => n[0])
+  .slice(0, 2)
+  .join('');
+---
+
+<article class="reveal border border-line bg-white p-5 flex gap-4 items-start">
+  <p
+    aria-hidden="true"
+    class="display text-xl w-12 h-12 shrink-0 bg-ink text-white flex items-center justify-center"
+  >
+    {initials}
+  </p>
+  <div class="min-w-0">
+    <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-xl leading-tight">{name}</h3>
+    <p class="text-th-red kicker mt-1">{role}</p>
+    <ul class="mt-3 space-y-1 text-sm text-steel">
+      {phone && (
+        <li>
+          <a href={`tel:${phone.replace(/[^0-9]/g, '')}`} class="hover:text-th-red transition-colors">{phone}</a>
+        </li>
+      )}
+      {email && (
+        <li class="truncate">
+          <a href={`mailto:${email}`} class="hover:text-th-red transition-colors">{email}</a>
+        </li>
+      )}
+    </ul>
+  </div>
+</article>

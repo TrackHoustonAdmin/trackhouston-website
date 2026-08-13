@@ -1,0 +1,289 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import CTAButton from '../components/CTAButton.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import StatBlock from '../components/StatBlock.astro';
+import Ticker from '../components/Ticker.astro';
+import NewsCard from '../components/NewsCard.astro';
+import site from '../data/site.json';
+import locations from '../data/locations.json';
+import results from '../data/results.json';
+import athletes from '../data/athletes.json';
+import programs from '../data/programs.json';
+
+import heroRelay from '../assets/photos/hero-relay.jpg';
+import girlsStart from '../assets/photos/girls-sprint-start.jpg';
+import carterRelay from '../assets/photos/carter-relay.jpg';
+import portraitBW from '../assets/photos/portrait-foreman-bw.jpg';
+import athleteSmile from '../assets/photos/athlete-smile.jpg';
+
+const news = (await getCollection('news'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+
+const areas = [
+  ...locations.trackField.map((l) => ({ ...l, program: 'Track & Field' })),
+  ...locations.crossCountry.map((l) => ({ ...l, program: 'Cross Country' })),
+];
+---
+
+<Layout title="Track Houston Youth Track Club — Houston Runs Here" heroNav>
+  <!-- HERO ------------------------------------------------------------- -->
+  <section class="relative min-h-[92svh] flex items-end bg-ink text-white overflow-hidden">
+    <Image
+      src={heroRelay}
+      alt="A Track Houston athlete carries the baton down the home straight at the AAU Junior Olympic Games, grandstand roaring behind him."
+      class="absolute inset-0 h-full w-full object-cover object-[center_30%] opacity-80"
+      loading="eager"
+      fetchpriority="high"
+      widths={[640, 1024, 1600, 2400]}
+      sizes="100vw"
+      quality={78}
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/30" aria-hidden="true"></div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 pb-16 sm:pb-20 pt-40 w-full">
+      <p class="kicker text-th-red">Est. 1989 · USATF Sanctioned · Ages 7–18</p>
+      <h1 class="display text-[17vw] sm:text-8xl lg:text-9xl mt-4 max-w-5xl">
+        Houston<br />Runs<span class="text-th-red"> Here.</span>
+      </h1>
+      <p class="mt-6 max-w-xl text-white/85 text-lg leading-relaxed">
+        Track Houston develops more than 600 athletes a year across the greater Houston area —
+        and qualifies more of them for the national Junior Olympics than any club in the country.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <CTAButton>Join Track Houston</CTAButton>
+        <CTAButton href="/locations" variant="ghost">Find Your Location</CTAButton>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS TICKER ---------------------------------------------------- -->
+  <Ticker items={results.ticker} />
+
+  <!-- SEASON STATUS ------------------------------------------------------ -->
+  <section class="bg-th-red text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-5 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
+      <p class="kicker text-white/85 shrink-0">Now Open</p>
+      <p class="font-medium">
+        {site.registration.status} — practices begin August 24 in Cypress, Katy and Sugar Land.
+      </p>
+      <a href="/register" class="kicker text-white underline decoration-white decoration-2 underline-offset-4 hover:text-ink hover:decoration-ink transition-colors sm:ml-auto shrink-0">
+        Register Now
+      </a>
+    </div>
+  </section>
+
+  <!-- STATS -------------------------------------------------------------- -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+    <SectionHeading kicker="The Club" title="Established. Elite. Everywhere in Houston." />
+    <div class="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+      <StatBlock value={1989} label="Founded in Missouri City, TX" countup={false} />
+      <StatBlock value={600} suffix="+" label="Athletes every year, ages 7–18" />
+      <StatBlock value={171} label="Medals at the 2026 National Junior Olympics" />
+      <StatBlock value={95} suffix="+" label="Alumni on college scholarships" />
+    </div>
+  </section>
+
+  <!-- LOCATIONS ---------------------------------------------------------- -->
+  <section class="bg-th-red text-white relative overflow-hidden">
+    <div class="lanes absolute inset-y-0 right-0 w-1/2 text-white/[0.08]" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+        <SectionHeading light kicker="Locations" title="Practice near you." />
+        <p class="reveal max-w-md text-white/90 leading-relaxed">
+          Twelve practice sites across the greater Houston area — from Alief to Conroe, Katy to
+          Rosharon. Wherever you are, Track Houston is close.
+        </p>
+      </div>
+      <ul class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border-t border-l border-white/25">
+        {
+          areas.map((l) => (
+            <li class="reveal border-b border-r border-white/25">
+              <a href="/locations" class="group block p-5 sm:p-6 hover:bg-ink transition-colors duration-150 h-full">
+                <p class="font-condensed font-semibold uppercase tracking-[0.05em] text-xl sm:text-2xl leading-none">
+                  {l.area}
+                </p>
+                <p class="mt-2 text-sm text-white/75 group-hover:text-white/90 transition-colors">
+                  {l.program}
+                </p>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <div class="mt-10">
+        <CTAButton href="/locations" variant="ghost">All Locations & Times</CTAButton>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAMPIONSHIP PEDIGREE ---------------------------------------------- -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div class="reveal relative">
+        <Image
+          src={carterRelay}
+          alt="A Track Houston sprinter drives toward the line, baton in hand, at the AAU Junior Olympic Games."
+          class="w-full h-auto object-cover"
+          widths={[480, 800, 1200]}
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          quality={78}
+        />
+        <p class="absolute -bottom-5 left-5 bg-th-red text-white display text-3xl sm:text-4xl px-4 py-2">
+          17 titles · 2026
+        </p>
+      </div>
+      <div>
+        <SectionHeading kicker="Championship Pedigree" title="Built at nationals." />
+        <p class="reveal mt-6 text-ink/80 leading-relaxed max-w-lg">
+          {results.featured2026.summary} Every summer, Track Houston shows up to the National
+          Junior Olympics deeper than anyone — and leaves with more hardware than anyone.
+        </p>
+        <ul class="reveal mt-8 divide-y divide-line border-y border-line">
+          {
+            results.featured2026.highlights.slice(0, 5).map((h) => (
+              <li class="py-3 flex items-baseline justify-between gap-6">
+                <span class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg">{h.athlete}</span>
+                <span class="text-steel text-sm text-right">{h.result}</span>
+              </li>
+            ))
+          }
+        </ul>
+        <div class="mt-8">
+          <CTAButton href="/results" variant="secondary">Results & Records</CTAButton>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATHWAY ------------------------------------------------------------ -->
+  <section class="bg-chalk border-y border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+      <SectionHeading kicker="Programs" title="Development → Competition → Championships" />
+      <div class="mt-12 grid md:grid-cols-3 gap-px bg-line border border-line">
+        {
+          programs.pathway.map((p) => (
+            <article class="reveal bg-chalk p-7 lg:p-9">
+              <p class="display text-6xl text-line" aria-hidden="true">{p.stage}</p>
+              <h3 class="font-condensed font-semibold uppercase tracking-[0.06em] text-2xl mt-4">
+                {p.title}
+              </h3>
+              <p class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">{p.body}</p>
+            </article>
+          ))
+        }
+      </div>
+      <p class="reveal mt-8 text-steel max-w-2xl">
+        No tryouts. Athletes ages 7–18 of every experience level train in two-year age divisions —
+        <a href="/programs" class="text-ink underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red transition-colors">see the full program structure</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ATHLETE SPOTLIGHT --------------------------------------------------- -->
+  <section class="bg-th-red text-white overflow-hidden">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28 grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-20 items-center">
+      <div class="order-2 lg:order-1">
+        <SectionHeading light kicker="Alumni Spotlight" title={athletes.spotlight.name} />
+        <p class="reveal kicker text-white mt-4">{athletes.spotlight.title}</p>
+        <p class="reveal mt-5 text-white/90 leading-relaxed max-w-lg">{athletes.spotlight.body}</p>
+        <div class="reveal mt-8 grid grid-cols-3 gap-6 border-t border-white/25 pt-8 max-w-lg">
+          {
+            athletes.spotlight.stats.map((s) => (
+              <div>
+                <p class="display text-3xl sm:text-4xl text-white">{s.value}</p>
+                <p class="mt-1 text-white/75 text-xs font-condensed font-medium uppercase tracking-[0.08em]">{s.label}</p>
+              </div>
+            ))
+          }
+        </div>
+        <div class="mt-8">
+          <CTAButton href="/athletes" variant="ghost">Meet Our Athletes</CTAButton>
+        </div>
+      </div>
+      <figure class="order-1 lg:order-2 reveal">
+        <Image
+          src={portraitBW}
+          alt="Black-and-white portrait of a young Track Houston athlete in uniform, focused, with a packed grandstand behind him."
+          class="w-full h-auto object-cover"
+          widths={[480, 800, 1200]}
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          quality={78}
+        />
+        <figcaption class="mt-3 text-white/80 text-sm">
+          The next generation: a Track Houston athlete at the Junior Olympic Games.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- WHY TRACK HOUSTON ---------------------------------------------------- -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+      <div>
+        <SectionHeading kicker="Why Track Houston" title="More than fast." />
+        <div class="reveal mt-8 space-y-6 max-w-lg text-ink/80 leading-relaxed">
+          <p>
+            <strong class="text-ink">Organized and safe.</strong> USATF-sanctioned, with more than
+            100 background-screened volunteers and experienced coaches at every site.
+          </p>
+          <p>
+            <strong class="text-ink">Classroom first.</strong> The Academic & Life Skills program,
+            free 800 Club SAT/ACT course and honor-roll recognition back every athlete's path to college.
+          </p>
+          <p>
+            <strong class="text-ink">A real pipeline.</strong> From first practice to the Junior
+            Olympics to 50+ colleges and universities — Track Houston athletes go places.
+          </p>
+        </div>
+      </div>
+      <div class="reveal grid grid-cols-2 gap-4 content-start">
+        <Image
+          src={athleteSmile}
+          alt="A young Track Houston athlete in goggles grins on the infield before his race."
+          class="w-full h-full object-cover aspect-[3/4]"
+          widths={[400, 700]}
+          sizes="(min-width: 1024px) 25vw, 50vw"
+          quality={78}
+        />
+        <Image
+          src={girlsStart}
+          alt="Eight Track Houston girls sprint off the start line in matching red and black uniforms."
+          class="w-full h-full object-cover aspect-[3/4] mt-8"
+          widths={[400, 700]}
+          sizes="(min-width: 1024px) 25vw, 50vw"
+          quality={78}
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS ------------------------------------------------------------------ -->
+  <section class="bg-chalk border-t border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+      <div class="flex items-end justify-between gap-6">
+        <SectionHeading kicker="Latest" title="Club news." />
+        <a href="/news" class="reveal kicker text-ink hover:text-th-red transition-colors whitespace-nowrap hidden sm:block">
+          All News →
+        </a>
+      </div>
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        {
+          news.map((post) => (
+            <NewsCard
+              href={`/news/${post.id.replace(/\.md$/, '')}`}
+              title={post.data.title}
+              date={post.data.date}
+              category={post.data.category}
+              excerpt={post.data.excerpt}
+              featured={post.data.featured}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Layout>

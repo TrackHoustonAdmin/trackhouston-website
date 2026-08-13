@@ -1,0 +1,139 @@
+@import 'tailwindcss';
+
+/* ---------------------------------------------------------------------------
+   Track Houston design tokens
+   Elite. Fast. Established. — red used as a weapon, not wallpaper.
+--------------------------------------------------------------------------- */
+@theme {
+  --color-th-red: #d31e2b;
+  --color-th-red-deep: #a3121e;
+  --color-ink: #0c0c0d;
+  --color-ink-soft: #17171a;
+  --color-paper: #ffffff;
+  --color-chalk: #f4f3f1;
+  --color-steel: #5c5c60;
+  --color-line: #e4e2df;
+
+  --font-display: 'Anton', 'Arial Narrow', sans-serif;
+  --font-condensed: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-body: 'Barlow', 'Helvetica Neue', Arial, sans-serif;
+
+  --tracking-athletic: 0.04em;
+}
+
+/* Base ---------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-th-red);
+  color: #fff;
+}
+
+/* Display type: Anton renders tight — give it consistent treatment */
+.display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  line-height: 0.92;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+.kicker {
+  font-family: var(--font-condensed);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8125rem;
+}
+
+/* Track-lane motif: thin parallel rules used as a section device */
+.lanes {
+  background-image: repeating-linear-gradient(
+    to right,
+    currentColor 0,
+    currentColor 1px,
+    transparent 1px,
+    transparent 25%
+  );
+}
+
+/* Focus states — visible, brand-consistent */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+/* Scroll reveal ------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition:
+    opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* Fast hover slide for CTAs */
+.cta-sweep {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.cta-sweep::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-th-red-deep);
+  transform: translateX(-101%);
+  transition: transform 0.18s ease-out;
+  z-index: -1;
+}
+.cta-sweep:hover::after,
+.cta-sweep:focus-visible::after {
+  transform: translateX(0);
+}
+
+/* Marquee ticker ------------------------------------------------------ */
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.ticker-track {
+  animation: ticker 36s linear infinite;
+}
+
+/* Reduced motion: kill everything decorative -------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .ticker-track { animation: none; }
+  .cta-sweep::after { transition: none; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

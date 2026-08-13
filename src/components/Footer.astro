@@ -1,0 +1,120 @@
+---
+import Wordmark from './Wordmark.astro';
+import CTAButton from './CTAButton.astro';
+import site from '../data/site.json';
+
+const year = new Date().getFullYear();
+
+const cols = [
+  {
+    title: 'Club',
+    links: [
+      { href: '/about', label: 'About Track Houston' },
+      { href: '/locations', label: 'Practice Locations' },
+      { href: '/programs', label: 'Programs & Age Groups' },
+      { href: '/coaches', label: 'Coaches' },
+      { href: '/contact', label: 'Contact' },
+    ],
+  },
+  {
+    title: 'Compete',
+    links: [
+      { href: '/schedule', label: 'Schedule & Meets' },
+      { href: '/results', label: 'Results & Records' },
+      { href: '/athletes', label: 'Athletes' },
+      { href: '/roster', label: 'Team Roster' },
+      { href: '/photos', label: 'Photo Archive' },
+      { href: '/news', label: 'News' },
+    ],
+  },
+  {
+    title: 'Families',
+    links: [
+      { href: '/register', label: 'Registration' },
+      { href: '/parents', label: 'Parent Hub' },
+      { href: '/sponsors', label: 'Sponsors & Support' },
+    ],
+  },
+];
+---
+
+<footer class="bg-th-red text-white">
+  <!-- CTA band -->
+  <div class="border-b border-white/20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-14 lg:py-20 flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+      <div>
+        <p class="kicker text-white/85">Ready to run?</p>
+        <p class="display text-4xl sm:text-6xl mt-3">Join Track Houston.</p>
+      </div>
+      <CTAButton class="self-start lg:self-auto">Register Now</CTAButton>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 py-12 lg:py-16 grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+    <div>
+      <Wordmark light width={150} />
+      <p class="mt-5 text-white/90 max-w-sm text-[0.95rem] leading-relaxed">
+        {site.description}
+      </p>
+      <p class="mt-5 text-white/80 text-sm">{site.mailingAddress}</p>
+      <ul class="mt-5 flex gap-4" aria-label="Social media">
+        <li>
+          <a href={site.social.facebook} class="text-white hover:text-ink transition-colors" aria-label="Track Houston on Facebook">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.6l.4-3h-3V9.1c0-.9.3-1.5 1.6-1.5H16.6V4.9c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9V11H7.9v3h2.6v7h3z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href={site.social.twitter} class="text-white hover:text-ink transition-colors" aria-label="Track Houston on X (Twitter)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3l-6.6 7.6L22 21h-6.1l-4.8-6.2L5.6 21h-3l7.1-8.1L2 3h6.3l4.3 5.7L17.8 3zm-1 16.2h1.7L7.4 4.7H5.6l11.2 14.5z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href={site.social.youtube} class="text-white hover:text-ink transition-colors" aria-label="Track Houston on YouTube">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15.2V8.8L15.5 12 10 15.2z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    {
+      cols.map((col) => (
+        <nav aria-label={`Footer — ${col.title}`}>
+          <h2 class="kicker text-white/70">{col.title}</h2>
+          <ul class="mt-4 space-y-2.5">
+            {col.links.map((l) => (
+              <li>
+                <a href={l.href} class="text-white hover:text-ink transition-colors text-[0.95rem] underline-offset-4 hover:underline">
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      ))
+    }
+  </div>
+
+  <div class="border-t border-white/20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <p class="text-white/80 text-sm">
+        © {year} Track Houston Youth Track Club. All rights reserved.
+      </p>
+      <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm" aria-label="Affiliations">
+        {
+          site.affiliations.map((a) => (
+            <li>
+              <a href={a.url} rel="external" class="text-white/80 hover:text-ink transition-colors">
+                {a.name}
+              </a>
+            </li>
+          ))
+        }
+        <li>
+          <a href={site.social.streaming} rel="external" class="text-white/80 hover:text-ink transition-colors">
+            Live Streaming
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

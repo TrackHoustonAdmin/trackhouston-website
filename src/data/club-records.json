@@ -1,0 +1,1093 @@
+{
+ "asOf": "Club record book, last compiled 2015",
+ "note": "Records set after 2015 (including the 2026 11-12 Boys 4x100m national record of 46.85 and Maryann Akpobassa\u2019s 2026 triple jump record) are being compiled into an updated edition. Corrections from official championship results are added as they are verified \u2014 most recently the 2011 USATF JO Sub-Bantam Boys 4x400m national champions (4:57.60), from the official 2011 results book.",
+ "divisions": [
+  {
+   "division": "8 & Under Girls",
+   "events": [
+    {
+     "event": "100 Meters",
+     "entries": [
+      {
+       "text": "Dynasty McClennon, 15.04, AAU NQ, 2011",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "200 Meters",
+     "entries": [
+      {
+       "text": "Taylor Bennett, 31.05, Gulf Assoc., 2005",
+       "national": false
+      },
+      {
+       "text": "Dynasty McClennon, 30.37, AAU Gulf, 2011",
+       "national": false
+      },
+      {
+       "text": "Dynasty McClennon, 30.19, AAU NQ, 2011",
+       "national": false
+      },
+      {
+       "text": "Dynasty McClennon, 29.48* (National), USATF JO, 2011",
+       "national": true
+      }
+     ]
+    },
+    {
+     "event": "400 Meters",
+     "entries": [
+      {
+       "text": "Dynasty McClennon, 1:12.94, AAU NQ, 2011",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "800 Meters",
+     "entries": [
+      {
+       "text": "Jasmine Floyd, 2:50.82, Gulf Assoc., 2001",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x100 M Relay",
+     "entries": [
+      {
+       "text": "Dynasty McClennon, Adoara Nwokeji, Daja Maxey, Maryah Hampton, 59.96* (National), AAU JO, 2011",
+       "national": true
+      }
+     ]
+    },
+    {
+     "event": "4x400 M Relay",
+     "entries": [
+      {
+       "text": "Simone Ballard, Grace Howard, Ireyana Jefferson, Miracle Price, 5:14.83, Gulf Assoc., 2012",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "Javelin Throw",
+     "entries": [
+      {
+       "text": "Haley Broussard, 40'-8\", Gulf Assoc., 2014",
+       "national": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "division": "8 & Under Boys",
+   "events": [
+    {
+     "event": "4x100 M Relay",
+     "entries": [
+      {
+       "text": "Jalen Curry, James Brown, Jeremiah Guice, Ryon Senegal, 58.27, Gulf Assoc., 2007",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x400 M Relay",
+     "entries": [
+      {
+       "text": "Lden Skinner, Elijah Bean, Finnley Polidore, Tyler Dale, 4:57.60, USATF JO \u2014 National Champions, 2011",
+       "national": false,
+       "champion": true
+      },
+      {
+       "text": "Aja Bradford, Darrell Bush, Keisean Henderson, Samir Coleman, 5:00.71, Gulf Assoc., 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "Javelin Throw",
+     "entries": [
+      {
+       "text": "Benjamin Harrison, 77'-1\", Gulf Assoc., 2013",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "Shot Put",
+     "entries": [
+      {
+       "text": "Jeyden Coleman, 26'-0\", Gulf Assoc., 2013",
+       "national": false
+      },
+      {
+       "text": "Jaylen Mays, 27'-10\", Region 12, 2013",
+       "national": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "division": "9-10 Girls",
+   "events": [
+    {
+     "event": "100 Meters",
+     "entries": [
+      {
+       "text": "Brittany Tiney, 13.22, Gulf Assoc., 2000",
+       "national": false
+      },
+      {
+       "text": "Adaora Nwokeji (9-Girls), 14.32, AAU NQ, 2012",
+       "national": false
+      },
+      {
+       "text": "Angel Haynes, 13.78, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "200 Meters",
+     "entries": [
+      {
+       "text": "Dynasty McClennon, 27.51, Gulf Assoc., 2012",
+       "national": false
+      },
+      {
+       "text": "Dynasty McClennon, 27.80, AAU NQ, 2012",
+       "national": false
+      },
+      {
+       "text": "Angel Haynes, 28.20, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "400 Meters",
+     "entries": [
+      {
+       "text": "Olu-Bunmi Okunade, 1:02.52, Gulf Assoc., 2007",
+       "national": false
+      },
+      {
+       "text": "Dynasty McClennon, 1:01.65, Region 12, 2013",
+       "national": false
+      },
+      {
+       "text": "Dynasty McClennon, 1:06.59, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "1500 Meters",
+     "entries": [
+      {
+       "text": "Camille Napier, 5:21.92, Region 12, 2013",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "1500M Race Walk",
+     "entries": [
+      {
+       "text": "Camila Vicens, 8:46.97, AAU NQ, 2012",
+       "national": false
+      },
+      {
+       "text": "Camila Vicens, 8:57.70, Gulf Assoc., 2012",
+       "national": false
+      },
+      {
+       "text": "Sanjana Perungulam, 9:10.13, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x100 M Relay",
+     "entries": [
+      {
+       "text": "Taylor Bennett, Olu-Bunmi Okunade, Tyana Davis, Kiana Horton, 54.02, Gulf Assoc., 2007",
+       "national": false
+      },
+      {
+       "text": "Kameron Butler, Brooke Coleman, Danielle Johnson, Angel Haynes, 54.77, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x400 M Relay",
+     "entries": [
+      {
+       "text": "Dynasty McClennon, Jalen Elrod, Daja Maxey, Maryah Hampton, 4:27.60, Gulf Assoc., 2013",
+       "national": false
+      },
+      {
+       "text": "same squad, 4:17.85, Region 12, 2013",
+       "national": false
+      },
+      {
+       "text": "same squad, 4:17.32* (National), USATF JO, 2013",
+       "national": true
+      },
+      {
+       "text": "Dynasty McClennon, Jalen Elrod, Daja Maxey, Peyton Vancourt, 4:34.20, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "Javelin Throw",
+     "entries": [
+      {
+       "text": "Simone Ballard, 27'-8\", AAU Gulf, 2013",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "Shot Put",
+     "entries": [
+      {
+       "text": "Arianna Stegall, 29'-2.50\", Gulf Assoc., 2013",
+       "national": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "division": "9-10 Boys",
+   "events": [
+    {
+     "event": "100 Meters",
+     "entries": [
+      {
+       "text": "Drew Bostick, 12.84, Gulf Assoc., 2002",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "200 Meters",
+     "entries": [
+      {
+       "text": "Bryson Stubblefield, 27.08, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "800 Meters",
+     "entries": [
+      {
+       "text": "Nathaniel Jones (9-Boys), 2:35.50, AAU Gulf, 2003",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "1500 Meters",
+     "entries": [
+      {
+       "text": "Ayenew Devany, 5:10.99, Region 12, 2013",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x100 M Relay",
+     "entries": [
+      {
+       "text": "Bryce Deadmon, Yakemah Siverand, Cecil Sheffield, Trelan McCray, 53.31, Gulf Assoc., 2006",
+       "national": false
+      },
+      {
+       "text": "Bryson Stubblefield, Kentrell Singleton, Ian Gilmore, Joel Delva, 52.37, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "High Jump",
+     "entries": [
+      {
+       "text": "Caleb Cavanaugh, 4'-6\", Gulf Assoc., 2011",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "Long Jump",
+     "entries": [
+      {
+       "text": "Jaden Galloway, 15'-9.75\", Gulf Assoc., 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "Javelin Throw",
+     "entries": [
+      {
+       "text": "Cameron Hubbard, 116'-8\", Gulf Assoc., 2007",
+       "national": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "division": "11-12 Girls",
+   "events": [
+    {
+     "event": "200 Meters",
+     "entries": [
+      {
+       "text": "Dynasty McClennon, 25.30, Gulf Assoc., 2015",
+       "national": false
+      },
+      {
+       "text": "Dynasty McClennon, 25.12, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "400 Meters",
+     "entries": [
+      {
+       "text": "Alaysha Johnson, 57.68, Gulf Assoc., 2008",
+       "national": false
+      },
+      {
+       "text": "Jalen Elrod, 57.86, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "800 Meters",
+     "entries": [
+      {
+       "text": "Jalen Elrod, 2:24.40, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "1500 Meters",
+     "entries": [
+      {
+       "text": "Kevriana Scott, 4:59.62, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "3000 Meters",
+     "entries": [
+      {
+       "text": "Camille Napier, 10:49.39, Gulf Assoc., 2015",
+       "national": false
+      },
+      {
+       "text": "Camille Napier, 10:37.79, Region 12, 2015",
+       "national": false
+      },
+      {
+       "text": "Camille Napier, 10:29.52* (National), USATF Indoor, 2015",
+       "national": true
+      }
+     ]
+    },
+    {
+     "event": "1500M Race Walk",
+     "entries": [
+      {
+       "text": "Camila Vicens (11-Girls), 7:39.39, AAU Gulf, 2013",
+       "national": false
+      },
+      {
+       "text": "9:14.25, AAU NQ, 2013",
+       "national": false
+      },
+      {
+       "text": "7:17.80* (National), AAU JO, 2013",
+       "national": true
+      },
+      {
+       "text": "Camila Vicens (12-Girls), 7:12.16* (National), AAU JO, 2014",
+       "national": true
+      },
+      {
+       "text": "Camila Vicens, 7:49.76, Region 12, 2013",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "80 M Hurdles",
+     "entries": [
+      {
+       "text": "Karen LaCour, 13.57, Gulf Assoc., 2001",
+       "national": false
+      },
+      {
+       "text": "Tairah Johnson, 13.96, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x100 M Relay",
+     "entries": [
+      {
+       "text": "A'Niya Galloway, Taejah Badal, Daja Maxey, Dynasty McClennon, 49.38, Gulf Assoc., 2015",
+       "national": false
+      },
+      {
+       "text": "same squad, 49.15* (National), Region 12, 2015",
+       "national": true
+      }
+     ]
+    },
+    {
+     "event": "4x400 M Relay",
+     "entries": [
+      {
+       "text": "Daja Maxey, Dynasty McClennon, Jalen Elrod, Taejha Badal, 3:59.38, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x800 M Relay",
+     "entries": [
+      {
+       "text": "Sydney Gandy, Kennedae Hollier, Dinah Murphy, Charity Thomas, 10:14.39, Gulf Assoc., 2010",
+       "national": false
+      },
+      {
+       "text": "Heidi Nielson, Kevriana Scott, Natalie Allen, Sophie Atkinson, 10:16.76, Region 12, 2015",
+       "national": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "division": "11-12 Boys",
+   "events": [
+    {
+     "event": "400 Meters",
+     "entries": [
+      {
+       "text": "Ian Gilmore (11-Boys), 59.76, AAU NQ, 2013",
+       "national": false
+      },
+      {
+       "text": "Ian Gilmore, 54.96, Gulf Assoc., 2014",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "800 Meters",
+     "entries": [
+      {
+       "text": "Ian Gilmore, 2:15.08, Gulf Assoc., 2014",
+       "national": false
+      },
+      {
+       "text": "Ian Gilmore, 2:17.22, Region 12, 2013",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "1500 Meters",
+     "entries": [
+      {
+       "text": "Lucas Bourgoyne, 4:43.46, Gulf Assoc., 2013",
+       "national": false
+      },
+      {
+       "text": "Ayenew Devany, 4:48.57, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "3000 Meters",
+     "entries": [
+      {
+       "text": "Ayenew Devany, 10:06.13, Gulf Assoc., 2015",
+       "national": false
+      },
+      {
+       "text": "Lucas Bourgoyne, 9:49.15, Region 12, 2013",
+       "national": false
+      },
+      {
+       "text": "Joshua Brooks (11-Boys), 10:48.36, AAU NQ, 2013",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "1500M Race Walk",
+     "entries": [
+      {
+       "text": "Pranav Menon, 8:58.52, Region 12, 2013",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x100 M Relay",
+     "entries": [
+      {
+       "text": "Troy Woolfolk, Daryl Turner, Avery Terrell, John Carrier, 49.35, Gulf Assoc., 2001",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x400 M Relay",
+     "entries": [
+      {
+       "text": "Tyler Dale, Elijah Bean, Brian Knight, Malik Cambell, 3:56.38, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x800 M Relay",
+     "entries": [
+      {
+       "text": "Joshua Brooks, Ian Gilmore, Lucas Bourgoyne, Phillip Green, 9:32.67, Gulf Assoc., 2013",
+       "national": false
+      },
+      {
+       "text": "same squad, 9:36.66, Region 12, 2013",
+       "national": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "division": "13-14 Girls",
+   "events": [
+    {
+     "event": "100 Meters",
+     "entries": [
+      {
+       "text": "Kailei Collins, 11.90, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "1500 Meters",
+     "entries": [
+      {
+       "text": "Sydney Gandy, 5:06.01, Gulf Assoc., 2011",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "3000M Race Walk",
+     "entries": [
+      {
+       "text": "Camila Vicens, 16:03.77, Gulf Assoc., 2015",
+       "national": false
+      },
+      {
+       "text": "15:50.95, Region 12, 2015",
+       "national": false
+      },
+      {
+       "text": "Camila Vicens (13-Girls), 15:33.80* (National), AAU JO, 2015",
+       "national": true
+      }
+     ]
+    },
+    {
+     "event": "4x100 M Relay",
+     "entries": [
+      {
+       "text": "Taylor Bennett, Amber Ivy, Olu-Bunmi Okunade, Morgan Davis, 47.82, Gulf Assoc., 2011",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x400 M Relay",
+     "entries": [
+      {
+       "text": "Taylor Bennett, Tyana Davis, Farrin Davis, Alaysah Johnson, 3:56.00, Gulf Assoc., 2010",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x800 M Relay",
+     "entries": [
+      {
+       "text": "8:50.32, Gulf Assoc., 2005",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "High Jump (tie)",
+     "entries": [
+      {
+       "text": "Anota Adekunle, 4'-11.75\", Gulf Assoc., 2013",
+       "national": false
+      },
+      {
+       "text": "Lauryn Combs, 4'-11.75\", Gulf Assoc., 2013",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "Javelin",
+     "entries": [
+      {
+       "text": "Kaylah Shepherd, 101'-5\", Gulf Assoc., 2013",
+       "national": false
+      },
+      {
+       "text": "95'-7\", Region 12, 2013",
+       "national": false
+      },
+      {
+       "text": "Kaylah Shepherd (13-Girls), 79'-6\", AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "division": "13-14 Boys",
+   "events": [
+    {
+     "event": "100 Meters",
+     "entries": [
+      {
+       "text": "Mike Estrella, 10.93, Gulf Assoc., 2001",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "400 Meters",
+     "entries": [
+      {
+       "text": "'Nikalos Harrell, 52.12, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "200 M Hurdles",
+     "entries": [
+      {
+       "text": "Kendall Sheffield, 25.28, Gulf Assoc., 2010",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x100 M Relay",
+     "entries": [
+      {
+       "text": "Dominique Henson, Michael Clay, Mike Estrella, Kevin Benjamin, 43.64, Gulf Assoc., 2001",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x400 M Relay",
+     "entries": [
+      {
+       "text": "3:36.19, AAU Gulf, 1998",
+       "national": false
+      },
+      {
+       "text": "O'Shae Clark, Oscar DeLeon, Robert Lewis, Dominique Lang, 3:36.37, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x800 M Relay",
+     "entries": [
+      {
+       "text": "Deonte Bradford, Matthew Abrams, Randall Jubilee, Tyler Litton, 8:35.00, Gulf Assoc., 2013",
+       "national": false
+      },
+      {
+       "text": "same squad, 8:34.33, Region 12, 2013",
+       "national": false
+      },
+      {
+       "text": "O'Shae Clark, Oscar DeLeon, Robert Lewis, Kenneth Lange, 8:45.94, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "Javelin Throw",
+     "entries": [
+      {
+       "text": "Matthew Kosecki, 169'-5.05\", Gulf Assoc., 2005",
+       "national": false
+      },
+      {
+       "text": "Sergio Domenech, 37.97m, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "division": "15-16 Girls",
+   "events": [
+    {
+     "event": "100 Meters",
+     "entries": [
+      {
+       "text": "Kynnedy Flannel, 11.56, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "200 Meters",
+     "entries": [
+      {
+       "text": "Taylor Bennett, 24.50, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "1500 Meters",
+     "entries": [
+      {
+       "text": "Bria Guerin, 4:57.37, Gulf Assoc., 2008",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "3000 Meters",
+     "entries": [
+      {
+       "text": "Nichole Jones, 10:05.88, Gulf Assoc., 2005",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "100 M Hurdles",
+     "entries": [
+      {
+       "text": "Alaysha Johnson, 14.20, AAU NQ, 2012",
+       "national": false
+      },
+      {
+       "text": "Javlyn Cameron, 13.94, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "400 M Hurdles",
+     "entries": [
+      {
+       "text": "Alaysha Johnson, 1:01.70, AAU NQ, 2012",
+       "national": false
+      },
+      {
+       "text": "Alaysha Johnson, 1:02.13, Gulf Assoc., 2011",
+       "national": false
+      },
+      {
+       "text": "Javlyn Cameron, 1:04.11, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x100 M Relay",
+     "entries": [
+      {
+       "text": "Alaysha Johnson, Zarriea Willis, Jasmine Grace, Farrin Davis, 46.54, AAU NQ, 2012",
+       "national": false
+      },
+      {
+       "text": "Kynnedy Flannel, Javlyn Cameron, Ariele Adams, Rachel Hall, 45.96, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x800 M Relay",
+     "entries": [
+      {
+       "text": "Bria Guerin, Monique Curry, Nefertari Hall, C'Arra Watts, 9:28.10, Gulf Assoc., 2009",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "High Jump",
+     "entries": [
+      {
+       "text": "Zarriea Willis, 5'-5.25\", AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "division": "15-16 Boys",
+   "events": [
+    {
+     "event": "100 Meters",
+     "entries": [
+      {
+       "text": "Brandon Brown, 10.38, Gulf Assoc., 2001",
+       "national": false
+      },
+      {
+       "text": "Mark Barre', 10.99, AAU NQ, 2012",
+       "national": false
+      },
+      {
+       "text": "LeGari Daniels, 10.73, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "200 Meters",
+     "entries": [
+      {
+       "text": "Mark Barre', 21.93, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "400 M Hurdles",
+     "entries": [
+      {
+       "text": "Nicholas Makukutu, 54.01, Gulf Assoc., 2004",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x400 M Relay",
+     "entries": [
+      {
+       "text": "Justin Davis, Courtney Hubert, Nicholas Makukutu, Mikey Ramos, 3:14.26, Gulf Assoc., 2004",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x800 M Relay",
+     "entries": [
+      {
+       "text": "Robert Lewis, Oscar De Leon, Kendall Brown, Cameron White, 8:17.64, Region 12, 2013",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "High Jump",
+     "entries": [
+      {
+       "text": "Derrick Edwards, 6'-1.50\", Gulf Assoc., 2008",
+       "national": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "division": "17-18 Women",
+   "events": [
+    {
+     "event": "100 Meters",
+     "entries": [
+      {
+       "text": "Bria Carter, 11.78, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "200 Meters",
+     "entries": [
+      {
+       "text": "Akeyla Mitchell, 23.93, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "800 Meters",
+     "entries": [
+      {
+       "text": "Shannon Jackson, 2:16.00, Gulf Assoc., 2007",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "1500 Meters",
+     "entries": [
+      {
+       "text": "Nichole Jones, 4:34.76, Gulf Assoc., 2006",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "3000 Meters",
+     "entries": [
+      {
+       "text": "Nichole Jones, 10:19.29, Gulf Assoc., 2006",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x100 M Relay",
+     "entries": [
+      {
+       "text": "Bria Carter, Akeyla Mitchell, Bealoved Brown, Dominique Taylor, 46.26, AAU NQ, 2012",
+       "national": false
+      },
+      {
+       "text": "Bianca Allen, Bria Carter, Jasmine Grace, Alaysh Johnson, 46.23, Region 12, 2013",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "Long Jump",
+     "entries": [
+      {
+       "text": "Samiyah Samuels, 19'-11.5\", Gulf Assoc., 2014",
+       "national": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "division": "17-18 Men",
+   "events": [
+    {
+     "event": "100 Meters",
+     "entries": [
+      {
+       "text": "Willie Hordge, 10.11, Gulf Assoc., 2001",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "200 Meters",
+     "entries": [
+      {
+       "text": "Carey LaCour, 20.80, Gulf Assoc., 2002",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "400 Meters",
+     "entries": [
+      {
+       "text": "LaDerek Jones, 47.71, Gulf Assoc., 2005",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "3000 Meters",
+     "entries": [
+      {
+       "text": "Ababu Mohamed, 9:13.46, Gulf Assoc., 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "400 M Hurdles",
+     "entries": [
+      {
+       "text": "Caleb Richmond, 52.47, Region 12, 2015",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x100 M Relay",
+     "entries": [
+      {
+       "text": "O'Shea Wilson, Jermaine Authorlee, Ahmed Ali, Kyle Fulks, 39.56* (National), Region 12, 2012",
+       "national": true
+      },
+      {
+       "text": "Ryan Beard, Ben Gay, Joey Harris, Terrance Williams, 39.73, USATF JO, 1998",
+       "national": false
+      },
+      {
+       "text": "O'Shea Wilson, Jermaine Authorlee, Ahmed Ali, Kyle Fulks, 40.00* (National), AAU JO, 2012",
+       "national": true
+      },
+      {
+       "text": "O'Shea Wilson, Xavier Moss, Ahmed Ali, Kyle Fulks, 40.23, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    },
+    {
+     "event": "4x400 M Relay",
+     "entries": [
+      {
+       "text": "Xavier Moss, Ahmed Ali, Jarell McFarland, Jecory Hoyt, 3:12.95, AAU NQ, 2012",
+       "national": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

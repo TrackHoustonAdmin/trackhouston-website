@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import MeetRow from '../components/MeetRow.astro';
+import CTAButton from '../components/CTAButton.astro';
+import schedule from '../data/schedule.json';
+import midDistance from '../assets/photos/mid-distance-race.jpg';
+
+type EventType = 'meet' | 'championship' | 'featured' | 'club';
+---
+
+<Layout
+  title="Schedule & Meets — Track Houston Youth Track Club"
+  description="Track Houston meet schedules: the 2026 cross country season from the CC Invitational through the USATF National Junior Olympic XC Championships, plus the spring track & field calendar."
+>
+  <PageHero
+    kicker="Schedule"
+    title="The season ahead."
+    intro="Check back frequently — meet dates and venues can change during the season."
+    image={midDistance}
+    imageAlt="Athletes racing under a stormy Texas sky at a championship meet."
+  />
+
+  <!-- XC season -->
+  <section id="cross-country" class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+      <SectionHeading kicker="Now" title={schedule.crossCountry.season} />
+      <p class="reveal kicker text-th-red pb-1">{schedule.crossCountry.note}</p>
+    </div>
+    <ul class="mt-10 border-t border-line">
+      {
+        schedule.crossCountry.events.map((e) => (
+          <MeetRow date={e.date} name={e.name} location={e.location} type={e.type as EventType} />
+        ))
+      }
+    </ul>
+  </section>
+
+  <!-- T&F season -->
+  <section class="bg-chalk border-t border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+      <SectionHeading kicker="Next" title={schedule.trackField.season} />
+      <p class="reveal mt-6 max-w-2xl text-ink/75 leading-relaxed">{schedule.trackField.note}</p>
+      <div class="reveal mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-line border border-line">
+        {
+          [
+            { label: 'Feb–Mar', name: 'Season opens', detail: 'Track Houston Opener & Intrasquad' },
+            { label: 'Apr–May', name: 'Invitationals', detail: 'Houston-area meets every weekend' },
+            { label: 'Late May', name: 'TH Championships', detail: '6,500+ athletes & spectators' },
+            { label: 'Jun–Jul', name: 'JO pipeline', detail: 'Association → Region → Nationals' },
+          ].map((p) => (
+            <div class="bg-chalk p-6">
+              <p class="kicker text-th-red">{p.label}</p>
+              <p class="font-condensed font-semibold uppercase tracking-[0.05em] text-xl mt-2">{p.name}</p>
+              <p class="text-steel text-sm mt-1">{p.detail}</p>
+            </div>
+          ))
+        }
+      </div>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <CTAButton>Register for the Season</CTAButton>
+        <CTAButton href="/parents" variant="secondary">Meet Info for Parents</CTAButton>
+      </div>
+    </div>
+  </section>
+</Layout>

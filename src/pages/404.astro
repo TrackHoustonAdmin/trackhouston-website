@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CTAButton from '../components/CTAButton.astro';
+---
+
+<Layout title="Page Not Found — Track Houston" description="That page didn't make the final.">
+  <section class="bg-th-red text-white min-h-[70vh] flex items-center">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-24">
+      <p class="kicker text-white/85">404 — False Start</p>
+      <h1 class="display text-7xl sm:text-9xl mt-4">Out of<br />lane.</h1>
+      <p class="mt-6 text-white/90 max-w-md text-lg">
+        That page didn't make the final. Head back to the start or find what you need below.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <CTAButton href="/">Back to Home</CTAButton>
+        <CTAButton href="/locations" variant="ghost">Practice Locations</CTAButton>
+      </div>
+    </div>
+  </section>
+</Layout>

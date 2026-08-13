@@ -1,0 +1,41 @@
+{
+  "ageDivisions": [
+    { "division": "7–8", "birthYears": "2018–2019", "maxEvents": "3 events per meet", "notes": "Must be age 7 by Dec 31 for national competition." },
+    { "division": "9–10", "birthYears": "2016–2017", "maxEvents": "3 events per meet", "notes": "Triathlon option available." },
+    { "division": "11–12", "birthYears": "2014–2015", "maxEvents": "3 events per meet", "notes": "Pentathlon option available." },
+    { "division": "13–14", "birthYears": "2012–2013", "maxEvents": "4 events per meet", "notes": "Introduces triple jump, pole vault and steeplechase." },
+    { "division": "15–16", "birthYears": "2010–2011", "maxEvents": "4 events per meet", "notes": "Adds hammer throw; heptathlon and decathlon available." },
+    { "division": "17–18", "birthYears": "2008–2009", "maxEvents": "4 events per meet", "notes": "Athletes turning 18 by the last day of nationals remain eligible." }
+  ],
+  "ageDivisionNotes": [
+    "Youth competition takes place in two-year age divisions. Age is calculated as of December 31 of the competition year.",
+    "Combined events (triathlon, pentathlon, heptathlon, decathlon) do not count toward event limits.",
+    "Athletes may only compete in events designated for their age group."
+  ],
+  "pathway": [
+    {
+      "stage": "01",
+      "title": "Development",
+      "body": "Every athlete starts somewhere. New athletes learn fundamentals — form, starts, exchanges, pacing — at their neighborhood practice site with USATF-experienced coaches. No tryouts. Ages 7–18, every experience level."
+    },
+    {
+      "stage": "02",
+      "title": "Competition",
+      "body": "The spring season runs through Houston-area invitationals and Track Houston's own meets, building toward the USATF Gulf Association championships. Cross country runs September through December."
+    },
+    {
+      "stage": "03",
+      "title": "Championships",
+      "body": "Athletes who qualify advance from Association to Region to the USATF National Junior Olympic Championships — a pipeline Track Houston feeds every single year, at volume."
+    }
+  ],
+  "scholars": {
+    "headline": "Excellence begins in the classroom.",
+    "body": "Track Houston's Academic & Life Skills program backs every athlete's path to college: NCAA eligibility monitoring, FAFSA help, athlete profiles for college coaches, campus visit coordination and honor-roll recognition each grading period.",
+    "club800": {
+      "title": "The 800 Club SAT/ACT Course",
+      "body": "Free test prep exclusively for Track Houston athletes — open to sophomores, juniors and seniors who have completed or are enrolled in Algebra II.",
+      "contact": { "name": "Joe Felder", "email": "joe.felder@trackhouston.com" }
+    }
+  }
+}

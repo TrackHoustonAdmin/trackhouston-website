@@ -1,0 +1,43 @@
+{
+  "intro": "Track Houston is a nonprofit founded in 1989. All donations are tax-deductible, and sponsorship puts your brand in front of one of the largest youth track audiences in the country — the annual Track Houston Championships draws over 6,500 athletes and spectators.",
+  "tiers": [
+    {
+      "name": "Gold",
+      "benefits": [
+        "Company link on trackhouston.com for one year",
+        "Vendor booth at the Track Houston Championships",
+        "PA announcements during the meet",
+        "Banner displayed at the event",
+        "Company name on the meet schedule",
+        "Appreciation plaque",
+        "Four entry bands"
+      ]
+    },
+    {
+      "name": "Silver",
+      "benefits": [
+        "PA announcements during the meet",
+        "Banner displayed at the event",
+        "Company name on the meet schedule",
+        "Appreciation plaque",
+        "Four entry bands"
+      ]
+    },
+    {
+      "name": "Bronze",
+      "benefits": [
+        "Company name on the meet schedule",
+        "Appreciation plaque",
+        "Two entry bands"
+      ]
+    }
+  ],
+  "vendors": {
+    "title": "Vendor Village — Track Houston Championships",
+    "body": "The Track Houston Championships is a two-day USATF-sanctioned meet each May with a dedicated Vendor Village. Apparel, jewelry, track & field memorabilia and other approved vendors can rent space for one or both days.",
+    "contact": { "name": "Regina Godine", "role": "Fundraiser Chair", "phone": "(281) 702-1929", "email": "regina.godine@trackhouston.com" }
+  },
+  "partners": [
+    { "name": "VS Athletics", "blurb": "Track Houston's preferred vendor for spikes, shoes and equipment. Use code TOR10 at checkout — a percentage of every sale comes back to the club.", "url": "https://www.vsathletics.com/" }
+  ]
+}

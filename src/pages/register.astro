@@ -1,0 +1,147 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import CTAButton from '../components/CTAButton.astro';
+import site from '../data/site.json';
+import carterRelay from '../assets/photos/carter-relay.jpg';
+
+const steps = [
+  {
+    n: '01',
+    title: 'Pick your program',
+    body: 'Cross country runs September–December; track & field runs February–July. Many athletes do both. Registration for the 2026 cross country season is open now.',
+  },
+  {
+    n: '02',
+    title: 'Register online',
+    body: 'Complete the registration form below before your athlete attends any practice. USATF membership applies for sanctioned championship competition — your age division coach will walk you through it.',
+  },
+  {
+    n: '03',
+    title: 'Show up and run',
+    body: 'Report to your nearest practice site and check in with the site coach. Uniform and gear info lives in the Parent Hub — VS Athletics is our preferred vendor (code TOR10).',
+  },
+];
+---
+
+<Layout
+  title="Register — Join Track Houston Youth Track Club"
+  description="Join Track Houston. Registration for athletes ages 7–18 across greater Houston — cross country registration for 2026 is open now."
+>
+  <PageHero
+    kicker="Registration"
+    title="Join Track Houston."
+    intro="Ages 7–18. Every experience level. Twelve practice sites across greater Houston. This is where it starts."
+    image={carterRelay}
+    imageAlt="A determined Track Houston relay runner powers down the straight at nationals."
+  >
+    <div class="mt-8 flex flex-wrap gap-4">
+      <CTAButton href={site.registration.crossCountryUrl}>Register — Cross Country 2026</CTAButton>
+    </div>
+  </PageHero>
+
+  <!-- Status bar -->
+  <div class="bg-ink text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+      <p class="kicker">Season Status</p>
+      <p class="font-condensed font-semibold uppercase tracking-[0.08em] text-lg">
+        {site.registration.status} · Track & Field 2027 registration opens before the spring season
+      </p>
+    </div>
+  </div>
+
+  <!-- Steps -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+    <SectionHeading kicker="How It Works" title="Three steps to the start line." />
+    <div class="mt-12 grid md:grid-cols-3 gap-px bg-line border border-line">
+      {
+        steps.map((s) => (
+          <article class="reveal bg-white p-7 lg:p-9">
+            <p class="display text-6xl text-line" aria-hidden="true">{s.n}</p>
+            <h2 class="font-condensed font-semibold uppercase tracking-[0.06em] text-2xl mt-4">{s.title}</h2>
+            <p class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">{s.body}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- What to know -->
+  <section class="bg-chalk border-y border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 lg:gap-20">
+      <SectionHeading kicker="Before You Register" title="What families should know." />
+      <div class="reveal space-y-5">
+        <details class="group bg-white border border-line">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between gap-4 font-condensed font-semibold uppercase tracking-[0.05em] text-lg">
+            Who can join?
+            <span class="text-th-red text-2xl leading-none group-open:rotate-45 transition-transform" aria-hidden="true">+</span>
+          </summary>
+          <p class="px-5 pb-5 text-ink/75 leading-relaxed">
+            Athletes ages 7–18 (competition age is calculated as of December 31). All experience
+            levels are welcome — there are no tryouts. Athletes compete in two-year age divisions.
+          </p>
+        </details>
+        <details class="group bg-white border border-line">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between gap-4 font-condensed font-semibold uppercase tracking-[0.05em] text-lg">
+            How much does it cost?
+            <span class="text-th-red text-2xl leading-none group-open:rotate-45 transition-transform" aria-hidden="true">+</span>
+          </summary>
+          <p class="px-5 pb-5 text-ink/75 leading-relaxed">
+            [TO CONFIRM — current season fees, what's included, and any family discounts. Contact
+            your age division head coach for this season's fee details.]
+          </p>
+        </details>
+        <details class="group bg-white border border-line">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between gap-4 font-condensed font-semibold uppercase tracking-[0.05em] text-lg">
+            Do we need a USATF membership?
+            <span class="text-th-red text-2xl leading-none group-open:rotate-45 transition-transform" aria-hidden="true">+</span>
+          </summary>
+          <p class="px-5 pb-5 text-ink/75 leading-relaxed">
+            Track Houston is sanctioned by USA Track & Field through the Gulf Association. Athletes
+            competing in USATF-sanctioned meets and the Junior Olympic championship series need a
+            current USATF youth membership — your age division coach will help you set it up.
+          </p>
+        </details>
+        <details class="group bg-white border border-line">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between gap-4 font-condensed font-semibold uppercase tracking-[0.05em] text-lg">
+            What about uniforms and spikes?
+            <span class="text-th-red text-2xl leading-none group-open:rotate-45 transition-transform" aria-hidden="true">+</span>
+          </summary>
+          <p class="px-5 pb-5 text-ink/75 leading-relaxed">
+            Uniform details come from your site coach after registration. For shoes and spikes, VS
+            Athletics is the club's preferred vendor — use code <strong>TOR10</strong> at checkout
+            and a percentage comes back to Track Houston. Buying from them is optional.
+          </p>
+        </details>
+        <details class="group bg-white border border-line">
+          <summary class="cursor-pointer list-none p-5 flex items-center justify-between gap-4 font-condensed font-semibold uppercase tracking-[0.05em] text-lg">
+            When and where is practice?
+            <span class="text-th-red text-2xl leading-none group-open:rotate-45 transition-transform" aria-hidden="true">+</span>
+          </summary>
+          <p class="px-5 pb-5 text-ink/75 leading-relaxed">
+            Twelve sites across greater Houston, generally Monday/Tuesday/Thursday evenings in
+            season. See <a href="/locations" class="text-ink underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red">practice locations</a> for
+            your nearest site and its coaches. Athletes must be registered before attending.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration CTA -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+    <div class="bg-th-red text-white p-8 sm:p-12 lg:p-16 relative overflow-hidden">
+      <div class="lanes absolute inset-y-0 right-0 w-1/2 text-white/[0.08]" aria-hidden="true"></div>
+      <div class="relative max-w-2xl">
+        <p class="kicker text-white/85">Ready?</p>
+        <h2 class="display text-5xl sm:text-6xl mt-3">Claim your lane.</h2>
+        <p class="mt-5 text-white/90 leading-relaxed">{site.registration.note}</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <CTAButton href={site.registration.crossCountryUrl}>Register — Cross Country 2026</CTAButton>
+          <CTAButton href="/contact" variant="ghost">Ask a Coach First</CTAButton>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

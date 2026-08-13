@@ -1,0 +1,19 @@
+---
+interface Props {
+  value: number;
+  suffix?: string;
+  label: string;
+  light?: boolean;
+  countup?: boolean;
+}
+const { value, suffix = '', label, light = false, countup = true } = Astro.props;
+---
+
+<div class="reveal">
+  <p class={`display text-5xl sm:text-6xl lg:text-7xl ${light ? 'text-white' : 'text-ink'}`}>
+    {countup ? <span data-countup={value}>{value.toLocaleString()}</span> : <span>{value}</span>}{suffix && <span class="text-th-red">{suffix}</span>}
+  </p>
+  <p class={`mt-2 font-condensed font-medium uppercase tracking-[0.1em] text-sm ${light ? 'text-white/60' : 'text-steel'}`}>
+    {label}
+  </p>
+</div>

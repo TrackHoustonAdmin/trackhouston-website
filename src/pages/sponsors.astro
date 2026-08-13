@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import CTAButton from '../components/CTAButton.astro';
+import sponsors from '../data/sponsors.json';
+import carterRelay from '../assets/photos/carter-relay.jpg';
+---
+
+<Layout
+  title="Sponsors & Support — Track Houston Youth Track Club"
+  description="Sponsor Track Houston: Gold, Silver and Bronze corporate packages, Vendor Village booths at the 6,500-person Track Houston Championships, and tax-deductible giving."
+>
+  <PageHero
+    kicker="Sponsors & Support"
+    title="Back the club."
+    intro={sponsors.intro}
+    image={carterRelay}
+    imageAlt="A Track Houston athlete competes in front of packed stands at a national championship."
+  />
+
+  <!-- Tiers -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+    <SectionHeading kicker="Corporate Sponsorship" title="Three ways in." />
+    <div class="mt-12 grid md:grid-cols-3 gap-5">
+      {
+        sponsors.tiers.map((t, i) => (
+          <article class={`reveal border p-7 lg:p-8 flex flex-col ${i === 0 ? 'bg-th-red text-white border-th-red' : 'bg-white border-line'}`}>
+            <p class={`display text-4xl ${i === 0 ? 'text-white' : 'text-th-red'}`}>{t.name}</p>
+            <ul class={`mt-6 space-y-2.5 text-[0.95rem] leading-relaxed ${i === 0 ? 'text-white/90' : 'text-ink/75'}`}>
+              {t.benefits.map((b) => (
+                <li class="flex gap-3">
+                  <span class={`font-bold ${i === 0 ? "text-white" : "text-th-red"}`} aria-hidden="true">/</span>
+                  {b}
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))
+      }
+    </div>
+    <p class="reveal mt-8 text-steel max-w-2xl">
+      All donations to Track Houston Youth Track Club are tax-deductible. For current sponsorship
+      pricing, contact {sponsors.vendors.contact.name}, {sponsors.vendors.contact.role} —
+      <a href={`tel:${sponsors.vendors.contact.phone.replace(/[^0-9]/g, '')}`} class="text-ink underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red">{sponsors.vendors.contact.phone}</a> ·
+      <a href={`mailto:${sponsors.vendors.contact.email}`} class="text-ink underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red">{sponsors.vendors.contact.email}</a>.
+    </p>
+  </section>
+
+  <!-- Vendor village -->
+  <section id="vendors" class="bg-chalk border-y border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12">
+      <SectionHeading kicker="Vendor Village" title={sponsors.vendors.title} />
+      <div class="reveal">
+        <p class="text-ink/80 leading-relaxed">{sponsors.vendors.body}</p>
+        <div class="mt-8">
+          <CTAButton href={`mailto:${sponsors.vendors.contact.email}`} variant="secondary">
+            Reserve Vendor Space
+          </CTAButton>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+    <SectionHeading kicker="Club Partners" title="Who's already with us." />
+    <div class="mt-10 grid md:grid-cols-2 gap-5">
+      {
+        sponsors.partners.map((p) => (
+          <article class="reveal border border-line border-l-4 border-l-th-red p-7">
+            <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-2xl">
+              <a href={p.url} rel="external" class="hover:text-th-red transition-colors">{p.name}</a>
+            </h3>
+            <p class="mt-3 text-ink/75 leading-relaxed">{p.blurb}</p>
+          </article>
+        ))
+      }
+      <article class="reveal border-2 border-dashed border-line p-7 flex flex-col justify-center">
+        <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-2xl text-steel">Your brand here</h3>
+        <p class="mt-3 text-steel leading-relaxed">
+          Put your company in front of 600+ Houston families and a 6,500-person championship crowd.
+        </p>
+      </article>
+    </div>
+  </section>
+</Layout>

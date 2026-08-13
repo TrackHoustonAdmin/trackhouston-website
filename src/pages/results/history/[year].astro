@@ -1,0 +1,68 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import CTAButton from '../../../components/CTAButton.astro';
+
+export async function getStaticPaths() {
+  const seasons = await getCollection('history');
+  return seasons.map((s) => ({ params: { year: String(s.data.year) }, props: { season: s } }));
+}
+
+const { season } = Astro.props;
+const { Content } = await render(season);
+const all = (await getCollection('history')).map((s) => s.data.year).sort();
+const y = season.data.year;
+const prev = all.filter((n) => n < y).pop();
+const next = all.find((n) => n > y);
+---
+
+<Layout
+  title={`${y} Championship Season — Track Houston History`}
+  description={`Track Houston's ${y} championship season: Junior Olympic results, athletic honors and meet recaps, preserved from the club's historical records.`}
+>
+  <header class="bg-th-red text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 pt-16 pb-14 sm:pt-24 sm:pb-16">
+      <p class="kicker text-white/85">Championship History</p>
+      <h1 class="display text-7xl sm:text-9xl mt-4">{y}</h1>
+      <p class="mt-5 text-white/90 max-w-2xl text-lg">
+        The {y} season as the club recorded it — preserved from Track Houston's historical pages.
+      </p>
+    </div>
+  </header>
+
+  <!-- Year pager -->
+  <nav aria-label="Season navigation" class="bg-ink text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-3 flex items-center justify-between">
+      {prev ? (
+        <a href={`/results/history/${prev}`} class="kicker text-white hover:text-th-red transition-colors">← {prev}</a>
+      ) : <span />}
+      <a href="/results/archive" class="kicker text-white/70 hover:text-white transition-colors">All Years</a>
+      {next ? (
+        <a href={`/results/history/${next}`} class="kicker text-white hover:text-th-red transition-colors">{next} →</a>
+      ) : <span />}
+    </div>
+  </nav>
+
+  <article class="mx-auto max-w-4xl px-4 sm:px-6 py-12 lg:py-16">
+    <div
+      class="max-w-none leading-relaxed text-ink/85 space-y-4
+        [&_h2]:font-condensed [&_h2]:font-semibold [&_h2]:uppercase [&_h2]:tracking-[0.04em] [&_h2]:text-3xl [&_h2]:text-ink [&_h2]:border-b-4 [&_h2]:border-th-red [&_h2]:pb-2 [&_h2]:mt-12
+        [&_h3]:font-condensed [&_h3]:font-semibold [&_h3]:uppercase [&_h3]:tracking-[0.04em] [&_h3]:text-xl [&_h3]:text-ink [&_h3]:mt-8
+        [&_h4]:font-condensed [&_h4]:font-semibold [&_h4]:uppercase [&_h4]:text-lg [&_h4]:mt-6
+        [&_strong]:text-ink
+        [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1
+        [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-1
+        [&_table]:w-full [&_table]:border-collapse [&_th]:text-left [&_th]:border-b-2 [&_th]:border-ink [&_th]:py-2 [&_td]:border-b [&_td]:border-line [&_td]:py-2 [&_td]:pr-4
+        [&_blockquote]:border-l-4 [&_blockquote]:border-th-red [&_blockquote]:bg-chalk [&_blockquote]:px-5 [&_blockquote]:py-3 [&_blockquote]:text-ink/80
+        [&_a]:underline [&_a]:decoration-th-red [&_a]:decoration-2 [&_a]:underline-offset-4
+        [&_em]:text-steel [&_em]:text-sm"
+    >
+      <Content />
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-line flex flex-wrap gap-4">
+      <CTAButton href="/results/archive" variant="secondary">All Archive Years</CTAButton>
+      <CTAButton>Join Track Houston</CTAButton>
+    </div>
+  </article>
+</Layout>

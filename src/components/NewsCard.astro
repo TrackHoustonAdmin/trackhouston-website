@@ -1,0 +1,29 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  date: Date;
+  category: string;
+  excerpt: string;
+  featured?: boolean;
+}
+const { href, title, date, category, excerpt, featured = false } = Astro.props;
+const formatted = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<article class={`reveal border-t-4 ${featured ? 'border-th-red' : 'border-ink'} bg-white border-x border-b border-line p-6 flex flex-col gap-3`}>
+  <div class="flex items-center justify-between gap-4">
+    <p class="kicker text-th-red">{category}</p>
+    <time datetime={date.toISOString().slice(0, 10)} class="text-steel text-sm">{formatted}</time>
+  </div>
+  <h3 class="font-condensed font-semibold uppercase tracking-[0.03em] text-2xl leading-tight">
+    <a href={href} class="hover:text-th-red transition-colors">{title}</a>
+  </h3>
+  <p class="text-ink/75 text-[0.95rem] leading-relaxed">{excerpt}</p>
+  <p class="mt-auto pt-2">
+    <a href={href} class="kicker text-ink hover:text-th-red transition-colors inline-flex items-center gap-2">
+      Read More
+      <svg aria-hidden="true" width="14" height="10" viewBox="0 0 18 12" fill="none"><path d="M11.5 1l5 5-5 5M16 6H1" stroke="currentColor" stroke-width="2"/></svg>
+    </a>
+  </p>
+</article>

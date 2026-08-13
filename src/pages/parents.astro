@@ -1,0 +1,125 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import CTAButton from '../components/CTAButton.astro';
+import site from '../data/site.json';
+import athleteSmile from '../assets/photos/athlete-smile.jpg';
+
+const quickLinks = [
+  { href: '/register', title: 'Registration', body: 'Register your athlete before their first practice. Cross country 2026 is open now.' },
+  { href: '/locations', title: 'Practice Locations', body: 'All 12 sites with days, times, addresses and site-coach phone numbers.' },
+  { href: '/schedule', title: 'Meet Schedule', body: 'The season calendar, championships and key dates — check it weekly in season.' },
+  { href: '/coaches', title: 'Coach Directory', body: 'Your age division head coach is your first contact for meets, forms and fees.' },
+];
+---
+
+<Layout
+  title="Parent Hub — Track Houston Youth Track Club"
+  description="Everything Track Houston families need in one place: registration, practice sites, meet schedules, USATF membership, uniforms and gear, live streaming and club contacts."
+>
+  <PageHero
+    kicker="Parent Hub"
+    title="Everything in one place."
+    intro="Registration, practices, meets, gear, memberships, contacts. If you need it on a Tuesday night, it's on this page."
+    image={athleteSmile}
+    imageAlt="A young Track Houston athlete smiles with teammates before competition."
+  />
+
+  <!-- Quick links -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <SectionHeading kicker="Start Here" title="The four things you'll need most." />
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      {
+        quickLinks.map((q) => (
+          <a href={q.href} class="reveal group border border-line border-t-4 border-t-th-red p-6 bg-white hover:bg-th-red hover:text-white transition-colors duration-150 flex flex-col">
+            <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-2xl">{q.title}</h3>
+            <p class="mt-3 text-steel group-hover:text-white/70 text-[0.95rem] leading-relaxed transition-colors">{q.body}</p>
+            <span class="kicker mt-auto pt-5 text-th-red group-hover:text-white transition-colors">Open →</span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Operational info -->
+  <section class="bg-chalk border-y border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+      <SectionHeading kicker="Family Handbook" title="The details." />
+      <div class="mt-10 grid lg:grid-cols-2 gap-5">
+        <article id="usatf" class="reveal bg-white border border-line p-7">
+          <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-2xl">USATF Membership</h3>
+          <p class="mt-3 text-ink/75 leading-relaxed">
+            Track Houston is sanctioned by <a href="http://www.usatf.org/" rel="external" class="text-ink underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red">USA Track & Field</a> through
+            the <a href="http://gulf.usatf.org/Home.aspx" rel="external" class="text-ink underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red">Gulf Association</a>.
+            Athletes competing in sanctioned meets and the Junior Olympic series need a current USATF
+            youth membership. Your age division head coach will walk you through it.
+          </p>
+        </article>
+
+        <article id="gear" class="reveal bg-white border border-line p-7">
+          <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-2xl">Uniforms, Shoes & Spikes</h3>
+          <p class="mt-3 text-ink/75 leading-relaxed">
+            Uniform details come from your site coach after registration.
+            <a href="https://www.vsathletics.com/" rel="external" class="text-ink underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red">VS Athletics</a> is the club's
+            preferred vendor for spikes, shoes and equipment — use code <strong>TOR10</strong> at checkout and a
+            percentage of the sale comes back to Track Houston. Purchasing from them is optional.
+            Tip from the coaches: spikes usually fit about a half size smaller than trainers.
+          </p>
+        </article>
+
+        <article class="reveal bg-white border border-line p-7">
+          <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-2xl">Meet Days & Event Limits</h3>
+          <p class="mt-3 text-ink/75 leading-relaxed">
+            Athletes in the 7-8, 9-10 and 11-12 divisions may enter up to three events per meet;
+            13-14 and up may enter four. Combined events don't count against the limit. Check the
+            <a href="/schedule" class="text-ink underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red">schedule</a> weekly during
+            the season — dates and venues can change.
+          </p>
+        </article>
+
+        <article class="reveal bg-white border border-line p-7">
+          <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-2xl">Watch Live</h3>
+          <p class="mt-3 text-ink/75 leading-relaxed">
+            Can't make the meet? Track Houston events stream on
+            <a href={site.social.streaming} rel="external" class="text-ink underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red">StreamPowerUp</a>, and
+            highlights land on the club's <a href={site.social.youtube} rel="external" class="text-ink underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red">YouTube channel</a> and
+            <a href={site.social.facebook} rel="external" class="text-ink underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red">Facebook page</a>.
+          </p>
+        </article>
+
+        <article class="reveal bg-white border border-line p-7">
+          <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-2xl">Volunteering</h3>
+          <p class="mt-3 text-ink/75 leading-relaxed">
+            Track Houston runs on 100+ background-screened volunteers — timing, marshaling, the
+            Vendor Village, team travel and more. Ask your site coach how to plug in, or reach the
+            club at the <a href="/contact" class="text-ink underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red">contact page</a>.
+          </p>
+        </article>
+
+        <article class="reveal bg-white border border-line p-7">
+          <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-2xl">Forms & Policies</h3>
+          <p class="mt-3 text-ink/75 leading-relaxed">
+            [TO CONFIRM — medical release, code of conduct, travel/reimbursement forms and club
+            policies will be collected here. Until then, your age division head coach can provide
+            any required paperwork.]
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact strip -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <div class="bg-th-red text-white p-8 sm:p-12 flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+      <div>
+        <p class="kicker text-white/85">Still stuck?</p>
+        <p class="display text-4xl sm:text-5xl mt-2">Call a coach.</p>
+        <p class="mt-3 text-white/90 max-w-xl">
+          Every age division has two head coaches with published phone numbers. That's on purpose.
+        </p>
+      </div>
+      <CTAButton href="/coaches" variant="ghost" class="shrink-0">Coach Directory</CTAButton>
+    </div>
+  </section>
+</Layout>

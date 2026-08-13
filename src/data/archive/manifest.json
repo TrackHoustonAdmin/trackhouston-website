@@ -1,0 +1,79 @@
+[
+ {
+  "year": "1990",
+  "parts": 1,
+  "sections": 5,
+  "thCount": 0,
+  "kind": "ocr"
+ },
+ {
+  "year": "1991",
+  "parts": 1,
+  "sections": 16,
+  "thCount": 0,
+  "kind": "ocr"
+ },
+ {
+  "year": "1992",
+  "parts": 2,
+  "sections": 38,
+  "thCount": 0,
+  "kind": "ocr"
+ },
+ {
+  "year": "1993",
+  "parts": 2,
+  "sections": 23,
+  "thCount": 0,
+  "kind": "ocr"
+ },
+ {
+  "year": "1994",
+  "parts": 3,
+  "sections": 23,
+  "thCount": 0,
+  "kind": "ocr"
+ },
+ {
+  "year": "1995",
+  "parts": 1,
+  "sections": 46,
+  "thCount": 0,
+  "kind": "ocr"
+ },
+ {
+  "year": "1996",
+  "parts": 1,
+  "sections": 18,
+  "thCount": 23,
+  "kind": "ocr"
+ },
+ {
+  "year": "1997",
+  "parts": 1,
+  "sections": 218,
+  "thCount": 3,
+  "kind": "ocr"
+ },
+ {
+  "year": "1998",
+  "parts": 1,
+  "sections": 190,
+  "thCount": 3,
+  "kind": "digital"
+ },
+ {
+  "year": "2000",
+  "parts": 2,
+  "sections": 421,
+  "thCount": 3,
+  "kind": "digital"
+ },
+ {
+  "year": "2011",
+  "parts": 1,
+  "sections": 278,
+  "thCount": 209,
+  "kind": "digital"
+ }
+]

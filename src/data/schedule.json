@@ -1,0 +1,20 @@
+{
+  "crossCountry": {
+    "season": "Cross Country 2026",
+    "note": "2026 schedule is tentative — check back frequently for changes.",
+    "events": [
+      { "date": "Aug 24", "name": "First day of practice", "location": "All three XC practice sites", "type": "club" },
+      { "date": "Sep 5", "name": "Track Houston CC Invitational", "location": "John Paul Landing Park, Cypress, TX", "type": "featured" },
+      { "date": "Sep 19", "name": "Top Speed Elite 4th Annual XC Meet", "location": "Spring Creek Park, Tomball, TX", "type": "meet" },
+      { "date": "Oct 3", "name": "9th Annual FPR Hay Bale CC Championships", "location": "Nottingham Park, Houston, TX", "type": "meet" },
+      { "date": "Oct 10", "name": "9th Annual Katy Express XC Championships", "location": "John Paul Landing Park, Cypress, TX", "type": "meet" },
+      { "date": "TBD", "name": "USATF Gulf XC Championships", "location": "TBD", "type": "championship" },
+      { "date": "Dec 12", "name": "USATF National Junior Olympic XC Championships", "location": "Moncus Park, Lafayette, LA", "type": "championship" }
+    ]
+  },
+  "trackField": {
+    "season": "Track & Field 2027",
+    "note": "The spring meet schedule is published before the season opens in February. A typical season: Track Houston Opener and Intrasquad, Houston-area invitationals, the Track Houston Championships in late May, then USATF Association and Region championships and the National Junior Olympics in July.",
+    "events": []
+  }
+}

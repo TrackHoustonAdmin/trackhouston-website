@@ -1,0 +1,19 @@
+---
+interface Props {
+  kicker: string;
+  title: string;
+  id?: string;
+  light?: boolean;
+  class?: string;
+}
+const { kicker, title, id, light = false, class: className = '' } = Astro.props;
+---
+
+<div class={`reveal ${className}`} id={id}>
+  <p class={`kicker ${light ? 'text-white/85' : 'text-th-red'}`}>{kicker}</p>
+  <h2
+    class={`display mt-3 text-4xl sm:text-5xl lg:text-6xl ${light ? 'text-white' : 'text-ink'}`}
+  >
+    {title}
+  </h2>
+</div>

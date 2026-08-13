@@ -1,0 +1,146 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import Ticker from '../components/Ticker.astro';
+import CTAButton from '../components/CTAButton.astro';
+import results from '../data/results.json';
+import lewisRelay from '../assets/photos/lewis-relay.jpg';
+---
+
+<Layout
+  title="Results, Championships & Records — Track Houston Youth Track Club"
+  description="171 medals and 17 titles at the 2026 USATF National Junior Olympics, a 46.85 national record in the 11-12 boys 4x100m, and two decades of championship results."
+>
+  <PageHero
+    kicker="Results & Records"
+    title="The receipts."
+    intro="Every year Track Houston qualifies more athletes for the national Junior Olympics — and brings home more medals — than any other track club in the country."
+    image={lewisRelay}
+    imageAlt="A Track Houston relay runner brings home the baton in front of a championship crowd."
+  />
+
+  <Ticker items={results.ticker} />
+
+  <!-- 2026 featured -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+    <div class="grid lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-20">
+      <div>
+        <SectionHeading kicker="2026" title="171 medals. 17 titles. One record." />
+        <p class="reveal mt-6 text-ink/80 leading-relaxed">
+          {results.featured2026.summary}
+        </p>
+        <div class="reveal mt-10 grid grid-cols-3 gap-6 border-t-2 border-ink pt-8">
+          <div>
+            <p class="display text-5xl sm:text-6xl text-th-red"><span data-countup="171">171</span></p>
+            <p class="kicker text-steel mt-2">Total medals</p>
+          </div>
+          <div>
+            <p class="display text-5xl sm:text-6xl text-th-red"><span data-countup="17">17</span></p>
+            <p class="kicker text-steel mt-2">National titles</p>
+          </div>
+          <div>
+            <p class="display text-5xl sm:text-6xl text-th-red">46.85</p>
+            <p class="kicker text-steel mt-2">11-12 Boys 4x100m national record</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="reveal kicker text-steel">2026 National Junior Olympic highlights</h3>
+        <ul class="reveal mt-4 divide-y divide-line border-y border-line">
+          {
+            results.featured2026.highlights.map((h) => (
+              <li class="py-3.5 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6">
+                <span class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg">{h.athlete}</span>
+                <span class="text-steel text-sm sm:text-right">{h.result}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2024 medal table -->
+  <section class="bg-th-red text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div>
+        <SectionHeading light kicker="2024" title="170 medals in College Station." />
+        <p class="reveal mt-6 text-white/90 leading-relaxed max-w-lg">
+          With nationals at Texas A&M, Track Houston turned a home-state Junior Olympics into one of
+          its biggest medal hauls ever.
+        </p>
+      </div>
+      <div class="reveal">
+        <table class="w-full border-collapse">
+          <caption class="sr-only">2024 USATF National Junior Olympic medal count by placement</caption>
+          <thead>
+            <tr class="border-b border-white/40">
+              <th scope="col" class="kicker text-white/80 text-left py-3">Placement</th>
+              <th scope="col" class="kicker text-white/80 text-right py-3">Count</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              results.medalTable2024.rows.map((r) => (
+                <tr class="border-b border-white/25">
+                  <td class="py-2.5 font-condensed font-semibold uppercase tracking-[0.06em] text-lg">{r.place}</td>
+                  <td class="py-2.5 text-right display text-2xl text-white">{r.count}</td>
+                </tr>
+              ))
+            }
+            <tr>
+              <td class="py-3 font-condensed font-semibold uppercase tracking-[0.06em] text-lg text-white">Total</td>
+              <td class="py-3 text-right display text-3xl text-white">{results.medalTable2024.total}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Honors + archive -->
+  <section id="honors" class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+    <SectionHeading kicker="Honor Roll" title="2022 national champions" />
+    <ul class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {
+        results.honors2022.map((h) => (
+          <li class="reveal border border-line border-t-4 border-t-th-red p-6">
+            <p class="font-condensed font-semibold uppercase tracking-[0.04em] text-xl">{h.athlete}</p>
+            <p class="kicker text-steel mt-1">{h.division}</p>
+            <p class="text-ink/75 text-sm mt-3">{h.result}</p>
+          </li>
+        ))
+      }
+    </ul>
+
+    <div id="records" class="reveal mt-16 grid md:grid-cols-3 gap-5">
+      <a href="/results/records" class="group bg-ink text-white p-7 hover:bg-th-red transition-colors duration-150 flex flex-col">
+        <p class="kicker text-th-red group-hover:text-white/85 transition-colors">The Record Book</p>
+        <h2 class="display text-3xl mt-2">Club records</h2>
+        <p class="text-white/75 group-hover:text-white/90 mt-3 text-sm leading-relaxed transition-colors">
+          Every division, every event — including ten national-record marks from 1996 to 2026.
+        </p>
+        <span class="kicker mt-auto pt-5">Open →</span>
+      </a>
+      <a href="/results/archive" class="group bg-ink text-white p-7 hover:bg-th-red transition-colors duration-150 flex flex-col">
+        <p class="kicker text-th-red group-hover:text-white/85 transition-colors">Championship History</p>
+        <h2 class="display text-3xl mt-2">2005–2025 seasons</h2>
+        <p class="text-white/75 group-hover:text-white/90 mt-3 text-sm leading-relaxed transition-colors">
+          Twenty years of Junior Olympic recaps, athletic honors and meet results, season by season.
+        </p>
+        <span class="kicker mt-auto pt-5">Open →</span>
+      </a>
+      <a href="/results/archive" class="group bg-ink text-white p-7 hover:bg-th-red transition-colors duration-150 flex flex-col">
+        <p class="kicker text-th-red group-hover:text-white/85 transition-colors">Original Documents</p>
+        <h2 class="display text-3xl mt-2">1990–2011 archive</h2>
+        <p class="text-white/75 group-hover:text-white/90 mt-3 text-sm leading-relaxed transition-colors">
+          Complete national JO results digitized from the original books — every Track Houston
+          appearance flagged.
+        </p>
+        <span class="kicker mt-auto pt-5">Open →</span>
+      </a>
+    </div>
+  </section>
+</Layout>

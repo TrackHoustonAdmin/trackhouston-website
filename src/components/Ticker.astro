@@ -1,0 +1,24 @@
+---
+interface Props {
+  items: string[];
+}
+const { items } = Astro.props;
+// Duplicate the list so the marquee loops seamlessly.
+const doubled = [...items, ...items];
+---
+
+<div class="bg-ink text-white overflow-hidden py-3" role="marquee" aria-label="Track Houston results ticker">
+  <ul class="ticker-track flex w-max gap-0 whitespace-nowrap" aria-hidden="false">
+    {
+      doubled.map((item, i) => (
+        <li
+          aria-hidden={i >= items.length ? 'true' : undefined}
+          class="font-condensed font-semibold uppercase tracking-[0.12em] text-sm flex items-center"
+        >
+          <span class="px-6">{item}</span>
+          <span aria-hidden="true" class="text-th-red">///</span>
+        </li>
+      ))
+    }
+  </ul>
+</div>
