@@ -187,12 +187,12 @@ const areas = [
   <section class="bg-th-red text-white overflow-hidden">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28 grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-20 items-center">
       <div class="order-2 lg:order-1">
-        <SectionHeading light kicker="Alumni Spotlight" title={athletes.spotlight.name} />
-        <p class="reveal kicker text-white mt-4">{athletes.spotlight.title}</p>
-        <p class="reveal mt-5 text-white/90 leading-relaxed max-w-lg">{athletes.spotlight.body}</p>
+        <SectionHeading light kicker="Alumni Spotlight" title={athletes.spotlights[0].name} />
+        <p class="reveal kicker text-white mt-4">{athletes.spotlights[0].title}</p>
+        <p class="reveal mt-5 text-white/90 leading-relaxed max-w-lg">{athletes.spotlights[0].body}</p>
         <div class="reveal mt-8 grid grid-cols-3 gap-6 border-t border-white/25 pt-8 max-w-lg">
           {
-            athletes.spotlight.stats.map((s) => (
+            athletes.spotlights[0].stats.map((s) => (
               <div>
                 <p class="display text-3xl sm:text-4xl text-white">{s.value}</p>
                 <p class="mt-1 text-white/75 text-xs font-condensed font-medium uppercase tracking-[0.08em]">{s.label}</p>

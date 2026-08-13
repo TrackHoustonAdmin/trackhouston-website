@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 import Layout from '../layouts/Layout.astro';
 import PageHero from '../components/PageHero.astro';
 import SectionHeading from '../components/SectionHeading.astro';
@@ -7,6 +8,13 @@ import CTAButton from '../components/CTAButton.astro';
 import athletes from '../data/athletes.json';
 import portraitBW from '../assets/photos/portrait-foreman-bw.jpg';
 import distanceRunner from '../assets/photos/distance-runner.jpg';
+import bryceDeadmon from '../assets/photos/bryce-deadmon.jpg';
+import alayshaJohnson from '../assets/photos/alaysha-johnson-paris.jpg';
+
+const spotlightImages: Record<string, ImageMetadata> = {
+  'bryce-deadmon': bryceDeadmon,
+  'alaysha-johnson-paris': alayshaJohnson,
+};
 ---
 
 <Layout
@@ -25,37 +33,63 @@ import distanceRunner from '../assets/photos/distance-runner.jpg';
     </div>
   </PageHero>
 
-  <!-- Spotlight -->
-  <section class="bg-th-red text-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-      <div>
-        <SectionHeading light kicker="Alumni Spotlight" title={athletes.spotlight.name} />
-        <p class="reveal kicker text-white mt-4">{athletes.spotlight.title}</p>
-        <p class="reveal mt-5 text-white/90 leading-relaxed max-w-lg">{athletes.spotlight.body}</p>
-        <div class="reveal mt-8 grid grid-cols-3 gap-6 border-t border-white/30 pt-8 max-w-lg">
-          {
-            athletes.spotlight.stats.map((s) => (
-              <div>
-                <p class="display text-3xl sm:text-4xl text-white">{s.value}</p>
-                <p class="mt-1 text-white/80 text-xs font-condensed font-medium uppercase tracking-[0.08em]">{s.label}</p>
-              </div>
-            ))
-          }
+  <!-- Alumni spotlights -->
+  {
+    athletes.spotlights.map((sp, i) => (
+      <section class={i % 2 === 0 ? 'bg-th-red text-white' : 'bg-ink text-white'}>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div class={i % 2 === 1 ? 'lg:order-2' : ''}>
+            <SectionHeading light kicker="Alumni Spotlight" title={sp.name} />
+            <p class="reveal kicker text-white mt-4">{sp.title}</p>
+            <p class="reveal mt-5 text-white/90 leading-relaxed max-w-lg">{sp.body}</p>
+            <div class="reveal mt-8 grid grid-cols-3 gap-6 border-t border-white/30 pt-8 max-w-lg">
+              {sp.stats.map((s) => (
+                <div>
+                  <p class={`display text-3xl sm:text-4xl ${i % 2 === 1 ? 'text-th-red' : 'text-white'}`}>{s.value}</p>
+                  <p class="mt-1 text-white/80 text-xs font-condensed font-medium uppercase tracking-[0.08em]">{s.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <figure class={`reveal ${i % 2 === 1 ? 'lg:order-1' : ''}`}>
+            <Image
+              src={spotlightImages[sp.image]}
+              alt={sp.imageAlt}
+              class="w-full h-auto object-cover max-h-[34rem] object-top"
+              widths={[480, 800, 1200]}
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              quality={80}
+            />
+            <figcaption class="mt-3 text-white/80 text-sm">{sp.caption}</figcaption>
+          </figure>
         </div>
-      </div>
+      </section>
+    ))
+  }
+
+  <!-- Today's club colors -->
+  <section class="bg-chalk border-b border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-14 lg:py-20 grid lg:grid-cols-[1.3fr_1fr] gap-10 items-center">
       <figure class="reveal">
         <Image
           src={distanceRunner}
           alt="A Track Houston athlete strides through a sunlit home straight."
           class="w-full h-auto object-cover"
           widths={[480, 800, 1200]}
-          sizes="(min-width: 1024px) 50vw, 100vw"
+          sizes="(min-width: 1024px) 60vw, 100vw"
           quality={78}
         />
-        <figcaption class="mt-3 text-white/80 text-sm">
-          Following in his footsteps: a Track Houston athlete in today's club colors.
+        <figcaption class="mt-3 text-steel text-sm">
+          Following in their footsteps: a Track Houston athlete in today's club colors.
         </figcaption>
       </figure>
+      <div>
+        <SectionHeading kicker="The Pathway" title="The next Olympian is at practice right now." />
+        <p class="reveal mt-5 text-ink/80 leading-relaxed">
+          Every spotlight athlete on this page started exactly where our current athletes are —
+          at a Track Houston practice. Development, competition, championships.
+        </p>
+      </div>
     </div>
   </section>
 
