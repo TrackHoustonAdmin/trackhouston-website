@@ -3,7 +3,7 @@
   "note": "Based on the club's 2020–21 published roster plus newer updates submitted by families. Alumni: changed schools, graduated, or missing from this list? Send us your update so we can keep the club's history complete.",
   "rollCallSeason": "2020–21",
   "rollCall": [
-    { "school": "Cornell University", "athletes": [ { "name": "Tyler Dale", "detail": "Track & Field" } ] },
+    { "school": "Cornell University", "athletes": [ { "name": "Tyler Dale", "detail": "Track & Field", "link": "https://cornellbigred.com/sports/mens-track-and-field/roster/tyler-dale/69354" } ] },
     { "school": "Baylor University", "athletes": [ { "name": "Elijah Bean", "detail": "Track & Field" } ] },
     { "school": "Yale University", "athletes": [ { "name": "Joshua Tarver", "detail": "Freshman · Football" } ] },
     { "school": "University of Houston", "athletes": [

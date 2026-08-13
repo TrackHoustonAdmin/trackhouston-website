@@ -91,7 +91,19 @@ const totalSchools = alumni.rollCall.length;
                       </span>
                     )}
                     <div class="min-w-0">
-                      <p class="font-medium leading-tight">{a.name}</p>
+                      {'link' in a && a.link ? (
+                        <a
+                          href={a.link}
+                          rel="external noopener"
+                          target="_blank"
+                          class="font-medium leading-tight underline decoration-th-red decoration-2 underline-offset-4 hover:text-th-red transition-colors"
+                        >
+                          {a.name}<span aria-hidden="true" class="text-th-red"> ↗</span>
+                          <span class="sr-only">(opens college roster bio)</span>
+                        </a>
+                      ) : (
+                        <p class="font-medium leading-tight">{a.name}</p>
+                      )}
                       <p class="text-steel text-sm">{a.detail}</p>
                     </div>
                   </li>
