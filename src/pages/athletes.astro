@@ -7,7 +7,7 @@ import SectionHeading from '../components/SectionHeading.astro';
 import CTAButton from '../components/CTAButton.astro';
 import athletes from '../data/athletes.json';
 import portraitBW from '../assets/photos/portrait-foreman-bw.jpg';
-import distanceRunner from '../assets/photos/distance-runner.jpg';
+import relayExchange from '../assets/photos/maryann-chloe-relay.jpg';
 import bryceDeadmon from '../assets/photos/bryce-deadmon.jpg';
 import alayshaJohnson from '../assets/photos/alaysha-johnson-paris.jpg';
 
@@ -72,15 +72,15 @@ const spotlightImages: Record<string, ImageMetadata> = {
     <div class="mx-auto max-w-7xl px-4 sm:px-6 py-14 lg:py-20 grid lg:grid-cols-[1.3fr_1fr] gap-10 items-center">
       <figure class="reveal">
         <Image
-          src={distanceRunner}
-          alt="A Track Houston athlete strides through a sunlit home straight."
+          src={relayExchange}
+          alt="Chloe Carter passes the baton to Maryann Akpobassa mid-race for Track Houston at a championship meet."
           class="w-full h-auto object-cover"
-          widths={[480, 800, 1200]}
+          widths={[480, 800, 1200, 1600]}
           sizes="(min-width: 1024px) 60vw, 100vw"
-          quality={78}
+          quality={80}
         />
         <figcaption class="mt-3 text-steel text-sm">
-          Following in their footsteps: a Track Houston athlete in today's club colors.
+          Following in their footsteps: Chloe Carter hands off to Maryann Akpobassa for Track Houston.
         </figcaption>
       </figure>
       <div>
