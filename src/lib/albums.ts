@@ -55,12 +55,16 @@ export function getAlbums(): Album[] {
       .sort();
     if (files.length < 3) continue;
     const year = (slug.match(/^(\d{4})/) || [])[1] ?? null;
+    // Cover: a file named cover.* wins; otherwise use a photo from the middle
+    // of the album (banner/skyline images tend to sort first alphabetically).
+    const explicit = files.find((f) => /^cover\./i.test(f));
+    const cover = explicit ?? files[Math.floor(files.length / 2)];
     albums.push({
       slug,
       title: titleOf(slug),
       year,
       count: files.length,
-      cover: `/gallery/${slug}/thumb/${files[0]}`,
+      cover: `/gallery/${slug}/thumb/${cover}`,
     });
   }
   // newest year first, then title
