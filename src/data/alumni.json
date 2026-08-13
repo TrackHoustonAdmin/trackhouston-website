@@ -1,8 +1,10 @@
 {
   "intro": "Coupling their academic performance and athletic accomplishments, many of Track Houston's athletes have received scholarships from colleges and universities throughout the United States.",
-  "note": "This roll call is from the club's 2020–21 records — the most recent published roster. Alumni: changed schools, graduated, or missing from this list? Email the webmaster so we can keep the club's history complete.",
+  "note": "Based on the club's 2020–21 published roster plus newer updates submitted by families. Alumni: changed schools, graduated, or missing from this list? Send us your update so we can keep the club's history complete.",
   "rollCallSeason": "2020–21",
   "rollCall": [
+    { "school": "Cornell University", "athletes": [ { "name": "Tyler Dale", "detail": "Track & Field" } ] },
+    { "school": "Baylor University", "athletes": [ { "name": "Elijah Bean", "detail": "Track & Field" } ] },
     { "school": "Yale University", "athletes": [ { "name": "Joshua Tarver", "detail": "Freshman · Football" } ] },
     { "school": "University of Houston", "athletes": [
       { "name": "Whitney Ochiam", "detail": "Senior · Hurdles" },
