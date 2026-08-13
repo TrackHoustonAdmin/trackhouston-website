@@ -18,14 +18,59 @@
     "streaming": "http://thytc1989.streampowerup.biz/"
   },
   "affiliations": [
-    { "name": "USA Track & Field", "url": "http://www.usatf.org/" },
-    { "name": "USATF Gulf Association", "url": "http://gulf.usatf.org/Home.aspx" },
-    { "name": "AAU Athletics", "url": "http://www.aauathletics.org/" }
+    {
+      "name": "USA Track & Field",
+      "url": "http://www.usatf.org/"
+    },
+    {
+      "name": "USATF Gulf Association",
+      "url": "http://gulf.usatf.org/Home.aspx"
+    },
+    {
+      "name": "AAU Athletics",
+      "url": "http://www.aauathletics.org/"
+    }
   ],
   "stats": [
-    { "value": 1989, "label": "Founded in Missouri City, TX", "suffix": "" },
-    { "value": 600, "label": "Athletes every year, ages 7–18", "suffix": "+" },
-    { "value": 171, "label": "Medals at the 2026 USATF National Junior Olympics", "suffix": "" },
-    { "value": 95, "label": "Alumni on college scholarships", "suffix": "+" }
+    {
+      "value": 1989,
+      "label": "Founded in Missouri City, TX",
+      "suffix": ""
+    },
+    {
+      "value": 600,
+      "label": "Athletes every year, ages 7–18",
+      "suffix": "+"
+    },
+    {
+      "value": 95,
+      "label": "Alumni on to college",
+      "suffix": "+"
+    },
+    {
+      "value": 197,
+      "label": "National Junior Olympic Championships",
+      "suffix": ""
+    },
+    {
+      "value": 21,
+      "label": "USATF National Team Championships",
+      "suffix": ""
+    },
+    {
+      "value": 11,
+      "label": "National Records",
+      "suffix": ""
+    },
+    {
+      "value": 2390,
+      "label": "All-Americans since 2006",
+      "suffix": ""
+    },
+    {
+      "value": 2014,
+      "label": "AAU National Club Champions",
+      "suffix": ""
+    }
   ]
 }
