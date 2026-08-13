@@ -3,165 +3,765 @@
   "note": "Based on the club's 2020–21 published roster plus newer updates submitted by families. Alumni: changed schools, graduated, or missing from this list? Send us your update so we can keep the club's history complete.",
   "rollCallSeason": "2020–21",
   "rollCall": [
-    { "school": "Cornell University", "athletes": [ { "name": "Tyler Dale", "detail": "Track & Field", "link": "https://cornellbigred.com/sports/mens-track-and-field/roster/tyler-dale/69354" } ] },
-    { "school": "Baylor University", "athletes": [ { "name": "Elijah Bean", "detail": "Track & Field" } ] },
-    { "school": "University of Oregon", "athletes": [ { "name": "Alaysha Johnson", "detail": "Track & Field", "link": "https://goducks.com/sports/track-and-field/roster/alaysha-johnson/7719" } ] },
-    { "school": "University of Kentucky", "athletes": [ { "name": "Dynasty McClennon", "detail": "Track & Field", "link": "https://ukathletics.com/sports/track/roster/player/dynasty-mcclennon/" } ] },
-    { "school": "Yale University", "athletes": [ { "name": "Joshua Tarver", "detail": "Freshman · Football" } ] },
-    { "school": "University of Houston", "athletes": [
-      { "name": "Whitney Ochiam", "detail": "Senior · Hurdles" },
-      { "name": "Ariele Adams", "detail": "Senior · Sprints" },
-      { "name": "Taylor Bennett", "detail": "Graduate Student · Sprints" },
-      { "name": "Essance Sample", "detail": "Senior · Sprints" },
-      { "name": "Tyrell Valentine", "detail": "Senior · Sprints" },
-      { "name": "Alec Williams", "detail": "Freshman · Sprints" },
-      { "name": "Winter Bogan", "detail": "Senior" }
-    ] },
-    { "school": "Oklahoma State University", "athletes": [ { "name": "Molly Humes", "detail": "Freshman · Cross Country" } ] },
-    { "school": "University of Arkansas", "athletes": [
-      { "name": "G'Auna Edwards", "detail": "Junior · Sprints/Hurdles" },
-      { "name": "Rashad Boyd", "detail": "Sophomore · Sprints" },
-      { "name": "Josh Oglesby", "detail": "Sophomore · Football/Track" }
-    ] },
-    { "school": "University of Colorado", "athletes": [
-      { "name": "Eriana Henderson", "detail": "Graduate Student · Hurdles" },
-      { "name": "Ian Gilmore", "detail": "Freshman · Sprints" },
-      { "name": "Tamia Badal", "detail": "Sophomore · Sprints" }
-    ] },
-    { "school": "University of Texas", "athletes": [
-      { "name": "Kynnedy Flannel", "detail": "Sophomore · Sprints" },
-      { "name": "Kiana Lowery", "detail": "Freshman · Throws" },
-      { "name": "Isaiah Lucas", "detail": "Junior · Hurdles" },
-      { "name": "D'Shawn Jamison", "detail": "Junior · Football" }
-    ] },
-    { "school": "Northwestern University", "athletes": [ { "name": "Genson Hooper-Price", "detail": "Freshman · Football" } ] },
-    { "school": "Texas Christian University", "athletes": [ { "name": "Lauren Lucas", "detail": "Freshman · Sprints" } ] },
-    { "school": "Texas A&M University", "athletes": [
-      { "name": "Amber Ivy", "detail": "Graduate Student · Sprints" },
-      { "name": "Bryce Deadmon", "detail": "Graduate Student · Sprints" },
-      { "name": "Jace Comick", "detail": "Graduate Student · Sprints" },
-      { "name": "Rachel Hall", "detail": "Junior · Sprints" },
-      { "name": "Megan Hopper", "detail": "Junior · Distance" },
-      { "name": "Chase Lane", "detail": "Freshman · Football" }
-    ] },
-    { "school": "University of Georgia", "athletes": [ { "name": "Caleb Cavanaugh", "detail": "Freshman · Sprints" } ] },
-    { "school": "University of Tennessee", "athletes": [ { "name": "Sebastian Cooper", "detail": "Sophomore · Mid-Distance" } ] },
-    { "school": "University of Nebraska", "athletes": [ { "name": "Clayton Keys", "detail": "Freshman · Hurdles" } ] },
-    { "school": "Rice University", "athletes": [
-      { "name": "Anota Adekunle", "detail": "Junior · Volleyball" },
-      { "name": "Teesa Mpagi", "detail": "Senior · Sprints" }
-    ] },
-    { "school": "Texas Tech University", "athletes": [ { "name": "Kailei Collins", "detail": "Freshman · Sprints" } ] },
-    { "school": "Texas State University", "athletes": [
-      { "name": "Kattiana Ealy-Pulido", "detail": "Junior · Hurdles" },
-      { "name": "Ariana Ealy-Pulido", "detail": "Junior · Hurdles" },
-      { "name": "Javlyn Cameron", "detail": "Senior · Sprints/Hurdles" }
-    ] },
-    { "school": "Houston Baptist University", "athletes": [
-      { "name": "Jessica Rabius", "detail": "Junior · Cross Country" },
-      { "name": "Samara Hodges", "detail": "Senior · Jumps" }
-    ] },
-    { "school": "Southern Methodist University", "athletes": [ { "name": "Madison Savoy", "detail": "Freshman · Mid-Distance" } ] },
-    { "school": "Lamar University", "athletes": [ { "name": "Myles Wanza", "detail": "Senior · Football" } ] },
-    { "school": "Arizona State University", "athletes": [ { "name": "Dubem Nwachukwu", "detail": "Junior · Distance" } ] },
-    { "school": "Sam Houston State University", "athletes": [
-      { "name": "Nathaniel McRae", "detail": "Sophomore · Sprints" },
-      { "name": "Clayton Fritsch", "detail": "Senior · Pole Vault" },
-      { "name": "Rebeca Gonzalez", "detail": "Junior · Cross Country" },
-      { "name": "Jasmin Mitchell", "detail": "Senior · Sprints" },
-      { "name": "Baylee Lara", "detail": "Senior · Combined Events" },
-      { "name": "Lauryn Cash", "detail": "Freshman · Sprints" },
-      { "name": "Ariana West", "detail": "Junior · Sprints" }
-    ] },
-    { "school": "Prairie View A&M University", "athletes": [
-      { "name": "Amber Johnson", "detail": "Sophomore · Track" },
-      { "name": "Dinah Murphy", "detail": "Sophomore · Track/Cross Country" },
-      { "name": "Ethan Phillips", "detail": "Sophomore · Mid-Distance" },
-      { "name": "Jada Chevalier", "detail": "Freshman · Hurdles" },
-      { "name": "Syntyche Laguerre", "detail": "Freshman · Jumps" }
-    ] },
-    { "school": "University of Illinois Chicago", "athletes": [ { "name": "Rosie Campbell-Watt", "detail": "Freshman · Distance" } ] },
-    { "school": "Texas Southern University", "athletes": [ { "name": "Tatyana Bryant", "detail": "Junior · Track" } ] },
-    { "school": "Southern University", "athletes": [ { "name": "Nia Williams", "detail": "Senior · Sprints" } ] },
-    { "school": "University of Arkansas at Pine Bluff", "athletes": [ { "name": "Arjai Johnson", "detail": "Junior · Distance" } ] },
-    { "school": "Stephen F. Austin State University", "athletes": [
-      { "name": "AJ Bennett", "detail": "Junior" },
-      { "name": "Ariyana Harris", "detail": "Sophomore · Sprints" },
-      { "name": "Sanders Crawford IV", "detail": "Freshman · Football" }
-    ] },
-    { "school": "University of Texas at Arlington", "athletes": [ { "name": "Jarvis Miles", "detail": "Sprints", "link": "https://utamavs.com/sports/track-and-field/roster/jarvis-miles/14266" } ] },
-    { "school": "Ottawa University", "athletes": [ { "name": "Javion Bell", "detail": "Freshman · Sprints" } ] },
-    { "school": "Air Force Academy", "athletes": [ { "name": "Derek Hackett", "detail": "Freshman · Hurdles" } ] },
-    { "school": "Southern Illinois University", "athletes": [ { "name": "Ja'Den Johnson", "detail": "Sophomore · Sprints" } ] },
-    { "school": "University of Texas Rio Grande Valley", "athletes": [
-      { "name": "Zarrey Sams", "detail": "Junior · Jumps" },
-      { "name": "Sir Hubbard", "detail": "Freshman · Track/Cross Country" }
-    ] },
-    { "school": "Oral Roberts University", "athletes": [ { "name": "Alexa Granderson", "detail": "Junior · Mid-Distance" } ] },
-    { "school": "University of the Incarnate Word", "athletes": [ { "name": "Alonzo Woods", "detail": "Senior · Sprints" } ] },
-    { "school": "Oklahoma Christian University", "athletes": [ { "name": "Peyton VanCourt", "detail": "Freshman · Sprints" } ] },
-    { "school": "Abilene Christian University", "athletes": [
-      { "name": "Ryan Linton II", "detail": "Senior · Sprints" },
-      { "name": "Le'Gari Daniels", "detail": "Junior · Sprints" },
-      { "name": "Trevon Hardy", "detail": "Sophomore · Distance" }
-    ] },
-    { "school": "Tarleton State University", "athletes": [
-      { "name": "Imani Williams", "detail": "Senior · Cross Country" },
-      { "name": "Reagan Gallagher", "detail": "Freshman · Jumps/Sprints" },
-      { "name": "Brandi Hemminger", "detail": "Freshman · Multi-Events" }
-    ] },
-    { "school": "University of Louisiana Lafayette", "athletes": [
-      { "name": "Lawryn Noel", "detail": "Freshman · Track" },
-      { "name": "Solomon Brent", "detail": "Sophomore · Track" }
-    ] },
-    { "school": "Cal State University", "athletes": [ { "name": "Randall Jubilee III", "detail": "Freshman · Sprints" } ] },
-    { "school": "Central Arkansas University", "athletes": [
-      { "name": "Tyler Rose", "detail": "Junior · Middle Distance" },
-      { "name": "Christian Richmond", "detail": "Sophomore · Football" }
-    ] },
-    { "school": "UNLV", "athletes": [ { "name": "Tianna Randle", "detail": "Freshman · Sprints" } ] },
-    { "school": "Texas A&M University–Corpus Christi", "athletes": [ { "name": "Andrew Gandy", "detail": "Junior · Track" } ] },
-    { "school": "McNeese State University", "athletes": [
-      { "name": "Tia Andrews", "detail": "Sophomore · Sprints/Jumps" },
-      { "name": "William Devany", "detail": "Junior · Distance" }
-    ] },
-    { "school": "Dixie State University", "athletes": [ { "name": "Isabelle Nielson", "detail": "Junior · Cross Country" } ] },
-    { "school": "Butler Junior College", "athletes": [ { "name": "Morgan Cossey", "detail": "Freshman · Sprints" } ] },
-    { "school": "Colorado School of Mines", "athletes": [ { "name": "Mackenzie Duck", "detail": "Freshman · Mid-Distance" } ] },
-    { "school": "Grand View University", "athletes": [ { "name": "Reggie Black", "detail": "Freshman · Sprints" } ] },
-    { "school": "Tennessee Tech University", "athletes": [ { "name": "Ababu Mohamed", "detail": "Senior · Cross Country" } ] },
-    { "school": "Colorado Mesa University", "athletes": [ { "name": "McKenna Molder", "detail": "Freshman · Hurdles/Sprints" } ] },
-    { "school": "Friends University", "athletes": [ { "name": "Dectrick Edwards Jr.", "detail": "Freshman · Sprints" } ] }
+    {
+      "school": "Cornell University",
+      "athletes": [
+        {
+          "name": "Tyler Dale",
+          "detail": "Sprints",
+          "link": "https://cornellbigred.com/sports/mens-track-and-field/roster/tyler-dale/69354"
+        }
+      ]
+    },
+    {
+      "school": "Baylor University",
+      "athletes": [
+        {
+          "name": "Elijah Bean",
+          "detail": "Football"
+        }
+      ]
+    },
+    {
+      "school": "University of Oregon",
+      "athletes": [
+        {
+          "name": "Alaysha Johnson",
+          "detail": "Sprints/Hurdles",
+          "link": "https://goducks.com/sports/track-and-field/roster/alaysha-johnson/7719"
+        }
+      ]
+    },
+    {
+      "school": "University of Kentucky",
+      "athletes": [
+        {
+          "name": "Dynasty McClennon",
+          "detail": "Sprints",
+          "link": "https://ukathletics.com/sports/track/roster/player/dynasty-mcclennon/"
+        }
+      ]
+    },
+    {
+      "school": "Yale University",
+      "athletes": [
+        {
+          "name": "Joshua Tarver",
+          "detail": "Football"
+        }
+      ]
+    },
+    {
+      "school": "University of Houston",
+      "athletes": [
+        {
+          "name": "Whitney Ochiam",
+          "detail": "Hurdles"
+        },
+        {
+          "name": "Ariele Adams",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Taylor Bennett",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Essance Sample",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Tyrell Valentine",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Alec Williams",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Winter Bogan",
+          "detail": "Track & Field"
+        }
+      ]
+    },
+    {
+      "school": "Oklahoma State University",
+      "athletes": [
+        {
+          "name": "Molly Humes",
+          "detail": "Cross Country"
+        }
+      ]
+    },
+    {
+      "school": "University of Arkansas",
+      "athletes": [
+        {
+          "name": "G'Auna Edwards",
+          "detail": "Sprints/Hurdles"
+        },
+        {
+          "name": "Rashad Boyd",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Josh Oglesby",
+          "detail": "Football/Track"
+        }
+      ]
+    },
+    {
+      "school": "University of Colorado",
+      "athletes": [
+        {
+          "name": "Eriana Henderson",
+          "detail": "Hurdles"
+        },
+        {
+          "name": "Ian Gilmore",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Tamia Badal",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "University of Texas",
+      "athletes": [
+        {
+          "name": "Kynnedy Flannel",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Kiana Lowery",
+          "detail": "Throws"
+        },
+        {
+          "name": "Isaiah Lucas",
+          "detail": "Hurdles"
+        },
+        {
+          "name": "D'Shawn Jamison",
+          "detail": "Football"
+        }
+      ]
+    },
+    {
+      "school": "Northwestern University",
+      "athletes": [
+        {
+          "name": "Genson Hooper-Price",
+          "detail": "Football"
+        }
+      ]
+    },
+    {
+      "school": "Texas Christian University",
+      "athletes": [
+        {
+          "name": "Lauren Lucas",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "Texas A&M University",
+      "athletes": [
+        {
+          "name": "Amber Ivy",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Bryce Deadmon",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Jace Comick",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Rachel Hall",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Megan Hopper",
+          "detail": "Distance"
+        },
+        {
+          "name": "Chase Lane",
+          "detail": "Football"
+        }
+      ]
+    },
+    {
+      "school": "University of Georgia",
+      "athletes": [
+        {
+          "name": "Caleb Cavanaugh",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "University of Tennessee",
+      "athletes": [
+        {
+          "name": "Sebastian Cooper",
+          "detail": "Mid-Distance"
+        }
+      ]
+    },
+    {
+      "school": "University of Nebraska",
+      "athletes": [
+        {
+          "name": "Clayton Keys",
+          "detail": "Hurdles"
+        }
+      ]
+    },
+    {
+      "school": "Rice University",
+      "athletes": [
+        {
+          "name": "Anota Adekunle",
+          "detail": "Volleyball"
+        },
+        {
+          "name": "Teesa Mpagi",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "Texas Tech University",
+      "athletes": [
+        {
+          "name": "Kailei Collins",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "Texas State University",
+      "athletes": [
+        {
+          "name": "Kattiana Ealy-Pulido",
+          "detail": "Hurdles"
+        },
+        {
+          "name": "Ariana Ealy-Pulido",
+          "detail": "Hurdles"
+        },
+        {
+          "name": "Javlyn Cameron",
+          "detail": "Sprints/Hurdles"
+        }
+      ]
+    },
+    {
+      "school": "Houston Baptist University",
+      "athletes": [
+        {
+          "name": "Jessica Rabius",
+          "detail": "Cross Country"
+        },
+        {
+          "name": "Samara Hodges",
+          "detail": "Jumps"
+        }
+      ]
+    },
+    {
+      "school": "Southern Methodist University",
+      "athletes": [
+        {
+          "name": "Madison Savoy",
+          "detail": "Mid-Distance"
+        }
+      ]
+    },
+    {
+      "school": "Lamar University",
+      "athletes": [
+        {
+          "name": "Myles Wanza",
+          "detail": "Football"
+        }
+      ]
+    },
+    {
+      "school": "Arizona State University",
+      "athletes": [
+        {
+          "name": "Dubem Nwachukwu",
+          "detail": "Distance"
+        }
+      ]
+    },
+    {
+      "school": "Sam Houston State University",
+      "athletes": [
+        {
+          "name": "Nathaniel McRae",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Clayton Fritsch",
+          "detail": "Pole Vault"
+        },
+        {
+          "name": "Rebeca Gonzalez",
+          "detail": "Cross Country"
+        },
+        {
+          "name": "Jasmin Mitchell",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Baylee Lara",
+          "detail": "Combined Events"
+        },
+        {
+          "name": "Lauryn Cash",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Ariana West",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "Prairie View A&M University",
+      "athletes": [
+        {
+          "name": "Amber Johnson",
+          "detail": "Track"
+        },
+        {
+          "name": "Dinah Murphy",
+          "detail": "Track/Cross Country"
+        },
+        {
+          "name": "Ethan Phillips",
+          "detail": "Mid-Distance"
+        },
+        {
+          "name": "Jada Chevalier",
+          "detail": "Hurdles"
+        },
+        {
+          "name": "Syntyche Laguerre",
+          "detail": "Jumps"
+        }
+      ]
+    },
+    {
+      "school": "University of Illinois Chicago",
+      "athletes": [
+        {
+          "name": "Rosie Campbell-Watt",
+          "detail": "Distance"
+        }
+      ]
+    },
+    {
+      "school": "Texas Southern University",
+      "athletes": [
+        {
+          "name": "Tatyana Bryant",
+          "detail": "Track"
+        }
+      ]
+    },
+    {
+      "school": "Southern University",
+      "athletes": [
+        {
+          "name": "Nia Williams",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "University of Arkansas at Pine Bluff",
+      "athletes": [
+        {
+          "name": "Arjai Johnson",
+          "detail": "Distance"
+        }
+      ]
+    },
+    {
+      "school": "Stephen F. Austin State University",
+      "athletes": [
+        {
+          "name": "AJ Bennett",
+          "detail": "Track & Field"
+        },
+        {
+          "name": "Ariyana Harris",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Sanders Crawford IV",
+          "detail": "Football"
+        }
+      ]
+    },
+    {
+      "school": "University of Texas at Arlington",
+      "athletes": [
+        {
+          "name": "Jarvis Miles",
+          "detail": "Sprints",
+          "link": "https://utamavs.com/sports/track-and-field/roster/jarvis-miles/14266"
+        }
+      ]
+    },
+    {
+      "school": "Ottawa University",
+      "athletes": [
+        {
+          "name": "Javion Bell",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "Air Force Academy",
+      "athletes": [
+        {
+          "name": "Derek Hackett",
+          "detail": "Hurdles"
+        }
+      ]
+    },
+    {
+      "school": "Southern Illinois University",
+      "athletes": [
+        {
+          "name": "Ja'Den Johnson",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "University of Texas Rio Grande Valley",
+      "athletes": [
+        {
+          "name": "Zarrey Sams",
+          "detail": "Jumps"
+        },
+        {
+          "name": "Sir Hubbard",
+          "detail": "Track/Cross Country"
+        }
+      ]
+    },
+    {
+      "school": "Oral Roberts University",
+      "athletes": [
+        {
+          "name": "Alexa Granderson",
+          "detail": "Mid-Distance"
+        }
+      ]
+    },
+    {
+      "school": "University of the Incarnate Word",
+      "athletes": [
+        {
+          "name": "Alonzo Woods",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "Oklahoma Christian University",
+      "athletes": [
+        {
+          "name": "Peyton VanCourt",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "Abilene Christian University",
+      "athletes": [
+        {
+          "name": "Ryan Linton II",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Le'Gari Daniels",
+          "detail": "Sprints"
+        },
+        {
+          "name": "Trevon Hardy",
+          "detail": "Distance"
+        }
+      ]
+    },
+    {
+      "school": "Tarleton State University",
+      "athletes": [
+        {
+          "name": "Imani Williams",
+          "detail": "Cross Country"
+        },
+        {
+          "name": "Reagan Gallagher",
+          "detail": "Jumps/Sprints"
+        },
+        {
+          "name": "Brandi Hemminger",
+          "detail": "Multi-Events"
+        }
+      ]
+    },
+    {
+      "school": "University of Louisiana Lafayette",
+      "athletes": [
+        {
+          "name": "Lawryn Noel",
+          "detail": "Track"
+        },
+        {
+          "name": "Solomon Brent",
+          "detail": "Track"
+        }
+      ]
+    },
+    {
+      "school": "Cal State University",
+      "athletes": [
+        {
+          "name": "Randall Jubilee III",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "Central Arkansas University",
+      "athletes": [
+        {
+          "name": "Tyler Rose",
+          "detail": "Middle Distance"
+        },
+        {
+          "name": "Christian Richmond",
+          "detail": "Football"
+        }
+      ]
+    },
+    {
+      "school": "UNLV",
+      "athletes": [
+        {
+          "name": "Tianna Randle",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "Texas A&M University–Corpus Christi",
+      "athletes": [
+        {
+          "name": "Andrew Gandy",
+          "detail": "Track"
+        }
+      ]
+    },
+    {
+      "school": "McNeese State University",
+      "athletes": [
+        {
+          "name": "Tia Andrews",
+          "detail": "Sprints/Jumps"
+        },
+        {
+          "name": "William Devany",
+          "detail": "Distance"
+        }
+      ]
+    },
+    {
+      "school": "Dixie State University",
+      "athletes": [
+        {
+          "name": "Isabelle Nielson",
+          "detail": "Cross Country"
+        }
+      ]
+    },
+    {
+      "school": "Butler Junior College",
+      "athletes": [
+        {
+          "name": "Morgan Cossey",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "Colorado School of Mines",
+      "athletes": [
+        {
+          "name": "Mackenzie Duck",
+          "detail": "Mid-Distance"
+        }
+      ]
+    },
+    {
+      "school": "Grand View University",
+      "athletes": [
+        {
+          "name": "Reggie Black",
+          "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "Tennessee Tech University",
+      "athletes": [
+        {
+          "name": "Ababu Mohamed",
+          "detail": "Cross Country"
+        }
+      ]
+    },
+    {
+      "school": "Colorado Mesa University",
+      "athletes": [
+        {
+          "name": "McKenna Molder",
+          "detail": "Hurdles/Sprints"
+        }
+      ]
+    },
+    {
+      "school": "Friends University",
+      "athletes": [
+        {
+          "name": "Dectrick Edwards Jr.",
+          "detail": "Sprints"
+        }
+      ]
+    }
   ],
   "signees": [
     {
       "year": "2015",
       "entries": [
-        { "name": "Bryanah Rideaux", "school": "Rice University", "sport": "Track" },
-        { "name": "Taylor Bennett", "school": "Baylor University", "sport": "Track" },
-        { "name": "Bryce Deadmon", "school": "Texas A&M University", "sport": "Track" },
-        { "name": "Kemah Siverand", "school": "Texas A&M University", "sport": "Football" },
-        { "name": "Kendall Sheffield", "school": "University of Alabama", "sport": "Football" },
-        { "name": "Kyle Fulks", "school": "University of Utah", "sport": "Football" },
-        { "name": "Jaslyn Perrodin", "school": "Southern University", "sport": "Softball" }
+        {
+          "name": "Bryanah Rideaux",
+          "school": "Rice University",
+          "sport": "Track"
+        },
+        {
+          "name": "Taylor Bennett",
+          "school": "Baylor University",
+          "sport": "Track"
+        },
+        {
+          "name": "Bryce Deadmon",
+          "school": "Texas A&M University",
+          "sport": "Track"
+        },
+        {
+          "name": "Kemah Siverand",
+          "school": "Texas A&M University",
+          "sport": "Football"
+        },
+        {
+          "name": "Kendall Sheffield",
+          "school": "University of Alabama",
+          "sport": "Football"
+        },
+        {
+          "name": "Kyle Fulks",
+          "school": "University of Utah",
+          "sport": "Football"
+        },
+        {
+          "name": "Jaslyn Perrodin",
+          "school": "Southern University",
+          "sport": "Softball"
+        }
       ]
     },
     {
       "year": "2013",
       "entries": [
-        { "name": "Kyle Fulks", "school": "Baylor University", "sport": "Football/Track" },
-        { "name": "Reeka Belton", "school": "Xavier University of Louisiana", "sport": "Track/Academic" },
-        { "name": "D'Andre Lewis", "school": "Texas Christian University", "sport": "Track and Field" },
-        { "name": "Jonathan Wiggins", "school": "Texas A&M University", "sport": "Football" },
-        { "name": "Jacob Onyechi", "school": "Air Force Academy", "sport": "Football" },
-        { "name": "Brass Woods III", "school": "Truman State University", "sport": "Football" },
-        { "name": "Janae Bottoms", "school": "University of Houston", "sport": "Track and Field" },
-        { "name": "Bria Carter", "school": "University of Houston", "sport": "Track and Field" },
-        { "name": "Rushell Harvey", "school": "Louisiana State University", "sport": "Track and Field" },
-        { "name": "Bealoved Brown", "school": "Louisiana State University", "sport": "Track and Field" },
-        { "name": "O'Shea Wilson", "school": "University of Iowa", "sport": "Track and Field" },
-        { "name": "Mylana Hearn", "school": "Texas State University", "sport": "Track and Field" },
-        { "name": "Jecory Hoyt", "school": "University of Arkansas at Little Rock", "sport": "Track and Field" }
+        {
+          "name": "Kyle Fulks",
+          "school": "Baylor University",
+          "sport": "Football/Track"
+        },
+        {
+          "name": "Reeka Belton",
+          "school": "Xavier University of Louisiana",
+          "sport": "Track/Academic"
+        },
+        {
+          "name": "D'Andre Lewis",
+          "school": "Texas Christian University",
+          "sport": "Track and Field"
+        },
+        {
+          "name": "Jonathan Wiggins",
+          "school": "Texas A&M University",
+          "sport": "Football"
+        },
+        {
+          "name": "Jacob Onyechi",
+          "school": "Air Force Academy",
+          "sport": "Football"
+        },
+        {
+          "name": "Brass Woods III",
+          "school": "Truman State University",
+          "sport": "Football"
+        },
+        {
+          "name": "Janae Bottoms",
+          "school": "University of Houston",
+          "sport": "Track and Field"
+        },
+        {
+          "name": "Bria Carter",
+          "school": "University of Houston",
+          "sport": "Track and Field"
+        },
+        {
+          "name": "Rushell Harvey",
+          "school": "Louisiana State University",
+          "sport": "Track and Field"
+        },
+        {
+          "name": "Bealoved Brown",
+          "school": "Louisiana State University",
+          "sport": "Track and Field"
+        },
+        {
+          "name": "O'Shea Wilson",
+          "school": "University of Iowa",
+          "sport": "Track and Field"
+        },
+        {
+          "name": "Mylana Hearn",
+          "school": "Texas State University",
+          "sport": "Track and Field"
+        },
+        {
+          "name": "Jecory Hoyt",
+          "school": "University of Arkansas at Little Rock",
+          "sport": "Track and Field"
+        }
       ]
     }
   ]
