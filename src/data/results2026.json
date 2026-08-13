@@ -1,0 +1,545 @@
+{
+ "meet": "2026 USATF National Junior Olympic Championships",
+ "venue": "Cerritos College · Norwalk, California · July 27 – August 2, 2026",
+ "note": "16 4x100m and 13 4x400m relay teams qualified for finals — the 11-12 boys alone qualified three 4x100m teams. Times and marks from the official meet timing (AthleticLIVE).",
+ "results": [
+  {
+   "place": 1,
+   "event": "400m",
+   "division": "11-12 Boys",
+   "mark": "54.13",
+   "name": "Thomas Holmes III"
+  },
+  {
+   "place": 1,
+   "event": "1500m",
+   "division": "17-18 Boys",
+   "mark": "4:00.52",
+   "name": "Elijah Zuniga"
+  },
+  {
+   "place": 1,
+   "event": "800m",
+   "division": "17-18 Boys",
+   "mark": "1:52.22",
+   "name": "Elijah Zuniga"
+  },
+  {
+   "place": 1,
+   "event": "200m",
+   "division": "17-18 Boys",
+   "mark": "21.03",
+   "name": "Avonte Earl"
+  },
+  {
+   "place": 1,
+   "event": "3000m",
+   "division": "17-18 Girls",
+   "mark": "10:39.70",
+   "name": "Brooklyn Allen"
+  },
+  {
+   "place": 1,
+   "event": "Triple Jump",
+   "division": "13-14 Girls",
+   "mark": "12.24m",
+   "name": "Maryann Akpobassa",
+   "note": "New national record"
+  },
+  {
+   "place": 1,
+   "event": "Pentathlon",
+   "division": "13-14 Boys",
+   "mark": null,
+   "name": "Jace Coleman"
+  },
+  {
+   "place": 1,
+   "event": "4x100m Relay",
+   "division": "8U Boys",
+   "mark": "58.49"
+  },
+  {
+   "place": 1,
+   "event": "4x100m Relay",
+   "division": "11-12 Boys",
+   "mark": "49.55"
+  },
+  {
+   "place": 1,
+   "event": "4x100m Relay",
+   "division": "15-16 Boys",
+   "mark": "41.66"
+  },
+  {
+   "place": 1,
+   "event": "Mixed 4x100m Relay",
+   "division": "15-16",
+   "mark": "44.43"
+  },
+  {
+   "place": 1,
+   "event": "4x400m Relay",
+   "division": "9-10 Girls",
+   "mark": "4:22.41"
+  },
+  {
+   "place": 1,
+   "event": "4x400m Relay",
+   "division": "11-12 Boys",
+   "mark": "3:49.93"
+  },
+  {
+   "place": 1,
+   "event": "4x800m Relay",
+   "division": "15-16 Boys",
+   "mark": "8:11.93"
+  },
+  {
+   "place": 1,
+   "event": "4x800m Relay",
+   "division": "17-18 Girls",
+   "mark": "9:39.57"
+  },
+  {
+   "place": 1,
+   "event": "Mixed 4x800m Relay",
+   "division": "15-16",
+   "mark": "9:05.60"
+  },
+  {
+   "place": 1,
+   "event": "Mixed 4x800m Relay",
+   "division": "17-18",
+   "mark": "9:06.57"
+  },
+  {
+   "place": 2,
+   "event": "400m",
+   "division": "13-14 Girls",
+   "mark": "55.73",
+   "name": "Chloe Carter"
+  },
+  {
+   "place": 2,
+   "event": "100m Hurdles",
+   "division": "13-14 Boys",
+   "mark": "13.66",
+   "name": "Jace Coleman"
+  },
+  {
+   "place": 2,
+   "event": "200m",
+   "division": "11-12 Boys",
+   "mark": "23.98",
+   "name": "Jacob Vilmael"
+  },
+  {
+   "place": 2,
+   "event": "200m",
+   "division": "17-18 Boys",
+   "mark": "21.07",
+   "name": "Damien Hankins"
+  },
+  {
+   "place": 2,
+   "event": "200m Hurdles",
+   "division": "13-14 Boys",
+   "mark": "25.75",
+   "name": "Jace Coleman"
+  },
+  {
+   "place": 2,
+   "event": "High Jump",
+   "division": "11-12 Boys",
+   "mark": "1.57m",
+   "name": "Jay'Den Evans"
+  },
+  {
+   "place": 2,
+   "event": "Long Jump",
+   "division": "13-14 Girls",
+   "mark": "5.68m",
+   "name": "Maryann Akpobassa"
+  },
+  {
+   "place": 2,
+   "event": "3000m",
+   "division": "17-18 Girls",
+   "mark": "10:42.68",
+   "name": "Alejandra Sagbini"
+  },
+  {
+   "place": 2,
+   "event": "4x100m Relay",
+   "division": "9-10 Boys",
+   "mark": "53.18"
+  },
+  {
+   "place": 2,
+   "event": "4x100m Relay",
+   "division": "13-14 Girls",
+   "mark": "47.47"
+  },
+  {
+   "place": 2,
+   "event": "4x100m Relay",
+   "division": "15-16 Girls",
+   "mark": "46.53"
+  },
+  {
+   "place": 2,
+   "event": "4x100m Relay",
+   "division": "17-18 Boys",
+   "mark": "40.12"
+  },
+  {
+   "place": 2,
+   "event": "Mixed 4x400m Relay",
+   "division": "15-16",
+   "mark": "3:35.86"
+  },
+  {
+   "place": 2,
+   "event": "4x400m Relay",
+   "division": "8U Girls",
+   "mark": "5:09.26"
+  },
+  {
+   "place": 2,
+   "event": "4x400m Relay",
+   "division": "8U Boys",
+   "mark": "4:57.22"
+  },
+  {
+   "place": 2,
+   "event": "4x400m Relay",
+   "division": "11-12 Boys",
+   "mark": "3:54.09",
+   "team": "B"
+  },
+  {
+   "place": 2,
+   "event": "4x400m Relay",
+   "division": "15-16 Girls",
+   "mark": "3:49.94"
+  },
+  {
+   "place": 2,
+   "event": "4x400m Relay",
+   "division": "15-16 Boys",
+   "mark": "3:21.12"
+  },
+  {
+   "place": 2,
+   "event": "4x800m Relay",
+   "division": "15-16 Girls",
+   "mark": "10:42.79"
+  },
+  {
+   "place": 3,
+   "event": "100m",
+   "division": "8U Girls",
+   "mark": "14.59",
+   "name": "Laila Darty"
+  },
+  {
+   "place": 3,
+   "event": "100m",
+   "division": "8U Girls",
+   "mark": null,
+   "name": "Meagan Ogunleye"
+  },
+  {
+   "place": 3,
+   "event": "100m",
+   "division": "11-12 Boys",
+   "mark": "11.96",
+   "name": "Christopher Landrum Jr."
+  },
+  {
+   "place": 3,
+   "event": "400m",
+   "division": "13-14 Girls",
+   "mark": "56.17",
+   "name": "Maryann Akpobassa"
+  },
+  {
+   "place": 3,
+   "event": "1500m",
+   "division": "17-18 Girls",
+   "mark": "4:59.01",
+   "name": "Brooklyn Allen"
+  },
+  {
+   "place": 3,
+   "event": "100m Hurdles",
+   "division": "15-16 Girls",
+   "mark": "14.36",
+   "name": "Aamari Randel"
+  },
+  {
+   "place": 3,
+   "event": "200m",
+   "division": "13-14 Girls",
+   "mark": "24.17",
+   "name": "Chloe Carter"
+  },
+  {
+   "place": 3,
+   "event": "400m Hurdles",
+   "division": "15-16 Boys",
+   "mark": "56.22",
+   "name": "Kaedyn Lasker"
+  },
+  {
+   "place": 3,
+   "event": "Triple Jump",
+   "division": "13-14 Girls",
+   "mark": "11.61m",
+   "name": "Francisca Akpobassa"
+  },
+  {
+   "place": 3,
+   "event": "Discus",
+   "division": "17-18 Girls",
+   "mark": "43.75m",
+   "name": "Abigail Lawal"
+  },
+  {
+   "place": 3,
+   "event": "4x100m Relay",
+   "division": "8U Girls",
+   "mark": "1:00.27"
+  },
+  {
+   "place": 3,
+   "event": "4x100m Relay",
+   "division": "9-10 Girls",
+   "mark": "55.51"
+  },
+  {
+   "place": 3,
+   "event": "4x400m Relay",
+   "division": "9-10 Boys",
+   "mark": "4:23.15"
+  },
+  {
+   "place": 3,
+   "event": "4x400m Relay",
+   "division": "13-14 Boys",
+   "mark": "3:33.19"
+  },
+  {
+   "place": 4,
+   "event": "100m",
+   "division": "17-18 Boys",
+   "mark": "10.56",
+   "name": "Sean Pina"
+  },
+  {
+   "place": 4,
+   "event": "400m",
+   "division": "15-16 Boys",
+   "mark": "48.57",
+   "name": "Devlin Hart"
+  },
+  {
+   "place": 4,
+   "event": "1500m",
+   "division": "17-18 Girls",
+   "mark": "4:59.36",
+   "name": "Alejandra Sagbini"
+  },
+  {
+   "place": 4,
+   "event": "Steeplechase",
+   "division": "15-16 Girls",
+   "mark": "7:41.36",
+   "name": "Jasmine Alexander"
+  },
+  {
+   "place": 4,
+   "event": "4x800m Relay",
+   "division": "17-18 Girls",
+   "mark": "10:50.82",
+   "team": "B"
+  },
+  {
+   "place": 5,
+   "event": "100m",
+   "division": "8U Boys",
+   "mark": "14.12",
+   "name": "Blaise McCullar"
+  },
+  {
+   "place": 5,
+   "event": "100m",
+   "division": "17-18 Boys",
+   "mark": "10.60",
+   "name": "Damien Hankins"
+  },
+  {
+   "place": 5,
+   "event": "400m",
+   "division": "9-10 Boys",
+   "mark": "1:01.65",
+   "name": "Benji Pascall"
+  },
+  {
+   "place": 5,
+   "event": "Steeplechase",
+   "division": "13-14 Girls",
+   "mark": "7:36.88",
+   "name": "Muqi Zhang"
+  },
+  {
+   "place": 5,
+   "event": "4x100m Relay",
+   "division": "9-10 Boys",
+   "mark": "53.88",
+   "team": "B"
+  },
+  {
+   "place": 5,
+   "event": "4x100m Relay",
+   "division": "13-14 Boys",
+   "mark": "45.13"
+  },
+  {
+   "place": 5,
+   "event": "4x100m Relay",
+   "division": "15-16 Girls",
+   "mark": "48.30",
+   "team": "B"
+  },
+  {
+   "place": 6,
+   "event": "1500m",
+   "division": "15-16 Boys",
+   "mark": "4:09.51",
+   "name": "Demitrius Kelly"
+  },
+  {
+   "place": 6,
+   "event": "80m Hurdles",
+   "division": "11-12 Girls",
+   "mark": "13.65",
+   "name": "Jai Blackwood"
+  },
+  {
+   "place": 6,
+   "event": "200m",
+   "division": "11-12 Girls",
+   "mark": "25.93",
+   "name": "Rhayne Alexander"
+  },
+  {
+   "place": 6,
+   "event": "800m",
+   "division": "15-16 Boys",
+   "mark": "1:58.04",
+   "name": "Evan Brown"
+  },
+  {
+   "place": 6,
+   "event": "800m",
+   "division": "17-18 Girls",
+   "mark": "2:18.53",
+   "name": "Ella Kempe"
+  },
+  {
+   "place": 6,
+   "event": "4x100m Relay",
+   "division": "11-12 Girls",
+   "mark": "51.46"
+  },
+  {
+   "place": 6,
+   "event": "4x100m Relay",
+   "division": "11-12 Boys",
+   "mark": "51.13",
+   "team": "B"
+  },
+  {
+   "place": 6,
+   "event": "4x100m Relay",
+   "division": "17-18 Girls",
+   "mark": "47.32"
+  },
+  {
+   "place": 7,
+   "event": "100m",
+   "division": "17-18 Boys",
+   "mark": "12.01",
+   "name": "Chinweoke Onwuchekwa"
+  },
+  {
+   "place": 7,
+   "event": "1500m",
+   "division": "15-16 Boys",
+   "mark": "4:09.55",
+   "name": "Evan Brown"
+  },
+  {
+   "place": 7,
+   "event": "110m Hurdles",
+   "division": "15-16 Boys",
+   "mark": "15.29",
+   "name": "Kaedyn Lasker"
+  },
+  {
+   "place": 7,
+   "event": "200m",
+   "division": "15-16 Boys",
+   "mark": "21.88",
+   "name": "Harrison Jordan"
+  },
+  {
+   "place": 7,
+   "event": "High Jump",
+   "division": "9-10 Girls",
+   "mark": "1.26m",
+   "name": "Kassidy Fonteno"
+  },
+  {
+   "place": 7,
+   "event": "4x400m Relay",
+   "division": "13-14 Girls",
+   "mark": "4:02.11"
+  },
+  {
+   "place": 7,
+   "event": "4x400m Relay",
+   "division": "15-16 Girls",
+   "mark": "4:04.64",
+   "team": "B"
+  },
+  {
+   "place": 8,
+   "event": "100m",
+   "division": "17-18 Girls",
+   "mark": "12.30",
+   "name": "Alayna Pittman"
+  },
+  {
+   "place": 8,
+   "event": "Javelin",
+   "division": "11-12 Girls",
+   "mark": "29.37m",
+   "name": "Alexis Esene"
+  },
+  {
+   "place": 8,
+   "event": "4x400m Relay",
+   "division": "17-18 Girls",
+   "mark": "3:56.57"
+  },
+  {
+   "place": 8,
+   "event": "4x800m Relay",
+   "division": "13-14 Girls",
+   "mark": "10:15.99"
+  }
+ ]
+}

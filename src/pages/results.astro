@@ -6,7 +6,16 @@ import SectionHeading from '../components/SectionHeading.astro';
 import Ticker from '../components/Ticker.astro';
 import CTAButton from '../components/CTAButton.astro';
 import results from '../data/results.json';
+import full2026 from '../data/results2026.json';
 import lewisRelay from '../assets/photos/lewis-relay.jpg';
+
+const PLACE_LABELS: Record<number, string> = {
+  1: 'Gold', 2: 'Silver', 3: 'Bronze', 4: '4th Place',
+  5: '5th Place', 6: '6th Place', 7: '7th Place', 8: '8th Place',
+};
+const groups = [1, 2, 3, 4, 5, 6, 7, 8]
+  .map((p) => ({ place: p, label: PLACE_LABELS[p], rows: full2026.results.filter((r) => r.place === p) }))
+  .filter((g) => g.rows.length > 0);
 ---
 
 <Layout
@@ -70,60 +79,62 @@ import lewisRelay from '../assets/photos/lewis-relay.jpg';
     </div>
   </section>
 
-  <!-- 2024 medal table -->
-  <section class="bg-th-red text-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-      <div>
-        <SectionHeading light kicker="2024" title="170 medals in College Station." />
-        <p class="reveal mt-6 text-white/90 leading-relaxed max-w-lg">
-          With nationals at Texas A&M, Track Houston turned a home-state Junior Olympics into one of
-          its biggest medal hauls ever.
-        </p>
+  <!-- 2026 complete results: Gold to 8th -->
+  <section id="honors" class="bg-ink text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+      <SectionHeading light kicker="2026 · Gold to 8th" title="Every podium finish." />
+      <p class="reveal mt-5 max-w-2xl text-white/80 leading-relaxed">
+        {full2026.meet} — {full2026.venue}. Every Track Houston result from gold through eighth
+        place, with official times and marks.
+      </p>
+
+      <div class="mt-12 space-y-12">
+        {
+          groups.map((g) => (
+            <div class="reveal">
+              <h3
+                class={`display text-3xl sm:text-4xl border-b-2 pb-2 ${
+                  g.place === 1
+                    ? 'text-th-red border-th-red'
+                    : g.place <= 3
+                      ? 'text-white border-white/50'
+                      : 'text-white/70 border-white/25'
+                }`}
+              >
+                {g.label}
+                <span class="font-condensed text-lg align-middle text-white/50 tracking-[0.08em] uppercase ml-3">
+                  {g.rows.length} {g.rows.length === 1 ? 'result' : 'results'}
+                </span>
+              </h3>
+              <ul class="mt-4 divide-y divide-white/15">
+                {g.rows.map((r) => (
+                  <li class="py-2.5 flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6">
+                    <span class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg sm:w-72 shrink-0">
+                      {r.event} <span class="text-white/60">· {r.division}</span>
+                      {'team' in r && r.team && <span class="text-white/60"> ({r.team} team)</span>}
+                    </span>
+                    <span class="flex-1 text-white/90">
+                      {'name' in r && r.name ? r.name : 'Track Houston relay'}
+                      {'note' in r && r.note && (
+                        <span class="ml-2 bg-th-red text-white kicker px-2 py-0.5 whitespace-nowrap">{r.note}</span>
+                      )}
+                    </span>
+                    <span class="display text-xl text-white/95 sm:text-right">{r.mark ?? ''}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
       </div>
-      <div class="reveal">
-        <table class="w-full border-collapse">
-          <caption class="sr-only">2024 USATF National Junior Olympic medal count by placement</caption>
-          <thead>
-            <tr class="border-b border-white/40">
-              <th scope="col" class="kicker text-white/80 text-left py-3">Placement</th>
-              <th scope="col" class="kicker text-white/80 text-right py-3">Count</th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-              results.medalTable2024.rows.map((r) => (
-                <tr class="border-b border-white/25">
-                  <td class="py-2.5 font-condensed font-semibold uppercase tracking-[0.06em] text-lg">{r.place}</td>
-                  <td class="py-2.5 text-right display text-2xl text-white">{r.count}</td>
-                </tr>
-              ))
-            }
-            <tr>
-              <td class="py-3 font-condensed font-semibold uppercase tracking-[0.06em] text-lg text-white">Total</td>
-              <td class="py-3 text-right display text-3xl text-white">{results.medalTable2024.total}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+
+      <p class="reveal mt-10 text-white/60 text-sm max-w-2xl">{full2026.note}</p>
     </div>
   </section>
 
-  <!-- Honors + archive -->
-  <section id="honors" class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
-    <SectionHeading kicker="Honor Roll" title="2022 national champions" />
-    <ul class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      {
-        results.honors2022.map((h) => (
-          <li class="reveal border border-line border-t-4 border-t-th-red p-6">
-            <p class="font-condensed font-semibold uppercase tracking-[0.04em] text-xl">{h.athlete}</p>
-            <p class="kicker text-steel mt-1">{h.division}</p>
-            <p class="text-ink/75 text-sm mt-3">{h.result}</p>
-          </li>
-        ))
-      }
-    </ul>
-
-    <div id="records" class="reveal mt-16 grid md:grid-cols-3 gap-5">
+  <!-- Archive links -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
+    <div id="records" class="reveal grid md:grid-cols-3 gap-5">
       <a href="/results/records" class="group bg-ink text-white p-7 hover:bg-th-red transition-colors duration-150 flex flex-col">
         <p class="kicker text-th-red group-hover:text-white/85 transition-colors">The Record Book</p>
         <h2 class="display text-3xl mt-2">Club records</h2>
