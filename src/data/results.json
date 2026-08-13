@@ -47,6 +47,30 @@
       {
         "athlete": "9-10 Girls 4x400m relay",
         "result": "Gold"
+      },
+      {
+        "athlete": "15-16 Boys 4x100m relay",
+        "result": "Gold"
+      },
+      {
+        "athlete": "15-16 Mixed 4x100m relay",
+        "result": "Gold"
+      },
+      {
+        "athlete": "15-16 Boys 4x800m relay",
+        "result": "Gold"
+      },
+      {
+        "athlete": "15-16 Mixed 4x800m relay",
+        "result": "Gold"
+      },
+      {
+        "athlete": "17-18 Girls 4x800m relay",
+        "result": "Gold"
+      },
+      {
+        "athlete": "17-18 Mixed 4x800m relay",
+        "result": "Gold"
       }
     ]
   },
