@@ -10,12 +10,12 @@ import boysDistance from '../assets/photos/boys-distance.jpg';
 
 <Layout
   title="Practice Locations — Track Houston Youth Track Club"
-  description="Find your Track Houston practice site: 9 track & field locations and 3 cross country locations across greater Houston — Alief, Conroe, Cypress, Humble, Katy, Missouri City, Rosharon, Sugar Land and the Inner Loop."
+  description="Find your Track Houston practice site: 8 track & field locations and 3 cross country locations across greater Houston — Alief, Conroe, Cypress, Humble, Katy, Rosharon, Sugar Land and the Inner Loop."
 >
   <PageHero
     kicker="Locations"
     title="Find your site."
-    intro="Twelve practice locations across greater Houston. Pick the one closest to you and call the site coach — athletes must be registered before attending practice."
+    intro="Eight track & field practice locations across greater Houston. Pick the one closest to you and call the site coach — athletes must be registered before attending practice."
     image={boysDistance}
     imageAlt="Track Houston runners training in a group on a Houston-area track."
   />
@@ -48,6 +48,7 @@ import boysDistance from '../assets/photos/boys-distance.jpg';
             address={l.address}
             coaches={l.coaches}
             schedule={l.schedule}
+            note={l.note}
             program="Track & Field"
           />
         ))

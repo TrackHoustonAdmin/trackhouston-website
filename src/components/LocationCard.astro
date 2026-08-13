@@ -10,8 +10,9 @@ interface Props {
   coaches: Coach[];
   schedule: string;
   program: 'Track & Field' | 'Cross Country';
+  note?: string;
 }
-const { area, facility, address, coaches, schedule, program } = Astro.props;
+const { area, facility, address, coaches, schedule, program, note } = Astro.props;
 const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${facility}, ${address}`)}`;
 ---
 
@@ -37,6 +38,7 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
       <span class="kicker text-steel block mb-1">Practice</span>
       {schedule}
     </p>
+    {note && <p class="text-xs text-steel leading-relaxed -mt-1">{note}</p>}
     {
       coaches.length > 0 && (
         <div class="border-t border-line pt-4 mt-auto">
