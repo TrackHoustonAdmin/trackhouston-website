@@ -104,35 +104,8 @@ const totalSchools = alumni.rollCall.length;
     </div>
   </section>
 
-  <!-- Signing classes -->
-  <section class="bg-chalk border-y border-line">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
-      <SectionHeading kicker="From the Archive" title="Signing classes" />
-      <p class="reveal mt-5 max-w-2xl text-steel text-sm leading-relaxed">
-        Signing-day classes preserved from the club's records. More years will be added as the
-        archive is restored.
-      </p>
-      <div class="mt-10 grid gap-10 lg:grid-cols-2">
-        {
-          alumni.signees.map((cls) => (
-            <div class="reveal bg-white border border-line p-6 sm:p-8">
-              <p class="display text-4xl text-th-red">{cls.year}</p>
-              <ul class="mt-5 divide-y divide-line">
-                {cls.entries.map((e) => (
-                  <li class="py-2.5 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-0.5">
-                    <span class="font-medium">{e.name}</span>
-                    <span class="text-steel text-sm">
-                      {e.school} · {e.sport}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </section>
+  {/* Signing-classes section removed for now (data preserved in alumni.json
+      under "signees") — restore once the club has complete year-by-year lists. */}
 
   <!-- Contribute -->
   <section class="mx-auto max-w-7xl px-4 sm:px-6 py-14">
