@@ -5,6 +5,8 @@
   "rollCall": [
     { "school": "Cornell University", "athletes": [ { "name": "Tyler Dale", "detail": "Track & Field", "link": "https://cornellbigred.com/sports/mens-track-and-field/roster/tyler-dale/69354" } ] },
     { "school": "Baylor University", "athletes": [ { "name": "Elijah Bean", "detail": "Track & Field" } ] },
+    { "school": "University of Oregon", "athletes": [ { "name": "Alaysha Johnson", "detail": "Track & Field", "link": "https://goducks.com/sports/track-and-field/roster/alaysha-johnson/7719" } ] },
+    { "school": "University of Kentucky", "athletes": [ { "name": "Dynasty McClennon", "detail": "Track & Field", "link": "https://ukathletics.com/sports/track/roster/player/dynasty-mcclennon/" } ] },
     { "school": "Yale University", "athletes": [ { "name": "Joshua Tarver", "detail": "Freshman · Football" } ] },
     { "school": "University of Houston", "athletes": [
       { "name": "Whitney Ochiam", "detail": "Senior · Hurdles" },
@@ -87,7 +89,7 @@
       { "name": "Ariyana Harris", "detail": "Sophomore · Sprints" },
       { "name": "Sanders Crawford IV", "detail": "Freshman · Football" }
     ] },
-    { "school": "Fort Scott Junior College", "athletes": [ { "name": "Jarvis Miles", "detail": "Sophomore · Sprints" } ] },
+    { "school": "University of Texas at Arlington", "athletes": [ { "name": "Jarvis Miles", "detail": "Sprints", "link": "https://utamavs.com/sports/track-and-field/roster/jarvis-miles/14266" } ] },
     { "school": "Ottawa University", "athletes": [ { "name": "Javion Bell", "detail": "Freshman · Sprints" } ] },
     { "school": "Air Force Academy", "athletes": [ { "name": "Derek Hackett", "detail": "Freshman · Hurdles" } ] },
     { "school": "Southern Illinois University", "athletes": [ { "name": "Ja'Den Johnson", "detail": "Sophomore · Sprints" } ] },
