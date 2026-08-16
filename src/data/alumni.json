@@ -35,6 +35,11 @@
         {
           "name": "Dubem Nwachukwu",
           "detail": "Distance"
+        },
+        {
+          "name": "Jada Campos",
+          "detail": "Sprints",
+          "link": "https://thesundevils.com/sports/track-field/roster/player/jada-campos"
         }
       ]
     },
@@ -144,6 +149,16 @@
       ]
     },
     {
+      "school": "Harvard University",
+      "athletes": [
+        {
+          "name": "Myles Marshall",
+          "detail": "Middle Distance",
+          "link": "https://gocrimson.com/sports/mens-track-and-field/roster/myles-marshall/8631"
+        }
+      ]
+    },
+    {
       "school": "Houston Baptist University",
       "athletes": [
         {
@@ -202,7 +217,8 @@
       "athletes": [
         {
           "name": "Kendall Sheffield",
-          "detail": "Football · NFL"
+          "detail": "Football · NFL",
+          "link": "https://ohiostatebuckeyes.com/sports/football/roster/kendall-sheffield/7113"
         }
       ]
     },
@@ -409,10 +425,6 @@
         {
           "name": "Chase Lane",
           "detail": "Football"
-        },
-        {
-          "name": "Kemah Siverand",
-          "detail": "Football · NFL"
         }
       ]
     },
@@ -646,7 +658,8 @@
         },
         {
           "name": "D'Shawn Jamison",
-          "detail": "Football · NFL"
+          "detail": "Football · NFL",
+          "link": "https://www.espn.com/nfl/player/_/id/4362082/dshawn-jamison"
         }
       ]
     },
@@ -679,6 +692,16 @@
         {
           "name": "Alonzo Woods",
           "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "University of Virginia",
+      "athletes": [
+        {
+          "name": "Sophie Atkinson",
+          "detail": "Distance/Cross Country",
+          "link": "https://virginiasports.com/sports/xctrack/roster/player/sophie-atkinson"
         }
       ]
     },
