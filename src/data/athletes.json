@@ -2,15 +2,24 @@
   "spotlights": [
     {
       "name": "Bryce Deadmon",
-      "title": "Olympic Gold Medalist",
-      "body": "Track Houston alumnus Bryce Deadmon won Olympic gold in the men's 4x400m relay and bronze in the mixed relay at Tokyo 2020. At the 2022 World Championships in Eugene, he split 43.82 on the winning 4x400m. Before Texas A&M and Team USA, he was a Track Houston athlete.",
+      "title": "Two-Time Olympic Gold Medalist",
+      "body": "Track Houston alumnus Bryce Deadmon has won Olympic gold in the men's 4x400m relay twice — at Tokyo 2020 and again at Paris 2024 — plus bronze in the mixed relay at Tokyo. At the 2022 World Championships in Eugene, he split 43.82 on the winning 4x400m. Before Texas A&M and Team USA, he was a Track Houston athlete.",
       "image": "bryce-deadmon",
       "imageAlt": "Bryce Deadmon smiles with the American flag draped over his shoulders after winning gold at the World Championships.",
       "caption": "Bryce Deadmon with the flag after 4x400m relay gold at the 2022 World Championships in Eugene.",
       "stats": [
-        { "value": "Gold", "label": "Tokyo 2020 · 4x400m relay" },
-        { "value": "43.82", "label": "4x400m split · 2022 Worlds" },
-        { "value": "A&M", "label": "Texas A&M University" }
+        {
+          "value": "2× Gold",
+          "label": "4x400m relay · Tokyo 2020 & Paris 2024"
+        },
+        {
+          "value": "43.82",
+          "label": "4x400m split · 2022 Worlds"
+        },
+        {
+          "value": "A&M",
+          "label": "Texas A&M University"
+        }
       ]
     },
     {
@@ -21,9 +30,18 @@
       "imageAlt": "Alaysha Johnson in Team USA kit clears a hurdle at the Paris 2024 Olympic Games.",
       "caption": "Alaysha Johnson clears a hurdle in her Team USA debut at the Paris 2024 Olympics.",
       "stats": [
-        { "value": "7th", "label": "Olympic final · Paris 2024" },
-        { "value": "12.31", "label": "100m hurdles · US Trials 2024" },
-        { "value": "UO", "label": "University of Oregon" }
+        {
+          "value": "7th",
+          "label": "Olympic final · Paris 2024"
+        },
+        {
+          "value": "12.31",
+          "label": "100m hurdles · US Trials 2024"
+        },
+        {
+          "value": "UO",
+          "label": "University of Oregon"
+        }
       ]
     }
   ],
@@ -31,19 +49,63 @@
     "headline": "From Houston to everywhere.",
     "body": "Coupling academic performance with athletic accomplishment, Track Houston athletes have earned scholarships at more than 50 colleges and universities across the country.",
     "schools": [
-      "Yale", "Texas A&M", "Texas", "Arkansas", "Georgia", "Tennessee", "Nebraska",
-      "Colorado", "TCU", "Rice", "Texas Tech", "Northwestern", "SMU", "Arizona State",
-      "Air Force Academy", "Houston", "Texas State", "Sam Houston State", "Prairie View A&M",
-      "UNLV", "McNeese State", "Abilene Christian", "Tarleton State", "Louisiana"
+      "Yale",
+      "Texas A&M",
+      "Texas",
+      "Arkansas",
+      "Georgia",
+      "Tennessee",
+      "Nebraska",
+      "Colorado",
+      "TCU",
+      "Rice",
+      "Texas Tech",
+      "Northwestern",
+      "SMU",
+      "Arizona State",
+      "Air Force Academy",
+      "Houston",
+      "Texas State",
+      "Sam Houston State",
+      "Prairie View A&M",
+      "UNLV",
+      "McNeese State",
+      "Abilene Christian",
+      "Tarleton State",
+      "Louisiana"
     ],
     "note": "Roster shown from the most recent published roll call (2020–21). Updated roster coming with the new season."
   },
   "current": [
-    { "name": "Elijah Zuniga", "highlight": "Three golds at the 2026 National Junior Olympics — 800m, 1500m, mixed 4x800m relay", "division": "17-18 Boys" },
-    { "name": "Maryann Akpobassa", "highlight": "Triple jump record holder · national silver medalist in the long jump", "division": "Girls" },
-    { "name": "Thomas Holmes III", "highlight": "2026 national champion, 400m", "division": "11-12 Boys" },
-    { "name": "Jace Coleman", "highlight": "National pentathlon champion · hurdles silver medalist", "division": "13-14 Boys" },
-    { "name": "Brooklyn Allen", "highlight": "2026 national champion, 3000m", "division": "17-18 Girls" },
-    { "name": "Avonte Earl", "highlight": "2026 national champion, 200m", "division": "17-18 Boys" }
+    {
+      "name": "Elijah Zuniga",
+      "highlight": "Three golds at the 2026 National Junior Olympics — 800m, 1500m, mixed 4x800m relay",
+      "division": "17-18 Boys"
+    },
+    {
+      "name": "Maryann Akpobassa",
+      "highlight": "Triple jump record holder · national silver medalist in the long jump",
+      "division": "Girls"
+    },
+    {
+      "name": "Thomas Holmes III",
+      "highlight": "2026 national champion, 400m",
+      "division": "11-12 Boys"
+    },
+    {
+      "name": "Jace Coleman",
+      "highlight": "National pentathlon champion · hurdles silver medalist",
+      "division": "13-14 Boys"
+    },
+    {
+      "name": "Brooklyn Allen",
+      "highlight": "2026 national champion, 3000m",
+      "division": "17-18 Girls"
+    },
+    {
+      "name": "Avonte Earl",
+      "highlight": "2026 national champion, 200m",
+      "division": "17-18 Boys"
+    }
   ]
 }
