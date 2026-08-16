@@ -1,0 +1,157 @@
+# Track Houston site admin — content model
+# Edits made here are committed to GitHub; the site republishes in ~3–6 minutes.
+# NOTE at domain cutover: update base_url below AND the GitHub OAuth App callback URL.
+
+backend:
+  name: github
+  repo: YouthClubLane/trackhouston-website
+  branch: main
+  base_url: https://trackhouston-website.vercel.app
+  auth_endpoint: api/oauth
+
+site_url: https://trackhouston-website.vercel.app
+logo_url: /favicon.svg
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: news
+    label: News Articles
+    label_singular: Article
+    folder: src/content/news
+    create: true
+    delete: true
+    slug: '{{year}}-{{slug}}'
+    summary: '{{title}} — {{date}}'
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, format: 'YYYY-MM-DD', time_format: false }
+      - name: category
+        label: Category
+        widget: select
+        options: [Championships, Club News, Athletes, Registration]
+      - { name: excerpt, label: Excerpt (1–2 sentences shown on cards), widget: text }
+      - { name: featured, label: Featured article, widget: boolean, default: false }
+      - { name: body, label: Article Body, widget: markdown }
+
+  - name: data
+    label: Club Information
+    files:
+      - name: schedule
+        label: 'Schedule & Meets'
+        file: src/data/schedule.json
+        fields:
+          - name: crossCountry
+            label: Cross Country Season
+            widget: object
+            fields:
+              - { name: season, label: Season Title, widget: string }
+              - { name: note, label: Note shown under the schedule, widget: text }
+              - name: events
+                label: Events
+                widget: list
+                summary: '{{fields.date}} — {{fields.name}}'
+                fields:
+                  - { name: date, label: 'Date (e.g. Sep 5)', widget: string }
+                  - { name: name, label: Event Name, widget: string }
+                  - { name: location, label: Location, widget: string }
+                  - name: type
+                    label: Type
+                    widget: select
+                    options: [meet, club, featured, championship]
+                    hint: '"featured" highlights the event; "championship" marks title meets'
+          - name: trackField
+            label: Track & Field Season
+            widget: object
+            fields:
+              - { name: season, label: Season Title, widget: string }
+              - { name: note, label: Note shown under the schedule, widget: text }
+              - name: events
+                label: Events
+                widget: list
+                summary: '{{fields.date}} — {{fields.name}}'
+                fields:
+                  - { name: date, label: 'Date (e.g. Mar 7)', widget: string }
+                  - { name: name, label: Event Name, widget: string }
+                  - { name: location, label: Location, widget: string }
+                  - name: type
+                    label: Type
+                    widget: select
+                    options: [meet, club, featured, championship]
+
+      - name: locations
+        label: 'Practice Locations'
+        file: src/data/locations.json
+        fields:
+          - name: trackField
+            label: Track & Field Sites
+            widget: list
+            summary: '{{fields.area}} — {{fields.facility}}'
+            fields:
+              - { name: area, label: Area (card title), widget: string }
+              - { name: facility, label: Facility Name, widget: string }
+              - { name: address, label: Address, widget: string }
+              - name: coaches
+                label: Site Coaches
+                widget: list
+                summary: '{{fields.name}}'
+                fields:
+                  - { name: name, label: Name, widget: string }
+                  - { name: phone, label: 'Phone (e.g. (832) 555-1234)', widget: string }
+              - { name: schedule, label: Practice Days & Times, widget: string }
+              - { name: note, label: Note (optional, small print on the card), widget: string, required: false }
+          - name: crossCountry
+            label: Cross Country Sites
+            widget: list
+            summary: '{{fields.area}} — {{fields.facility}}'
+            fields:
+              - { name: area, label: Area, widget: string }
+              - { name: facility, label: Facility Name, widget: string }
+              - { name: address, label: Address, widget: string }
+              - name: coaches
+                label: Site Coaches
+                widget: list
+                required: false
+                fields:
+                  - { name: name, label: Name, widget: string }
+                  - { name: phone, label: Phone, widget: string }
+              - { name: schedule, label: Practice Days & Times, widget: string }
+          - { name: note, label: Note shown under the locations, widget: text }
+
+      - name: alumni
+        label: 'Alumni Roll Call'
+        file: src/data/alumni.json
+        fields:
+          - { name: intro, label: Intro Paragraph, widget: text }
+          - { name: note, label: Note under the roll call heading, widget: text }
+          - { name: rollCallSeason, label: 'Roll call season label (e.g. 2020–21)', widget: string }
+          - name: rollCall
+            label: Roll Call (grouped by school)
+            widget: list
+            summary: '{{fields.school}}'
+            fields:
+              - { name: school, label: College / University, widget: string }
+              - name: athletes
+                label: Athletes
+                widget: list
+                summary: '{{fields.name}}'
+                fields:
+                  - { name: name, label: Name, widget: string }
+                  - { name: detail, label: 'Sport / Events (e.g. Sprints)', widget: string }
+                  - { name: link, label: 'College roster bio URL (optional)', widget: string, required: false }
+          - name: signees
+            label: 'Signing classes (archived — not currently shown on the site)'
+            widget: list
+            collapsed: true
+            summary: '{{fields.year}}'
+            fields:
+              - { name: year, label: Year, widget: string }
+              - name: entries
+                label: Signees
+                widget: list
+                fields:
+                  - { name: name, label: Name, widget: string }
+                  - { name: school, label: School, widget: string }
+                  - { name: sport, label: Sport, widget: string }
