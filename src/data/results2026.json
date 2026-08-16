@@ -246,13 +246,6 @@
   {
    "place": 3,
    "event": "100m",
-   "division": "8U Girls",
-   "mark": null,
-   "name": "Meagan Ogunleye"
-  },
-  {
-   "place": 3,
-   "event": "100m",
    "division": "11-12 Boys",
    "mark": "11.96",
    "name": "Christopher Landrum Jr."
@@ -514,6 +507,13 @@
    "division": "15-16 Girls",
    "mark": "4:04.64",
    "team": "B"
+  },
+  {
+   "place": 8,
+   "event": "100m",
+   "division": "9-10 Girls",
+   "mark": "13.90",
+   "name": "Meagan Ogunleye"
   },
   {
    "place": 8,
