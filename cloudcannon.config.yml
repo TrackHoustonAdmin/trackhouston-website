@@ -1,0 +1,91 @@
+# CloudCannon configuration for the Track Houston website.
+# Controls what editors can change. The design/layout stays code-only.
+
+timezone: America/Chicago
+
+paths:
+  static: public
+  uploads: public/uploads
+
+collections_config:
+  news:
+    path: src/content/news
+    name: News Articles
+    icon: newspaper
+    create:
+      path: '[relative_base_path]/{date|year}-{title|slugify}.md'
+    _enabled_editors:
+      - content
+      - data
+    schemas:
+      default:
+        name: New Article
+    _inputs:
+      title:
+        type: text
+        comment: Headline shown on the card and the article page
+      date:
+        type: date
+      category:
+        type: select
+        options:
+          values:
+            - Championships
+            - Club News
+            - Athletes
+            - Registration
+      excerpt:
+        type: textarea
+        comment: 1–2 sentences shown on the article card
+      featured:
+        type: switch
+        comment: Featured articles are highlighted on the News page
+
+  data:
+    path: src/data
+    name: Club Information
+    icon: settings
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+    glob:
+      - alumni.json
+      - schedule.json
+      - locations.json
+      - results2026.json
+
+_inputs:
+  # Alumni
+  rollCall:
+    type: array
+    comment: The alumni roll call, grouped by college
+  athletes:
+    type: array
+  link:
+    type: url
+    comment: Optional link to the athlete's official college roster bio
+  detail:
+    type: text
+    comment: Sport / events (e.g. Sprints, Hurdles, Football)
+  # Locations
+  coaches:
+    type: array
+  note:
+    type: textarea
+  # Schedule
+  events:
+    type: array
+  type:
+    type: select
+    options:
+      values:
+        - meet
+        - club
+        - featured
+        - championship
+  # Results
+  mark:
+    type: text
+    comment: Official time or mark
+  place:
+    type: number
