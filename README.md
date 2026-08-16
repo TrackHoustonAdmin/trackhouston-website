@@ -1,7 +1,7 @@
 # Track Houston — Website
 
-Redesign of trackhouston.com for Track Houston Youth Track Club.
-Astro + Tailwind CSS, fully static, deploy-ready for **Vercel**.
+The official website of **Track Houston Youth Track Club** — maintained by the club.
+Astro + Tailwind CSS, fully static, deployed on **Vercel**. Content editing at `/admin`.
 
 ## Quick start
 
