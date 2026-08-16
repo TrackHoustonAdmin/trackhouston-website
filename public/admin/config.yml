@@ -4,13 +4,13 @@
 
 backend:
   name: github
-  repo: YouthClubLane/trackhouston-website
+  repo: TrackHoustonAdmin/trackhouston-website
   branch: main
   base_url: https://trackhouston-website.vercel.app
   auth_endpoint: api/oauth
 
 site_url: https://trackhouston-website.vercel.app
-logo_url: /favicon.svg
+logo_url: /admin/logo.png
 
 media_folder: public/uploads
 public_folder: /uploads
