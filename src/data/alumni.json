@@ -284,6 +284,21 @@
       ]
     },
     {
+      "school": "Princeton University",
+      "athletes": [
+        {
+          "name": "Adaora Nwokeji",
+          "detail": "Basketball",
+          "link": "https://goprincetontigers.com/sports/womens-basketball/roster/adaora-nwokeji/23566"
+        },
+        {
+          "name": "Laila Payne",
+          "detail": "Hurdles/Sprints",
+          "link": "https://goprincetontigers.com/sports/womens-track-and-field/roster/laila-payne/24335"
+        }
+      ]
+    },
+    {
       "school": "Rice University",
       "athletes": [
         {
@@ -425,6 +440,11 @@
         {
           "name": "Chase Lane",
           "detail": "Football"
+        },
+        {
+          "name": "Lawson Jacobs",
+          "detail": "Sprints",
+          "link": "https://12thman.com/sports/track-and-field/roster/player/lawson-jacobs"
         }
       ]
     },
@@ -478,6 +498,26 @@
         {
           "name": "Kailei Collins",
           "detail": "Sprints"
+        },
+        {
+          "name": "Johnathan Crawford",
+          "detail": "Sprints",
+          "link": "https://texastech.com/sports/track-and-field/roster/johnathan-crawford/14130"
+        },
+        {
+          "name": "Elijah Ferguson",
+          "detail": "Sprints",
+          "link": "https://texastech.com/sports/track-and-field/roster/elijah-ferguson/14181"
+        }
+      ]
+    },
+    {
+      "school": "University of Alabama",
+      "athletes": [
+        {
+          "name": "Adin Lathrop",
+          "detail": "Cross Country/Distance",
+          "link": "https://rolltide.com/sports/xctrack/roster/adin-lathrop/16116"
         }
       ]
     },
@@ -495,6 +535,16 @@
         {
           "name": "Josh Oglesby",
           "detail": "Football/Track"
+        },
+        {
+          "name": "Taejha Badal",
+          "detail": "Sprints",
+          "link": "https://arkansasrazorbacks.com/roster/taejha-badal/"
+        },
+        {
+          "name": "Kevin Bello",
+          "detail": "Sprints",
+          "link": "https://arkansasrazorbacks.com/roster/kevin-bello/"
         }
       ]
     },
@@ -508,6 +558,16 @@
       ]
     },
     {
+      "school": "University of Central Florida",
+      "athletes": [
+        {
+          "name": "Tamia Badal",
+          "detail": "Hurdles",
+          "link": "https://ucfknights.com/sports/track-and-field/roster/player/tamia-badal"
+        }
+      ]
+    },
+    {
       "school": "University of Colorado",
       "athletes": [
         {
@@ -516,11 +576,18 @@
         },
         {
           "name": "Ian Gilmore",
-          "detail": "Sprints"
-        },
+          "detail": "Sprints",
+          "link": "https://cubuffs.com/sports/track-and-field/roster/ian-gilmore/16870"
+        }
+      ]
+    },
+    {
+      "school": "University of Florida",
+      "athletes": [
         {
-          "name": "Tamia Badal",
-          "detail": "Sprints"
+          "name": "Jaela Auguste",
+          "detail": "Volleyball",
+          "link": "https://floridagators.com/sports/womens-volleyball/roster/jaela-auguste/17686"
         }
       ]
     },
@@ -568,6 +635,16 @@
         {
           "name": "Winter Bogan",
           "detail": "Track & Field"
+        },
+        {
+          "name": "Joe Williams",
+          "detail": "Sprints",
+          "link": "https://uhcougars.com/sports/track-and-field/roster/joe-williams/2197"
+        },
+        {
+          "name": "Samiyah Samuels",
+          "detail": "Track & Field",
+          "link": "https://uhcougars.com/sports/track-and-field/roster/samiyah-samuels/5651"
         }
       ]
     },
@@ -577,6 +654,16 @@
         {
           "name": "Rosie Campbell-Watt",
           "detail": "Distance"
+        }
+      ]
+    },
+    {
+      "school": "University of Iowa",
+      "athletes": [
+        {
+          "name": "O'Shea Wilson",
+          "detail": "Sprints",
+          "link": "https://hawkeyesports.com/sports/mtrack/roster/player/oshea-wilson"
         }
       ]
     },
@@ -609,6 +696,11 @@
         {
           "name": "Clayton Keys",
           "detail": "Hurdles"
+        },
+        {
+          "name": "James Ledbetter",
+          "detail": "Sprints/Hurdles",
+          "link": "https://huskers.com/sports/track-and-field/roster/player/james-ledbetter"
         }
       ]
     },
@@ -660,6 +752,11 @@
           "name": "D'Shawn Jamison",
           "detail": "Football · NFL",
           "link": "https://www.espn.com/nfl/player/_/id/4362082/dshawn-jamison"
+        },
+        {
+          "name": "Mackenzie Collins",
+          "detail": "Sprints",
+          "link": "https://texaslonghorns.com/sports/track-and-field/roster/mackenzie-collins/14569"
         }
       ]
     },
@@ -692,6 +789,16 @@
         {
           "name": "Alonzo Woods",
           "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "University of Utah",
+      "athletes": [
+        {
+          "name": "Kyle Fulks",
+          "detail": "Football",
+          "link": "https://utahutes.com/sports/football/roster/kyle-fulks/4758"
         }
       ]
     },
