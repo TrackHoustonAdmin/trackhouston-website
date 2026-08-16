@@ -11,13 +11,14 @@ import Footer from '../components/Footer.astro';
 import site from '../data/site.json';
 
 interface Props {
+  noindex?: boolean;
   title: string;
   description?: string;
   /** Set true on the homepage to use a transparent-over-hero nav */
   heroNav?: boolean;
 }
 
-const { title, description = site.description, heroNav = false } = Astro.props;
+const { title, description = site.description, heroNav = false, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 
 const jsonLd = {
@@ -39,6 +40,7 @@ const jsonLd = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />

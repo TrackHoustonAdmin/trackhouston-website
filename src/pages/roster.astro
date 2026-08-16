@@ -17,13 +17,14 @@ const anchor = (d: string) => d.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 ---
 
 <Layout
+  noindex
   title="Team Roster — Track Houston Youth Track Club"
-  description={`The official Track Houston roster: ${total} athletes across ${byDivision.length} age divisions and ${roster.sites.length} practice sites in greater Houston.`}
+  description={`The official Track Houston roster: ${total} athletes across ${byDivision.length} age divisions.`}
 >
   <PageHero
     kicker={roster.season}
     title="The roster."
-    intro={`${total} athletes. ${byDivision.length} age divisions. ${roster.sites.length} practice sites. One club.`}
+    intro={`${total} athletes. ${byDivision.length} age divisions. One club.`}
     image={girlsStart}
     imageAlt="Track Houston sprinters race off the start line in club uniforms."
   />
@@ -60,14 +61,6 @@ const anchor = (d: string) => d.toLowerCase().replace(/[^a-z0-9]+/g, '-');
         />
       </label>
       <div class="flex items-center gap-3">
-        <label for="site-filter" class="kicker text-steel whitespace-nowrap">Site</label>
-        <select
-          id="site-filter"
-          class="border-2 border-ink px-3 py-2.5 bg-white font-condensed font-semibold uppercase tracking-[0.06em] text-sm"
-        >
-          <option value="">All sites</option>
-          {roster.sites.map((s) => <option value={s}>{s}</option>)}
-        </select>
         <p class="kicker text-steel whitespace-nowrap" aria-live="polite">
           <span id="roster-count">{total}</span> athletes
         </p>
@@ -90,13 +83,11 @@ const anchor = (d: string) => d.toLowerCase().replace(/[^a-z0-9]+/g, '-');
                 <li
                   data-athlete
                   data-name={a.name.toLowerCase()}
-                  data-site={a.site}
                   class="flex items-baseline justify-between gap-4 py-3 border-b border-line"
                 >
                   <span class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg leading-tight">
                     {a.name}
                   </span>
-                  <span class="text-steel text-sm whitespace-nowrap">{a.site}</span>
                 </li>
               ))}
             </ul>
@@ -125,19 +116,15 @@ const anchor = (d: string) => d.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
   <script>
     const search = document.getElementById('roster-search') as HTMLInputElement;
-    const siteSel = document.getElementById('site-filter') as HTMLSelectElement;
     const countEl = document.getElementById('roster-count');
     const athletes = [...document.querySelectorAll<HTMLElement>('[data-athlete]')];
     const sections = [...document.querySelectorAll<HTMLElement>('[data-division-section]')];
 
     function apply() {
       const q = (search?.value || '').trim().toLowerCase();
-      const site = siteSel?.value || '';
       let visible = 0;
       for (const el of athletes) {
-        const show =
-          (!q || (el.dataset.name || '').includes(q)) &&
-          (!site || el.dataset.site === site);
+        const show = !q || (el.dataset.name || '').includes(q);
         el.hidden = !show;
         if (show) visible++;
       }
@@ -152,6 +139,5 @@ const anchor = (d: string) => d.toLowerCase().replace(/[^a-z0-9]+/g, '-');
     }
 
     search?.addEventListener('input', apply);
-    siteSel?.addEventListener('change', apply);
   </script>
 </Layout>

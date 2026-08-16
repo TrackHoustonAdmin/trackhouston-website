@@ -8,7 +8,7 @@ export default defineConfig({
   site: 'https://www.trackhouston.com',
   output: 'static',
   trailingSlash: 'never',
-  integrations: [sitemap()],
+  integrations: [sitemap({ filter: (page) => !['/coaches','/athletes','/alumni','/roster'].some((p) => new URL(page).pathname.replace(/\/$/, '') === p) })],
   vite: {
     plugins: [tailwindcss()],
   },
