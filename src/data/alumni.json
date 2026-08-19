@@ -26,6 +26,10 @@
         {
           "name": "Derek Hackett",
           "detail": "Hurdles"
+        },
+        {
+          "name": "Jacob Onyechi",
+          "detail": "Football"
         }
       ]
     },
@@ -187,6 +191,11 @@
         {
           "name": "Myles Wanza",
           "detail": "Football"
+        },
+        {
+          "name": "Deonte Bradford",
+          "detail": "Football",
+          "link": "https://lamarcardinals.com/sports/football/roster/deonte-bradford/4582"
         }
       ]
     },
@@ -341,6 +350,16 @@
         {
           "name": "Ariana West",
           "detail": "Sprints"
+        }
+      ]
+    },
+    {
+      "school": "Southeastern Louisiana University",
+      "athletes": [
+        {
+          "name": "Paul Kopesky",
+          "detail": "Football",
+          "link": "https://lionsports.net/sports/football/roster/paul-kopesky/2490"
         }
       ]
     },
@@ -508,6 +527,16 @@
           "name": "Elijah Ferguson",
           "detail": "Sprints",
           "link": "https://texastech.com/sports/track-and-field/roster/elijah-ferguson/14181"
+        }
+      ]
+    },
+    {
+      "school": "UCLA",
+      "athletes": [
+        {
+          "name": "Matthew Kosecki",
+          "detail": "Javelin/Throws",
+          "link": "https://uclabruins.com/sports/track-and-field/roster/matthew-kosecki/789"
         }
       ]
     },
@@ -757,6 +786,11 @@
           "name": "Mackenzie Collins",
           "detail": "Sprints",
           "link": "https://texaslonghorns.com/sports/track-and-field/roster/mackenzie-collins/14569"
+        },
+        {
+          "name": "Cole Lindhorst",
+          "detail": "Distance/Cross Country",
+          "link": "https://texaslonghorns.com/sports/track-and-field/roster/cole-lindhorst/12756"
         }
       ]
     },

@@ -1,7 +1,7 @@
 {
  "al-coleman": {
   "name": "Al Coleman",
-  "registered": false,
+  "registered": true,
   "credentials": [],
   "bio": ""
  },
@@ -34,7 +34,7 @@
  },
  "darcy-davis": {
   "name": "Darcy Davis",
-  "registered": false,
+  "registered": true,
   "credentials": [],
   "bio": ""
  },
@@ -182,7 +182,7 @@
  },
  "rod-grogan": {
   "name": "Rod Grogan",
-  "registered": false,
+  "registered": true,
   "credentials": [],
   "bio": ""
  },
@@ -215,7 +215,7 @@
  },
  "torrey-dale": {
   "name": "Torrey Dale",
-  "registered": false,
+  "registered": true,
   "credentials": [],
   "bio": ""
  },

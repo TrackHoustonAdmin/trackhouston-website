@@ -1,0 +1,2030 @@
+{
+ "divisions": [
+  {
+   "division": "13-14 Boys",
+   "years": [
+    {
+     "year": "2005",
+     "location": "Indianapolis, Indiana",
+     "entries": [
+      {
+       "event": "Pentathlon",
+       "place": "1ST",
+       "mark": "3326",
+       "athletes": "Marcus Davis"
+      },
+      {
+       "event": "100 MH",
+       "place": "3RD",
+       "mark": "13.73",
+       "athletes": "Marcus Davis"
+      },
+      {
+       "event": "High Jump",
+       "place": "8TH",
+       "mark": "5.7",
+       "athletes": "Napolean Robicheaux"
+      },
+      {
+       "event": "Javelin",
+       "place": "1ST",
+       "mark": "179.02",
+       "athletes": "Matthew Kosecki"
+      },
+      {
+       "event": "Discuss",
+       "place": "3RD",
+       "mark": "160.02",
+       "athletes": "Matthew Kosecki"
+      },
+      {
+       "event": "3000M",
+       "place": "",
+       "mark": "",
+       "athletes": "Justin Housley"
+      },
+      {
+       "event": "4 X 4",
+       "place": "2ND",
+       "mark": "332.67",
+       "athletes": "Marcus Davis"
+      },
+      {
+       "event": "4 X 8",
+       "place": "5TH",
+       "mark": "850.27",
+       "athletes": "Blake Washington"
+      }
+     ]
+    },
+    {
+     "year": "2006",
+     "location": "Baltimore, Maryland",
+     "entries": [
+      {
+       "event": "100 M",
+       "place": "5TH",
+       "mark": "11.27",
+       "athletes": "Eric Sanderson"
+      },
+      {
+       "event": "200M",
+       "place": "4TH",
+       "mark": "22.85",
+       "athletes": "Eric Sanderson"
+      },
+      {
+       "event": "200MH",
+       "place": "3RD",
+       "mark": "25.62",
+       "athletes": "Jordan Sampson"
+      },
+      {
+       "event": "Triple Jump",
+       "place": "2ND",
+       "mark": "42-11.75",
+       "athletes": "Jordan Sampson"
+      },
+      {
+       "event": "100MH",
+       "place": "4TH",
+       "mark": "14.06",
+       "athletes": "Paul Kopesky"
+      },
+      {
+       "event": "1500",
+       "place": "12TH",
+       "mark": "447.48",
+       "athletes": "Johnathan Jones"
+      },
+      {
+       "event": "4 X 1",
+       "place": "3RD",
+       "mark": "44.92",
+       "athletes": "Fred Hamilton"
+      },
+      {
+       "event": "4 X 4",
+       "place": "2ND",
+       "mark": "330.15",
+       "athletes": "Fred Hamilton"
+      },
+      {
+       "event": "4 X 8",
+       "place": "2ND",
+       "mark": "845.66",
+       "athletes": "Fred Hamilton"
+      }
+     ]
+    },
+    {
+     "year": "2007",
+     "location": "Walnut California",
+     "entries": [
+      {
+       "event": "800M",
+       "place": "8TH",
+       "mark": "214.02",
+       "athletes": "Donald Beyette"
+      },
+      {
+       "event": "1500M",
+       "place": "",
+       "mark": "441.45",
+       "athletes": "Jeffrey Perkins"
+      },
+      {
+       "event": "100MH",
+       "place": "1ST",
+       "mark": "13.41",
+       "athletes": "Paul Kopesky"
+      },
+      {
+       "event": "200MH",
+       "place": "1ST",
+       "mark": "25.08",
+       "athletes": "Paul Kopesky"
+      },
+      {
+       "event": "4 X 4",
+       "place": "6TH",
+       "mark": "338.8",
+       "athletes": "Paul Kopesky"
+      },
+      {
+       "event": "4 X 4",
+       "place": "PRELIMS",
+       "mark": "342.48",
+       "athletes": "Courtney Harris"
+      },
+      {
+       "event": "4 X 8",
+       "place": "2ND",
+       "mark": "848.5",
+       "athletes": "Ricardo Riascos"
+      },
+      {
+       "event": "4 X 8",
+       "place": "9TH",
+       "mark": "915.51",
+       "athletes": "Jeffrey Perkins"
+      }
+     ]
+    },
+    {
+     "year": "2008",
+     "location": "Omaha, Nebraska",
+     "entries": [
+      {
+       "event": "100MH",
+       "place": "2ND",
+       "mark": "13.63",
+       "athletes": "Terrell Clements"
+      },
+      {
+       "event": "200MH",
+       "place": "2ND",
+       "mark": "25.06",
+       "athletes": "Terrell Clements"
+      },
+      {
+       "event": "400M",
+       "place": "5TH",
+       "mark": "52.35",
+       "athletes": "Terrence Marshall"
+      },
+      {
+       "event": "400M",
+       "place": "6TH",
+       "mark": "53.07",
+       "athletes": "Nick Hooper"
+      },
+      {
+       "event": "1500M",
+       "place": "2ND",
+       "mark": "419.46",
+       "athletes": "Nathaniel Jones"
+      },
+      {
+       "event": "300M",
+       "place": "5TH",
+       "mark": "930.13",
+       "athletes": "Nathaniel Jones"
+      },
+      {
+       "event": "4 X 1",
+       "place": "2ND",
+       "mark": "44.62",
+       "athletes": "Nick Hooper"
+      },
+      {
+       "event": "4 X 4",
+       "place": "2ND",
+       "mark": "327.77",
+       "athletes": "Nick Hooper"
+      },
+      {
+       "event": "4 X 4",
+       "place": "8TH",
+       "mark": "347.49",
+       "athletes": "Bryce Peters"
+      },
+      {
+       "event": "4 X 8",
+       "place": "2ND",
+       "mark": "836.84",
+       "athletes": "Jeffrey Perkins"
+      }
+     ]
+    },
+    {
+     "year": "2009",
+     "location": "Greensboro, North Carolina",
+     "entries": [
+      {
+       "event": "400M",
+       "place": "2ND",
+       "mark": "50.92",
+       "athletes": "Jacob Onyechi"
+      },
+      {
+       "event": "4 X 4",
+       "place": "5TH",
+       "mark": "335.86",
+       "athletes": "Mark Barre"
+      },
+      {
+       "event": "4 X 4",
+       "place": "8TH",
+       "mark": "342.37",
+       "athletes": "Cavian Davis"
+      },
+      {
+       "event": "4 X 8",
+       "place": "7TH",
+       "mark": "918.65",
+       "athletes": "Jecory Hoyt"
+      },
+      {
+       "event": "4 X 8",
+       "place": "10TH",
+       "mark": "922.01",
+       "athletes": "Cavian Davis"
+      }
+     ]
+    },
+    {
+     "year": "2010",
+     "location": "Sacramento, California",
+     "entries": [
+      {
+       "event": "100MH",
+       "place": "1ST",
+       "mark": "13.27",
+       "athletes": "Kendall Sheffield"
+      },
+      {
+       "event": "200MH",
+       "place": "1ST",
+       "mark": "24.18",
+       "athletes": "Kendall Sheffield"
+      },
+      {
+       "event": "100M",
+       "place": "2ND",
+       "mark": "11.4",
+       "athletes": "Mark Barre"
+      },
+      {
+       "event": "200M",
+       "place": "3RD",
+       "mark": "22.79",
+       "athletes": "Mark Barre"
+      },
+      {
+       "event": "400M",
+       "place": "PRELIM",
+       "mark": "55.29",
+       "athletes": "Montria Brown"
+      },
+      {
+       "event": "800M",
+       "place": "PRELIM",
+       "mark": "209.81",
+       "athletes": "Montria Brown"
+      },
+      {
+       "event": "1500M",
+       "place": "PRELIM",
+       "mark": "451",
+       "athletes": "Victor Suzzylo"
+      },
+      {
+       "event": "1500M",
+       "place": "PRELIM",
+       "mark": "456.65",
+       "athletes": "Zahir Nobles"
+      },
+      {
+       "event": "3000M",
+       "place": "19TH",
+       "mark": "10.20.02",
+       "athletes": "Lance Garr"
+      },
+      {
+       "event": "Javelin",
+       "place": "5TH",
+       "mark": "149-.09",
+       "athletes": "Cameron Hubbard"
+      },
+      {
+       "event": "Shot Put",
+       "place": "19TH",
+       "mark": "38-11.75",
+       "athletes": "Isaac Samuels"
+      },
+      {
+       "event": "Shot Put",
+       "place": "21ST",
+       "mark": "38-.04",
+       "athletes": "Cameron Delgado"
+      },
+      {
+       "event": "Javelin",
+       "place": "11TH",
+       "mark": "137",
+       "athletes": "Dwan Seaton"
+      },
+      {
+       "event": "Discuss",
+       "place": "",
+       "mark": "FOUL",
+       "athletes": "Isaac Samuels"
+      },
+      {
+       "event": "4 X 1",
+       "place": "2ND",
+       "mark": "44.21",
+       "athletes": "Kendall Sheffield"
+      },
+      {
+       "event": "4 X 4",
+       "place": "1ST",
+       "mark": "330",
+       "athletes": "Mark Barre"
+      },
+      {
+       "event": "4 X 4",
+       "place": "4TH",
+       "mark": "336.27",
+       "athletes": "Jermiah Guillory"
+      },
+      {
+       "event": "4 X 8",
+       "place": "4TH",
+       "mark": "854.05",
+       "athletes": "Montria Brown"
+      },
+      {
+       "event": "4 X 8",
+       "place": "7TH",
+       "mark": "912.68",
+       "athletes": "Cort Coleman"
+      }
+     ]
+    },
+    {
+     "year": "2011",
+     "location": "Witchita, Kansas",
+     "entries": [
+      {
+       "event": "100MH",
+       "place": "4TH",
+       "mark": "13.72",
+       "athletes": "Chris Parker"
+      },
+      {
+       "event": "200MH",
+       "place": "7TH",
+       "mark": "26.42",
+       "athletes": "Chris Parker"
+      },
+      {
+       "event": "400M",
+       "place": "4TH",
+       "mark": "52.33",
+       "athletes": "Victor Suzsylo"
+      },
+      {
+       "event": "4 X 1",
+       "place": "8TH",
+       "mark": "00:46:32",
+       "athletes": "Bryce Deadmon"
+      },
+      {
+       "event": "4 X 4",
+       "place": "2nd",
+       "mark": "03:32:00",
+       "athletes": "Bryce Deadmon"
+      },
+      {
+       "event": "4 X 8",
+       "place": "3RD",
+       "mark": "08:57:27",
+       "athletes": "Robert Lewis"
+      },
+      {
+       "event": "4 X 8",
+       "place": "12TH",
+       "mark": "09:36:12",
+       "athletes": "Kennedy Oats"
+      }
+     ]
+    },
+    {
+     "year": "2012 USA",
+     "location": "",
+     "entries": [
+      {
+       "event": "800M",
+       "place": "2ND",
+       "mark": "203.51",
+       "athletes": "O'Shae Clark"
+      },
+      {
+       "event": "800M",
+       "place": "7TH",
+       "mark": "208.76",
+       "athletes": "Oscar Deleon"
+      },
+      {
+       "event": "800M",
+       "place": "8TH",
+       "mark": "212.26",
+       "athletes": "Robert Lewis"
+      },
+      {
+       "event": "200MH",
+       "place": "44TH",
+       "mark": "29.93",
+       "athletes": "Terrance Lange"
+      },
+      {
+       "event": "100M",
+       "place": "21ST",
+       "mark": "11.71",
+       "athletes": "Shamon Ehiemua"
+      },
+      {
+       "event": "100M",
+       "place": "32TH",
+       "mark": "11.82",
+       "athletes": "Dominique Lange"
+      },
+      {
+       "event": "100M",
+       "place": "49TH",
+       "mark": "12.3",
+       "athletes": "Broderick Jones"
+      },
+      {
+       "event": "Shot Put",
+       "place": "35TH",
+       "mark": "11.11M",
+       "athletes": "Omari Sampson"
+      },
+      {
+       "event": "Shot Put",
+       "place": "41ST",
+       "mark": "10.41",
+       "athletes": "Sergio Domenech"
+      },
+      {
+       "event": "Triple Jump",
+       "place": "10TH",
+       "mark": "11.17M",
+       "athletes": "Khayri Thomas"
+      },
+      {
+       "event": "200M",
+       "place": "18TH",
+       "mark": "24.09",
+       "athletes": "Dominique Lange"
+      },
+      {
+       "event": "200M",
+       "place": "31ST",
+       "mark": "24.14",
+       "athletes": "Nikalos Harrell"
+      },
+      {
+       "event": "200M",
+       "place": "35TH",
+       "mark": "24.4",
+       "athletes": "Shamon Ehiemua"
+      },
+      {
+       "event": "Javelin",
+       "place": "22ND",
+       "mark": "32.72M",
+       "athletes": "Sergio Domenech"
+      },
+      {
+       "event": "3000M",
+       "place": "24TH",
+       "mark": "00:10:17.410000",
+       "athletes": "Kenneth Lange"
+      },
+      {
+       "event": "4 X 1",
+       "place": "3RD",
+       "mark": "44.74",
+       "athletes": "Broderick Jones"
+      },
+      {
+       "event": "4 X 1",
+       "place": "25TH",
+       "mark": "49.1",
+       "athletes": "Terrance Lange"
+      },
+      {
+       "event": "4 X 4",
+       "place": "1ST",
+       "mark": "327.81",
+       "athletes": "Robert Lewis"
+      },
+      {
+       "event": "4 X 4",
+       "place": "9TH",
+       "mark": "339.83",
+       "athletes": "Broderick Jones"
+      },
+      {
+       "event": "4 X 8",
+       "place": "1ST",
+       "mark": "833.11",
+       "athletes": "O'Shae Clark"
+      },
+      {
+       "event": "4 X 8",
+       "place": "21ST",
+       "mark": "1014.61",
+       "athletes": "Khayri Thomas"
+      }
+     ]
+    },
+    {
+     "year": "2012 AAU",
+     "location": "",
+     "entries": [
+      {
+       "event": "100M",
+       "place": "18TH",
+       "mark": "12.31",
+       "athletes": "Myles Wanza"
+      },
+      {
+       "event": "200M",
+       "place": "31ST",
+       "mark": "25.19",
+       "athletes": "D'Shawn Jamison"
+      },
+      {
+       "event": "400M",
+       "place": "37TH",
+       "mark": "57.42",
+       "athletes": "Randall Jubilee"
+      },
+      {
+       "event": "800M",
+       "place": "30TH",
+       "mark": "2.20.28",
+       "athletes": "Randall Jubilee"
+      },
+      {
+       "event": "1500M",
+       "place": "29TH",
+       "mark": "4.55.78",
+       "athletes": "Dana Gilmore"
+      },
+      {
+       "event": "1500M",
+       "place": "49TH",
+       "mark": "5.08.33",
+       "athletes": "Kaleb Davis"
+      },
+      {
+       "event": "3000M",
+       "place": "19TH",
+       "mark": "11.02.67",
+       "athletes": "Tate Mcmillan"
+      },
+      {
+       "event": "Long Jump",
+       "place": "6TH",
+       "mark": "18-5.25",
+       "athletes": "Myles Wanza"
+      },
+      {
+       "event": "3000M",
+       "place": "15TH",
+       "mark": "10.42.89",
+       "athletes": "Kenneth Lange"
+      },
+      {
+       "event": "100MH",
+       "place": "32TH",
+       "mark": "15.74",
+       "athletes": "Caleb Parker"
+      },
+      {
+       "event": "Javelin",
+       "place": "7TH",
+       "mark": "37.77",
+       "athletes": "Sergio Domenech"
+      },
+      {
+       "event": "Shot Put",
+       "place": "27TH",
+       "mark": "36.00.5",
+       "athletes": "Sergio Domenech"
+      },
+      {
+       "event": "Shot Put",
+       "place": "20TH",
+       "mark": "33.05.75",
+       "athletes": "Omari Sampson"
+      },
+      {
+       "event": "Pentathelon",
+       "place": "23RD",
+       "mark": "1388",
+       "athletes": "Demetrius Nobles"
+      },
+      {
+       "event": "Pentathelon",
+       "place": "27TH",
+       "mark": "1180",
+       "athletes": "Terrance Lange"
+      },
+      {
+       "event": "Long Jump",
+       "place": "37TH",
+       "mark": "16.08.75",
+       "athletes": "Cameron Ehle"
+      },
+      {
+       "event": "Triple Jump",
+       "place": "26TH",
+       "mark": "35.05.5",
+       "athletes": "Khayri Thomas"
+      },
+      {
+       "event": "100MH",
+       "place": "25th",
+       "mark": "15.38",
+       "athletes": "Keveyaun Thompson"
+      },
+      {
+       "event": "100MH",
+       "place": "8TH",
+       "mark": "14.75",
+       "athletes": "Cameron Ehle"
+      },
+      {
+       "event": "200MH",
+       "place": "18TH",
+       "mark": "27.32",
+       "athletes": "Isaiah Bean"
+      },
+      {
+       "event": "High Jump",
+       "place": "12TH",
+       "mark": "5.04",
+       "athletes": "Caleb Parker"
+      },
+      {
+       "event": "Long Jump",
+       "place": "37TH",
+       "mark": "16.875",
+       "athletes": "Cameron Ehle"
+      },
+      {
+       "event": "Shot Put",
+       "place": "13TH",
+       "mark": "40.03.5",
+       "athletes": "Isaiah Bean"
+      },
+      {
+       "event": "Discus",
+       "place": "9TH",
+       "mark": "41.92",
+       "athletes": "Isaiah Bean"
+      },
+      {
+       "event": "4 X 1",
+       "place": "3RD",
+       "mark": "44.52",
+       "athletes": "Broderick Jones"
+      },
+      {
+       "event": "4 X 1",
+       "place": "17TH",
+       "mark": "46.91",
+       "athletes": "Cameron Ehle"
+      },
+      {
+       "event": "4 X 4",
+       "place": "2ND",
+       "mark": "3.27.79",
+       "athletes": "Robert Lewis"
+      },
+      {
+       "event": "4 X 4",
+       "place": "25TH",
+       "mark": "3.55.8",
+       "athletes": "Broderick Jones"
+      },
+      {
+       "event": "4 X 8",
+       "place": "2ND",
+       "mark": "8.46.09",
+       "athletes": "O'Shae Clark"
+      },
+      {
+       "event": "4 X 8",
+       "place": "12TH",
+       "mark": "9.28.63",
+       "athletes": "Khayri Thomas"
+      }
+     ]
+    },
+    {
+     "year": "2013",
+     "location": "Greensboro, North Carolina",
+     "entries": [
+      {
+       "event": "800M",
+       "place": "7TH",
+       "mark": "2.06.06",
+       "athletes": "Tyler Litton"
+      },
+      {
+       "event": "800M",
+       "place": "9TH",
+       "mark": "2.06.66",
+       "athletes": "Randall Jubilee"
+      },
+      {
+       "event": "800M",
+       "place": "12TH",
+       "mark": "2.08.46",
+       "athletes": "Deonte Bradford"
+      },
+      {
+       "event": "800M",
+       "place": "16TH",
+       "mark": "2.10.40",
+       "athletes": "Matthew Abrahams"
+      },
+      {
+       "event": "High Jump",
+       "place": "21ST",
+       "mark": "5'1'",
+       "athletes": "D'Shawn Jamison"
+      },
+      {
+       "event": "Javelin",
+       "place": "18TH",
+       "mark": "12O'",
+       "athletes": "Tyler Jackson"
+      },
+      {
+       "event": "4 X 1",
+       "place": "5TH",
+       "mark": "45.99",
+       "athletes": "Myles Wanza"
+      },
+      {
+       "event": "4 X 4",
+       "place": "3RD",
+       "mark": "3.34.37",
+       "athletes": "Matthew Abrahams"
+      },
+      {
+       "event": "4 X 4",
+       "place": "8TH",
+       "mark": "3.54.41",
+       "athletes": "Deonte Bradford"
+      },
+      {
+       "event": "4 X 8",
+       "place": "1ST",
+       "mark": "08.47.82",
+       "athletes": "Randall Jubilee"
+      },
+      {
+       "event": "4 X 8",
+       "place": "10TH",
+       "mark": "9.17.68",
+       "athletes": "Ryan Mcdaniel"
+      }
+     ]
+    },
+    {
+     "year": "2014",
+     "location": "Humble, Tx",
+     "entries": [
+      {
+       "event": "100M",
+       "place": "8th",
+       "mark": "11.58",
+       "athletes": "Bryson Jackson"
+      },
+      {
+       "event": "Javelin",
+       "place": "8TH",
+       "mark": "141.01",
+       "athletes": "Tyler Jackson"
+      },
+      {
+       "event": "3000M",
+       "place": "7TH",
+       "mark": "945.54",
+       "athletes": "Lucas Bourgoyne"
+      },
+      {
+       "event": "4 X 1",
+       "place": "3rd",
+       "mark": "44.36",
+       "athletes": "Kendon Flowers"
+      },
+      {
+       "event": "4 X 4",
+       "place": "1ST",
+       "mark": "328.05",
+       "athletes": "Deonte Bradford"
+      },
+      {
+       "event": "4 X 4",
+       "place": "7TH",
+       "mark": "340.13",
+       "athletes": "Jules Perridon"
+      },
+      {
+       "event": "4 X 8",
+       "place": "1ST",
+       "mark": "844.14",
+       "athletes": "Deonte Bradford"
+      },
+      {
+       "event": "4 X 8",
+       "place": "2ND",
+       "mark": "854.29",
+       "athletes": "Audreleous Henderson"
+      }
+     ]
+    },
+    {
+     "year": "2014 AAU",
+     "location": "AAU J.O. (DES MOINES, IA",
+     "entries": [
+      {
+       "event": "1500M",
+       "place": "4th",
+       "mark": "431.44",
+       "athletes": "Lucas Bourgoyne"
+      },
+      {
+       "event": "1500M",
+       "place": "8TH",
+       "mark": "424.13",
+       "athletes": "Andrew Gandy"
+      },
+      {
+       "event": "3000M",
+       "place": "3rd",
+       "mark": "",
+       "athletes": "Lucas Bourgoyne"
+      },
+      {
+       "event": "3000M",
+       "place": "3rd",
+       "mark": "924",
+       "athletes": "Andrew Gandy"
+      },
+      {
+       "event": "4 X 1",
+       "place": "3rd",
+       "mark": "45",
+       "athletes": "Nathaniel Mcrae"
+      },
+      {
+       "event": "4 X 4",
+       "place": "2nd",
+       "mark": "327.13",
+       "athletes": "Kendon Flowers"
+      },
+      {
+       "event": "4 X 8",
+       "place": "1ST",
+       "mark": "841.94",
+       "athletes": "Nathaniel Mcrae"
+      },
+      {
+       "event": "4 X 8",
+       "place": "3RD",
+       "mark": "852.89",
+       "athletes": "Audraleous Henderson"
+      }
+     ]
+    },
+    {
+     "year": "2015",
+     "location": "Jacksonville, Florida",
+     "entries": [
+      {
+       "event": "100M",
+       "place": "4TH",
+       "mark": "11.54",
+       "athletes": "Chase Lane"
+      },
+      {
+       "event": "800M",
+       "place": "4TH",
+       "mark": "202.95",
+       "athletes": "Ian Gilmore"
+      },
+      {
+       "event": "High Jump",
+       "place": "4TH",
+       "mark": "5'8\" 3/4",
+       "athletes": "Genson Hooper"
+      },
+      {
+       "event": "4 X 1",
+       "place": "2ND",
+       "mark": "43.91",
+       "athletes": "Terrance Fileds"
+      },
+      {
+       "event": "4 X 4",
+       "place": "1ST",
+       "mark": "326.04",
+       "athletes": "Kacey Barnett"
+      },
+      {
+       "event": "4 X 4",
+       "place": "6TH",
+       "mark": "334.23",
+       "athletes": "Darrius Green"
+      },
+      {
+       "event": "4 X 8",
+       "place": "1ST",
+       "mark": "849.34",
+       "athletes": "Darrius Green"
+      }
+     ]
+    },
+    {
+     "year": "2016",
+     "location": "SACRAMENTO, CA",
+     "entries": [
+      {
+       "event": "400M",
+       "place": "6TH",
+       "mark": "50.59",
+       "athletes": "Ian Gilmore"
+      },
+      {
+       "event": "800M",
+       "place": "3RD",
+       "mark": "2.02.26",
+       "athletes": "Ian Gilmore"
+      },
+      {
+       "event": "3000M",
+       "place": "5TH",
+       "mark": "9.15.56",
+       "athletes": "Cole Lindhurst"
+      },
+      {
+       "event": "4 X 1",
+       "place": "7TH",
+       "mark": "46.39",
+       "athletes": "Ian Johnson"
+      },
+      {
+       "event": "4 X 4",
+       "place": "4TH",
+       "mark": "333.78",
+       "athletes": "Jayson Thomas"
+      },
+      {
+       "event": "4 X 8",
+       "place": "2ND",
+       "mark": "836.57",
+       "athletes": "Cole Lindhurst"
+      },
+      {
+       "event": "4 X 8",
+       "place": "8TH",
+       "mark": "902.65",
+       "athletes": "Malik Campbell"
+      }
+     ]
+    },
+    {
+     "year": "2016 AAU",
+     "location": "AAU J.O. (HOUSTON, TX",
+     "entries": [
+      {
+       "event": "400M",
+       "place": "1ST",
+       "mark": "50.98",
+       "athletes": "Elijah Bean"
+      },
+      {
+       "event": "400M",
+       "place": "1ST",
+       "mark": "49.65",
+       "athletes": "Ian Gilmore"
+      },
+      {
+       "event": "3000M",
+       "place": "2ND",
+       "mark": "938.02",
+       "athletes": "Cole Lindhurst"
+      },
+      {
+       "event": "4 X 8",
+       "place": "2ND",
+       "mark": "841.92",
+       "athletes": "Ian Gilmore"
+      }
+     ]
+    },
+    {
+     "year": "2017",
+     "location": "LAWRENCE, KANSAS",
+     "entries": [
+      {
+       "event": "800M",
+       "place": "1ST",
+       "mark": "201.06",
+       "athletes": "Malik Campbell"
+      },
+      {
+       "event": "200M",
+       "place": "3RD",
+       "mark": "22.75",
+       "athletes": "Elijah Bean"
+      },
+      {
+       "event": "High Jump",
+       "place": "15TH",
+       "mark": "5'5\"",
+       "athletes": "Jalen Rivers"
+      },
+      {
+       "event": "Javelin",
+       "place": "22TH",
+       "mark": "124'7\"",
+       "athletes": "Joshua Tarver"
+      },
+      {
+       "event": "Javelin",
+       "place": "29TH",
+       "mark": "117'9\"",
+       "athletes": "Jalen Rivers"
+      },
+      {
+       "event": "Javelin",
+       "place": "33RD",
+       "mark": "113'5\"",
+       "athletes": "Tyler Browing"
+      },
+      {
+       "event": "Long Jump",
+       "place": "32TH",
+       "mark": "17'2\"",
+       "athletes": "Ian Johnson"
+      },
+      {
+       "event": "1500M",
+       "place": "DNS",
+       "mark": "DNS",
+       "athletes": "Travis Gibson"
+      },
+      {
+       "event": "3000",
+       "place": "15TH",
+       "mark": "954.16",
+       "athletes": "Travis Gibson"
+      },
+      {
+       "event": "4 X 100",
+       "place": "9th",
+       "mark": "45.77",
+       "athletes": "Cedric Jenkins"
+      },
+      {
+       "event": "4 X 100",
+       "place": "3RD",
+       "mark": "44.7",
+       "athletes": "Ian Johnson"
+      },
+      {
+       "event": "4 X 400",
+       "place": "1ST",
+       "mark": "326.8",
+       "athletes": "Colin Taylor"
+      },
+      {
+       "event": "4 X 400",
+       "place": "8TH",
+       "mark": "340.58",
+       "athletes": "Cedric Jenkins"
+      },
+      {
+       "event": "4 X 800",
+       "place": "2ND",
+       "mark": "848.48",
+       "athletes": "Elijah Bean"
+      },
+      {
+       "event": "4 X 800",
+       "place": "4TH",
+       "mark": "903.84",
+       "athletes": "Cedric Jenkins"
+      }
+     ]
+    },
+    {
+     "year": "2017 AAU",
+     "location": "AAU J.O. (YPSILANTI, MICHIGAN",
+     "entries": [
+      {
+       "event": "3000",
+       "place": "6TH",
+       "mark": "948.22",
+       "athletes": "Travis Gibson"
+      },
+      {
+       "event": "4X100",
+       "place": "3RD",
+       "mark": "45.2",
+       "athletes": "Jared Butler"
+      },
+      {
+       "event": "4X400",
+       "place": "1ST",
+       "mark": "327.31",
+       "athletes": "Colin Taylor"
+      },
+      {
+       "event": "4X800",
+       "place": "4TH",
+       "mark": "852.48",
+       "athletes": "Malik Campbell"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "division": "15-16 Boys",
+   "years": [
+    {
+     "year": "2018",
+     "location": "North Carolina",
+     "entries": [
+      {
+       "event": "400M",
+       "place": "3RD",
+       "mark": "48.96",
+       "athletes": "Ian Gilmore"
+      },
+      {
+       "event": "100M",
+       "place": "46TH",
+       "mark": "11.63",
+       "athletes": "Tyrese Overshown"
+      },
+      {
+       "event": "800M",
+       "place": "38TH",
+       "mark": "208.29",
+       "athletes": "Malik Campbell"
+      },
+      {
+       "event": "4 X 1",
+       "place": "9TH",
+       "mark": "43.26",
+       "athletes": "Ian Gilmore"
+      },
+      {
+       "event": "4 X 4",
+       "place": "DQ",
+       "mark": "316",
+       "athletes": "Aaron Cooper"
+      },
+      {
+       "event": "4 X 8",
+       "place": "1ST",
+       "mark": "809.42",
+       "athletes": "Jose Hernandez"
+      }
+     ]
+    },
+    {
+     "year": "2019",
+     "location": "Sacramento ",
+     "entries": [
+      {
+       "event": "200M",
+       "place": "8TH",
+       "mark": "22.17/22.40/28.38",
+       "athletes": "Elijah Bean"
+      },
+      {
+       "event": "400M",
+       "place": "10TH",
+       "mark": "50.18",
+       "athletes": "Solomon Granderson"
+      },
+      {
+       "event": "400M",
+       "place": "24TH",
+       "mark": "51.42",
+       "athletes": "Tyler Dale"
+      },
+      {
+       "event": "110H",
+       "place": "8TH",
+       "mark": "15.44/14.98/15.28",
+       "athletes": "Walter Truit"
+      },
+      {
+       "event": "400H",
+       "place": "10TH",
+       "mark": "57.76",
+       "athletes": "Walter Truit"
+      },
+      {
+       "event": "400H",
+       "place": "28th",
+       "mark": "101.58",
+       "athletes": "Zion Norris"
+      },
+      {
+       "event": "Javelin",
+       "place": "13TH",
+       "mark": "43.42",
+       "athletes": "Jalen Rivers"
+      },
+      {
+       "event": "High Jump",
+       "place": "3RD",
+       "mark": "1.85M",
+       "athletes": "Jalen Rivers"
+      },
+      {
+       "event": "Triple Jump",
+       "place": "29TH",
+       "mark": "11.59M",
+       "athletes": "Walter Truit"
+      },
+      {
+       "event": "4 X 1",
+       "place": "7TH",
+       "mark": "44.33",
+       "athletes": "Ian Johnson"
+      },
+      {
+       "event": "4 X 4",
+       "place": "2ND",
+       "mark": "321.74",
+       "athletes": "Cedric Jenkins"
+      },
+      {
+       "event": "4 X 4",
+       "place": "7TH",
+       "mark": "334.7",
+       "athletes": "Jahbari Kuykendall"
+      },
+      {
+       "event": "4 X 8",
+       "place": "5TH",
+       "mark": "829.19",
+       "athletes": "Solomon Granderson"
+      }
+     ]
+    },
+    {
+     "year": "2021",
+     "location": "Humble",
+     "entries": [
+      {
+       "event": "400M",
+       "place": "3RD",
+       "mark": "48.04",
+       "athletes": "Damarien Jacobs"
+      },
+      {
+       "event": "400M",
+       "place": "40TH",
+       "mark": "51.48",
+       "athletes": "Trenton Burningham"
+      },
+      {
+       "event": "4 X 1",
+       "place": "5TH",
+       "mark": "42.84",
+       "athletes": "Sebastian Meji"
+      },
+      {
+       "event": "4 X 4",
+       "place": "2ND",
+       "mark": "318.53",
+       "athletes": "Jalyn Fonteno"
+      },
+      {
+       "event": "4 X 4",
+       "place": "16TH",
+       "mark": "330.86",
+       "athletes": "Elijah Ferguson"
+      },
+      {
+       "event": "4 X 8",
+       "place": "7TH",
+       "mark": "824.99",
+       "athletes": "Trenton Burningham"
+      }
+     ]
+    },
+    {
+     "year": "2022",
+     "location": "Sacramento ",
+     "entries": [
+      {
+       "event": "200 Meters",
+       "place": "8TH",
+       "mark": "22.48/22.42/24.71",
+       "athletes": "Ethan Ladipo"
+      },
+      {
+       "event": "400 Hurdles",
+       "place": "2ND",
+       "mark": "56.82",
+       "athletes": "Tim Thomas"
+      },
+      {
+       "event": "400 Hurdles",
+       "place": "3RD",
+       "mark": "57.22",
+       "athletes": "Jackson Norris"
+      },
+      {
+       "event": "400 Hurdles",
+       "place": "8TH",
+       "mark": "101.52",
+       "athletes": "Evan Ealy"
+      },
+      {
+       "event": "Long Jump",
+       "place": "3RD",
+       "mark": "6.71M/22.01",
+       "athletes": "Jackson Norris"
+      },
+      {
+       "event": "Decathlon",
+       "place": "3RD",
+       "mark": "4961",
+       "athletes": "Benjamin Haywood"
+      },
+      {
+       "event": "110 Hurdles",
+       "place": "8TH",
+       "mark": "15.49/17.51",
+       "athletes": "Benjamin Haywood"
+      },
+      {
+       "event": "100 Meters",
+       "place": "12TH",
+       "mark": "11.34/11.30",
+       "athletes": "Tobi Hasstrup"
+      },
+      {
+       "event": "100 Meters",
+       "place": "24TH",
+       "mark": "11.38/11.48",
+       "athletes": "Jaden Jenkins"
+      },
+      {
+       "event": "100 Meters",
+       "place": "18TH",
+       "mark": "11.25/11.39",
+       "athletes": "Leanderay Collins"
+      },
+      {
+       "event": "100 Meters",
+       "place": "48TH",
+       "mark": "11.72",
+       "athletes": "Christian Witcher"
+      },
+      {
+       "event": "200 Meters",
+       "place": "24TH",
+       "mark": "22.54/23.21",
+       "athletes": "Leanderay Collins"
+      },
+      {
+       "event": "400 Meters",
+       "place": "15TH",
+       "mark": "50.76",
+       "athletes": "Juan Lowe"
+      },
+      {
+       "event": "400 Meters",
+       "place": "26TH",
+       "mark": "51.69",
+       "athletes": "Izaiah Bingham"
+      },
+      {
+       "event": "800 Meters",
+       "place": "18TH",
+       "mark": "203.39",
+       "athletes": "Izaiah Bingham"
+      },
+      {
+       "event": "110 Hurdles",
+       "place": "13TH",
+       "mark": "16.17",
+       "athletes": "Evan Ealy"
+      },
+      {
+       "event": "110 Hurdles",
+       "place": "DQ",
+       "mark": "NT",
+       "athletes": "Jaden Jenkins"
+      },
+      {
+       "event": "Triple Jump",
+       "place": "38TH",
+       "mark": "10.29/33.9118",
+       "athletes": "Jaeden Moore"
+      },
+      {
+       "event": "Pole Vault",
+       "place": "12TH",
+       "mark": "3.60M/11.9732",
+       "athletes": "Zachary Kelsey"
+      },
+      {
+       "event": "4 X 1",
+       "place": "1ST",
+       "mark": "42.43",
+       "athletes": "Jaden Jenkins"
+      },
+      {
+       "event": "4 X 1",
+       "place": "5TH",
+       "mark": "43.61",
+       "athletes": "Jadon Rodriguez"
+      },
+      {
+       "event": "4 X 1",
+       "place": "10TH",
+       "mark": "44.53",
+       "athletes": "Tim Thomas"
+      },
+      {
+       "event": "4 X 4",
+       "place": "3TH",
+       "mark": "321.28",
+       "athletes": "Izaiah Bingham"
+      },
+      {
+       "event": "4 X 4",
+       "place": "8TH",
+       "mark": "331.71",
+       "athletes": "Juan Lowe"
+      },
+      {
+       "event": "4 X 8",
+       "place": "4TH",
+       "mark": "826.54",
+       "athletes": "Izaiah Bingham"
+      }
+     ]
+    },
+    {
+     "year": "2023",
+     "location": "OREGON",
+     "entries": [
+      {
+       "event": "100M",
+       "place": "15TH",
+       "mark": "11.16",
+       "athletes": "Destin Achi"
+      },
+      {
+       "event": "100M",
+       "place": "20TH",
+       "mark": "11.24",
+       "athletes": "Tobi Hasstrup"
+      },
+      {
+       "event": "100M",
+       "place": "22ND",
+       "mark": "11.27",
+       "athletes": "Marrel Davis"
+      },
+      {
+       "event": "200M",
+       "place": "7TH",
+       "mark": "22.29",
+       "athletes": "Christian Witcher"
+      },
+      {
+       "event": "400",
+       "place": "DNF",
+       "mark": "49.49",
+       "athletes": "Christian Witcher"
+      },
+      {
+       "event": "800",
+       "place": "52ND",
+       "mark": "207.69",
+       "athletes": "Eze Bowe"
+      },
+      {
+       "event": "800",
+       "place": "67TH",
+       "mark": "211.81",
+       "athletes": "Braylon Campbell"
+      },
+      {
+       "event": "Shot Put",
+       "place": "17TH",
+       "mark": "12.55M",
+       "athletes": "Tobi Hasstrup"
+      },
+      {
+       "event": "Triple Jump",
+       "place": "53RD",
+       "mark": "11.33M",
+       "athletes": "Stephen Louis"
+      },
+      {
+       "event": "Decathlon",
+       "place": "26TH",
+       "mark": "3238",
+       "athletes": "Xavier Pina"
+      },
+      {
+       "event": "Long Jump",
+       "place": "1ST",
+       "mark": "7.27M",
+       "athletes": "Jackson Norris"
+      },
+      {
+       "event": "Long Jump",
+       "place": "24TH",
+       "mark": "6.15M",
+       "athletes": "Harrison Lowe"
+      },
+      {
+       "event": "4 X 4",
+       "place": "1ST",
+       "mark": "318.52",
+       "athletes": "Josiah Vilmael"
+      },
+      {
+       "event": "4 X 4",
+       "place": "7TH",
+       "mark": "323.41",
+       "athletes": "Eze Bowe"
+      },
+      {
+       "event": "4 X 8",
+       "place": "3RD",
+       "mark": "823.63",
+       "athletes": "Braylon Campbell"
+      }
+     ]
+    },
+    {
+     "year": "2024",
+     "location": "COLLEGE STATION",
+     "entries": [
+      {
+       "event": "100M",
+       "place": "1ST",
+       "mark": "10.45 NR",
+       "athletes": "Dillon Mitchell"
+      },
+      {
+       "event": "100M",
+       "place": "4TH",
+       "mark": "10.63",
+       "athletes": "Sam Onwuchekwa"
+      },
+      {
+       "event": "110H",
+       "place": "40TH",
+       "mark": "19.32",
+       "athletes": "Lapido Daniel"
+      },
+      {
+       "event": "200M",
+       "place": "5TH",
+       "mark": "21.97",
+       "athletes": "Deisnyk Mccullough"
+      },
+      {
+       "event": "200M",
+       "place": "6TH",
+       "mark": "22.02",
+       "athletes": "Dillon Mitchell"
+      },
+      {
+       "event": "200M",
+       "place": "15TH",
+       "mark": "22.41",
+       "athletes": "Jordan Simmons"
+      },
+      {
+       "event": "400M",
+       "place": "24TH",
+       "mark": "50.37",
+       "athletes": "Noah Evans"
+      },
+      {
+       "event": "400MH",
+       "place": "19TH",
+       "mark": "58.88",
+       "athletes": "Diego Izarra"
+      },
+      {
+       "event": "Steeplechase",
+       "place": "27TH",
+       "mark": "00:07:30.070000",
+       "athletes": "Grayson Panek"
+      },
+      {
+       "event": "Lj",
+       "place": "3RD",
+       "mark": "23-08.25",
+       "athletes": "Harrison Lowe"
+      },
+      {
+       "event": "Lj",
+       "place": "29",
+       "mark": "19-07.5",
+       "athletes": "Noah Evans"
+      },
+      {
+       "event": "Tj",
+       "place": "1ST",
+       "mark": "49-10.5",
+       "athletes": "Harrison Lowe"
+      },
+      {
+       "event": "Tj",
+       "place": "5TH",
+       "mark": "45-07.25",
+       "athletes": "Abdul Ghaji"
+      },
+      {
+       "event": "Tj",
+       "place": "16TH",
+       "mark": "43-07.25",
+       "athletes": "Sean Pina"
+      },
+      {
+       "event": "Tj",
+       "place": "19TH",
+       "mark": "42-09.5",
+       "athletes": "Stephen Louis"
+      },
+      {
+       "event": "4 X 1",
+       "place": "1ST",
+       "mark": "40.66 NR",
+       "athletes": "Deisnyk Mccullough"
+      },
+      {
+       "event": "4 X 1",
+       "place": "5TH",
+       "mark": "42.06",
+       "athletes": "Tade Bello"
+      },
+      {
+       "event": "4 X 4",
+       "place": "5H",
+       "mark": "0.0022944444444444444",
+       "athletes": "Noah Evans"
+      }
+     ]
+    },
+    {
+     "year": "2025USATF",
+     "location": "USATF SAVANNAH, GEORGIA",
+     "entries": [
+      {
+       "event": "100M",
+       "place": "1ST",
+       "mark": "10.34 NR",
+       "athletes": "Dillon Mitchell"
+      },
+      {
+       "event": "Tj",
+       "place": "6TH",
+       "mark": "13.23",
+       "athletes": "Derrick Mccullar"
+      }
+     ]
+    },
+    {
+     "year": "2025AAU",
+     "location": "AAU HUMBLE, TX (TURNER STADIUM",
+     "entries": [
+      {
+       "event": "100M",
+       "place": "10.23 NR",
+       "mark": "10.23 NR",
+       "athletes": "Dillon Mitchell"
+      },
+      {
+       "event": "100M",
+       "place": "2ND",
+       "mark": "10.52",
+       "athletes": "Sam Onwuchekwa"
+      },
+      {
+       "event": "100M",
+       "place": "13TH",
+       "mark": "10.66",
+       "athletes": "Damien Hankins"
+      },
+      {
+       "event": "200M",
+       "place": "1ST",
+       "mark": "21.04",
+       "athletes": "Dillon Mitchell"
+      },
+      {
+       "event": "200M",
+       "place": "15TH",
+       "mark": "21.93",
+       "athletes": "Sam Onwuchekwa"
+      },
+      {
+       "event": "200M",
+       "place": "7TH",
+       "mark": "22.42",
+       "athletes": "Damien Hankins"
+      },
+      {
+       "event": "110MH",
+       "place": "1ST",
+       "mark": "14",
+       "athletes": "Avonte Earl"
+      },
+      {
+       "event": "110MH",
+       "place": "33RD",
+       "mark": "15.61",
+       "athletes": "David Ojelabi"
+      },
+      {
+       "event": "400M",
+       "place": "21ST",
+       "mark": "49.57",
+       "athletes": "Justin Wallace"
+      },
+      {
+       "event": "400M",
+       "place": "59TH",
+       "mark": "51.71",
+       "athletes": "Oliver Reid"
+      },
+      {
+       "event": "400M",
+       "place": "55TH",
+       "mark": "51.36",
+       "athletes": "Isaiah Avery"
+      },
+      {
+       "event": "800M",
+       "place": "19TH",
+       "mark": "159.77",
+       "athletes": "Zion Pearson"
+      },
+      {
+       "event": "800M",
+       "place": "33",
+       "mark": "201.52",
+       "athletes": "Micah Sterling"
+      },
+      {
+       "event": "400MH",
+       "place": "13TH",
+       "mark": "57.03",
+       "athletes": "Avonte Earl"
+      },
+      {
+       "event": "1500M",
+       "place": "14TH",
+       "mark": "415.76",
+       "athletes": "Emanuelle Martinez"
+      },
+      {
+       "event": "3000M",
+       "place": "10TH",
+       "mark": "922.62",
+       "athletes": "Emanuelle Martinez"
+      },
+      {
+       "event": "Tj",
+       "place": "4TH",
+       "mark": "13.81",
+       "athletes": "David Ojelabi"
+      },
+      {
+       "event": "Steeplechase",
+       "place": "5TH",
+       "mark": "636.03",
+       "athletes": "Leo Sabin"
+      },
+      {
+       "event": "Steeplechase",
+       "place": "DNS",
+       "mark": "DNS",
+       "athletes": "Cole Maunoir"
+      },
+      {
+       "event": "4 X 1",
+       "place": "1ST",
+       "mark": "39.6 NR",
+       "athletes": "Damien Hankins"
+      },
+      {
+       "event": "4 X 1",
+       "place": "14TH",
+       "mark": "42.93",
+       "athletes": "Tade Bello"
+      },
+      {
+       "event": "4 X 4",
+       "place": "4TH",
+       "mark": "316.36",
+       "athletes": "Oliver Reid"
+      },
+      {
+       "event": "4 X 4",
+       "place": "30TH",
+       "mark": "330.19",
+       "athletes": "Isaiah Avery"
+      },
+      {
+       "event": "4 X 8",
+       "place": "4TH",
+       "mark": "817.43",
+       "athletes": "Zion Pearson"
+      }
+     ]
+    },
+    {
+     "year": "2026",
+     "location": "",
+     "entries": [
+      {
+       "event": "100M",
+       "place": "9TH",
+       "mark": "10.78",
+       "athletes": "Harrison Jordan"
+      },
+      {
+       "event": "110H",
+       "place": "7TH",
+       "mark": "15.29",
+       "athletes": "Kaedyn Lasker"
+      },
+      {
+       "event": "200M",
+       "place": "7TH",
+       "mark": "21.88",
+       "athletes": "Harrison Jordan"
+      },
+      {
+       "event": "400M",
+       "place": "4TH",
+       "mark": "48.57",
+       "athletes": "Devlin Hart"
+      },
+      {
+       "event": "400MH",
+       "place": "3RD",
+       "mark": "56.22",
+       "athletes": "Kaedyn Lasker"
+      },
+      {
+       "event": "400MH",
+       "place": "12TH",
+       "mark": "58.75",
+       "athletes": "Dylan Williams"
+      },
+      {
+       "event": "800M",
+       "place": "6TH",
+       "mark": "1.58.04",
+       "athletes": "Evan Brown"
+      },
+      {
+       "event": "800M",
+       "place": "15TH",
+       "mark": "2.00.13",
+       "athletes": "Uzodimma Wittick"
+      },
+      {
+       "event": "800M",
+       "place": "18TH",
+       "mark": "2.00.22",
+       "athletes": "Micah Sterling"
+      },
+      {
+       "event": "1500M",
+       "place": "6TH",
+       "mark": "4.09.51",
+       "athletes": "Demitrius Kelly"
+      },
+      {
+       "event": "1500M",
+       "place": "7TH",
+       "mark": "4.09.55",
+       "athletes": "Evan Brown"
+      },
+      {
+       "event": "4 X 1",
+       "place": "1ST",
+       "mark": "41.66",
+       "athletes": "Devlin Hart"
+      },
+      {
+       "event": "4 X 1 Mixed",
+       "place": "1ST",
+       "mark": "44.43",
+       "athletes": "Amari Randle"
+      },
+      {
+       "event": "4 X 4",
+       "place": "2ND",
+       "mark": "3.21.12",
+       "athletes": "Ayden Henderson"
+      },
+      {
+       "event": "4 X 4",
+       "place": "11TH",
+       "mark": "3.28.57",
+       "athletes": "Micah Sterling"
+      },
+      {
+       "event": "4 X 4",
+       "place": "18TH",
+       "mark": "3.36.32",
+       "athletes": "Daniel Christopher"
+      },
+      {
+       "event": "4 X 4 Mixed",
+       "place": "2ND",
+       "mark": "3.35.86",
+       "athletes": "Drake Pieters"
+      },
+      {
+       "event": "4 X 8",
+       "place": "1ST",
+       "mark": "8.11.93",
+       "athletes": "Evan Brown"
+      },
+      {
+       "event": "4X8",
+       "place": "9TH",
+       "mark": "9.03.14",
+       "athletes": "Dylan Anderson"
+      },
+      {
+       "event": "4 X 8 Mixed",
+       "place": "1ST",
+       "mark": "9.05.60",
+       "athletes": "Drake Pieters"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

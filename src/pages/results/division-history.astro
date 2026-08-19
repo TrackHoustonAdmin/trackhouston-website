@@ -1,0 +1,79 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHero from '../../components/PageHero.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import CTAButton from '../../components/CTAButton.astro';
+import data from '../../data/division-jo-history.json';
+
+const totalEntries = data.divisions.reduce(
+  (n, d) => n + d.years.reduce((m, y) => m + y.entries.length, 0),
+  0
+);
+const isPodium = (p: string) => /^(1ST|2ND|3RD)$/i.test(p);
+const anchor = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+---
+
+<Layout
+  noindex
+  title="Junior Olympic History by Division — Track Houston"
+  description={`${totalEntries} Junior Olympic results from the club's own division records — year by year, athlete by athlete.`}
+>
+  <PageHero
+    kicker="From the Club's Records"
+    title="Division history."
+    intro="Junior Olympic successes recorded by the club's own coaching staff, year by year — every event, every mark, every athlete."
+  />
+
+  <!-- Division jump links -->
+  <nav aria-label="Divisions" class="bg-ink text-white sticky top-16 lg:top-20 z-30">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 flex gap-8 overflow-x-auto">
+      {
+        data.divisions.map((d) => (
+          <a href={`#${anchor(d.division)}`} class="kicker py-4 text-white whitespace-nowrap border-b-2 border-transparent hover:border-th-red hover:text-th-red transition-colors">
+            {d.division}
+          </a>
+        ))
+      }
+    </div>
+  </nav>
+
+  {
+    data.divisions.map((d) => (
+      <section id={anchor(d.division)} class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-20 scroll-mt-32">
+        <SectionHeading kicker="Junior Olympic Games" title={`${d.division}.`} />
+        <div class="mt-10 space-y-12">
+          {d.years.map((y) => (
+            <div>
+              <h3 class="display text-3xl sm:text-4xl text-th-red border-b-2 border-line pb-2">
+                {y.year}
+                {y.location && <span class="font-condensed text-lg align-middle text-steel tracking-[0.06em] uppercase ml-3">{y.location}</span>}
+              </h3>
+              <ul class="mt-3 divide-y divide-line">
+                {y.entries.map((e) => (
+                  <li class={`py-2 flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-5 ${isPodium(e.place) ? '' : 'text-steel'}`}>
+                    <span class={`font-condensed font-semibold uppercase tracking-[0.05em] w-14 shrink-0 ${isPodium(e.place) ? 'text-th-red' : ''}`}>
+                      {e.place || '—'}
+                    </span>
+                    <span class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg sm:w-44 shrink-0">{e.event}</span>
+                    <span class="flex-1">{e.athletes}</span>
+                    <span class="display text-lg sm:text-right">{e.mark}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))
+  }
+
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 pb-16">
+    <div class="bg-chalk border border-line p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+      <p class="text-steel max-w-xl">
+        Keep the records coming — girls divisions and other age groups are added as the club's
+        coaching staff shares their season files.
+      </p>
+      <CTAButton href="/results" variant="secondary" class="shrink-0">All Results & Records</CTAButton>
+    </div>
+  </section>
+</Layout>
