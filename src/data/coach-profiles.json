@@ -1,0 +1,240 @@
+{
+ "al-coleman": {
+  "name": "Al Coleman",
+  "registered": false,
+  "credentials": [],
+  "bio": ""
+ },
+ "andre-perry": {
+  "name": "Andre Perry",
+  "registered": true,
+  "credentials": [
+   "NFHS Coaching Track and Field"
+  ],
+  "bio": ""
+ },
+ "andrea-alexander": {
+  "name": "Andrea Alexander",
+  "registered": true,
+  "credentials": [
+   "USATF Level 1",
+   "Reactive Strength: Slow SSC, Pt. 1",
+   "Reactive Strength: Fast SSC, Pt. 2"
+  ],
+  "bio": ""
+ },
+ "dallas-gray": {
+  "name": "Dallas Gray",
+  "registered": true,
+  "credentials": [
+   "USATF Level 1",
+   "Developmental Coach and Level 1 Sports Science"
+  ],
+  "bio": ""
+ },
+ "darcy-davis": {
+  "name": "Darcy Davis",
+  "registered": false,
+  "credentials": [],
+  "bio": ""
+ },
+ "deisnyk-mccullough": {
+  "name": "Deisnyk McCullough",
+  "registered": true,
+  "credentials": [
+   "NFHS Coaching Track and Field",
+   "Basic Principles of Endurance"
+  ],
+  "bio": ""
+ },
+ "derrick-mccullar": {
+  "name": "Derrick McCullar",
+  "registered": true,
+  "credentials": [
+   "NFHS Coaching Track and Field",
+   "Basic Principles of Endurance"
+  ],
+  "bio": ""
+ },
+ "donna-iles": {
+  "name": "Donna Iles",
+  "registered": false,
+  "credentials": [],
+  "bio": ""
+ },
+ "dwight-rhodes": {
+  "name": "Dwight Rhodes",
+  "registered": true,
+  "credentials": [
+   "USATF Level 1"
+  ],
+  "bio": ""
+ },
+ "harry-mitchell": {
+  "name": "Harry Mitchell",
+  "registered": true,
+  "credentials": [
+   "Developmental Coach and Level 1 Sports Science",
+   "USATF Developmental Coach Program (2026)"
+  ],
+  "bio": ""
+ },
+ "jasmin-jackson": {
+  "name": "Jasmin Jackson",
+  "registered": false,
+  "credentials": [],
+  "bio": ""
+ },
+ "jeremy-waddy": {
+  "name": "Jeremy Waddy",
+  "registered": false,
+  "credentials": [],
+  "bio": ""
+ },
+ "joe-felder": {
+  "name": "Joe Felder",
+  "registered": true,
+  "credentials": [
+   "USATF Level 2"
+  ],
+  "bio": ""
+ },
+ "keith-evans": {
+  "name": "Keith Evans",
+  "registered": true,
+  "credentials": [
+   "USATF Level 1",
+   "Basic Principles of Endurance"
+  ],
+  "bio": ""
+ },
+ "keith-fulks": {
+  "name": "Keith Fulks",
+  "registered": true,
+  "credentials": [
+   "USATF Level 1",
+   "Basic Principles of Endurance"
+  ],
+  "bio": ""
+ },
+ "kenneth-gandy": {
+  "name": "Kenneth Gandy",
+  "registered": true,
+  "credentials": [
+   "USATF Cross Country Specialist Course",
+   "USATF Marathon Specialist Course"
+  ],
+  "bio": ""
+ },
+ "kenya-artis": {
+  "name": "Kenya Artis",
+  "registered": true,
+  "credentials": [
+   "NFHS Coaching Cross Country",
+   "Basic Principles of Endurance"
+  ],
+  "bio": ""
+ },
+ "krystle-iles": {
+  "name": "Krystle Iles",
+  "registered": true,
+  "credentials": [
+   "USATF Level 1",
+   "NFHS Coaching Track and Field",
+   "Basic Principles of Endurance"
+  ],
+  "bio": ""
+ },
+ "latanya-rhodes": {
+  "name": "LaTanya Rhodes",
+  "registered": false,
+  "credentials": [],
+  "bio": ""
+ },
+ "latosha-lewis-payne": {
+  "name": "Latosha Lewis Payne",
+  "registered": false,
+  "credentials": [],
+  "bio": ""
+ },
+ "martrice-wafer": {
+  "name": "Martrice Wafer",
+  "registered": true,
+  "credentials": [
+   "USATF Level 1"
+  ],
+  "bio": ""
+ },
+ "regina-godine": {
+  "name": "Regina Godine",
+  "registered": false,
+  "credentials": [],
+  "bio": ""
+ },
+ "rita-obey": {
+  "name": "Rita Obey",
+  "registered": true,
+  "credentials": [
+   "USATF Level 1",
+   "Developmental Coach and Level 1 Sports Science"
+  ],
+  "bio": ""
+ },
+ "rod-grogan": {
+  "name": "Rod Grogan",
+  "registered": false,
+  "credentials": [],
+  "bio": ""
+ },
+ "roderick-robins": {
+  "name": "Roderick Robins",
+  "registered": true,
+  "credentials": [
+   "NFHS Coaching Track and Field",
+   "Basic Principles of Endurance"
+  ],
+  "bio": ""
+ },
+ "shante-robinson": {
+  "name": "Shante Robinson",
+  "registered": true,
+  "credentials": [
+   "NFHS Coaching Track and Field",
+   "Basic Principles of Endurance"
+  ],
+  "bio": ""
+ },
+ "terrance-lange": {
+  "name": "Terrance Lange",
+  "registered": true,
+  "credentials": [
+   "NFHS Coaching Track and Field",
+   "Basic Principles of Endurance"
+  ],
+  "bio": ""
+ },
+ "torrey-dale": {
+  "name": "Torrey Dale",
+  "registered": false,
+  "credentials": [],
+  "bio": ""
+ },
+ "walter-alexander": {
+  "name": "Walter Alexander",
+  "registered": true,
+  "credentials": [
+   "USATF Level 1",
+   "Basic Principles of Endurance",
+   "Basic Principles of Sprinting"
+  ],
+  "bio": ""
+ },
+ "william-valerie": {
+  "name": "William Valerie",
+  "registered": true,
+  "credentials": [
+   "Member of USATF International Team"
+  ],
+  "bio": ""
+ }
+}

@@ -1,4 +1,7 @@
 ---
+import fs from 'node:fs';
+import path from 'node:path';
+
 interface Props {
   name: string;
   role: string;
@@ -11,17 +14,28 @@ const initials = name
   .map((n) => n[0])
   .slice(0, 2)
   .join('');
+const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const photo = ['jpg', 'jpeg', 'png', 'webp']
+  .map((ext) => `/coaches/${slug}.${ext}`)
+  .find((p) => fs.existsSync(path.resolve('public' + p))) ?? null;
 ---
 
 <article class="reveal border border-line bg-white p-5 flex gap-4 items-start">
-  <p
-    aria-hidden="true"
-    class="display text-xl w-12 h-12 shrink-0 bg-ink text-white flex items-center justify-center"
-  >
-    {initials}
-  </p>
+  {
+    photo ? (
+      <a href={`/coaches/${slug}`} class="shrink-0">
+        <img src={photo} alt={`${name} headshot`} loading="lazy" decoding="async" class="w-12 h-12 object-cover object-top" />
+      </a>
+    ) : (
+      <p aria-hidden="true" class="display text-xl w-12 h-12 shrink-0 bg-ink text-white flex items-center justify-center">
+        {initials}
+      </p>
+    )
+  }
   <div class="min-w-0">
-    <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-xl leading-tight">{name}</h3>
+    <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-xl leading-tight">
+      <a href={`/coaches/${slug}`} class="hover:text-th-red transition-colors">{name}</a>
+    </h3>
     <p class="text-th-red kicker mt-1">{role}</p>
     <ul class="mt-3 space-y-1 text-sm text-steel">
       {phone && (

@@ -53,6 +53,7 @@ collections_config:
       - schedule.json
       - locations.json
       - results2026.json
+      - coach-profiles.json
 
 _inputs:
   # Alumni
@@ -83,6 +84,15 @@ _inputs:
         - club
         - featured
         - championship
+  # Coach bios
+  bio:
+    type: markdown
+    comment: The coach's About section, written in their own words
+  registered:
+    type: switch
+    comment: Listed in the USATF Coaches Registry (membership + SafeSport + background screen)
+  credentials:
+    type: array
   # Results
   mark:
     type: text
