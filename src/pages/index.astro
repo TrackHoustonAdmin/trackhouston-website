@@ -15,8 +15,7 @@ import programs from '../data/programs.json';
 
 import heroRelay from '../assets/photos/hero-relay.jpg';
 import girlsStart from '../assets/photos/girls-sprint-start.jpg';
-import carterRelay from '../assets/photos/carter-relay.jpg';
-import portraitBW from '../assets/photos/portrait-foreman-bw.jpg';
+import bryceDeadmon from '../assets/photos/bryce-deadmon.jpg';
 import athleteSmile from '../assets/photos/athlete-smile.jpg';
 
 const news = (await getCollection('news'))
@@ -126,39 +125,29 @@ const areas = [
 
   <!-- CHAMPIONSHIP PEDIGREE ---------------------------------------------- -->
   <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-      <div class="reveal relative">
-        <Image
-          src={carterRelay}
-          alt="A Track Houston sprinter drives toward the line, baton in hand, at the AAU Junior Olympic Games."
-          class="w-full h-auto object-cover"
-          widths={[480, 800, 1200]}
-          sizes="(min-width: 1024px) 50vw, 100vw"
-          quality={78}
-        />
-        <p class="absolute -bottom-5 left-5 bg-th-red text-white display text-3xl sm:text-4xl px-4 py-2">
-          17 titles · 2026
-        </p>
-      </div>
-      <div>
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+      <div class="lg:order-2">
         <SectionHeading kicker="Championship Pedigree" title="Built at nationals." />
         <p class="reveal mt-6 text-ink/80 leading-relaxed max-w-lg">
           {results.featured2026.summary} Every summer, Track Houston shows up to the National
           Junior Olympics deeper than anyone — and leaves with more hardware than anyone.
         </p>
-        <ul class="reveal mt-8 divide-y divide-line border-y border-line">
+        <div class="mt-8">
+          <CTAButton href="/results" variant="secondary">Results & Records</CTAButton>
+        </div>
+      </div>
+      <div class="lg:order-1">
+        <h3 class="reveal kicker text-steel">2026 National Junior Olympic highlights</h3>
+        <ul class="reveal mt-4 divide-y divide-line border-y border-line">
           {
-            results.featured2026.highlights.slice(0, 5).map((h) => (
-              <li class="py-3 flex items-baseline justify-between gap-6">
+            results.featured2026.highlights.map((h) => (
+              <li class="py-3 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6">
                 <span class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg">{h.athlete}</span>
-                <span class="text-steel text-sm text-right">{h.result}</span>
+                <span class="text-steel text-sm sm:text-right">{h.result}</span>
               </li>
             ))
           }
         </ul>
-        <div class="mt-8">
-          <CTAButton href="/results" variant="secondary">Results & Records</CTAButton>
-        </div>
       </div>
     </div>
   </section>
@@ -210,15 +199,15 @@ const areas = [
       </div>
       <figure class="order-1 lg:order-2 reveal">
         <Image
-          src={portraitBW}
-          alt="Black-and-white portrait of a young Track Houston athlete in uniform, focused, with a packed grandstand behind him."
-          class="w-full h-auto object-cover"
+          src={bryceDeadmon}
+          alt="Bryce Deadmon smiles with the American flag draped over his shoulders after winning gold at the World Championships."
+          class="w-full h-auto object-cover max-h-[34rem] object-top"
           widths={[480, 800, 1200]}
           sizes="(min-width: 1024px) 50vw, 100vw"
-          quality={78}
+          quality={80}
         />
         <figcaption class="mt-3 text-white/80 text-sm">
-          The next generation: a Track Houston athlete at the Junior Olympic Games.
+          Bryce Deadmon with the flag after 4x400m relay gold at the 2022 World Championships in Eugene.
         </figcaption>
       </figure>
     </div>
