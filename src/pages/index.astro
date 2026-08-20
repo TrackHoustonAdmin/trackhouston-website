@@ -129,42 +129,37 @@ const areas = [
 
   <!-- CHAMPIONSHIP PEDIGREE ---------------------------------------------- -->
   <section class="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-      <div class="lg:order-2">
-        <SectionHeading kicker="Championship Pedigree" title="Built at nationals." />
-        <p class="reveal mt-6 text-ink/80 leading-relaxed max-w-lg">
-          {results.featured2026.summary} Every summer, Track Houston shows up to the National
-          Junior Olympics deeper than anyone — and leaves with more hardware than anyone.
-        </p>
-        <div class="mt-8">
-          <CTAButton href="/results" variant="secondary">Results & Records</CTAButton>
-        </div>
-      </div>
-      <div class="lg:order-1">
-        <h3 class="reveal kicker text-steel">2026 National Junior Olympic highlights</h3>
-        <ul class="reveal mt-4 divide-y divide-line border-y border-line">
-          {
-            results.featured2026.highlights.map((h) => (
-              <li class="py-3">
-                <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6">
-                  <span class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg">{h.athlete}</span>
-                  <span class="text-steel text-sm sm:text-right">{h.result}</span>
-                </div>
-                {h.photo && (
-                  <img
-                    src={h.photo}
-                    alt={`${h.athlete} on the podium at the 2026 National Junior Olympics`}
-                    loading="lazy"
-                    decoding="async"
-                    class="mt-3 w-full max-w-md"
-                  />
-                )}
-              </li>
-            ))
-          }
-        </ul>
+    <div class="max-w-2xl mx-auto text-center">
+      <SectionHeading kicker="Championship Pedigree" title="Built at nationals." />
+      <p class="reveal mt-6 text-ink/80 leading-relaxed">
+        {results.featured2026.summary} Every summer, Track Houston shows up to the National
+        Junior Olympics deeper than anyone — and leaves with more hardware than anyone.
+      </p>
+      <div class="reveal mt-8 flex justify-center">
+        <CTAButton href="/results" variant="secondary">Results & Records</CTAButton>
       </div>
     </div>
+
+    <h3 class="reveal kicker text-steel mt-16 text-center">2026 National Junior Olympic highlights</h3>
+    <ul class="reveal mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8">
+      {
+        results.featured2026.highlights.map((h) => (
+          <li class="border-t-2 border-ink pt-3">
+            <p class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg leading-tight">{h.athlete}</p>
+            <p class="text-steel text-sm mt-1">{h.result}</p>
+            {h.photo && (
+              <img
+                src={h.photo}
+                alt={`${h.athlete} on the podium at the 2026 National Junior Olympics`}
+                loading="lazy"
+                decoding="async"
+                class="mt-3 h-28 w-auto relative origin-top-left transition-transform duration-200 ease-out hover:scale-[2.6] hover:z-20 hover:shadow-2xl"
+              />
+            )}
+          </li>
+        ))
+      }
+    </ul>
   </section>
 
   <!-- PATHWAY ------------------------------------------------------------ -->
