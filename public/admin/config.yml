@@ -6,10 +6,10 @@ backend:
   name: github
   repo: TrackHoustonAdmin/trackhouston-website
   branch: main
-  base_url: https://trackhouston-website.vercel.app
+  base_url: https://www.trackhouston.org
   auth_endpoint: api/oauth
 
-site_url: https://trackhouston-website.vercel.app
+site_url: https://www.trackhouston.org
 logo_url: /admin/logo.png
 
 media_folder: public/uploads
