@@ -1,5 +1,5 @@
 {
-  "note": "Compiled from official 2026 USATF Junior Olympic results, the official 1990–2011 national results books, and the coaching staff's own division records. Where a coaching-staff sheet records a single name for a relay, that name is shown with “+ squad” — send the full leg names and they'll be added.",
+  "note": "Compiled from official 2026 USATF Junior Olympic results (relay squads verified on the official meet results), the official 1990–2011 national results books, and the coaching staff's own division records. Where a coaching-staff sheet records a single name for a relay, that name is shown with “+ squad” — send the full leg names and they'll be added.",
   "aauSource": "AAU Athletics Boys National Records book (aausports.org)",
   "aauRecords": [
     {
@@ -37,7 +37,28 @@
       ]
     },
     {
+      "name": "Jasmine Alexander",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Brianna Alexander",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
       "name": "Brooklyn Allen",
+      "golds": 2,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "London Barnett",
       "golds": 1,
       "years": [
         "2026"
@@ -81,6 +102,13 @@
     },
     {
       "name": "Evan Brown",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Jordan Burnside",
       "golds": 1,
       "years": [
         "2026"
@@ -136,6 +164,13 @@
       ]
     },
     {
+      "name": "Courtney Drain",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
       "name": "Avonte Earl",
       "golds": 2,
       "years": [
@@ -151,6 +186,20 @@
       ]
     },
     {
+      "name": "Zoey Esene",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Jeremiah Foreman",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
       "name": "Ian Gilmore",
       "golds": 1,
       "years": [
@@ -162,6 +211,13 @@
       "golds": 1,
       "years": [
         "2011"
+      ]
+    },
+    {
+      "name": "Jayceon Gray",
+      "golds": 1,
+      "years": [
+        "2026"
       ]
     },
     {
@@ -200,6 +256,13 @@
       ]
     },
     {
+      "name": "Ayden Henderson",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
       "name": "Jose Hernandez",
       "golds": 1,
       "years": [
@@ -215,7 +278,7 @@
     },
     {
       "name": "Thomas Holmes III",
-      "golds": 1,
+      "golds": 2,
       "years": [
         "2026"
       ]
@@ -242,10 +305,45 @@
       ]
     },
     {
+      "name": "Harrison Jordan",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Elijah Griffin Jr.",
+      "golds": 2,
+      "years": [
+        "2026"
+      ]
+    },
+    {
       "name": "Randall Jubilee",
       "golds": 1,
       "years": [
         "2013"
+      ]
+    },
+    {
+      "name": "Demitrius Kelly",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Damien Kelly",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Ella Kempe",
+      "golds": 1,
+      "years": [
+        "2026"
       ]
     },
     {
@@ -305,6 +403,20 @@
       ]
     },
     {
+      "name": "Blaise McCullar",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Cole McCullar",
+      "golds": 2,
+      "years": [
+        "2026"
+      ]
+    },
+    {
       "name": "Deisnyk McCullough",
       "golds": 1,
       "years": [
@@ -327,6 +439,13 @@
       ]
     },
     {
+      "name": "Nori Norris",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
       "name": "Jackson Norris",
       "golds": 1,
       "years": [
@@ -338,6 +457,27 @@
       "golds": 1,
       "years": [
         "2011"
+      ]
+    },
+    {
+      "name": "Reuben Ozomah",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Tiana Peck",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Brooke Perry",
+      "golds": 1,
+      "years": [
+        "2026"
       ]
     },
     {
@@ -355,7 +495,21 @@
       ]
     },
     {
-      "name": "Amari Randle",
+      "name": "Aniya Ramirez",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "A'mari Randel",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Alejandra Sagbini",
       "golds": 1,
       "years": [
         "2026"
@@ -369,10 +523,38 @@
       ]
     },
     {
+      "name": "Carter Singleton",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
       "name": "Lden Skinner",
       "golds": 1,
       "years": [
         "2011"
+      ]
+    },
+    {
+      "name": "Jayson Smith",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Micah Sterling",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Amara Tafen",
+      "golds": 1,
+      "years": [
+        "2026"
       ]
     },
     {
@@ -383,10 +565,31 @@
       ]
     },
     {
+      "name": "Deklan Terry",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Kaden Underwood",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
       "name": "Josiah Vilmael",
       "golds": 1,
       "years": [
         "2023"
+      ]
+    },
+    {
+      "name": "Kamar Waddy",
+      "golds": 2,
+      "years": [
+        "2026"
       ]
     },
     {
@@ -404,8 +607,15 @@
       ]
     },
     {
+      "name": "Uzodimma Wittick",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
       "name": "Elijah Zuniga",
-      "golds": 2,
+      "golds": 3,
       "years": [
         "2026"
       ]
@@ -475,7 +685,7 @@
       "division": "8U Boys",
       "event": "4x100m Relay",
       "mark": "58.49",
-      "gold": "Track Houston squad",
+      "gold": "Jayceon Gray, Kaden Underwood, Carter Singleton, Blaise McCullar",
       "squad": true
     },
     {
@@ -484,7 +694,7 @@
       "division": "11-12 Boys",
       "event": "4x100m Relay",
       "mark": "49.55",
-      "gold": "Track Houston squad",
+      "gold": "Cole McCullar, Elijah Griffin Jr., Jeremiah Foreman, Kamar Waddy",
       "squad": true
     },
     {
@@ -493,7 +703,7 @@
       "division": "15-16 Boys",
       "event": "4x100m Relay",
       "mark": "41.66",
-      "gold": "Devlin Hart + squad",
+      "gold": "Devlin Hart, Jayson Smith, Jordan Burnside, Harrison Jordan",
       "squad": true
     },
     {
@@ -502,7 +712,7 @@
       "division": "15-16 Mixed",
       "event": "4x100m Relay",
       "mark": "44.43",
-      "gold": "Amari Randle + squad",
+      "gold": "Tiana Peck, A'mari Randel, Deklan Terry, Ayden Henderson",
       "squad": true
     },
     {
@@ -511,7 +721,7 @@
       "division": "9-10 Girls",
       "event": "4x400m Relay",
       "mark": "4:22.41",
-      "gold": "Track Houston squad",
+      "gold": "Amara Tafen, London Barnett, Zoey Esene, Nori Norris",
       "squad": true
     },
     {
@@ -520,7 +730,7 @@
       "division": "11-12 Boys",
       "event": "4x400m Relay",
       "mark": "3:49.93",
-      "gold": "Track Houston squad",
+      "gold": "Thomas Holmes III, Elijah Griffin Jr., Cole McCullar, Kamar Waddy",
       "squad": true
     },
     {
@@ -529,7 +739,7 @@
       "division": "15-16 Boys",
       "event": "4x800m Relay",
       "mark": "8:11.93",
-      "gold": "Evan Brown + squad",
+      "gold": "Evan Brown, Micah Sterling, Uzodimma Wittick, Demitrius Kelly",
       "squad": true
     },
     {
@@ -538,7 +748,7 @@
       "division": "17-18 Girls",
       "event": "4x800m Relay",
       "mark": "9:39.57",
-      "gold": "Track Houston squad",
+      "gold": "Ella Kempe, Alejandra Sagbini, Brooke Perry, Courtney Drain",
       "squad": true
     },
     {
@@ -547,7 +757,7 @@
       "division": "15-16 Mixed",
       "event": "4x800m Relay",
       "mark": "9:05.60",
-      "gold": "Drake Pieters + squad",
+      "gold": "Damien Kelly, Aniya Ramirez, Drake Pieters, Jasmine Alexander",
       "squad": true
     },
     {
@@ -556,7 +766,7 @@
       "division": "17-18 Mixed",
       "event": "4x800m Relay",
       "mark": "9:06.57",
-      "gold": "Track Houston squad",
+      "gold": "Elijah Zuniga, Reuben Ozomah, Brooklyn Allen, Brianna Alexander",
       "squad": true
     },
     {
