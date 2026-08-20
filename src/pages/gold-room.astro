@@ -25,13 +25,15 @@ const DIV_TO_BIRTH: Record<string, string[]> = {
   '17-18 Girls': ['Girls born 2008–2009'],
   '17-18 Mixed': ['Boys born 2008–2009', 'Girls born 2008–2009'],
 };
-const goldDivs2026 = [...new Set(data.ledger.filter((e) => e.year === '2026').map((e) => e.division))];
-const coachRows = goldDivs2026.map((div) => {
+/* Coaches are credited for RELAY golds only. */
+const relayGolds2026 = data.ledger.filter((e) => e.year === '2026' && e.event.includes('Relay'));
+const relayDivs2026 = [...new Set(relayGolds2026.map((e) => e.division))];
+const coachRows = relayDivs2026.map((div) => {
   const birthLabels = DIV_TO_BIRTH[div] ?? [];
   const names = birthLabels.flatMap(
     (b) => coaches.ageDivisions.find((d) => d.division === b)?.coaches.map((c) => c.name) ?? []
   );
-  const golds = data.ledger.filter((e) => e.year === '2026' && e.division === div).length;
+  const golds = relayGolds2026.filter((e) => e.division === div).length;
   return { division: div, coaches: [...new Set(names)], golds };
 });
 ---
@@ -183,19 +185,33 @@ const coachRows = goldDivs2026.map((div) => {
 
   <!-- Coaches -->
   <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
-    <SectionHeading kicker="Behind Every Gold" title="The coaches." />
+    <SectionHeading kicker="Behind Every Relay" title="The coaches." />
     <p class="reveal mt-5 max-w-2xl text-ink/75 leading-relaxed">
-      The Spring 2026 head coaches of record for every division that produced a national champion
-      this season. Historical coaching staffs are credited as the club's season records are added —
-      coaches, send in your year sheets.
+      {data.coaches.rule}
     </p>
-    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+    <!-- Featured: Keith Evans -->
+    <article class="reveal mt-10 bg-ink text-white p-8 sm:p-10 grid lg:grid-cols-[auto_1fr] gap-8 items-center border-l-4 border-th-gold">
+      <div class="text-center lg:text-left">
+        <p class="display text-7xl sm:text-8xl text-th-gold">{data.coaches.featured.relayGolds}</p>
+        <p class="kicker text-white/60 mt-2">Relay golds · {data.coaches.featured.span}</p>
+      </div>
+      <div>
+        <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-3xl">
+          <a href={`/coaches/${data.coaches.featured.slug}`} class="hover:text-th-gold transition-colors">{data.coaches.featured.name}</a>
+        </h3>
+        <p class="mt-3 text-white/80 leading-relaxed max-w-2xl">{data.coaches.featured.body}</p>
+      </div>
+    </article>
+
+    <p class="reveal mt-12 kicker text-steel">2026 relay golds · division head coaches of record</p>
+    <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {
         coachRows.map((row) => (
           <article class="reveal border border-line bg-white">
             <div class="border-l-4 border-th-gold px-5 py-3.5 flex items-baseline justify-between gap-3 bg-chalk">
               <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-xl">{row.division}</h3>
-              <p class="kicker text-th-gold whitespace-nowrap">{row.golds} gold{row.golds === 1 ? '' : 's'}</p>
+              <p class="kicker text-th-gold whitespace-nowrap">{row.golds} relay gold{row.golds === 1 ? '' : 's'}</p>
             </div>
             <ul class="px-5 py-4 space-y-1.5">
               {row.coaches.map((name) => (
@@ -208,6 +224,7 @@ const coachRows = goldDivs2026.map((div) => {
         ))
       }
     </div>
+    <p class="reveal mt-8 text-steel text-sm max-w-2xl">{data.coaches.invite}</p>
   </section>
 
   <!-- CTA -->
