@@ -1,0 +1,905 @@
+{
+  "note": "Compiled from official 2026 USATF Junior Olympic results, the official 1990–2011 national results books, and the coaching staff's own division records. Where a coaching-staff sheet records a single name for a relay, that name is shown with “+ squad” — send the full leg names and they'll be added.",
+  "aauSource": "AAU Athletics Boys National Records book (aausports.org)",
+  "aauRecords": [
+    {
+      "division": "17-18 Men",
+      "event": "4x100m Relay",
+      "mark": "40.00",
+      "holder": "Track Houston",
+      "date": "August 4, 2012",
+      "athletes": "O'Shea Wilson, Jermaine Authorlee, Ahmed Ali, Kyle Fulks",
+      "note": "Squad per the club record book — the same four also hold the 39.56 Region 12 mark from 2012."
+    },
+    {
+      "division": "15-16 Boys",
+      "event": "4x800m Relay",
+      "mark": "7:55.91",
+      "holder": "Track Houston",
+      "date": "August 5, 2016",
+      "athletes": "",
+      "note": "Confirmed on the AAU books and FloTrack's all-time list. Send the four names and they'll be added."
+    }
+  ],
+  "honorRoll": [
+    {
+      "name": "Mahasin Ahmad",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Maryann Akpobassa",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Brooklyn Allen",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Kacey Barnett",
+      "golds": 1,
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "name": "Mark Barre",
+      "golds": 1,
+      "years": [
+        "2010"
+      ]
+    },
+    {
+      "name": "Elijah Bean",
+      "golds": 2,
+      "years": [
+        "2011",
+        "2016"
+      ]
+    },
+    {
+      "name": "Albert Bennett",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Deonte Bradford",
+      "golds": 2,
+      "years": [
+        "2014"
+      ]
+    },
+    {
+      "name": "Evan Brown",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Malik Campbell",
+      "golds": 1,
+      "years": [
+        "2017"
+      ]
+    },
+    {
+      "name": "Eric Charles",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "O'Shae Clark",
+      "golds": 1,
+      "years": [
+        "2012"
+      ]
+    },
+    {
+      "name": "Jace Coleman",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Tyler Dale",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Qualen Davis",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Marcus Davis",
+      "golds": 1,
+      "years": [
+        "2005"
+      ]
+    },
+    {
+      "name": "Avonte Earl",
+      "golds": 2,
+      "years": [
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "name": "Jalen Elrod",
+      "golds": 3,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Ian Gilmore",
+      "golds": 1,
+      "years": [
+        "2016"
+      ]
+    },
+    {
+      "name": "Tarameshia Gordon",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Darrius Green",
+      "golds": 1,
+      "years": [
+        "2015"
+      ]
+    },
+    {
+      "name": "Maryah Hampton",
+      "golds": 2,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Damien Hankins",
+      "golds": 1,
+      "years": [
+        "2025"
+      ]
+    },
+    {
+      "name": "Devlin Hart",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Rushell Harvey",
+      "golds": 2,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Jose Hernandez",
+      "golds": 1,
+      "years": [
+        "2018"
+      ]
+    },
+    {
+      "name": "Jecory Hoyt",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Thomas Holmes III",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Dshawn Jamison",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Jaden Jenkins",
+      "golds": 1,
+      "years": [
+        "2022"
+      ]
+    },
+    {
+      "name": "Alaysha Johnson",
+      "golds": 2,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Randall Jubilee",
+      "golds": 1,
+      "years": [
+        "2013"
+      ]
+    },
+    {
+      "name": "Daidrick Kibbie",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Paul Kopesky",
+      "golds": 2,
+      "years": [
+        "2007"
+      ]
+    },
+    {
+      "name": "Matthew Kosecki",
+      "golds": 1,
+      "years": [
+        "2005"
+      ]
+    },
+    {
+      "name": "Otis Laskey",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Robert Lewis",
+      "golds": 1,
+      "years": [
+        "2012"
+      ]
+    },
+    {
+      "name": "Harrison Lowe",
+      "golds": 1,
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Daja Maxey",
+      "golds": 2,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Dynasty McClennon",
+      "golds": 2,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Deisnyk McCullough",
+      "golds": 1,
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Nathaniel McRae",
+      "golds": 1,
+      "years": [
+        "2014"
+      ]
+    },
+    {
+      "name": "Dillon Mitchell",
+      "golds": 3,
+      "years": [
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "name": "Jackson Norris",
+      "golds": 1,
+      "years": [
+        "2023"
+      ]
+    },
+    {
+      "name": "Adaora Nwokeji",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Drake Pieters",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Finnley Polidore",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Amari Randle",
+      "golds": 1,
+      "years": [
+        "2026"
+      ]
+    },
+    {
+      "name": "Kendall Sheffield",
+      "golds": 2,
+      "years": [
+        "2010"
+      ]
+    },
+    {
+      "name": "Lden Skinner",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Colin Taylor",
+      "golds": 2,
+      "years": [
+        "2017"
+      ]
+    },
+    {
+      "name": "Josiah Vilmael",
+      "golds": 1,
+      "years": [
+        "2023"
+      ]
+    },
+    {
+      "name": "Myles Wanza",
+      "golds": 1,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Zarriea Willis",
+      "golds": 2,
+      "years": [
+        "2011"
+      ]
+    },
+    {
+      "name": "Elijah Zuniga",
+      "golds": 2,
+      "years": [
+        "2026"
+      ]
+    }
+  ],
+  "ledger": [
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "11-12 Boys",
+      "event": "400m",
+      "mark": "54.13",
+      "gold": "Thomas Holmes III"
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "17-18 Boys",
+      "event": "800m",
+      "mark": "1:52.22",
+      "gold": "Elijah Zuniga"
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "17-18 Boys",
+      "event": "1500m",
+      "mark": "4:00.52",
+      "gold": "Elijah Zuniga"
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "17-18 Boys",
+      "event": "200m",
+      "mark": "21.03",
+      "gold": "Avonte Earl"
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "17-18 Girls",
+      "event": "3000m",
+      "mark": "10:39.70",
+      "gold": "Brooklyn Allen"
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "13-14 Girls",
+      "event": "Triple Jump",
+      "mark": "12.24m",
+      "gold": "Maryann Akpobassa",
+      "note": "National record"
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "Pentathlon",
+      "mark": null,
+      "gold": "Jace Coleman"
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "8U Boys",
+      "event": "4x100m Relay",
+      "mark": "58.49",
+      "gold": "Track Houston squad",
+      "squad": true
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "11-12 Boys",
+      "event": "4x100m Relay",
+      "mark": "49.55",
+      "gold": "Track Houston squad",
+      "squad": true
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "15-16 Boys",
+      "event": "4x100m Relay",
+      "mark": "41.66",
+      "gold": "Devlin Hart + squad",
+      "squad": true
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "15-16 Mixed",
+      "event": "4x100m Relay",
+      "mark": "44.43",
+      "gold": "Amari Randle + squad",
+      "squad": true
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "9-10 Girls",
+      "event": "4x400m Relay",
+      "mark": "4:22.41",
+      "gold": "Track Houston squad",
+      "squad": true
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "11-12 Boys",
+      "event": "4x400m Relay",
+      "mark": "3:49.93",
+      "gold": "Track Houston squad",
+      "squad": true
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "15-16 Boys",
+      "event": "4x800m Relay",
+      "mark": "8:11.93",
+      "gold": "Evan Brown + squad",
+      "squad": true
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "17-18 Girls",
+      "event": "4x800m Relay",
+      "mark": "9:39.57",
+      "gold": "Track Houston squad",
+      "squad": true
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "15-16 Mixed",
+      "event": "4x800m Relay",
+      "mark": "9:05.60",
+      "gold": "Drake Pieters + squad",
+      "squad": true
+    },
+    {
+      "year": "2026",
+      "meet": "USATF National Junior Olympics",
+      "division": "17-18 Mixed",
+      "event": "4x800m Relay",
+      "mark": "9:06.57",
+      "gold": "Track Houston squad",
+      "squad": true
+    },
+    {
+      "year": "2025",
+      "meet": "USATF National Junior Olympics",
+      "division": "15-16 Boys",
+      "event": "100m",
+      "mark": "10.34",
+      "gold": "Dillon Mitchell",
+      "note": "National record"
+    },
+    {
+      "year": "2025",
+      "meet": "AAU Junior Olympic Games",
+      "division": "15-16 Boys",
+      "event": "200m",
+      "mark": "21.04",
+      "gold": "Dillon Mitchell"
+    },
+    {
+      "year": "2025",
+      "meet": "AAU Junior Olympic Games",
+      "division": "15-16 Boys",
+      "event": "110m Hurdles",
+      "mark": "14.00",
+      "gold": "Avonte Earl"
+    },
+    {
+      "year": "2025",
+      "meet": "AAU Junior Olympic Games",
+      "division": "15-16 Boys",
+      "event": "4x100m Relay",
+      "mark": "39.6",
+      "gold": "Damien Hankins + squad",
+      "note": "National record",
+      "squad": true
+    },
+    {
+      "year": "2024",
+      "meet": "National Junior Olympics",
+      "division": "15-16 Boys",
+      "event": "100m",
+      "mark": "10.45",
+      "gold": "Dillon Mitchell",
+      "note": "National record"
+    },
+    {
+      "year": "2024",
+      "meet": "National Junior Olympics",
+      "division": "15-16 Boys",
+      "event": "Triple Jump",
+      "mark": "49-10.5",
+      "gold": "Harrison Lowe"
+    },
+    {
+      "year": "2024",
+      "meet": "National Junior Olympics",
+      "division": "15-16 Boys",
+      "event": "4x100m Relay",
+      "mark": "40.66",
+      "gold": "Deisnyk McCullough + squad",
+      "note": "National record",
+      "squad": true
+    },
+    {
+      "year": "2023",
+      "meet": "National Junior Olympics",
+      "division": "15-16 Boys",
+      "event": "Long Jump",
+      "mark": "7.27m",
+      "gold": "Jackson Norris"
+    },
+    {
+      "year": "2023",
+      "meet": "National Junior Olympics",
+      "division": "15-16 Boys",
+      "event": "4x400m Relay",
+      "mark": "3:18.52",
+      "gold": "Josiah Vilmael + squad",
+      "squad": true
+    },
+    {
+      "year": "2022",
+      "meet": "National Junior Olympics",
+      "division": "15-16 Boys",
+      "event": "4x100m Relay",
+      "mark": "42.43",
+      "gold": "Jaden Jenkins + squad",
+      "squad": true
+    },
+    {
+      "year": "2018",
+      "meet": "National Junior Olympics",
+      "division": "15-16 Boys",
+      "event": "4x800m Relay",
+      "mark": "8:09.42",
+      "gold": "Jose Hernandez + squad",
+      "squad": true
+    },
+    {
+      "year": "2017",
+      "meet": "National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "800m",
+      "mark": "2:01.06",
+      "gold": "Malik Campbell"
+    },
+    {
+      "year": "2017",
+      "meet": "National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "4x400m Relay",
+      "mark": "3:26.8",
+      "gold": "Colin Taylor + squad",
+      "squad": true
+    },
+    {
+      "year": "2017",
+      "meet": "AAU Junior Olympic Games",
+      "division": "13-14 Boys",
+      "event": "4x400m Relay",
+      "mark": "3:27.31",
+      "gold": "Colin Taylor + squad",
+      "squad": true
+    },
+    {
+      "year": "2016",
+      "meet": "AAU Junior Olympic Games",
+      "division": "13-14 Boys",
+      "event": "400m",
+      "mark": "50.98",
+      "gold": "Elijah Bean"
+    },
+    {
+      "year": "2016",
+      "meet": "AAU Junior Olympic Games",
+      "division": "13-14 Boys",
+      "event": "400m",
+      "mark": "49.65",
+      "gold": "Ian Gilmore"
+    },
+    {
+      "year": "2015",
+      "meet": "National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "4x400m Relay",
+      "mark": "3:26.04",
+      "gold": "Kacey Barnett + squad",
+      "squad": true
+    },
+    {
+      "year": "2015",
+      "meet": "National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "4x800m Relay",
+      "mark": "8:49.34",
+      "gold": "Darrius Green + squad",
+      "squad": true
+    },
+    {
+      "year": "2014",
+      "meet": "National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "4x400m Relay",
+      "mark": "3:28.05",
+      "gold": "Deonte Bradford + squad",
+      "squad": true
+    },
+    {
+      "year": "2014",
+      "meet": "National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "4x800m Relay",
+      "mark": "8:44.14",
+      "gold": "Deonte Bradford + squad",
+      "squad": true
+    },
+    {
+      "year": "2014",
+      "meet": "AAU Junior Olympic Games",
+      "division": "13-14 Boys",
+      "event": "4x800m Relay",
+      "mark": "8:41.94",
+      "gold": "Nathaniel McRae + squad",
+      "squad": true
+    },
+    {
+      "year": "2013",
+      "meet": "National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "4x800m Relay",
+      "mark": "8:47.82",
+      "gold": "Randall Jubilee + squad",
+      "squad": true
+    },
+    {
+      "year": "2012",
+      "meet": "USATF National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "4x400m Relay",
+      "mark": "3:27.81",
+      "gold": "Robert Lewis + squad",
+      "squad": true
+    },
+    {
+      "year": "2012",
+      "meet": "USATF National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "4x800m Relay",
+      "mark": "8:33.11",
+      "gold": "O'Shae Clark + squad",
+      "squad": true
+    },
+    {
+      "year": "2011",
+      "meet": "USATF National Junior Olympics",
+      "division": "Sub-Bantam Girls",
+      "event": "200m",
+      "mark": "29.48",
+      "gold": "Dynasty McClennon",
+      "note": "National record"
+    },
+    {
+      "year": "2011",
+      "meet": "USATF National Junior Olympics",
+      "division": "Sub-Bantam Girls",
+      "event": "400m",
+      "mark": "1:12.38",
+      "gold": "Jalen Elrod"
+    },
+    {
+      "year": "2011",
+      "meet": "USATF National Junior Olympics",
+      "division": "Sub-Bantam Girls",
+      "event": "4x100m Relay",
+      "mark": "1:01.01",
+      "gold": "Jalen Elrod, Maryah Hampton, Daja Maxey, Adaora Nwokeji"
+    },
+    {
+      "year": "2011",
+      "meet": "USATF National Junior Olympics",
+      "division": "Midget Boys",
+      "event": "4x100m Relay",
+      "mark": "49.60",
+      "gold": "Albert Bennett, Eric Charles, Dshawn Jamison, Myles Wanza"
+    },
+    {
+      "year": "2011",
+      "meet": "USATF National Junior Olympics",
+      "division": "Intermediate Girls",
+      "event": "4x100m Relay",
+      "mark": "46.44",
+      "gold": "Tarameshia Gordon, Zarriea Willis, Rushell Harvey, Alaysha Johnson"
+    },
+    {
+      "year": "2011",
+      "meet": "USATF National Junior Olympics",
+      "division": "Sub-Bantam Girls",
+      "event": "4x400m Relay",
+      "mark": "5:05.18",
+      "gold": "Jalen Elrod, Maryah Hampton, Daja Maxey, Dynasty McClennon"
+    },
+    {
+      "year": "2011",
+      "meet": "USATF National Junior Olympics",
+      "division": "Sub-Bantam Boys",
+      "event": "4x400m Relay",
+      "mark": "4:57.60",
+      "gold": "Lden Skinner, Elijah Bean, Finnley Polidore, Tyler Dale",
+      "note": "National record"
+    },
+    {
+      "year": "2011",
+      "meet": "USATF National Junior Olympics",
+      "division": "Intermediate Girls",
+      "event": "4x400m Relay",
+      "mark": "3:46.90",
+      "gold": "Mahasin Ahmad, Alaysha Johnson, Rushell Harvey, Zarriea Willis"
+    },
+    {
+      "year": "2011",
+      "meet": "USATF National Junior Olympics",
+      "division": "Intermediate Boys",
+      "event": "4x400m Relay",
+      "mark": "3:18.89",
+      "gold": "Qualen Davis, Jecory Hoyt, Daidrick Kibbie, Otis Laskey"
+    },
+    {
+      "year": "2010",
+      "meet": "National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "100m Hurdles",
+      "mark": "13.27",
+      "gold": "Kendall Sheffield"
+    },
+    {
+      "year": "2010",
+      "meet": "National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "200m Hurdles",
+      "mark": "24.18",
+      "gold": "Kendall Sheffield"
+    },
+    {
+      "year": "2010",
+      "meet": "National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "4x400m Relay",
+      "mark": "3:30",
+      "gold": "Mark Barre + squad",
+      "squad": true
+    },
+    {
+      "year": "2007",
+      "meet": "National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "100m Hurdles",
+      "mark": "13.41",
+      "gold": "Paul Kopesky"
+    },
+    {
+      "year": "2007",
+      "meet": "National Junior Olympics",
+      "division": "13-14 Boys",
+      "event": "200m Hurdles",
+      "mark": "25.08",
+      "gold": "Paul Kopesky"
+    },
+    {
+      "year": "2005",
+      "meet": "National Junior Olympics · Indianapolis",
+      "division": "13-14 Boys",
+      "event": "Pentathlon",
+      "mark": "3,326 pts",
+      "gold": "Marcus Davis"
+    },
+    {
+      "year": "2005",
+      "meet": "National Junior Olympics · Indianapolis",
+      "division": "13-14 Boys",
+      "event": "Javelin",
+      "mark": "179-02",
+      "gold": "Matthew Kosecki"
+    }
+  ]
+}
