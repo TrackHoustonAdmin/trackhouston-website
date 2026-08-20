@@ -14,13 +14,11 @@
     "highlights": [
       {
         "athlete": "Elijah Zuniga",
-        "result": "Gold — 17-18 Boys 800m, 1500m and mixed 4x800m relay",
-        "photo": "/champions-2026/elijah-zuniga.jpg"
+        "result": "Gold — 17-18 Boys 800m, 1500m and mixed 4x800m relay"
       },
       {
         "athlete": "Maryann Akpobassa",
-        "result": "Triple jump record · silver in long jump",
-        "photo": "/champions-2026/maryann-akpobassa.jpg"
+        "result": "Triple jump record · silver in long jump"
       },
       {
         "athlete": "Thomas Holmes III",
@@ -28,18 +26,15 @@
       },
       {
         "athlete": "11-12 Boys 4x100m relay",
-        "result": "National record 46.85, set at Region 12",
-        "photo": "/champions-2026/record-11-12-4x100.jpg"
+        "result": "National record 46.85, set at Region 12"
       },
       {
         "athlete": "11-12 Boys 4x100m relay ",
-        "result": "Gold — Cole McCullar, Elijah Griffin Jr., Jeremiah Foreman, Kamar Waddy",
-        "photo": "/champions-2026/boys-11-12-4x100.jpg"
+        "result": "Gold — Cole McCullar, Elijah Griffin Jr., Jeremiah Foreman, Kamar Waddy"
       },
       {
         "athlete": "11-12 Boys 4x400m relay",
-        "result": "Gold — Thomas Holmes III, Elijah Griffin Jr., Cole McCullar, Kamar Waddy",
-        "photo": "/champions-2026/boys-11-12-4x400.jpg"
+        "result": "Gold — Thomas Holmes III, Elijah Griffin Jr., Cole McCullar, Kamar Waddy"
       },
       {
         "athlete": "Jace Coleman",
@@ -47,38 +42,31 @@
       },
       {
         "athlete": "Brooklyn Allen",
-        "result": "Gold — 3000m (17-18 Girls)",
-        "photo": "/champions-2026/brooklyn-allen.jpg"
+        "result": "Gold — 3000m (17-18 Girls)"
       },
       {
         "athlete": "Avonte Earl",
-        "result": "Gold — 200m (17-18 Boys)",
-        "photo": "/champions-2026/avonte-earl.jpg"
+        "result": "Gold — 200m (17-18 Boys)"
       },
       {
         "athlete": "8U Boys 4x100m relay",
-        "result": "Gold — Jayceon Gray, Kaden Underwood, Carter Singleton, Blaise McCullar",
-        "photo": "/champions-2026/boys-8u-4x100.jpg"
+        "result": "Gold — Jayceon Gray, Kaden Underwood, Carter Singleton, Blaise McCullar"
       },
       {
         "athlete": "9-10 Girls 4x400m relay",
-        "result": "Gold — Amara Tafen, London Barnett, Zoey Esene, Nori Norris",
-        "photo": "/champions-2026/girls-9-10-4x400.jpg"
+        "result": "Gold — Amara Tafen, London Barnett, Zoey Esene, Nori Norris"
       },
       {
         "athlete": "15-16 Boys 4x100m relay",
-        "result": "Gold — Devlin Hart, Jayson Smith, Jordan Burnside, Harrison Jordan",
-        "photo": "/champions-2026/boys-15-16-4x100.jpg"
+        "result": "Gold — Devlin Hart, Jayson Smith, Jordan Burnside, Harrison Jordan"
       },
       {
         "athlete": "15-16 Mixed 4x100m relay",
-        "result": "Gold — Tiana Peck, A'mari Randel, Deklan Terry, Ayden Henderson",
-        "photo": "/champions-2026/mixed-15-16-4x100.jpg"
+        "result": "Gold — Tiana Peck, A'mari Randel, Deklan Terry, Ayden Henderson"
       },
       {
         "athlete": "15-16 Boys 4x800m relay",
-        "result": "Gold — Evan Brown, Micah Sterling, Uzodimma Wittick, Demitrius Kelly",
-        "photo": "/champions-2026/boys-15-16-4x800.jpg"
+        "result": "Gold — Evan Brown, Micah Sterling, Uzodimma Wittick, Demitrius Kelly"
       },
       {
         "athlete": "15-16 Mixed 4x800m relay",
@@ -86,13 +74,69 @@
       },
       {
         "athlete": "17-18 Girls 4x800m relay",
-        "result": "Gold — Ella Kempe, Alejandra Sagbini, Brooke Perry, Courtney Drain",
-        "photo": "/champions-2026/girls-17-18-4x800.jpg"
+        "result": "Gold — Ella Kempe, Alejandra Sagbini, Brooke Perry, Courtney Drain"
       },
       {
         "athlete": "17-18 Mixed 4x800m relay",
-        "result": "Gold — Elijah Zuniga, Reuben Ozomah, Brooklyn Allen, Brianna Alexander",
-        "photo": "/champions-2026/mixed-17-18-4x800.jpg"
+        "result": "Gold — Elijah Zuniga, Reuben Ozomah, Brooklyn Allen, Brianna Alexander"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/champions-2026/elijah-zuniga.jpg",
+        "alt": "Elijah Zuniga with his gold medals at the 2026 National Junior Olympics"
+      },
+      {
+        "src": "/champions-2026/maryann-akpobassa.jpg",
+        "alt": "Maryann Akpobassa with her medals at the 2026 National Junior Olympics"
+      },
+      {
+        "src": "/champions-2026/brooklyn-allen.jpg",
+        "alt": "Brooklyn Allen with her 3000m gold at the 2026 National Junior Olympics"
+      },
+      {
+        "src": "/champions-2026/avonte-earl.jpg",
+        "alt": "Avonte Earl with his 200m gold at the 2026 National Junior Olympics"
+      },
+      {
+        "src": "/champions-2026/boys-8u-4x100.jpg",
+        "alt": "8U Boys 4x100m relay champions at the 2026 National Junior Olympics"
+      },
+      {
+        "src": "/champions-2026/girls-9-10-4x400.jpg",
+        "alt": "9-10 Girls 4x400m relay champions at the 2026 National Junior Olympics"
+      },
+      {
+        "src": "/champions-2026/record-11-12-4x100.jpg",
+        "alt": "The 11-12 Boys national-record 4x100m squad at the 2026 National Junior Olympics"
+      },
+      {
+        "src": "/champions-2026/boys-11-12-4x100.jpg",
+        "alt": "11-12 Boys 4x100m relay champions at the 2026 National Junior Olympics"
+      },
+      {
+        "src": "/champions-2026/boys-11-12-4x400.jpg",
+        "alt": "11-12 Boys 4x400m relay champions at the 2026 National Junior Olympics"
+      },
+      {
+        "src": "/champions-2026/boys-15-16-4x100.jpg",
+        "alt": "15-16 Boys 4x100m relay champions at the 2026 National Junior Olympics"
+      },
+      {
+        "src": "/champions-2026/boys-15-16-4x800.jpg",
+        "alt": "15-16 Boys 4x800m relay champions at the 2026 National Junior Olympics"
+      },
+      {
+        "src": "/champions-2026/mixed-15-16-4x100.jpg",
+        "alt": "15-16 Mixed 4x100m relay champions at the 2026 National Junior Olympics"
+      },
+      {
+        "src": "/champions-2026/girls-17-18-4x800.jpg",
+        "alt": "17-18 Girls 4x800m relay champions at the 2026 National Junior Olympics"
+      },
+      {
+        "src": "/champions-2026/mixed-17-18-4x800.jpg",
+        "alt": "17-18 Mixed 4x800m relay champions at the 2026 National Junior Olympics"
       }
     ]
   },

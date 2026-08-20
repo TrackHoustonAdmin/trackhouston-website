@@ -68,14 +68,9 @@ const groups = [1, 2, 3, 4, 5, 6, 7, 8]
         <ul class="reveal mt-4 divide-y divide-line border-y border-line">
           {
             results.featured2026.highlights.map((h) => (
-              <li class="py-3 flex items-center gap-4">
-                {h.photo && (
-                  <img src={h.photo} alt={`${h.athlete} on the podium at the 2026 National Junior Olympics`} loading="lazy" decoding="async" class="w-16 h-16 object-cover object-top shrink-0" />
-                )}
-                <div class="flex-1 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6 min-w-0">
-                  <span class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg">{h.athlete}</span>
-                  <span class="text-steel text-sm sm:text-right">{h.result}</span>
-                </div>
+              <li class="py-3.5 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6">
+                <span class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg">{h.athlete}</span>
+                <span class="text-steel text-sm sm:text-right">{h.result}</span>
               </li>
             ))
           }
