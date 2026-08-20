@@ -1,153 +1,138 @@
 {
-  "trackField": [
+ "trackField": [
+  {
+   "area": "Alief",
+   "facility": "Killough Middle School",
+   "address": "7600 Synott, Houston, TX 77083",
+   "coaches": [
     {
-      "area": "Alief",
-      "facility": "Killough Middle School",
-      "address": "7600 Synott, Houston, TX 77083",
-      "coaches": [
-        {
-          "name": "Joinel Vilmael",
-          "phone": "(281) 628-6117"
-        },
-        {
-          "name": "Damaris Vilmael",
-          "phone": "(832) 509-6573"
-        }
-      ],
-      "schedule": "Mon · Tue · Thu, 6:00–8:00 PM (in season)"
+     "name": "Joinel Vilmael"
     },
     {
-      "area": "Conroe / Spring",
-      "facility": "York Junior High School",
-      "address": "3515 Waterbend Cove, Spring, TX 77386",
-      "coaches": [
-        {
-          "name": "Keith Combs",
-          "phone": "(832) 788-8511"
-        },
-        {
-          "name": "Lashone Ishmon",
-          "phone": "(832) 794-4467"
-        }
-      ],
-      "schedule": "Mon · Tue · Thu, 6:00–8:00 PM (in season)"
-    },
-    {
-      "area": "Cypress / CyFair",
-      "facility": "Cypress Springs High School",
-      "address": "7909 Fry Rd, Cypress, TX 77433",
-      "coaches": [
-        {
-          "name": "Dwight Rhodes",
-          "phone": "(832) 435-3250"
-        },
-        {
-          "name": "Deisnyk McCullough",
-          "phone": "(832) 687-1740"
-        }
-      ],
-      "schedule": "Tue · Thu, from 6:00 PM (in season)"
-    },
-    {
-      "area": "Humble",
-      "facility": "Atascocita Middle School",
-      "address": "18810 W Lake Houston Pkwy, Houston, TX 77346",
-      "coaches": [
-        {
-          "name": "Jared Alexander",
-          "phone": "(832) 694-5966"
-        },
-        {
-          "name": "Gerren Iles",
-          "phone": "(713) 823-2424"
-        }
-      ],
-      "schedule": "Mon · Tue · Thu, 6:00–8:00 PM (in season)"
-    },
-    {
-      "area": "Inner Loop / Third Ward",
-      "facility": "Yates High School",
-      "address": "3650 Alabama St, Houston, TX 77004",
-      "coaches": [
-        {
-          "name": "Keith Evans",
-          "phone": "(832) 215-3224"
-        }
-      ],
-      "schedule": "Mon · Wed, 6:15–8:00 PM (in season)"
-    },
-    {
-      "area": "Katy",
-      "facility": "McMeans Junior High School",
-      "address": "21000 Westheimer Pkwy, Katy, TX 77450",
-      "coaches": [
-        {
-          "name": "Kenneth Gandy",
-          "phone": "(832) 449-0803"
-        },
-        {
-          "name": "Walter Alexander",
-          "phone": "(918) 645-6383"
-        }
-      ],
-      "schedule": "Mon · Tue · Thu, 6:00–8:00 PM (in season)"
-    },
-    {
-      "area": "Sugar Land",
-      "facility": "Dulles High School",
-      "address": "550 Dulles Ave, Sugar Land, TX 77478",
-      "coaches": [
-        {
-          "name": "Krystle Iles",
-          "phone": "(713) 702-7194"
-        },
-        {
-          "name": "Telvin Fonteno",
-          "phone": "(832) 226-8089"
-        }
-      ],
-      "schedule": "Mon · Tue · Thu, 6:00–8:00 PM (in season)",
-      "note": "Early-season Saturday practices are held at Blueridge Park (5600 Court Road, Houston) — an alternate field, not a permanent site — until the club moves to its Missouri City practice site."
-    },
-    {
-      "area": "Rosharon",
-      "facility": "Almeta Crawford High School",
-      "address": "801 Caldwell Ranch Blvd, Rosharon, TX 77583",
-      "coaches": [
-        {
-          "name": "Rod Grogan",
-          "phone": "(713) 459-0464"
-        },
-        {
-          "name": "Joc Hudson",
-          "phone": "(832) 332-7321"
-        }
-      ],
-      "schedule": "Mon · Tue · Thu, 6:00–8:00 PM (in season)"
+     "name": "Damaris Vilmael"
     }
-  ],
-  "crossCountry": [
+   ],
+   "schedule": "Mon · Tue · Thu, 6:00–8:00 PM (in season)"
+  },
+  {
+   "area": "Conroe / Spring",
+   "facility": "York Junior High School",
+   "address": "3515 Waterbend Cove, Spring, TX 77386",
+   "coaches": [
     {
-      "area": "Cypress",
-      "facility": "John Paul Landing Park",
-      "address": "24202 West Rd, Cypress, TX 77433",
-      "coaches": [],
-      "schedule": "Mon · Tue · Thu, 6:00–7:30 PM · practice begins Aug 24"
+     "name": "Keith Combs"
     },
     {
-      "area": "Katy",
-      "facility": "Willow Fork Park",
-      "address": "Grand Parkway at Cinco Ranch Blvd, Katy, TX",
-      "coaches": [],
-      "schedule": "Mon · Tue · Thu, 6:00–8:00 PM · practice begins Aug 24"
-    },
-    {
-      "area": "Sugar Land",
-      "facility": "Sugar Land Memorial Park",
-      "address": "15300 University Blvd, Sugar Land, TX 77479",
-      "coaches": [],
-      "schedule": "Mon & Tue, 6:00–7:15 PM · practice begins Aug 24"
+     "name": "Lashone Ishmon"
     }
-  ],
-  "note": "Athletes must be registered before attending practice. Practice days and times can shift by season — confirm with your site coach."
+   ],
+   "schedule": "Mon · Tue · Thu, 6:00–8:00 PM (in season)"
+  },
+  {
+   "area": "Cypress / CyFair",
+   "facility": "Cypress Springs High School",
+   "address": "7909 Fry Rd, Cypress, TX 77433",
+   "coaches": [
+    {
+     "name": "Dwight Rhodes"
+    },
+    {
+     "name": "Deisnyk McCullough"
+    }
+   ],
+   "schedule": "Tue · Thu, from 6:00 PM (in season)"
+  },
+  {
+   "area": "Humble",
+   "facility": "Atascocita Middle School",
+   "address": "18810 W Lake Houston Pkwy, Houston, TX 77346",
+   "coaches": [
+    {
+     "name": "Jared Alexander"
+    },
+    {
+     "name": "Gerren Iles"
+    }
+   ],
+   "schedule": "Mon · Tue · Thu, 6:00–8:00 PM (in season)"
+  },
+  {
+   "area": "Inner Loop / Third Ward",
+   "facility": "Yates High School",
+   "address": "3650 Alabama St, Houston, TX 77004",
+   "coaches": [
+    {
+     "name": "Keith Evans"
+    }
+   ],
+   "schedule": "Mon · Wed, 6:15–8:00 PM (in season)"
+  },
+  {
+   "area": "Katy",
+   "facility": "McMeans Junior High School",
+   "address": "21000 Westheimer Pkwy, Katy, TX 77450",
+   "coaches": [
+    {
+     "name": "Kenneth Gandy"
+    },
+    {
+     "name": "Walter Alexander"
+    }
+   ],
+   "schedule": "Mon · Tue · Thu, 6:00–8:00 PM (in season)"
+  },
+  {
+   "area": "Sugar Land",
+   "facility": "Dulles High School",
+   "address": "550 Dulles Ave, Sugar Land, TX 77478",
+   "coaches": [
+    {
+     "name": "Krystle Iles"
+    },
+    {
+     "name": "Telvin Fonteno"
+    }
+   ],
+   "schedule": "Mon · Tue · Thu, 6:00–8:00 PM (in season)",
+   "note": "Early-season Saturday practices are held at Blueridge Park (5600 Court Road, Houston) — an alternate field, not a permanent site — until the club moves to its Missouri City practice site."
+  },
+  {
+   "area": "Rosharon",
+   "facility": "Almeta Crawford High School",
+   "address": "801 Caldwell Ranch Blvd, Rosharon, TX 77583",
+   "coaches": [
+    {
+     "name": "Rod Grogan"
+    },
+    {
+     "name": "Joc Hudson"
+    }
+   ],
+   "schedule": "Mon · Tue · Thu, 6:00–8:00 PM (in season)"
+  }
+ ],
+ "crossCountry": [
+  {
+   "area": "Cypress",
+   "facility": "John Paul Landing Park",
+   "address": "24202 West Rd, Cypress, TX 77433",
+   "coaches": [],
+   "schedule": "Mon · Tue · Thu, 6:00–7:30 PM · practice begins Aug 24"
+  },
+  {
+   "area": "Katy",
+   "facility": "Willow Fork Park",
+   "address": "Grand Parkway at Cinco Ranch Blvd, Katy, TX",
+   "coaches": [],
+   "schedule": "Mon · Tue · Thu, 6:00–8:00 PM · practice begins Aug 24"
+  },
+  {
+   "area": "Sugar Land",
+   "facility": "Sugar Land Memorial Park",
+   "address": "15300 University Blvd, Sugar Land, TX 77479",
+   "coaches": [],
+   "schedule": "Mon & Tue, 6:00–7:15 PM · practice begins Aug 24"
+  }
+ ],
+ "note": "Athletes must be registered before attending practice. Practice days and times can shift by season — confirm with your site coach."
 }

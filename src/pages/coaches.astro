@@ -4,13 +4,14 @@ import PageHero from '../components/PageHero.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import CoachCard from '../components/CoachCard.astro';
 import coaches from '../data/coaches.json';
+import { slugOf } from '../lib/coachProfiles';
 import girlsStart from '../assets/photos/girls-sprint-start.jpg';
 ---
 
 <Layout
   noindex
   title="Coaches — Track Houston Youth Track Club"
-  description="Track Houston's leadership, cross country head coaches and Spring 2026 age division head coaches — with direct phone and email contacts for every division."
+  description="Track Houston's leadership, cross country head coaches and Spring 2026 age division head coaches — with a profile and contact for every division."
 >
   <PageHero
     kicker="Coaches"
@@ -24,7 +25,7 @@ import girlsStart from '../assets/photos/girls-sprint-start.jpg';
   <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
     <SectionHeading kicker="Club Leadership" title="The front office." />
     <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      {coaches.leadership.map((p) => <CoachCard name={p.name} role={p.role} phone={p.phone} email={p.email} />)}
+      {coaches.leadership.map((p) => <CoachCard name={p.name} role={p.role} email={p.email} />)}
     </div>
   </section>
 
@@ -33,7 +34,7 @@ import girlsStart from '../assets/photos/girls-sprint-start.jpg';
     <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
       <SectionHeading kicker="Cross Country" title="XC head coaches" />
       <div class="mt-10 grid sm:grid-cols-2 gap-5 max-w-3xl">
-        {coaches.crossCountry.map((p) => <CoachCard name={p.name} role={p.role} phone={p.phone} email={p.email} />)}
+        {coaches.crossCountry.map((p) => <CoachCard name={p.name} role={p.role} email={p.email} />)}
       </div>
     </div>
   </section>
@@ -54,9 +55,11 @@ import girlsStart from '../assets/photos/girls-sprint-start.jpg';
             <ul class="px-5 py-4 space-y-2">
               {d.coaches.map((c) => (
                 <li class="flex items-baseline justify-between gap-4">
-                  <span class="font-medium">{c.name}</span>
-                  <a href={`tel:${c.phone.replace(/[^0-9]/g, '')}`} class="text-steel text-sm hover:text-th-red transition-colors whitespace-nowrap">
-                    {c.phone}
+                  <a href={`/coaches/${slugOf(c.name)}`} class="font-medium hover:text-th-red transition-colors">
+                    {c.name}
+                  </a>
+                  <a href={`/coaches/${slugOf(c.name)}`} class="text-steel text-sm hover:text-th-red transition-colors whitespace-nowrap">
+                    Profile →
                   </a>
                 </li>
               ))}

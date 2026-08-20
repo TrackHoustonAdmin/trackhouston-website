@@ -10,7 +10,6 @@ export interface CoachPerson {
   name: string;
   slug: string;
   roles: string[];
-  phone?: string;
   email?: string;
   photo: string | null;
   credentials: string[];
@@ -30,7 +29,7 @@ const photoOf = (slug: string): string | null => {
 /** Every person in coaches.json, merged with their profile (bio/credentials) and photo. */
 export function getCoachPeople(): CoachPerson[] {
   const map = new Map<string, CoachPerson>();
-  const add = (name: string, role: string, phone?: string, email?: string) => {
+  const add = (name: string, role: string, email?: string) => {
     const slug = slugOf(name);
     if (!map.has(slug)) {
       const prof = (profiles as Record<string, { bio?: string; credentials?: string[]; registered?: boolean }>)[slug] ?? {};
@@ -38,7 +37,6 @@ export function getCoachPeople(): CoachPerson[] {
         name,
         slug,
         roles: [],
-        phone,
         email,
         photo: photoOf(slug),
         credentials: prof.credentials ?? [],
@@ -48,13 +46,12 @@ export function getCoachPeople(): CoachPerson[] {
     }
     const p = map.get(slug)!;
     if (!p.roles.includes(role)) p.roles.push(role);
-    if (!p.phone && phone) p.phone = phone;
     if (!p.email && email) p.email = email;
   };
-  for (const p of coaches.leadership) add(p.name, p.role, p.phone, p.email);
-  for (const p of coaches.crossCountry) add(p.name, (p as any).role ?? 'Cross Country Head Coach', p.phone, (p as any).email);
+  for (const p of coaches.leadership) add(p.name, p.role, p.email);
+  for (const p of coaches.crossCountry) add(p.name, (p as any).role ?? 'Cross Country Head Coach', (p as any).email);
   for (const d of coaches.ageDivisions) {
-    for (const c of d.coaches ?? []) add(c.name, `Head Coach — ${d.division}`, c.phone, (c as any).email);
+    for (const c of d.coaches ?? []) add(c.name, `Head Coach — ${d.division}`, (c as any).email);
   }
   return [...map.values()];
 }

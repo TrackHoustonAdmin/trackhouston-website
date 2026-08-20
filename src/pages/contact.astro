@@ -9,20 +9,20 @@ import site from '../data/site.json';
 const routes = [
   { topic: 'Registration & new families', who: 'Your age division head coach', href: '/coaches', label: 'Coach directory' },
   { topic: 'Practice locations', who: 'The site coaches listed on each location', href: '/locations', label: 'Locations' },
-  { topic: 'Cross country', who: 'Kenya Artis · (337) 274-4458, or Kenneth Gandy · (832) 449-0803', href: '/coaches', label: 'XC coaches' },
-  { topic: 'Sponsorship, vendors & donations', who: 'Regina Godine · (281) 702-1929 · regina.godine@trackhouston.com', href: '/sponsors', label: 'Sponsorship' },
+  { topic: 'Cross country', who: 'Co-head coaches Kenya Artis and Kenneth Gandy', href: '/coaches', label: 'XC coaches' },
+  { topic: 'Sponsorship, vendors & donations', who: 'Regina Godine · regina.godine@trackhouston.com', href: '/sponsors', label: 'Sponsorship' },
   { topic: 'Academics & scholarships', who: 'Joe Felder · joe.felder@trackhouston.com', href: '/programs', label: 'Scholars program' },
 ];
 ---
 
 <Layout
   title="Contact — Track Houston Youth Track Club"
-  description="Contact Track Houston: club leadership, age division head coaches, cross country coaches and sponsorship — direct phone numbers and emails."
+  description="Contact Track Houston: club leadership, age division head coaches, cross country coaches and sponsorship — real names and direct emails."
 >
   <PageHero
     kicker="Contact"
     title="Talk to us."
-    intro="No contact forms that go nowhere. Real names, real phone numbers."
+    intro="No contact forms that go nowhere. Real names, real people."
   />
 
   <!-- Routing -->
@@ -51,7 +51,7 @@ const routes = [
     <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
       <SectionHeading kicker="Leadership" title="Club officers" />
       <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {coaches.leadership.map((p) => <CoachCard name={p.name} role={p.role} phone={p.phone} email={p.email} />)}
+        {coaches.leadership.map((p) => <CoachCard name={p.name} role={p.role} email={p.email} />)}
       </div>
     </div>
   </section>

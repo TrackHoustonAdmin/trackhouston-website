@@ -5,10 +5,9 @@ import path from 'node:path';
 interface Props {
   name: string;
   role: string;
-  phone?: string;
   email?: string;
 }
-const { name, role, phone = '', email = '' } = Astro.props;
+const { name, role, email = '' } = Astro.props;
 const initials = name
   .split(' ')
   .map((n) => n[0])
@@ -38,11 +37,6 @@ const photo = ['jpg', 'jpeg', 'png', 'webp']
     </h3>
     <p class="text-th-red kicker mt-1">{role}</p>
     <ul class="mt-3 space-y-1 text-sm text-steel">
-      {phone && (
-        <li>
-          <a href={`tel:${phone.replace(/[^0-9]/g, '')}`} class="hover:text-th-red transition-colors">{phone}</a>
-        </li>
-      )}
       {email && (
         <li class="truncate">
           <a href={`mailto:${email}`} class="hover:text-th-red transition-colors">{email}</a>

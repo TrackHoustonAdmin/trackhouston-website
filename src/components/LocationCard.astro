@@ -1,7 +1,6 @@
 ---
 interface Coach {
   name: string;
-  phone: string;
 }
 interface Props {
   area: string;
@@ -45,12 +44,7 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
           <span class="kicker text-steel block mb-2">Site coaches</span>
           <ul class="space-y-1.5">
             {coaches.map((c) => (
-              <li class="flex items-baseline justify-between gap-3 text-sm">
-                <span class="font-medium">{c.name}</span>
-                <a href={`tel:${c.phone.replace(/[^0-9]/g, '')}`} class="text-steel hover:text-th-red transition-colors whitespace-nowrap">
-                  {c.phone}
-                </a>
-              </li>
+              <li class="text-sm font-medium">{c.name}</li>
             ))}
           </ul>
         </div>

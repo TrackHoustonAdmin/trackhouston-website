@@ -41,11 +41,6 @@ const updateMailto = `mailto:Treasurer@TrackHouston.com?subject=${encodeURICompo
           <h1 class="display text-5xl sm:text-7xl">{person.name}</h1>
           <p class="kicker text-white/90 mt-3">{person.roles.join(' · ')}</p>
           <ul class="mt-4 flex flex-wrap gap-x-6 gap-y-1 text-white/90 text-sm">
-            {person.phone && (
-              <li>
-                <a href={`tel:${person.phone.replace(/[^0-9]/g, '')}`} class="hover:text-ink transition-colors">{person.phone}</a>
-              </li>
-            )}
             {person.email && (
               <li>
                 <a href={`mailto:${person.email}`} class="hover:text-ink transition-colors">{person.email}</a>
