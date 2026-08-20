@@ -1,0 +1,263 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import CTAButton from '../components/CTAButton.astro';
+import data from '../data/gold-room.json';
+import coaches from '../data/coaches.json';
+import { slugOf } from '../lib/coachProfiles';
+
+const years = [...new Set(data.ledger.map((e) => e.year))];
+const byYear = years.map((y) => ({ year: y, entries: data.ledger.filter((e) => e.year === y) }));
+const totalGolds = data.ledger.length;
+
+/* Spring 2026 head coaches of the divisions that produced 2026 national champions.
+   Division labels map to birth years: 8U→2018–19, 9-10→2016–17, 11-12→2014–15,
+   13-14→2012–13, 15-16→2010–11, 17-18→2008–09. */
+const DIV_TO_BIRTH: Record<string, string[]> = {
+  '8U Boys': ['Boys born 2018–2019'],
+  '9-10 Girls': ['Girls born 2016–2017'],
+  '11-12 Boys': ['Boys born 2014–2015'],
+  '13-14 Girls': ['Girls born 2012–2013'],
+  '13-14 Boys': ['Boys born 2012–2013'],
+  '15-16 Boys': ['Boys born 2010–2011'],
+  '15-16 Mixed': ['Boys born 2010–2011', 'Girls born 2010–2011'],
+  '17-18 Boys': ['Boys born 2008–2009'],
+  '17-18 Girls': ['Girls born 2008–2009'],
+  '17-18 Mixed': ['Boys born 2008–2009', 'Girls born 2008–2009'],
+};
+/* Coaches are credited for RELAY golds only. */
+const relayGolds2026 = data.ledger.filter((e) => e.year === '2026' && e.event.includes('Relay'));
+const relayDivs2026 = [...new Set(relayGolds2026.map((e) => e.division))];
+const coachRows = relayDivs2026.map((div) => {
+  const birthLabels = DIV_TO_BIRTH[div] ?? [];
+  const names = birthLabels.flatMap(
+    (b) => coaches.ageDivisions.find((d) => d.division === b)?.coaches.map((c) => c.name) ?? []
+  );
+  const golds = relayGolds2026.filter((e) => e.division === div).length;
+  return { division: div, coaches: [...new Set(names)], golds };
+});
+---
+
+<Layout
+  noindex
+  title="Hall of Champions — Track Houston Youth Track Club"
+  description={`${totalGolds} national gold medals, every name we have on record — plus the national records Track Houston still owns.`}
+>
+  <!-- Hero -->
+  <section class="bg-ink text-white relative overflow-hidden">
+    <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1 bg-th-gold"></div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 pt-20 lg:pt-28 pb-16 lg:pb-24">
+      <p class="reveal kicker text-th-gold">National Champions Only</p>
+      <h1 class="reveal display text-6xl sm:text-8xl lg:text-9xl mt-4">
+        Hall of<br />Champions.
+      </h1>
+      <p class="reveal mt-6 max-w-2xl text-white/80 leading-relaxed">
+        Every Track Houston athlete with a national Junior Olympic gold medal on record —
+        relay or individual, USATF or AAU — and the national records the club still owns.
+      </p>
+      <div class="reveal mt-10 grid grid-cols-3 gap-6 border-t border-white/20 pt-8 max-w-2xl">
+        <div>
+          <p class="display text-5xl sm:text-6xl text-th-gold"><span data-countup={String(totalGolds)}>{totalGolds}</span></p>
+          <p class="kicker text-white/60 mt-2">Gold medals on record</p>
+        </div>
+        <div>
+          <p class="display text-5xl sm:text-6xl text-th-gold"><span data-countup={String(data.honorRoll.length)}>{data.honorRoll.length}</span></p>
+          <p class="kicker text-white/60 mt-2">Names in the hall</p>
+        </div>
+        <div>
+          <p class="display text-5xl sm:text-6xl text-th-gold">{data.records.usatf.length + data.records.aau.length}</p>
+          <p class="kicker text-white/60 mt-2">National records held</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- National records owned: USATF first, then AAU -->
+  <section class="bg-ink-soft text-white border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+      <SectionHeading light kicker="Still Standing" title="National records we own." />
+
+      <h3 class="reveal mt-12 kicker text-th-gold">USATF</h3>
+      <div class="mt-5 grid md:grid-cols-2 gap-5">
+        {
+          data.records.usatf.map((r) => (
+            <article class="reveal border border-th-gold/40 bg-ink p-7 flex flex-col">
+              <p class="kicker text-th-gold">{r.division} · {r.event}</p>
+              <p class="display text-6xl sm:text-7xl mt-4">{r.mark}</p>
+              <p class="mt-4 font-condensed font-semibold uppercase tracking-[0.05em] text-lg">
+                {r.holder} <span class="text-white/50">· {r.date}</span>
+              </p>
+              {r.athletes && <p class="mt-2 text-white/85">{r.athletes}</p>}
+              {r.note && <p class="mt-3 text-white/55 text-sm leading-relaxed">{r.note}</p>}
+            </article>
+          ))
+        }
+      </div>
+
+      <h3 class="reveal mt-14 kicker text-th-gold">AAU</h3>
+      <p class="reveal mt-3 max-w-2xl text-white/70 leading-relaxed text-sm">
+        From the {data.aauSource}. AAU lists individual records by hometown rather than club —
+        relay records carry the club name.
+      </p>
+      <div class="mt-5 grid md:grid-cols-2 gap-5">
+        {
+          data.records.aau.map((r) => (
+            <article class="reveal border border-th-gold/40 bg-ink p-7 flex flex-col">
+              <p class="kicker text-th-gold">{r.division} · {r.event}</p>
+              <p class="display text-6xl sm:text-7xl mt-4">{r.mark}</p>
+              <p class="mt-4 font-condensed font-semibold uppercase tracking-[0.05em] text-lg">
+                {r.holder} <span class="text-white/50">· {r.date}</span>
+              </p>
+              {r.athletes && <p class="mt-2 text-white/85">{r.athletes}</p>}
+              {r.note && <p class="mt-3 text-white/55 text-sm leading-relaxed">{r.note}</p>}
+            </article>
+          ))
+        }
+      </div>
+
+      <p class="reveal mt-10 text-white/55 text-sm max-w-3xl leading-relaxed">
+        {data.records.footnote}
+        <a href="/results/records" class="underline decoration-th-gold underline-offset-4 hover:text-th-gold transition-colors ml-1">Open the Record Book →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Honor roll -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <SectionHeading kicker="The Honor Roll" title="Every name on a gold." />
+    <p class="reveal mt-5 max-w-2xl text-ink/75 leading-relaxed">
+      Alphabetical by last name. The count is gold medals that athlete's name appears on in the
+      club's records — individual titles and relay golds alike.
+    </p>
+    <ul class="mt-10 columns-2 sm:columns-3 lg:columns-4 gap-x-8">
+      {
+        data.honorRoll.map((a) => (
+          <li class="break-inside-avoid flex items-baseline justify-between gap-3 border-b border-line py-2">
+            <span class="font-condensed font-semibold uppercase tracking-[0.04em]">{a.name}</span>
+            <span class="text-sm text-steel whitespace-nowrap">
+              {a.golds > 1 && <span class="text-th-gold font-semibold">{a.golds}×</span>}
+              <span class="ml-1">{a.years.length > 1 ? `${a.years[0]}–${a.years[a.years.length - 1]}` : a.years[0]}</span>
+            </span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <!-- The ledger -->
+  <section class="bg-chalk border-y border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+      <SectionHeading kicker="The Ledger" title="Gold by gold." />
+      <p class="reveal mt-5 max-w-2xl text-steel text-sm leading-relaxed">{data.note}</p>
+      <div class="mt-12 space-y-12">
+        {
+          byYear.map((y) => (
+            <div class="reveal">
+              <h3 class="display text-4xl sm:text-5xl text-th-red border-b-2 border-ink pb-2 flex items-baseline gap-4">
+                {y.year}
+                <span class="font-condensed text-lg text-steel tracking-[0.08em] uppercase">
+                  {y.entries.length} gold{y.entries.length === 1 ? '' : 's'}
+                </span>
+              </h3>
+              <ul class="mt-3 divide-y divide-line">
+                {y.entries.map((e) => (
+                  <li class="py-2.5 flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-5">
+                    <span class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg sm:w-72 shrink-0">
+                      {e.event} <span class="text-steel">· {e.division}</span>
+                    </span>
+                    <span class="flex-1">
+                      {e.gold}
+                      {e.note && (
+                        <span class="ml-2 bg-th-gold text-ink kicker px-2 py-0.5 whitespace-nowrap">{e.note}</span>
+                      )}
+                    </span>
+                    <span class="display text-lg sm:text-right text-ink/85">{e.mark ?? ''}</span>
+                    <span class="kicker text-steel sm:w-40 sm:text-right shrink-0">{e.meet.replace('National Junior Olympics', 'JO').replace('Junior Olympic Games', 'JO')}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Coaches -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <SectionHeading kicker="Behind Every Relay" title="The coaches." />
+    <p class="reveal mt-5 max-w-2xl text-ink/75 leading-relaxed">
+      {data.coaches.rule}
+    </p>
+
+    <!-- Coach ledger: counted so far -->
+    {
+      data.coaches.counted.map((c) => (
+        <article class="reveal mt-10 bg-ink text-white p-8 sm:p-10 grid lg:grid-cols-[auto_1fr] gap-8 items-center border-l-4 border-th-gold">
+          <div class="text-center lg:text-left">
+            <p class="display text-7xl sm:text-8xl text-th-gold">{c.relayGolds}</p>
+            <p class="kicker text-white/60 mt-2">Relay golds · {c.span}</p>
+          </div>
+          <div>
+            <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-3xl">
+              <a href={`/coaches/${c.slug}`} class="hover:text-th-gold transition-colors">{c.name}</a>
+            </h3>
+            <p class="mt-3 text-white/80 leading-relaxed max-w-2xl">{c.body}</p>
+          </div>
+        </article>
+      ))
+    }
+
+    <!-- Sheets on the way -->
+    <div class="reveal mt-5 border border-th-gold/40 bg-chalk p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center gap-5 justify-between">
+      <p class="text-ink/75 leading-relaxed max-w-2xl text-sm">{data.coaches.pendingNote}</p>
+      <ul class="flex flex-wrap gap-x-6 gap-y-1 shrink-0">
+        {
+          data.coaches.pending.map((c) => (
+            <li>
+              <a href={`/coaches/${c.slug}`} class="font-condensed font-semibold uppercase tracking-[0.05em] text-lg hover:text-th-red transition-colors">
+                {c.name} <span class="text-th-gold">· counting</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <p class="reveal mt-12 kicker text-steel">2026 relay golds · division head coaches of record</p>
+    <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {
+        coachRows.map((row) => (
+          <article class="reveal border border-line bg-white">
+            <div class="border-l-4 border-th-gold px-5 py-3.5 flex items-baseline justify-between gap-3 bg-chalk">
+              <h3 class="font-condensed font-semibold uppercase tracking-[0.05em] text-xl">{row.division}</h3>
+              <p class="kicker text-th-gold whitespace-nowrap">{row.golds} relay gold{row.golds === 1 ? '' : 's'}</p>
+            </div>
+            <ul class="px-5 py-4 space-y-1.5">
+              {row.coaches.map((name) => (
+                <li>
+                  <a href={`/coaches/${slugOf(name)}`} class="font-medium hover:text-th-red transition-colors">{name}</a>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))
+      }
+    </div>
+    <p class="reveal mt-8 text-steel text-sm max-w-2xl">{data.coaches.invite}</p>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-ink text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 flex flex-col sm:flex-row sm:items-center justify-between gap-8">
+      <div>
+        <p class="kicker text-th-gold">Your name goes here</p>
+        <p class="display text-4xl sm:text-5xl mt-2">The hall has space.</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <CTAButton>Join Track Houston</CTAButton>
+        <CTAButton href="/results" variant="ghost">All Results & Records</CTAButton>
+      </div>
+    </div>
+  </section>
+</Layout>

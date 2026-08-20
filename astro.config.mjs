@@ -8,7 +8,7 @@ export default defineConfig({
   site: 'https://www.trackhouston.com',
   output: 'static',
   trailingSlash: 'never',
-  integrations: [sitemap({ filter: (page) => !['/coaches','/athletes','/alumni','/roster','/gold-room','/results/division-history'].some((p) => new URL(page).pathname.replace(/\/$/, '') === p) })],
+  integrations: [sitemap({ filter: (page) => !['/coaches','/athletes','/alumni','/roster','/gold-room','/hall-of-champions','/results/division-history'].some((p) => new URL(page).pathname.replace(/\/$/, '') === p) })],
   vite: {
     plugins: [tailwindcss()],
   },

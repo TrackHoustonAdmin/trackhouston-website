@@ -1264,14 +1264,27 @@
     "footnote": "Track Houston's 15-16 4x800m AAU record of 7:55.91 stood from 2016 until August 1, 2025. Earlier national-record marks — including Dynasty McClennon's 2011 200m and the 2011 Sub-Bantam Boys 4x400m — live in the full Record Book."
   },
   "coaches": {
-    "rule": "Coaches are credited for relay golds — the races a coach builds, orders and calls. Individual titles belong to the athletes.",
-    "featured": {
-      "name": "Keith Evans",
-      "slug": "keith-evans",
-      "relayGolds": 20,
-      "span": "2010–2026",
-      "body": "The 13-14 and 15-16 boys division records in this room are Coach Keith Evans' own season sheets — every national championship relay on them is his. From the 2010 13-14 4x400 through the 2025 AAU-record 39.60 and all four winning 15-16 relays in 2026."
-    },
-    "invite": "Historical coaching staffs are credited as coaches share their season sheets — send yours in."
+    "rule": "Coaches are credited for relay golds — the races a coach builds, orders and calls. Individual titles belong to the athletes. The counts below reflect only the season sheets turned in so far — this ledger grows as each coach's records arrive.",
+    "counted": [
+      {
+        "name": "Keith Evans",
+        "slug": "keith-evans",
+        "relayGolds": 20,
+        "span": "2010–2026",
+        "body": "The first season sheets in the room: Coach Evans' own 13-14 and 15-16 boys division records. Every national championship relay on them is his — from the 2010 13-14 4x400 through the 2025 AAU-record 39.60 and all four winning 15-16 relays in 2026."
+      }
+    ],
+    "pending": [
+      {
+        "name": "William Valerie",
+        "slug": "william-valerie"
+      },
+      {
+        "name": "Dwight Rhodes",
+        "slug": "dwight-rhodes"
+      }
+    ],
+    "pendingNote": "Relay championship histories that rival or match that count are still being compiled — starting with these coaches. Season sheets in, golds counted.",
+    "invite": "Coaches: send your season records to the club and your relay championships join the ledger."
   }
 }
