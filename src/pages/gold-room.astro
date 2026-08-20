@@ -63,24 +63,22 @@ const coachRows = goldDivs2026.map((div) => {
           <p class="kicker text-white/60 mt-2">Names in the room</p>
         </div>
         <div>
-          <p class="display text-5xl sm:text-6xl text-th-gold">2</p>
-          <p class="kicker text-white/60 mt-2">AAU national records held</p>
+          <p class="display text-5xl sm:text-6xl text-th-gold">{data.records.usatf.length + data.records.aau.length}</p>
+          <p class="kicker text-white/60 mt-2">National records held</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- AAU national records owned -->
+  <!-- National records owned: USATF first, then AAU -->
   <section class="bg-ink-soft text-white border-t border-white/10">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
-      <SectionHeading light kicker="Still Standing" title="AAU national records we own." />
-      <p class="reveal mt-5 max-w-2xl text-white/70 leading-relaxed text-sm">
-        From the {data.aauSource}. AAU lists individual records by hometown rather than club —
-        relay records carry the club name.
-      </p>
-      <div class="mt-10 grid md:grid-cols-2 gap-5">
+      <SectionHeading light kicker="Still Standing" title="National records we own." />
+
+      <h3 class="reveal mt-12 kicker text-th-gold">USATF</h3>
+      <div class="mt-5 grid md:grid-cols-2 gap-5">
         {
-          data.aauRecords.map((r) => (
+          data.records.usatf.map((r) => (
             <article class="reveal border border-th-gold/40 bg-ink p-7 flex flex-col">
               <p class="kicker text-th-gold">{r.division} · {r.event}</p>
               <p class="display text-6xl sm:text-7xl mt-4">{r.mark}</p>
@@ -93,6 +91,32 @@ const coachRows = goldDivs2026.map((div) => {
           ))
         }
       </div>
+
+      <h3 class="reveal mt-14 kicker text-th-gold">AAU</h3>
+      <p class="reveal mt-3 max-w-2xl text-white/70 leading-relaxed text-sm">
+        From the {data.aauSource}. AAU lists individual records by hometown rather than club —
+        relay records carry the club name.
+      </p>
+      <div class="mt-5 grid md:grid-cols-2 gap-5">
+        {
+          data.records.aau.map((r) => (
+            <article class="reveal border border-th-gold/40 bg-ink p-7 flex flex-col">
+              <p class="kicker text-th-gold">{r.division} · {r.event}</p>
+              <p class="display text-6xl sm:text-7xl mt-4">{r.mark}</p>
+              <p class="mt-4 font-condensed font-semibold uppercase tracking-[0.05em] text-lg">
+                {r.holder} <span class="text-white/50">· {r.date}</span>
+              </p>
+              {r.athletes && <p class="mt-2 text-white/85">{r.athletes}</p>}
+              {r.note && <p class="mt-3 text-white/55 text-sm leading-relaxed">{r.note}</p>}
+            </article>
+          ))
+        }
+      </div>
+
+      <p class="reveal mt-10 text-white/55 text-sm max-w-3xl leading-relaxed">
+        {data.records.footnote}
+        <a href="/results/records" class="underline decoration-th-gold underline-offset-4 hover:text-th-gold transition-colors ml-1">Open the Record Book →</a>
+      </p>
     </div>
   </section>
 

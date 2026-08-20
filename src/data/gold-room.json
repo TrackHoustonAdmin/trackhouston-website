@@ -1,26 +1,6 @@
 {
   "note": "Compiled from official 2026 USATF Junior Olympic results (relay squads verified on the official meet results), the official 1990–2011 national results books, and the coaching staff's own division records. Where a coaching-staff sheet records a single name for a relay, that name is shown with “+ squad” — send the full leg names and they'll be added.",
   "aauSource": "AAU Athletics Boys National Records book (aausports.org)",
-  "aauRecords": [
-    {
-      "division": "17-18 Men",
-      "event": "4x100m Relay",
-      "mark": "40.00",
-      "holder": "Track Houston",
-      "date": "August 4, 2012",
-      "athletes": "O'Shea Wilson, Jermaine Authorlee, Ahmed Ali, Kyle Fulks",
-      "note": "Squad per the club record book — the same four also hold the 39.56 Region 12 mark from 2012."
-    },
-    {
-      "division": "15-16 Boys",
-      "event": "4x800m Relay",
-      "mark": "7:55.91",
-      "holder": "Track Houston",
-      "date": "August 5, 2016",
-      "athletes": "",
-      "note": "Confirmed on the AAU books and FloTrack's all-time list. Send the four names and they'll be added."
-    }
-  ],
   "honorRoll": [
     {
       "name": "Mahasin Ahmad",
@@ -207,7 +187,7 @@
     },
     {
       "name": "Avonte Earl",
-      "golds": 2,
+      "golds": 3,
       "years": [
         "2025",
         "2026"
@@ -488,7 +468,7 @@
     },
     {
       "name": "Dillon Mitchell",
-      "golds": 3,
+      "golds": 4,
       "years": [
         "2024",
         "2025"
@@ -520,6 +500,13 @@
       "golds": 2,
       "years": [
         "2007"
+      ]
+    },
+    {
+      "name": "C. Onwuchekwa",
+      "golds": 1,
+      "years": [
+        "2025"
       ]
     },
     {
@@ -862,10 +849,9 @@
       "meet": "AAU Junior Olympic Games",
       "division": "15-16 Boys",
       "event": "4x100m Relay",
-      "mark": "39.6",
-      "gold": "Damien Hankins + squad",
-      "note": "National record",
-      "squad": true
+      "mark": "39.60",
+      "gold": "Damien Hankins, Dillon Mitchell, Avonte Earl, C. Onwuchekwa",
+      "note": "National record"
     },
     {
       "year": "2024",
@@ -1206,5 +1192,75 @@
       "mark": "179-02",
       "gold": "Matthew Kosecki"
     }
-  ]
+  ],
+  "records": {
+    "usatf": [
+      {
+        "division": "11-12 Boys",
+        "event": "4x100m Relay",
+        "mark": "46.85",
+        "holder": "Track Houston",
+        "date": "2026 · USATF Region 12",
+        "athletes": "",
+        "note": "Set at the 2026 Region 12 Championships — the fastest 11-12 4x100m ever run in USATF competition."
+      },
+      {
+        "division": "13-14 Girls",
+        "event": "Triple Jump",
+        "mark": "12.24m",
+        "holder": "Maryann Akpobassa",
+        "date": "2026 · USATF National JO",
+        "athletes": "",
+        "note": "Set while winning gold at the 2026 National Junior Olympics in Norwalk."
+      },
+      {
+        "division": "15-16 Boys",
+        "event": "100m",
+        "mark": "10.34",
+        "holder": "Dillon Mitchell",
+        "date": "2025 · USATF National JO",
+        "athletes": "",
+        "note": "Championship record set while winning the 2025 Junior Olympic title."
+      },
+      {
+        "division": "15-16 Boys",
+        "event": "4x100m Relay",
+        "mark": "40.66",
+        "holder": "Track Houston",
+        "date": "2024 · National JO",
+        "athletes": "Deisnyk McCullough + squad",
+        "note": "National record per the coaching staff's division records — send the full squad and they'll be named."
+      }
+    ],
+    "aau": [
+      {
+        "division": "15-16 Boys",
+        "event": "100m",
+        "mark": "10.23",
+        "holder": "Dillon Mitchell",
+        "date": "July 29, 2025 · AAU JO Games",
+        "athletes": "",
+        "note": "AAU lists individuals by hometown — Houston, TX. The fastest 15-16 100m in AAU history."
+      },
+      {
+        "division": "15-16 Boys",
+        "event": "4x100m Relay",
+        "mark": "39.60",
+        "holder": "Track Houston Youth",
+        "date": "August 2, 2025 · AAU JO Games",
+        "athletes": "Damien Hankins, Dillon Mitchell, Avonte Earl, C. Onwuchekwa",
+        "note": "Squad as listed in the AAU national record book."
+      },
+      {
+        "division": "17-18 Men",
+        "event": "4x100m Relay",
+        "mark": "40.00",
+        "holder": "Track Houston",
+        "date": "August 4, 2012 · AAU JO Games",
+        "athletes": "O'Shea Wilson, Jermaine Authorlee, Ahmed Ali, Kyle Fulks",
+        "note": "Squad per the club record book — the same four also hold the 39.56 Region 12 mark from 2012."
+      }
+    ],
+    "footnote": "Track Houston's 15-16 4x800m AAU record of 7:55.91 stood from 2016 until August 1, 2025. Earlier national-record marks — including Dynasty McClennon's 2011 200m and the 2011 Sub-Bantam Boys 4x400m — live in the full Record Book."
+  }
 }
