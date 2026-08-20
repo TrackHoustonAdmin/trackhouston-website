@@ -54,6 +54,7 @@ collections_config:
       - locations.json
       - results2026.json
       - coach-profiles.json
+      - videos.json
 
   suggestions:
     path: src/data

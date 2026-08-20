@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import CTAButton from '../components/CTAButton.astro';
+import videos from '../data/videos.json';
+import site from '../data/site.json';
+
+const reelId = (url: string) => {
+  const m = url.match(/\/(?:reel|p)\/([^/]+)/);
+  return m ? m[1] : null;
+};
+const reels = videos.reels.map((r) => ({ ...r, id: reelId(r.url) })).filter((r) => r.id);
+---
+
+<Layout
+  title="Media — Track Houston Youth Track Club"
+  description="Track Houston on social: the latest reels from the track, plus the club's Instagram, YouTube and Facebook."
+>
+  <PageHero
+    kicker="Social Media"
+    title="The club, in motion."
+    intro="Race clips, medal ceremonies and behind-the-scenes from Track Houston meets — straight from the club's Instagram."
+  />
+
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {
+        reels.map((r) => (
+          <div class="reveal border border-line bg-white overflow-hidden">
+            <iframe
+              src={`https://www.instagram.com/reel/${r.id}/embed/`}
+              title="Track Houston Instagram reel"
+              class="w-full aspect-[9/16] block"
+              loading="lazy"
+              frameborder="0"
+              scrolling="no"
+              allowfullscreen
+            />
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="reveal mt-12 bg-ink text-white p-8 sm:p-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+      <div>
+        <p class="kicker text-th-red">More every week</p>
+        <p class="display text-4xl sm:text-5xl mt-2">Follow the club.</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <CTAButton href={videos.instagram}>@trackhouston on Instagram</CTAButton>
+        <CTAButton href={site.social.youtube} variant="ghost">YouTube</CTAButton>
+        <CTAButton href={site.social.facebook} variant="ghost">Facebook</CTAButton>
+      </div>
+    </div>
+  </section>
+</Layout>
