@@ -23,13 +23,28 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'SportsOrganization',
-  name: site.name,
-  url: Astro.site?.toString(),
-  foundingDate: String(site.founded),
-  sport: 'Track and Field',
-  address: { '@type': 'PostalAddress', addressLocality: 'Sugar Land', addressRegion: 'TX', postalCode: '77496', addressCountry: 'US' },
-  sameAs: [site.social.facebook, site.social.twitter, site.social.youtube],
+  '@graph': [
+    {
+      '@type': 'SportsOrganization',
+      '@id': new URL('/', Astro.site).toString() + '#org',
+      name: site.name,
+      alternateName: 'Track Houston',
+      url: Astro.site?.toString(),
+      logo: new URL('/apple-touch-icon.png', Astro.site).toString(),
+      foundingDate: String(site.founded),
+      sport: 'Track and Field',
+      nonprofitStatus: 'Nonprofit501c3',
+      address: { '@type': 'PostalAddress', addressLocality: 'Sugar Land', addressRegion: 'TX', postalCode: '77496', addressCountry: 'US' },
+      sameAs: [site.social.facebook, site.social.twitter, site.social.youtube, site.social.instagram],
+    },
+    {
+      '@type': 'WebSite',
+      name: site.name,
+      alternateName: 'Track Houston',
+      url: Astro.site?.toString(),
+      publisher: { '@id': new URL('/', Astro.site).toString() + '#org' },
+    },
+  ],
 };
 ---
 
