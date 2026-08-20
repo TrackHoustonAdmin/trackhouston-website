@@ -1,0 +1,12 @@
+{
+  "note": "Site change requests for Claude. Anyone with admin access can add a request here — when the treasurer opens a Claude session and says 'check the suggestion box', each new request is read, implemented, and marked done. Use the site editor (CloudCannon) to add entries; save publishes this file to the repo where Claude can read it.",
+  "requests": [
+    {
+      "date": "2026-08-20",
+      "page": "Example — Hall of Champions",
+      "request": "EXAMPLE ENTRY, leave status as done: Add Coach Valerie's relay golds once his season sheets are in.",
+      "from": "Torrey Dale",
+      "status": "done"
+    }
+  ]
+}

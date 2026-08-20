@@ -55,6 +55,16 @@ collections_config:
       - results2026.json
       - coach-profiles.json
 
+  suggestions:
+    path: src/data
+    name: Suggestion Box (for Claude)
+    icon: forum
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+    glob:
+      - suggestions.json
+
 _inputs:
   # Alumni
   rollCall:
@@ -99,3 +109,21 @@ _inputs:
     comment: Official time or mark
   place:
     type: number
+  # Suggestion box
+  requests:
+    type: array
+    comment: One entry per site change request
+  request:
+    type: textarea
+    comment: What should change, in plain words — page, what's wrong, what you want instead
+  from:
+    type: text
+    comment: Your name, so Claude can follow up in the right place
+  status:
+    type: select
+    comment: Leave as "new" — Claude sets it to done after making the change
+    options:
+      values:
+        - new
+        - in progress
+        - done
