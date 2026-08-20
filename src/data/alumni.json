@@ -53,6 +53,11 @@
         {
           "name": "Elijah Bean",
           "detail": "Football"
+        },
+        {
+          "name": "Taylor Bennett",
+          "detail": "Sprints — Big 12 champion, All-American",
+          "link": "https://baylorbears.com/sports/track-and-field/roster/taylor-bennett/5351"
         }
       ]
     },
@@ -547,6 +552,11 @@
           "name": "Adin Lathrop",
           "detail": "Cross Country/Distance",
           "link": "https://rolltide.com/sports/xctrack/roster/adin-lathrop/16116"
+        },
+        {
+          "name": "Tony Brown",
+          "detail": "Football — NFL",
+          "link": "https://rolltide.com/sports/football/roster/tony-brown/3887"
         }
       ]
     },
@@ -643,10 +653,6 @@
         },
         {
           "name": "Ariele Adams",
-          "detail": "Sprints"
-        },
-        {
-          "name": "Taylor Bennett",
           "detail": "Sprints"
         },
         {

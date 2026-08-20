@@ -94,6 +94,13 @@
       ]
     },
     {
+      "name": "Taylor Bennett",
+      "golds": 2,
+      "years": [
+        "2007"
+      ]
+    },
+    {
       "name": "Deonte Bradford",
       "golds": 2,
       "years": [
@@ -108,6 +115,13 @@
       ]
     },
     {
+      "name": "Tony Brown",
+      "golds": 1,
+      "years": [
+        "2007"
+      ]
+    },
+    {
       "name": "Jordan Burnside",
       "golds": 1,
       "years": [
@@ -119,6 +133,13 @@
       "golds": 1,
       "years": [
         "2017"
+      ]
+    },
+    {
+      "name": "Chance Casey",
+      "golds": 1,
+      "years": [
+        "2007"
       ]
     },
     {
@@ -154,6 +175,20 @@
       "golds": 1,
       "years": [
         "2011"
+      ]
+    },
+    {
+      "name": "Cavian Davis",
+      "golds": 1,
+      "years": [
+        "2007"
+      ]
+    },
+    {
+      "name": "Tyana Davis",
+      "golds": 2,
+      "years": [
+        "2007"
       ]
     },
     {
@@ -270,6 +305,13 @@
       ]
     },
     {
+      "name": "Kiana Horton",
+      "golds": 2,
+      "years": [
+        "2007"
+      ]
+    },
+    {
       "name": "Jecory Hoyt",
       "golds": 1,
       "years": [
@@ -281,6 +323,13 @@
       "golds": 2,
       "years": [
         "2026"
+      ]
+    },
+    {
+      "name": "Brass Woods III",
+      "golds": 1,
+      "years": [
+        "2007"
       ]
     },
     {
@@ -403,6 +452,13 @@
       ]
     },
     {
+      "name": "Tre'Lan McCray",
+      "golds": 1,
+      "years": [
+        "2007"
+      ]
+    },
+    {
       "name": "Blaise McCullar",
       "golds": 1,
       "years": [
@@ -457,6 +513,13 @@
       "golds": 1,
       "years": [
         "2011"
+      ]
+    },
+    {
+      "name": "Olu-Bunmi Okunade",
+      "golds": 2,
+      "years": [
+        "2007"
       ]
     },
     {
@@ -1081,7 +1144,7 @@
     },
     {
       "year": "2007",
-      "meet": "National Junior Olympics",
+      "meet": "USATF National Junior Olympics",
       "division": "13-14 Boys",
       "event": "100m Hurdles",
       "mark": "13.41",
@@ -1089,11 +1152,43 @@
     },
     {
       "year": "2007",
-      "meet": "National Junior Olympics",
+      "meet": "USATF National Junior Olympics",
       "division": "13-14 Boys",
       "event": "200m Hurdles",
-      "mark": "25.08",
+      "mark": "24.96",
       "gold": "Paul Kopesky"
+    },
+    {
+      "year": "2007",
+      "meet": "USATF National Junior Olympics",
+      "division": "Midget Boys (11-12)",
+      "event": "4x100m Relay",
+      "mark": "49.07",
+      "gold": "Tony Brown, Tre'Lan McCray, Brass Woods III, Cavian Davis"
+    },
+    {
+      "year": "2007",
+      "meet": "USATF National Junior Olympics",
+      "division": "Bantam Girls (9-10)",
+      "event": "4x100m Relay",
+      "mark": "54.22",
+      "gold": "Olu-Bunmi Okunade, Tyana Davis, Kiana Horton, Taylor Bennett"
+    },
+    {
+      "year": "2007",
+      "meet": "USATF National Junior Olympics",
+      "division": "Bantam Girls (9-10)",
+      "event": "4x400m Relay",
+      "mark": "4:23.81",
+      "gold": "Olu-Bunmi Okunade, Tyana Davis, Kiana Horton, Taylor Bennett"
+    },
+    {
+      "year": "2007",
+      "meet": "USATF National Junior Olympics",
+      "division": "Intermediate Boys (15-16)",
+      "event": "400m Hurdles",
+      "mark": "52.22",
+      "gold": "Chance Casey"
     },
     {
       "year": "2005",
