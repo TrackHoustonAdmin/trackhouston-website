@@ -34,13 +34,24 @@ const areas = [
     <Image
       src={heroRelay}
       alt="A Track Houston athlete carries the baton down the home straight at the AAU Junior Olympic Games, grandstand roaring behind him."
-      class="absolute inset-0 h-full w-full object-cover object-[center_30%] opacity-80"
+      class="hero-slide is-active absolute inset-0 h-full w-full object-cover object-[center_30%]"
       loading="eager"
       fetchpriority="high"
       widths={[640, 1024, 1600, 2400]}
       sizes="100vw"
       quality={78}
     />
+    {
+      [2, 3, 4, 8, 12, 16, 21].map((n) => (
+        <img
+          src={`/hero/regional-${n}.jpg`}
+          alt="Track Houston athletes competing at the USATF Region 12 Championships."
+          class="hero-slide absolute inset-0 h-full w-full object-cover object-[center_35%]"
+          loading="lazy"
+          decoding="async"
+        />
+      ))
+    }
     <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/30" aria-hidden="true"></div>
 
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 pb-16 sm:pb-20 pt-40 w-full">
@@ -135,8 +146,9 @@ const areas = [
         {results.featured2026.summary} Every summer, Track Houston shows up to the National
         Junior Olympics deeper than anyone — and leaves with more hardware than anyone.
       </p>
-      <div class="reveal mt-8 flex justify-center">
+      <div class="reveal mt-8 flex justify-center gap-4 flex-wrap">
         <CTAButton href="/results" variant="secondary">Results & Records</CTAButton>
+        <CTAButton href="/recap-2026" variant="secondary">2026 JO Recap & Video</CTAButton>
       </div>
     </div>
 
@@ -290,3 +302,30 @@ const areas = [
     </div>
   </section>
 </Layout>
+
+<style>
+  .hero-slide {
+    opacity: 0;
+    transition: opacity 1.4s ease-in-out;
+  }
+  .hero-slide.is-active {
+    opacity: 0.8;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-slide {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  const slides = document.querySelectorAll('.hero-slide');
+  if (slides.length > 1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    let i = 0;
+    setInterval(() => {
+      slides[i].classList.remove('is-active');
+      i = (i + 1) % slides.length;
+      slides[i].classList.add('is-active');
+    }, 6000);
+  }
+</script>

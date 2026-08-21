@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import CTAButton from '../components/CTAButton.astro';
+import results from '../data/results.json';
+
+const VIDEOS = [
+  {
+    src: '/videos/avonte-slo-mo.mp4',
+    poster: '/videos/avonte-slo-mo-poster.jpg',
+    title: 'Avonte Earl — slow motion off the curve',
+    note: 'The 17-18 Boys 200m national champion, frame by frame.',
+  },
+  {
+    src: '/videos/jo-2026-finals-1.mp4',
+    poster: '/videos/jo-2026-finals-1-poster.jpg',
+    title: 'Championship Saturday — out of the blocks',
+    note: 'Finals day at Cerritos College, August 2, 2026.',
+  },
+  {
+    src: '/videos/jo-2026-finals-2.mp4',
+    poster: '/videos/jo-2026-finals-2-poster.jpg',
+    title: 'Championship Saturday — trackside',
+    note: 'The scene as Track Houston closed out a 189-medal week.',
+  },
+];
+---
+
+<Layout
+  title="2026 Junior Olympic Recap — Track Houston Youth Track Club"
+  description="Relive Track Houston's 2026 USATF National Junior Olympics: 189 medals, 17 national championships, a national record — with video from championship weekend in Norwalk."
+>
+  <PageHero
+    kicker="July 27 – August 2, 2026 · Cerritos College, Norwalk CA"
+    title="The 2026 Junior Olympics."
+    intro={results.featured2026.summary}
+  />
+
+  <!-- Numbers strip -->
+  <section class="bg-ink text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-12 grid grid-cols-2 sm:grid-cols-5 gap-8">
+      <div><p class="display text-5xl text-th-red">189</p><p class="kicker text-white/60 mt-2">Medals</p></div>
+      <div><p class="display text-5xl text-th-red">17</p><p class="kicker text-white/60 mt-2">National titles</p></div>
+      <div><p class="display text-5xl text-th-red">1</p><p class="kicker text-white/60 mt-2">National record</p></div>
+      <div><p class="display text-5xl text-th-red">36</p><p class="kicker text-white/60 mt-2">Relays on the podium</p></div>
+      <div><p class="display text-5xl text-th-red">45</p><p class="kicker text-white/60 mt-2">Individual medalists</p></div>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24">
+    <SectionHeading kicker="From the Stands" title="Watch it back." />
+    <div class="mt-10 grid lg:grid-cols-3 gap-8">
+      {
+        VIDEOS.map((v) => (
+          <figure class="reveal">
+            <video
+              controls
+              preload="metadata"
+              poster={v.poster}
+              class="w-full bg-ink"
+              playsinline
+            >
+              <source src={v.src} type="video/mp4" />
+            </video>
+            <figcaption class="mt-3">
+              <p class="font-condensed font-semibold uppercase tracking-[0.05em] text-lg">{v.title}</p>
+              <p class="text-steel text-sm mt-1">{v.note}</p>
+            </figcaption>
+          </figure>
+        ))
+      }
+    </div>
+    <p class="reveal mt-8 text-steel text-sm max-w-2xl">
+      Have meet video worth sharing? Send it to the club — this page grows as families pass along
+      their clips.
+    </p>
+  </section>
+
+  <!-- Champions link-out -->
+  <section class="bg-chalk border-y border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 flex flex-col sm:flex-row sm:items-center justify-between gap-8">
+      <div>
+        <p class="kicker text-th-red">Every gold, every name</p>
+        <p class="display text-4xl sm:text-5xl mt-2">Meet the champions.</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <CTAButton href="/results" variant="secondary">2026 Results</CTAButton>
+        <CTAButton href="/hall-of-champions" variant="secondary">Hall of Champions</CTAButton>
+        <CTAButton href="/photos" variant="secondary">Photo Archive</CTAButton>
+      </div>
+    </div>
+  </section>
+</Layout>
