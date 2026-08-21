@@ -25,7 +25,7 @@
       {
         "athlete": "Thomas Holmes III",
         "result": "Gold — 11-12 Boys 400m",
-        "photo": "/champions-2026/thomas-holmes.jpg"
+        "photo": "/champions-2026/thomas-holmes.png"
       },
       {
         "athlete": "11-12 Boys 4x100m relay",
@@ -34,7 +34,7 @@
       {
         "athlete": "11-12 Boys 4x100m relay ",
         "result": "Gold — Cole McCullar, Elijah Griffin Jr., Jeremiah Foreman, Kamar Waddy",
-        "photo": "/champions-2026/boys-11-12-4x100.jpg"
+        "photo": "/champions-2026/boys-11-12-4x100.png"
       },
       {
         "athlete": "11-12 Boys 4x400m relay",
@@ -83,7 +83,8 @@
       },
       {
         "athlete": "15-16 Mixed 4x800m relay",
-        "result": "Gold — Damien Kelly, Aniya Ramirez, Drake Pieters, Jasmine Alexander"
+        "result": "Gold — Damien Kelly, Aniya Ramirez, Drake Pieters, Jasmine Alexander",
+        "photo": "/champions-2026/mixed-15-16-4x800.png"
       },
       {
         "athlete": "17-18 Girls 4x800m relay",
