@@ -9,7 +9,7 @@ export async function getStaticPaths() {
 
 const { person } = Astro.props;
 const initials = person.name.split(' ').map((n) => n[0]).slice(0, 2).join('');
-const updateMailto = `mailto:Treasurer@TrackHouston.com?subject=${encodeURIComponent(`Coach Bio Update — ${person.name}`)}&body=${encodeURIComponent('My updated About Me:\n\n\n(Optional: attach a new photo.)')}`;
+const bioFormUrl = 'https://tally.so/r/Y57yzB';
 ---
 
 <Layout
@@ -69,8 +69,8 @@ const updateMailto = `mailto:Treasurer@TrackHouston.com?subject=${encodeURICompo
         )
       }
       <div class="mt-8">
-        <a href={updateMailto} class="kicker bg-chalk border border-line px-4 py-2.5 hover:border-th-red hover:text-th-red transition-colors inline-block">
-          Coach {person.name.split(' ')[0]}? Update your bio →
+        <a href={bioFormUrl} rel="external" class="kicker bg-chalk border border-line px-4 py-2.5 hover:border-th-red hover:text-th-red transition-colors inline-block">
+          Coach {person.name.split(' ')[0]}? Fill out your bio form →
         </a>
       </div>
     </section>
