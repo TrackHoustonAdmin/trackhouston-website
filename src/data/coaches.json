@@ -2,33 +2,33 @@
   "leadership": [
     {
       "name": "William Valerie",
-      "role": "Managing Director & Athletic Director",
+      "role": "Athletic Director",
       "email": "william.valerie@trackhouston.com"
     },
     {
       "name": "Donna Iles",
-      "role": "Managing Director & Athletic Director",
+      "role": "Athletic Director",
       "email": "donna.iles@trackhouston.com"
     },
     {
       "name": "Keith Evans",
-      "role": "President & General Manager",
+      "role": "President",
       "email": "keith.evans@trackhouston.com"
     },
     {
       "name": "Regina Godine",
-      "role": "Vice President, Development & Community Engagement",
+      "role": "Vice President · Fundraiser Chair",
       "email": "regina.godine@trackhouston.com"
     },
     {
-      "name": "Torrey Dale",
-      "role": "Vice President, Finance, Marketing & Strategy",
-      "email": "torrey.dale@trackhouston.com"
+      "name": "LaTanya Rhodes",
+      "role": "Secretary",
+      "email": "latanya.rhodes@trackhouston.com"
     },
     {
-      "name": "LaTanya Rhodes",
-      "role": "Secretary & Communications Coordinator",
-      "email": "latanya.rhodes@trackhouston.com"
+      "name": "Torrey Dale",
+      "role": "Treasurer",
+      "email": "torrey.dale@trackhouston.com"
     }
   ],
   "crossCountry": [
