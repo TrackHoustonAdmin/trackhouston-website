@@ -99,7 +99,10 @@ const jsonLd = {
               }
             }
           },
-          { threshold: 0.15 }
+          // threshold 0 + bottom rootMargin: fires as soon as the element edges into
+          // view. A percentage threshold breaks on tall elements (a 6,000px-tall
+          // one-column grid can never show 15% of itself in a phone viewport).
+          { threshold: 0, rootMargin: '0px 0px -8% 0px' }
         );
         document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
 
