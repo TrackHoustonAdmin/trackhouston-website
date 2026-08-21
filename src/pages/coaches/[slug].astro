@@ -9,7 +9,7 @@ export async function getStaticPaths() {
 
 const { person } = Astro.props;
 const initials = person.name.split(' ').map((n) => n[0]).slice(0, 2).join('');
-const bioFormUrl = 'https://tally.so/r/Y57yzB';
+const bioFormUrl = `https://tally.so/r/Y57yzB?coach=${encodeURIComponent(person.name)}`;
 ---
 
 <Layout

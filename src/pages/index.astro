@@ -18,11 +18,6 @@ import girlsStart from '../assets/photos/girls-sprint-start.jpg';
 import bryceDeadmon from '../assets/photos/bryce-deadmon.jpg';
 import athleteSmile from '../assets/photos/athlete-smile.jpg';
 
-/* Highlight entries with no photo render as stat tiles instead. */
-const STAT_TILE: Record<string, string> = {
-  '11-12 Boys 4x100m relay': '46.85',
-};
-
 const news = (await getCollection('news'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
@@ -162,7 +157,7 @@ const areas = [
       {
         results.featured2026.highlights.map((h) => (
           <li class="border-t-2 border-ink pt-4 flex flex-col">
-            {h.photo ? (
+            {h.photo && (
               <div class="overflow-hidden">
                 <img
                   src={h.photo}
@@ -171,11 +166,6 @@ const areas = [
                   decoding="async"
                   class="w-full aspect-[4/3] object-cover object-top transition-transform duration-300 ease-out hover:scale-105"
                 />
-              </div>
-            ) : (
-              <div class="w-full aspect-[4/3] bg-ink flex flex-col items-center justify-center">
-                <p class="display text-6xl text-th-red">{STAT_TILE[h.athlete] ?? 'GOLD'}</p>
-                <p class="kicker text-white/60 mt-3">{STAT_TILE[h.athlete] ? 'National record' : '2026 champions'}</p>
               </div>
             )}
             <p class="font-condensed font-semibold uppercase tracking-[0.04em] text-lg leading-tight mt-4">{h.athlete}</p>
