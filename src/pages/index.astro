@@ -158,13 +158,15 @@ const areas = [
         results.featured2026.highlights.map((h) => (
           <li class="border-t-2 border-ink pt-4 flex flex-col">
             {h.photo && (
-              <div class="overflow-hidden">
+              <div class="overflow-hidden bg-ink">
                 <img
                   src={h.photo}
                   alt={`${h.athlete} on the podium at the 2026 National Junior Olympics`}
                   loading="lazy"
                   decoding="async"
-                  class="w-full aspect-[4/3] object-cover object-top transition-transform duration-300 ease-out hover:scale-105"
+                  class={`w-full aspect-[4/3] transition-transform duration-300 ease-out hover:scale-105 ${
+                    h.fit === 'contain' ? 'object-contain' : 'object-cover object-top'
+                  }`}
                 />
               </div>
             )}

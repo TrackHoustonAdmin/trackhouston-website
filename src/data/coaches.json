@@ -1,186 +1,181 @@
 {
- "leadership": [
-  {
-   "name": "William Valerie",
-   "role": "Athletic Director",
-   "email": "william.valerie@trackhouston.com"
-  },
-  {
-   "name": "Donna Iles",
-   "role": "Athletic Director",
-   "email": "donna.iles@trackhouston.com"
-  },
-  {
-   "name": "Keith Evans",
-   "role": "President",
-   "email": "keith.evans@trackhouston.com"
-  },
-  {
-   "name": "Regina Godine",
-   "role": "Vice President · Fundraiser Chair",
-   "email": "regina.godine@trackhouston.com"
-  },
-  {
-   "name": "LaTanya Rhodes",
-   "role": "Secretary",
-   "email": "latanya.rhodes@trackhouston.com"
-  },
-  {
-   "name": "Torrey Dale",
-   "role": "Treasurer",
-   "email": "torrey.dale@trackhouston.com"
-  },
-  {
-   "name": "Joe Felder",
-   "role": "Academic & Life Skills Committee",
-   "email": "joe.felder@trackhouston.com"
-  }
- ],
- "crossCountry": [
-  {
-   "name": "Kenya Artis",
-   "role": "Cross Country Co-Head Coach",
-   "email": "kenya.artis@trackhouston.com"
-  },
-  {
-   "name": "Kenneth Gandy",
-   "role": "Cross Country Co-Head Coach",
-   "email": "kenneth.gandy@trackhouston.com"
-  }
- ],
- "ageDivisions": [
-  {
-   "division": "Girls born 2018–2019",
-   "coaches": [
+  "leadership": [
     {
-     "name": "Krystle Iles"
+      "name": "William Valerie",
+      "role": "Co-Executive Director & Athletic Director",
+      "email": "william.valerie@trackhouston.com"
     },
     {
-     "name": "Andre Perry"
-    }
-   ]
-  },
-  {
-   "division": "Boys born 2018–2019",
-   "coaches": [
-    {
-     "name": "Deisnyk McCullough"
+      "name": "Donna Iles",
+      "role": "Co-Executive Director & Athletic Director",
+      "email": "donna.iles@trackhouston.com"
     },
     {
-     "name": "Roderick Robins"
-    }
-   ]
-  },
-  {
-   "division": "Girls born 2016–2017",
-   "coaches": [
-    {
-     "name": "Walter Alexander"
+      "name": "Keith Evans",
+      "role": "President & General Manager",
+      "email": "keith.evans@trackhouston.com"
     },
     {
-     "name": "Andrea Alexander"
-    }
-   ]
-  },
-  {
-   "division": "Boys born 2016–2017",
-   "coaches": [
-    {
-     "name": "Dallas Gray"
+      "name": "Regina Godine",
+      "role": "Vice President, Development & Community Engagement",
+      "email": "regina.godine@trackhouston.com"
     },
     {
-     "name": "Jeremy Waddy"
-    }
-   ]
-  },
-  {
-   "division": "Girls born 2014–2015",
-   "coaches": [
-    {
-     "name": "Latosha Lewis Payne"
+      "name": "Torrey Dale",
+      "role": "Vice President, Finance, Marketing & Strategy",
+      "email": "torrey.dale@trackhouston.com"
     },
     {
-     "name": "Rita Obey"
+      "name": "LaTanya Rhodes",
+      "role": "Secretary & Communications Coordinator",
+      "email": "latanya.rhodes@trackhouston.com"
     }
-   ]
-  },
-  {
-   "division": "Boys born 2014–2015",
-   "coaches": [
+  ],
+  "crossCountry": [
     {
-     "name": "Dwight Rhodes"
+      "name": "Kenya Artis",
+      "role": "Cross Country Co-Head Coach",
+      "email": "kenya.artis@trackhouston.com"
     },
     {
-     "name": "Derrick McCullar"
+      "name": "Kenneth Gandy",
+      "role": "Cross Country Co-Head Coach",
+      "email": "kenneth.gandy@trackhouston.com"
     }
-   ]
-  },
-  {
-   "division": "Girls born 2012–2013",
-   "coaches": [
+  ],
+  "ageDivisions": [
     {
-     "name": "Martrice Wafer"
+      "division": "Girls born 2018–2019",
+      "coaches": [
+        {
+          "name": "Krystle Iles"
+        },
+        {
+          "name": "Andre Perry"
+        }
+      ]
     },
     {
-     "name": "Kenya Artis"
-    }
-   ]
-  },
-  {
-   "division": "Boys born 2012–2013",
-   "coaches": [
-    {
-     "name": "Terrance Lange"
+      "division": "Boys born 2018–2019",
+      "coaches": [
+        {
+          "name": "Deisnyk McCullough"
+        },
+        {
+          "name": "Roderick Robins"
+        }
+      ]
     },
     {
-     "name": "Keith Fulks"
-    }
-   ]
-  },
-  {
-   "division": "Girls born 2010–2011",
-   "coaches": [
-    {
-     "name": "William Valerie"
+      "division": "Girls born 2016–2017",
+      "coaches": [
+        {
+          "name": "Walter Alexander"
+        },
+        {
+          "name": "Andrea Alexander"
+        }
+      ]
     },
     {
-     "name": "Jasmin Jackson"
-    }
-   ]
-  },
-  {
-   "division": "Boys born 2010–2011",
-   "coaches": [
-    {
-     "name": "Keith Evans"
+      "division": "Boys born 2016–2017",
+      "coaches": [
+        {
+          "name": "Dallas Gray"
+        },
+        {
+          "name": "Jeremy Waddy"
+        }
+      ]
     },
     {
-     "name": "Al Coleman"
-    }
-   ]
-  },
-  {
-   "division": "Girls born 2008–2009",
-   "coaches": [
-    {
-     "name": "Shante Robinson"
+      "division": "Girls born 2014–2015",
+      "coaches": [
+        {
+          "name": "Latosha Lewis Payne"
+        },
+        {
+          "name": "Rita Obey"
+        }
+      ]
     },
     {
-     "name": "Harry Mitchell"
-    }
-   ]
-  },
-  {
-   "division": "Boys born 2008–2009",
-   "coaches": [
-    {
-     "name": "Rod Grogan"
+      "division": "Boys born 2014–2015",
+      "coaches": [
+        {
+          "name": "Dwight Rhodes"
+        },
+        {
+          "name": "Derrick McCullar"
+        }
+      ]
     },
     {
-     "name": "Darcy Davis"
+      "division": "Girls born 2012–2013",
+      "coaches": [
+        {
+          "name": "Martrice Wafer"
+        },
+        {
+          "name": "Kenya Artis"
+        }
+      ]
+    },
+    {
+      "division": "Boys born 2012–2013",
+      "coaches": [
+        {
+          "name": "Terrance Lange"
+        },
+        {
+          "name": "Keith Fulks"
+        }
+      ]
+    },
+    {
+      "division": "Girls born 2010–2011",
+      "coaches": [
+        {
+          "name": "William Valerie"
+        },
+        {
+          "name": "Jasmin Jackson"
+        }
+      ]
+    },
+    {
+      "division": "Boys born 2010–2011",
+      "coaches": [
+        {
+          "name": "Keith Evans"
+        },
+        {
+          "name": "Al Coleman"
+        }
+      ]
+    },
+    {
+      "division": "Girls born 2008–2009",
+      "coaches": [
+        {
+          "name": "Shante Robinson"
+        },
+        {
+          "name": "Harry Mitchell"
+        }
+      ]
+    },
+    {
+      "division": "Boys born 2008–2009",
+      "coaches": [
+        {
+          "name": "Rod Grogan"
+        },
+        {
+          "name": "Darcy Davis"
+        }
+      ]
     }
-   ]
-  }
- ],
- "seasonLabel": "Spring 2026 age division head coaches"
+  ],
+  "seasonLabel": "Spring 2026 age division head coaches"
 }

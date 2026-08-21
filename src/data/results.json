@@ -40,7 +40,8 @@
       {
         "athlete": "Jace Coleman",
         "result": "Gold — pentathlon · silver — hurdles (13-14)",
-        "photo": "/champions-2026/jace-coleman.png"
+        "photo": "/champions-2026/jace-coleman.png",
+        "fit": "contain"
       },
       {
         "athlete": "Brooklyn Allen",
